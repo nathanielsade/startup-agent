@@ -16,3 +16,10 @@ def test_init_db_creates_schema(tmp_path):
 def test_version():
     result = runner.invoke(app, ["version"])
     assert result.exit_code == 0
+
+
+def test_run_with_no_companies(tmp_path):
+    db = tmp_path / "r.db"
+    result = runner.invoke(app, ["run", "--db-path", str(db)])
+    assert result.exit_code == 0
+    assert "companies=0" in result.stdout
