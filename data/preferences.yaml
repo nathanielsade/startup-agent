@@ -17,6 +17,20 @@ locations:
   - Center (Gush Dan / Sharon)
   - Remote
 must_have: []
+title_include:
+  - engineer
+  - developer
+  - software
+  - programmer
+  - devops
+  - sre
+  - full stack
+  - full-stack
+  - fullstack
+  - machine learning
+  - data scientist
+  - research
+  - sdet
 exclude:
   - Senior
   - Staff
@@ -28,3 +42,21 @@ exclude:
   - VP
   - Intern
   - Internship
+  - Sales Engineer
+  - Solutions Engineer
+  - Support Engineer
+  - Customer Engineer
+  - Field Engineer
+  - Presales
+  - Pre-Sales
+  - Account Executive
+  - Sales Development
+  - Counsel
+  - Marketing
+  - Recruiter
+  - Sourcer
+  - Designer
+  - Accountant
+  - Payroll
+  - Analyst
+  - Revenue Architect

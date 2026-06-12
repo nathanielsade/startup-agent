@@ -15,10 +15,15 @@ def test_classifies_regions():
 
 
 def test_location_allowed_rule():
-    assert location_allowed("Tel Aviv") is True       # center
-    assert location_allowed("Remote") is True          # remote always ok
-    assert location_allowed("Haifa") is False          # north
-    assert location_allowed("Beer Sheva") is False     # south
-    assert location_allowed("Jerusalem") is False      # excluded
-    assert location_allowed("London") is True          # unknown -> keep (don't miss)
-    assert location_allowed(None) is True              # missing -> keep
+    assert location_allowed("Tel Aviv") is True
+    assert location_allowed("Tel Aviv-Yafo, Tel Aviv District, Israel") is True
+    assert location_allowed("Kiryat Ono, Israel") is True   # unlisted Israeli city, has "israel"
+    assert location_allowed("Remote") is True
+    assert location_allowed("Remote - EMEA") is True
+    assert location_allowed("Haifa") is False
+    assert location_allowed("Beer Sheva") is False
+    assert location_allowed("Jerusalem") is False
+    assert location_allowed("Dublin") is False              # foreign -> drop
+    assert location_allowed("United States") is False        # foreign -> drop
+    assert location_allowed("London") is False
+    assert location_allowed(None) is False                   # missing -> drop

@@ -50,5 +50,12 @@ def classify_location(location: str | None) -> Region:
 
 
 def location_allowed(location: str | None) -> bool:
+    if not location:
+        return False
     region = classify_location(location)
-    return region not in (Region.NORTH, Region.SOUTH, Region.JERUSALEM)
+    if region in (Region.REMOTE, Region.CENTER):
+        return True
+    if region in (Region.NORTH, Region.SOUTH, Region.JERUSALEM):
+        return False
+    # UNKNOWN region: keep only if the string clearly says Israel (unlisted Israeli city)
+    return "israel" in location.lower()

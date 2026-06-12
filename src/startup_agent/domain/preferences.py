@@ -7,3 +7,4 @@ class Preferences(BaseModel):
     locations: list[str] = Field(default_factory=list)
     must_have: list[str] = Field(default_factory=list)
     exclude: list[str] = Field(default_factory=list)
+    title_include: list[str] = Field(default_factory=list)
