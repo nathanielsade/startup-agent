@@ -35,3 +35,15 @@ def test_ashby_handles_empty_board():
     adapter = AshbyAdapter(fetch_json=lambda url: {"jobs": []})
     company = Company(name="Empty", ats_type=AtsType.ASHBY, ats_token="empty")
     assert adapter.fetch_jobs(company) == []
+
+
+def test_ashby_skips_malformed_job_keeps_good_ones():
+    payload = {"jobs": [
+        {"id": "bad"},  # missing title/url -> skipped
+        {"id": "ok", "title": "Engineer", "jobUrl": "https://jobs.ashbyhq.com/x/ok",
+         "location": "Tel Aviv", "descriptionPlain": "x", "publishedAt": "2026-01-01T00:00:00+00:00"},
+    ]}
+    adapter = AshbyAdapter(fetch_json=lambda url: payload)
+    jobs = adapter.fetch_jobs(Company(name="X", ats_type=AtsType.ASHBY, ats_token="x"))
+    assert len(jobs) == 1
+    assert jobs[0].title == "Engineer"

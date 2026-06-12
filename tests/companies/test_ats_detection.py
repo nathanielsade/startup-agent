@@ -18,3 +18,7 @@ def test_detect_ashby_lever_workable_comeet():
 def test_detect_unknown():
     assert detect_ats("https://www.some-startup.com/careers") == (AtsType.UNKNOWN, None)
     assert detect_ats(None) == (AtsType.UNKNOWN, None)
+
+
+def test_detect_greenhouse_url_with_jobs_path():
+    assert detect_ats("https://boards.greenhouse.io/fireblocks/jobs/123") == (AtsType.GREENHOUSE, "fireblocks")

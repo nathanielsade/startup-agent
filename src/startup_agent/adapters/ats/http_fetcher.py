@@ -35,7 +35,7 @@ class HttpJsonFetcher:
                 return response.json()
             except httpx.HTTPError as error:
                 last_error = error
-                if self._backoff:
+                if self._backoff and attempt < self._retries - 1:
                     time.sleep(self._backoff * (attempt + 1))
         assert last_error is not None
         raise last_error

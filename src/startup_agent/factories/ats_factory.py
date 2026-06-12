@@ -5,7 +5,7 @@ from startup_agent.domain.models import AtsType, Company
 from startup_agent.ports.ats import ATSAdapter
 
 # Registry: add a new ATS by registering its adapter class here. Nothing else changes.
-_REGISTRY: dict[AtsType, type] = {
+_REGISTRY: dict[AtsType, type[ATSAdapter]] = {
     AtsType.GREENHOUSE: GreenhouseAdapter,
     AtsType.ASHBY: AshbyAdapter,
 }

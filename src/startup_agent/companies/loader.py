@@ -15,6 +15,7 @@ def load_companies_from_seed(path: str) -> list[Company]:
                 website=row.get("website"),
                 ats_type=AtsType(ats_value),
                 ats_token=row.get("ats_token"),
+                careers_url=row.get("careers_url"),
             )
         )
     return companies

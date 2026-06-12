@@ -7,11 +7,6 @@ from startup_agent.domain.models import AtsType, Company
 FIXTURE = Path("spike/fixtures/greenhouse_fireblocks.json")
 
 
-def _stub_fetcher():
-    payload = json.loads(FIXTURE.read_text())
-    return lambda url: payload
-
-
 def test_greenhouse_builds_correct_url_and_parses_jobs():
     captured = {}
     payload = json.loads(FIXTURE.read_text())
@@ -41,3 +36,21 @@ def test_greenhouse_handles_empty_board():
     adapter = GreenhouseAdapter(fetch_json=lambda url: {"jobs": []})
     company = Company(name="Empty", ats_type=AtsType.GREENHOUSE, ats_token="empty")
     assert adapter.fetch_jobs(company) == []
+
+
+def test_greenhouse_skips_malformed_job_keeps_good_ones():
+    payload = {"jobs": [
+        {"id": "bad"},  # missing title/absolute_url -> skipped
+        {
+            "id": "good",
+            "title": "Engineer",
+            "absolute_url": "https://boards.greenhouse.io/acme/jobs/good",
+            "location": {"name": "Tel Aviv"},
+            "content": "desc",
+            "first_published": "2026-01-01T00:00:00+00:00",
+        },
+    ]}
+    adapter = GreenhouseAdapter(fetch_json=lambda url: payload)
+    jobs = adapter.fetch_jobs(Company(name="Acme", ats_type=AtsType.GREENHOUSE, ats_token="acme"))
+    assert len(jobs) == 1
+    assert jobs[0].title == "Engineer"
