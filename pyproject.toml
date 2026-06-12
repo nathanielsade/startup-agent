@@ -16,7 +16,7 @@ dependencies = [
 ]
 
 [project.scripts]
-startup-agent = "startup_agent:main"
+startup-agent = "startup_agent.cli:app"
 
 [build-system]
 requires = ["uv_build>=0.11.21,<0.12.0"]
