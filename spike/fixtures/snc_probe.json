@@ -1,0 +1,124 @@
+{
+  "snc": {
+    "main_page": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8"
+    },
+    "/api/companies": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/v1/companies": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/v2/companies": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/startups": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/v1/startups": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/startups/search": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/startups/search": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/v1/startups/search": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/search": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/companies/search": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/graphql": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "/api/graphql": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta nam"
+    },
+    "POST:/startups/search": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+    },
+    "POST:/api/v1/startups/search": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+    },
+    "POST:/api/companies/search": {
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8",
+      "is_json": false,
+      "body_prefix": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+    },
+    "auth_probe": {
+      "api_urls": [],
+      "auth_hints": []
+    }
+  },
+  "alternatives": {
+    "ivc_online": {
+      "status": 200,
+      "accessible": true
+    },
+    "linkedin_jobs": {
+      "status": 200,
+      "note": "Requires auth cookie"
+    },
+    "awesome-israel-tech": {
+      "status": 200,
+      "len": 31320
+    },
+    "geektime_iltech": {
+      "status": 404,
+      "len": 0
+    }
+  },
+  "summary": {
+    "snc_working_endpoints": [],
+    "snc_verdict": "gated_or_blocked"
+  }
+}

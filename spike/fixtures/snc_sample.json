@@ -1,0 +1,340 @@
+{
+  "source": "curated_manual",
+  "note": "SNC blocked by Cloudflare WAF. This is a manually curated list of Israeli startups from public sources (TechCrunch, Calcalist, LinkedIn, company websites).",
+  "companies": [
+    {
+      "name": "Wiz",
+      "hq": "Tel Aviv",
+      "sector": "cloud security",
+      "ats": "greenhouse",
+      "ats_token": "wiz (new GH, JS-rendered)"
+    },
+    {
+      "name": "Cybereason",
+      "hq": "Tel Aviv",
+      "sector": "endpoint security",
+      "ats": "unknown"
+    },
+    {
+      "name": "Claroty",
+      "hq": "Tel Aviv",
+      "sector": "OT/IoT security",
+      "ats": "ashby",
+      "ats_token": "claroty (404)"
+    },
+    {
+      "name": "Axonius",
+      "hq": "Tel Aviv",
+      "sector": "asset management",
+      "ats": "ashby",
+      "ats_token": "axonius (404)"
+    },
+    {
+      "name": "Orca Security",
+      "hq": "Tel Aviv",
+      "sector": "cloud security",
+      "ats": "ashby",
+      "ats_token": "orca (1 job verified)"
+    },
+    {
+      "name": "Cyera",
+      "hq": "Tel Aviv",
+      "sector": "data security",
+      "ats": "ashby",
+      "ats_token": "cyera (404)"
+    },
+    {
+      "name": "Island",
+      "hq": "Tel Aviv",
+      "sector": "enterprise browser",
+      "ats": "greenhouse",
+      "ats_token": "island (new GH, JS-rendered)"
+    },
+    {
+      "name": "Fireblocks",
+      "hq": "Tel Aviv",
+      "sector": "crypto security",
+      "ats": "greenhouse",
+      "ats_token": "fireblocks (56 jobs verified)"
+    },
+    {
+      "name": "At-Bay",
+      "hq": "San Francisco/Tel Aviv",
+      "sector": "cyber insurance",
+      "ats": "greenhouse",
+      "ats_token": "atbay (0 jobs, valid)"
+    },
+    {
+      "name": "Melio",
+      "hq": "Tel Aviv",
+      "sector": "B2B payments",
+      "ats": "greenhouse",
+      "ats_token": "melio (21 jobs verified)"
+    },
+    {
+      "name": "Lemonade",
+      "hq": "New York/Tel Aviv",
+      "sector": "insurtech",
+      "ats": "greenhouse",
+      "ats_token": "lemonade (new GH, JS-rendered)"
+    },
+    {
+      "name": "Papaya Global",
+      "hq": "Tel Aviv",
+      "sector": "global payroll",
+      "ats": "unknown"
+    },
+    {
+      "name": "Tipalti",
+      "hq": "Foster City/Tel Aviv",
+      "sector": "AP automation",
+      "ats": "unknown"
+    },
+    {
+      "name": "monday.com",
+      "hq": "Tel Aviv",
+      "sector": "work management",
+      "ats": "greenhouse",
+      "ats_token": "monday (new GH, JS-rendered)"
+    },
+    {
+      "name": "Gong",
+      "hq": "San Francisco/Tel Aviv",
+      "sector": "revenue intelligence",
+      "ats": "greenhouse",
+      "ats_token": "gongio (94 jobs verified)"
+    },
+    {
+      "name": "Riskified",
+      "hq": "Tel Aviv",
+      "sector": "fraud prevention",
+      "ats": "greenhouse",
+      "ats_token": "riskified (30 jobs verified)"
+    },
+    {
+      "name": "WalkMe",
+      "hq": "Tel Aviv",
+      "sector": "digital adoption",
+      "ats": "comeet"
+    },
+    {
+      "name": "Similarweb",
+      "hq": "Tel Aviv",
+      "sector": "web analytics",
+      "ats": "comeet"
+    },
+    {
+      "name": "Snyk",
+      "hq": "London/Tel Aviv",
+      "sector": "developer security",
+      "ats": "greenhouse",
+      "ats_token": "snyk (new GH, JS-rendered)"
+    },
+    {
+      "name": "Coralogix",
+      "hq": "Tel Aviv",
+      "sector": "observability",
+      "ats": "greenhouse",
+      "ats_token": "coralogix (new GH, JS-rendered)"
+    },
+    {
+      "name": "Pinecone",
+      "hq": "New York/Tel Aviv",
+      "sector": "vector database",
+      "ats": "ashby",
+      "ats_token": "pinecone (7 jobs verified)"
+    },
+    {
+      "name": "Aidoc",
+      "hq": "Tel Aviv",
+      "sector": "medical AI",
+      "ats": "greenhouse",
+      "ats_token": "aidoc (404, likely new GH)"
+    },
+    {
+      "name": "Verbit",
+      "hq": "Tel Aviv",
+      "sector": "AI transcription",
+      "ats": "greenhouse",
+      "ats_token": "verbit (404, likely new GH)"
+    },
+    {
+      "name": "Pixellot",
+      "hq": "Tel Aviv",
+      "sector": "AI sports video",
+      "ats": "greenhouse",
+      "ats_token": "pixellot (404)"
+    },
+    {
+      "name": "Drata",
+      "hq": "San Diego",
+      "sector": "compliance automation",
+      "ats": "ashby",
+      "ats_token": "drata (53 jobs verified)"
+    },
+    {
+      "name": "Varonis",
+      "hq": "New York/Tel Aviv",
+      "sector": "data security",
+      "ats": "comeet"
+    },
+    {
+      "name": "CyberArk",
+      "hq": "Newton/Tel Aviv",
+      "sector": "PAM",
+      "ats": "comeet"
+    },
+    {
+      "name": "Imperva",
+      "hq": "San Mateo/Tel Aviv",
+      "sector": "web security",
+      "ats": "comeet"
+    },
+    {
+      "name": "Radware",
+      "hq": "Tel Aviv",
+      "sector": "application delivery",
+      "ats": "comeet"
+    },
+    {
+      "name": "Run:ai",
+      "hq": "Tel Aviv",
+      "sector": "GPU orchestration",
+      "ats": "unknown"
+    },
+    {
+      "name": "Deel",
+      "hq": "San Francisco",
+      "sector": "global HR",
+      "ats": "unknown"
+    },
+    {
+      "name": "OtterTune",
+      "hq": "Pittsburgh",
+      "sector": "DB tuning",
+      "ats": "unknown"
+    },
+    {
+      "name": "Tabnine",
+      "hq": "Tel Aviv",
+      "sector": "AI code completion",
+      "ats": "unknown"
+    },
+    {
+      "name": "JFrog",
+      "hq": "Sunnyvale/Tel Aviv",
+      "sector": "DevOps",
+      "ats": "unknown"
+    },
+    {
+      "name": "Noname Security",
+      "hq": "Palo Alto/Tel Aviv",
+      "sector": "API security",
+      "ats": "ashby",
+      "ats_token": "noname (404)"
+    },
+    {
+      "name": "Hunters",
+      "hq": "Tel Aviv",
+      "sector": "SOC platform",
+      "ats": "ashby",
+      "ats_token": "hunter (404)"
+    },
+    {
+      "name": "BigPanda",
+      "hq": "Mountain View/Tel Aviv",
+      "sector": "AIOps",
+      "ats": "unknown"
+    },
+    {
+      "name": "EarlySense",
+      "hq": "Tel Aviv",
+      "sector": "patient monitoring",
+      "ats": "unknown"
+    },
+    {
+      "name": "Ori Biotech",
+      "hq": "London",
+      "sector": "cell therapy",
+      "ats": "unknown"
+    },
+    {
+      "name": "IronSource",
+      "hq": "Tel Aviv",
+      "sector": "growth platform",
+      "ats": "unknown"
+    },
+    {
+      "name": "AppsFlyer",
+      "hq": "Tel Aviv",
+      "sector": "mobile attribution",
+      "ats": "unknown"
+    },
+    {
+      "name": "Perion",
+      "hq": "Tel Aviv",
+      "sector": "digital advertising",
+      "ats": "comeet"
+    },
+    {
+      "name": "NICE",
+      "hq": "Ra anana",
+      "sector": "enterprise software",
+      "ats": "unknown"
+    },
+    {
+      "name": "Amdocs",
+      "hq": "Chesterfield MO",
+      "sector": "telecom software",
+      "ats": "comeet"
+    },
+    {
+      "name": "Orion Innovation",
+      "hq": "Edison NJ",
+      "sector": "digital services",
+      "ats": "unknown"
+    },
+    {
+      "name": "Lusha",
+      "hq": "Tel Aviv",
+      "sector": "B2B data",
+      "ats": "unknown"
+    },
+    {
+      "name": "Innovid",
+      "hq": "New York/Tel Aviv",
+      "sector": "CTV advertising",
+      "ats": "unknown"
+    },
+    {
+      "name": "Skai",
+      "hq": "Tel Aviv",
+      "sector": "marketing intelligence",
+      "ats": "unknown"
+    },
+    {
+      "name": "ironSource Aura",
+      "hq": "Tel Aviv",
+      "sector": "OEM growth",
+      "ats": "unknown"
+    },
+    {
+      "name": "Cato Networks",
+      "hq": "Tel Aviv",
+      "sector": "SASE",
+      "ats": "unknown"
+    },
+    {
+      "name": "Checkpoint",
+      "hq": "Tel Aviv",
+      "sector": "network security",
+      "ats": "unknown"
+    },
+    {
+      "name": "Forter",
+      "hq": "New York/Tel Aviv",
+      "sector": "fraud prevention",
+      "ats": "unknown"
+    }
+  ]
+}
