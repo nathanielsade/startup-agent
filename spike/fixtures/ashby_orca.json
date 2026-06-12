@@ -1,0 +1,28 @@
+{
+  "jobs": [
+    {
+      "id": "67824dda-de40-448e-ba76-87ed4e06d05f",
+      "title": "Open Application",
+      "department": "General",
+      "team": "General",
+      "employmentType": "FullTime",
+      "location": "Remote",
+      "secondaryLocations": [],
+      "publishedAt": "2025-09-24T17:29:49.900+00:00",
+      "isListed": true,
+      "isRemote": null,
+      "workplaceType": null,
+      "address": {
+        "postalAddress": {
+          "addressCountry": "United States",
+          "addressLocality": "Remote"
+        }
+      },
+      "jobUrl": "https://jobs.ashbyhq.com/orca/67824dda-de40-448e-ba76-87ed4e06d05f",
+      "applyUrl": "https://jobs.ashbyhq.com/orca/67824dda-de40-448e-ba76-87ed4e06d05f/application",
+      "descriptionHtml": "<p style=\"min-height:1.5em\">Location: Remote</p><p style=\"min-height:1.5em\">Orca is expanding into new product verticals, bringing a new class of regulated assets on-chain with the compliance infrastructure and liquidity primitives to make them actually work. Our ambition reaches beyond becoming the leading provider of financial primitives in crypto—we aim to reshape the foundation of finance itself. If you are someone who is tired of just working another job and wants to build something meaningful, then we invite you to join our team.</p><p style=\"min-height:1.5em\">We’re always looking for talented individuals to join our growing team. If you think your skills can contribute to Orca's mission, but don’t see a specific role that matches your expertise in our current open positions, we’d love to hear from you. By submitting your resume here, you’ll be considered for future opportunities that align with your background and interests.<br />If there’s a potential fit for an existing or upcoming opportunity, our team will get in touch. While we’d love to respond to everyone, we’re unfortunately unable to provide individual updates on all open applications.</p><p style=\"min-height:1.5em\"><strong>What Orca offers</strong></p><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Competitive Salary.</p></li><li><p style=\"min-height:1.5em\">Bonus AND Token allocation.</p></li><li><p style=\"min-height:1.5em\">Flexible work schedule.</p></li><li><p style=\"min-height:1.5em\">Home office stipend.</p></li><li><p style=\"min-height:1.5em\">Wellness stipend.</p></li><li><p style=\"min-height:1.5em\">Opportunity to co-work with the team multiple times a year from at different locations around the world, fully covered by Orca.</p></li><li><p style=\"min-height:1.5em\">Option to work remotely or from Orca’s office in New York City.</p></li><li><p style=\"min-height:1.5em\">Paid subscriptions to GitHub Copilot, ChatGPT, or other tools that make you more productive.</p></li></ul><p style=\"min-height:1.5em\"><br /><strong>About:</strong> <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://orca.so\">https://orca.so</a></p><p style=\"min-height:1.5em\"><strong>Twitter:</strong> <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://x.com/orca_so\">https://x.com/orca_so</a></p><p style=\"min-height:1.5em\"><strong>Discord:</strong> <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://discord.orca.so\">https://discord.orca.so</a></p><p style=\"min-height:1.5em\"><strong>Podcast: </strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://orcapod.orca.so\">https://orcapod.orca.so</a></p><p style=\"min-height:1.5em\"><em>Orca is an equal opportunity employer.</em></p>",
+      "descriptionPlain": "Location: Remote\n\nOrca is expanding into new product verticals, bringing a new class of regulated assets on-chain with the compliance infrastructure and liquidity primitives to make them actually work. Our ambition reaches beyond becoming the leading provider of financial primitives in crypto—we aim to reshape the foundation of finance itself. If you are someone who is tired of just working another job and wants to build something meaningful, then we invite you to join our team.\n\nWe’re always looking for talented individuals to join our growing team. If you think your skills can contribute to Orca's mission, but don’t see a specific role that matches your expertise in our current open positions, we’d love to hear from you. By submitting your resume here, you’ll be considered for future opportunities that align with your background and interests.\nIf there’s a potential fit for an existing or upcoming opportunity, our team will get in touch. While we’d love to respond to everyone, we’re unfortunately unable to provide individual updates on all open applications.\n\nWhat Orca offers\n\n - Competitive Salary.\n\n - Bonus AND Token allocation.\n\n - Flexible work schedule.\n\n - Home office stipend.\n\n - Wellness stipend.\n\n - Opportunity to co-work with the team multiple times a year from at different locations around the world, fully covered by Orca.\n\n - Option to work remotely or from Orca’s office in New York City.\n\n - Paid subscriptions to GitHub Copilot, ChatGPT, or other tools that make you more productive.\n\n\nAbout: https://orca.so\n\nTwitter: https://x.com/orca_so\n\nDiscord: https://discord.orca.so\n\nPodcast: https://orcapod.orca.so\n\nOrca is an equal opportunity employer."
+    }
+  ],
+  "apiVersion": "1"
+}

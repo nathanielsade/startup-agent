@@ -5,5 +5,4 @@ __pycache__/
 .ruff_cache/
 jobs.db
 .env
-spike/fixtures/*.json
-!spike/fixtures/.gitkeep
+# spike/fixtures/*.json intentionally tracked — test data for phase 0
