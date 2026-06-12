@@ -1,4 +1,3 @@
-import json
 import sqlite3
 from datetime import datetime, timezone
 from pathlib import Path
@@ -67,7 +66,8 @@ class SQLiteJobRepository(JobRepository):
             (job.id, job.company_id, job.ats_job_id, job.title, job.location,
              job.url, job.description,
              job.posted_at.isoformat() if job.posted_at else None,
-             _now(), json.dumps({})),
+             job.first_seen_at.isoformat() if job.first_seen_at else _now(),
+             None),
         )
         self._conn.commit()
         return True

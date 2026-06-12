@@ -1,4 +1,6 @@
-from startup_agent.domain.models import Company, Job, AtsType
+import pytest
+
+from startup_agent.domain.models import AtsType, Company, Job
 
 
 def test_company_requires_name_and_defaults_active():
@@ -23,3 +25,12 @@ def test_job_id_is_stable_hash_of_company_and_ats_job_id():
 
 def test_unknown_ats_type_is_supported():
     assert AtsType("unknown") is AtsType.UNKNOWN
+
+
+def test_match_result_rejects_out_of_range_score():
+    from pydantic import ValidationError
+    from startup_agent.domain.models import MatchResult
+    with pytest.raises(ValidationError):
+        MatchResult(job_id="j", score=150, reason="too high", stage="llm")
+    MatchResult(job_id="j", score=0, reason="ok", stage="llm")
+    MatchResult(job_id="j", score=100, reason="ok", stage="llm")
