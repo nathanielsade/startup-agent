@@ -1,0 +1,548 @@
+{
+  "offset": 0,
+  "limit": 100,
+  "totalFound": 9,
+  "content": [
+    {
+      "id": "111575641",
+      "name": "writing/journalism internship",
+      "uuid": "1db69446-1cb8-4c39-b1a8-86191c56e38d",
+      "jobAdId": "4ba41213-81ba-43f4-ae1c-d54ef5653268",
+      "defaultJobAd": true,
+      "refNumber": "REF12A",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2017-03-24T23:19:12.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.7127837",
+        "longitude": "-74.00594130000002",
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "writing_editing",
+        "label": "Writing/Editing"
+      },
+      "typeOfEmployment": {
+        "id": "part-time",
+        "label": "Part-time"
+      },
+      "experienceLevel": {
+        "id": "internship",
+        "label": "Internship"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/111575641",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "109561192",
+      "name": "Journalism Internship For Growing Startup",
+      "uuid": "5f193654-031e-463c-b4de-13a67883cb38",
+      "jobAdId": "85f6257e-9f5a-4b60-a277-301070a2f32c",
+      "defaultJobAd": true,
+      "refNumber": "REF11R",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2017-02-28T21:10:16.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.7127837",
+        "longitude": "-74.00594130000002",
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "writing_editing",
+        "label": "Writing/Editing"
+      },
+      "typeOfEmployment": {
+        "id": "intern",
+        "label": "Intern"
+      },
+      "experienceLevel": {
+        "id": "internship",
+        "label": "Internship"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/109561192",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "106249111",
+      "name": "Social Media Intern For Growing Startup",
+      "uuid": "188998e6-e07b-4d09-9e10-5b155af7a478",
+      "jobAdId": "a744dad6-fc1f-4a4e-8e0f-13f4d3dee525",
+      "defaultJobAd": true,
+      "refNumber": "REF10D",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2017-01-20T18:30:26.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.7127837",
+        "longitude": "-74.00594130000002",
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "marketing",
+        "label": "Marketing"
+      },
+      "typeOfEmployment": {
+        "id": "part-time",
+        "label": "Part-time"
+      },
+      "experienceLevel": {
+        "id": "internship",
+        "label": "Internship"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/106249111",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "91985146",
+      "name": "Weekend Content Manager",
+      "uuid": "68d14c75-94de-4f7f-b52b-03f307a48bd9",
+      "jobAdId": "2650469e-ee39-412b-859d-772ef3c6412d",
+      "defaultJobAd": true,
+      "refNumber": "REF7N",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2016-05-05T18:36:23.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.7127837",
+        "longitude": "-74.00594130000002",
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "marketing",
+        "label": "Marketing"
+      },
+      "typeOfEmployment": {
+        "id": "part-time",
+        "label": "Part-time"
+      },
+      "experienceLevel": {
+        "id": "entry_level",
+        "label": "Entry Level"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/91985146",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "91685650",
+      "name": "Weekend Content Producer",
+      "uuid": "7c2c205a-7b50-4762-8f8d-4c56e5f6c79d",
+      "jobAdId": "89d151f3-9f46-426f-89af-034ccbfa2484",
+      "defaultJobAd": true,
+      "refNumber": "REF6G",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2016-04-25T13:56:33.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.7127837",
+        "longitude": "-74.00594130000002",
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "marketing",
+        "label": "Marketing"
+      },
+      "typeOfEmployment": {},
+      "experienceLevel": {
+        "id": "entry_level",
+        "label": "Entry Level"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/91685650",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "91545171",
+      "name": "Weekend Content Producer",
+      "uuid": "0e59c0b6-be7b-4556-bfd7-4b6a5631f54b",
+      "jobAdId": "430b8d9e-d8ea-4071-9107-9cf870ddf5cb",
+      "defaultJobAd": true,
+      "refNumber": "REF5O",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2016-04-19T15:16:35.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.7127837",
+        "longitude": "-74.00594130000002",
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "marketing",
+        "label": "Marketing"
+      },
+      "typeOfEmployment": {
+        "id": "part-time",
+        "label": "Part-time"
+      },
+      "experienceLevel": {
+        "id": "entry_level",
+        "label": "Entry Level"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/91545171",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "91193192",
+      "name": "Content Manager at Fully-Funded Mobile Startup",
+      "uuid": "cb03fc95-7366-41d4-a62d-ec24f8c556ec",
+      "jobAdId": "f6aea200-6f50-4e70-8181-85281a6a3c43",
+      "defaultJobAd": true,
+      "refNumber": "REF2I",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2016-04-05T22:41:15.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "marketing",
+        "label": "Marketing"
+      },
+      "typeOfEmployment": {
+        "id": "permanent",
+        "label": "Full-time"
+      },
+      "experienceLevel": {
+        "id": "not_applicable",
+        "label": "Not Applicable"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/91193192",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "91188345",
+      "name": "Content Editorial at Fully-Funded Mobile Startup",
+      "uuid": "f076a58f-6cc8-42ad-ae4e-e09b8f5ba381",
+      "jobAdId": "920476fb-0751-4c70-86a4-8e8e4c56655e",
+      "defaultJobAd": true,
+      "refNumber": "REF3A",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2016-04-05T20:16:08.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.7127837",
+        "longitude": "-74.00594130000002",
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "marketing",
+        "label": "Marketing"
+      },
+      "typeOfEmployment": {
+        "id": "permanent",
+        "label": "Full-time"
+      },
+      "experienceLevel": {
+        "id": "not_applicable",
+        "label": "Not Applicable"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/91188345",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    },
+    {
+      "id": "91077301",
+      "name": "Weekend Content Manager",
+      "uuid": "48a8296d-4c79-4f8d-82f9-90cdf6ecfb9e",
+      "jobAdId": "73cc2fee-0277-499f-8920-0e837ef8a5b2",
+      "defaultJobAd": true,
+      "refNumber": "REF4H",
+      "company": {
+        "identifier": "GONG",
+        "name": "GONG!"
+      },
+      "releasedDate": "2016-04-01T13:53:37.000Z",
+      "location": {
+        "city": "New York",
+        "region": "NY",
+        "country": "us",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.7127837",
+        "longitude": "-74.00594130000002",
+        "fullLocation": "New York, NY, United States"
+      },
+      "industry": {
+        "id": "media_production",
+        "label": "Media Production"
+      },
+      "department": {},
+      "function": {
+        "id": "marketing",
+        "label": "Marketing"
+      },
+      "typeOfEmployment": {},
+      "experienceLevel": {
+        "id": "not_applicable",
+        "label": "Not Applicable"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "us",
+          "valueLabel": "United States"
+        },
+        {
+          "fieldId": "58b830fee4b08fd8c9055c17",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "GONG!"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/Gong/postings/91077301",
+      "language": {
+        "code": "en",
+        "label": "English",
+        "labelNative": "English (US)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,931 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7747681003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5770314003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7747681003,
+      "updated_at": "2026-06-03T09:16:47-04:00",
+      "requisition_id": "795",
+      "title": "AI Software Developer In Test (SDET)",
+      "company_name": "Melio",
+      "first_published": "2026-06-03T09:16:47-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;We are looking for &lt;strong&gt;AI Software Developer In Test (SDET) &lt;/strong&gt;with a deep quality mindset who lives at the intersection of software quality and AI.This isn&#39;t a traditional automation role as you&#39;ll design and build AI agents and skills that serve both automated and manual QA workflows like autonomous failure investigation, test generation, exploratory testing assistance, triage, and suite maintenance. You&#39;ll also evolve the automation framework itself, with AI as your primary force multiplier.&lt;/p&gt;\n&lt;p&gt;You&#39;ll join a team that has already integrated multiple AI coding agents (Devin, Claude Code, Cursor) into daily workflows, and built custom AI skills for automated failure analysis.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Over 5 years of experience in QA testing processes, including test planning and execution&lt;/li&gt;\n&lt;li&gt;More than 5 years of proven experience in automation testing&lt;/li&gt;\n&lt;li&gt;proven experience with TypeScript, JavaScript, Java, or Python&lt;/li&gt;\n&lt;li&gt;Proven experience with the Playwright or a comparable modern E2E framework&lt;/li&gt;\n&lt;li&gt;Experience building and maintaining large-scale test automation frameworks (not just writing tests)&lt;/li&gt;\n&lt;li&gt;Hands-on experience with AI coding assistants (Devin, Cursor, Copilot, Claude, or similar) beyond casual usage - you&#39;ve shaped how they work on a codebase&lt;/li&gt;\n&lt;li&gt;Understanding of CI/CD systems (CircleCI, GitHub Actions, or equivalent)&lt;/li&gt;\n&lt;li&gt;Ability to write clear, structured technical documentation (you&#39;ll be writing instructions that AI agents follow)&lt;/li&gt;\n&lt;li&gt;Strong quality-focused mindset&lt;/li&gt;\n&lt;li&gt;Exceptional ability to understand cross-platform architectures and think from a user&#39;s perspective&lt;/li&gt;\n&lt;li&gt;API testing experience (REST, service clients, test data management)&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience with prompt engineering and LLM-driven automation&lt;/li&gt;\n&lt;li&gt;Background in manual QA - you understand the workflows, pain points, and judgment calls that manual testers make daily, and can translate those into AI-assisted processes&lt;/li&gt;\n&lt;li&gt;Familiarity with test management platforms (Allure TestOps, TestRail, or similar)&lt;/li&gt;\n&lt;li&gt;Experience building Slack bots, internal tools, or developer experience tooling&lt;/li&gt;\n&lt;li&gt;Understanding of serverless architectures (AWS Lambda)&lt;/li&gt;\n&lt;li&gt;Page Object Model architecture at scale&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;h4&gt;AI Skills &amp;amp; Agent Design&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;Design, build, and maintain AI skills and agents for the entire quality domain, serving both automation engineers and manual QA teams&lt;/li&gt;\n&lt;li&gt;Build AI-powered workflows for manual QA: exploratory testing guidance, test plan generation, regression scope analysis, bug investigation assistance, smart test case prioritization&lt;/li&gt;\n&lt;li&gt;Author and iterate on agent configuration files and skill definitions that govern how AI agents interact with the codebase and quality processes&lt;/li&gt;\n&lt;li&gt;Build tooling that transforms test infrastructure data (Allure TestOps, CircleCI, Playwright traces) into AI-consumable formats&lt;/li&gt;\n&lt;li&gt;Integrate AI agents into CI/CD pipelines (e.g., auto-fix modes triggered on failures)&lt;/li&gt;\n&lt;li&gt;Evaluate and onboard new AI coding tools, defining prompt strategies and guardrails for each.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h4&gt;Test Automation Engineering&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;Develop and maintain E2E tests using TypeScript and Playwright across a monorepo with 12+ packages&lt;/li&gt;\n&lt;li&gt;Build and extend Page Object Models, entity factories, API service clients, and custom fixtures&lt;/li&gt;\n&lt;li&gt;Design test architecture for new partner integrations and product domains&lt;/li&gt;\n&lt;li&gt;Own CI/CD pipeline configuration (CircleCI) including parallel execution, sharding, and scheduled workflows&lt;/li&gt;\n&lt;li&gt;Build internal developer tools (Slack bots, Chrome extensions, CLI utilities) that improve team velocity&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the Engineering department:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The Engineering department is the backbone of Melio. We build, scale, and maintain the technical infrastructure that processes over $100B in annual payments for small businesses nationwide.&lt;/p&gt;\n&lt;p&gt;Following our acquisition by Xero, we&#39;re tackling an even more exciting challenge: integrating Melio&#39;s payment platform with Xero&#39;s accounting software to create a unified financial ecosystem. This means building robust, scalable systems that seamlessly connect two powerful platforms while maintaining the security and reliability that financial services demand.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Our Stack:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;We&#39;re all-in on AWS Serverless—meaning fully managed infrastructure that lets us build and scale faster than ever. We use TypeScript and Python for consistency, combining relational and document databases, and deploy via SAM CLI built on CloudFormation. Serverless gives us the agility to innovate rapidly while maintaining enterprise-grade reliability.&lt;/p&gt;\n&lt;p&gt;As part of our engineering team, you&#39;ll work on problems that matter: real-time payment processing, fraud prevention, API integrations, data synchronization, and user experience optimization. You&#39;ll have the autonomy to make architectural decisions, the support of a world-class team, and the satisfaction of seeing your code impact millions of small businesses.&lt;/p&gt;\n&lt;p&gt;If you&#39;re ready to build systems that scale, solve hard problems, and help small businesses thrive, we want to talk to you.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Read more about our Engineering department on our&lt;/em&gt;&lt;a href=&quot;https://medium.com/melio-engineering&quot;&gt;&lt;em&gt; &lt;/em&gt;&lt;em&gt;tech blog&lt;/em&gt;&lt;/a&gt;&lt;em&gt;.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Melio, a Xero company, is revolutionizing how small businesses handle payments. By combining Melio&#39;s best-in-class bill pay platform with Xero&#39;s global accounting expertise, we&#39;re building the ultimate financial command center for American small businesses. We&#39;re the fastest-growing B2B payment solution in the US—but we&#39;re still small enough that you can make real, visible impact as we scale to reach millions more businesses.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;span style=&quot;color: rgb(236, 240, 241);&quot; data-sheets-root=&quot;1&quot;&gt;#LI-TG&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7714514003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5756115003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7714514003,
+      "updated_at": "2026-05-17T08:22:19-04:00",
+      "requisition_id": "780",
+      "title": "Backend Engineer",
+      "company_name": "Melio",
+      "first_published": "2026-04-29T09:22:45-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;We&#39;re looking for a&lt;strong&gt;&amp;nbsp;Backend Engineer&lt;/strong&gt; to join our team!&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Tech Enthusiasts - more important than experience is to have the passion to learn and get out of the comfort zone&lt;/li&gt;\n&lt;li&gt;+4 years of professional experience as a software engineer in software engineering, architecture, and design&lt;/li&gt;\n&lt;li&gt;Experience with microservices architecture and running cloud-based production environments&lt;/li&gt;\n&lt;li&gt;Team player who prefers collaboration over working solo&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Independent, fast learner, and excited about learning new technologies.&lt;/li&gt;\n&lt;li&gt;Looking to improve a strong and open culture&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Each member of our team is an all-around player who influences the product from the overall experience to the development.&lt;/li&gt;\n&lt;li&gt;You’ll be using top technologies like Typescript, Node.js, AWS and scalable databases to build a unique experience in the world of B2B payments.&lt;/li&gt;\n&lt;li&gt;You should be passionate about engineering and building a product end-to-end, through the design, coding, testing, and deployment phases.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the Engineering department:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The Engineering department is the backbone of Melio. We build, scale, and maintain the technical infrastructure that processes over $100B in annual payments for small businesses nationwide.&lt;/p&gt;\n&lt;p&gt;Following our acquisition by Xero, we&#39;re tackling an even more exciting challenge: integrating Melio&#39;s payment platform with Xero&#39;s accounting software to create a unified financial ecosystem. This means building robust, scalable systems that seamlessly connect two powerful platforms while maintaining the security and reliability that financial services demand.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Our Stack:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;We&#39;re all-in on AWS Serverless—meaning fully managed infrastructure that lets us build and scale faster than ever. We use TypeScript and Python for consistency, combining relational and document databases, and deploy via SAM CLI built on CloudFormation. Serverless gives us the agility to innovate rapidly while maintaining enterprise-grade reliability.&lt;/p&gt;\n&lt;p&gt;As part of our engineering team, you&#39;ll work on problems that matter: real-time payment processing, fraud prevention, API integrations, data synchronization, and user experience optimization. You&#39;ll have the autonomy to make architectural decisions, the support of a world-class team, and the satisfaction of seeing your code impact millions of small businesses.&lt;/p&gt;\n&lt;p&gt;If you&#39;re ready to build systems that scale, solve hard problems, and help small businesses thrive, we want to talk to you.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Read more about our Engineering department on our&lt;/em&gt;&lt;a href=&quot;https://medium.com/melio-engineering&quot;&gt;&lt;em&gt; &lt;/em&gt;&lt;em&gt;tech blog&lt;/em&gt;&lt;/a&gt;&lt;em&gt;.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Melio, a Xero company, is revolutionizing how small businesses handle payments. By combining Melio&#39;s best-in-class bill pay platform with Xero&#39;s global accounting expertise, we&#39;re building the ultimate financial command center for American small businesses. We&#39;re the fastest-growing B2B payment solution in the US—but we&#39;re still small enough that you can make real, visible impact as we scale to reach millions more businesses.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;&lt;span style=&quot;color: rgb(236, 240, 241);&quot; data-sheets-root=&quot;1&quot;&gt;#LI-TA1&lt;/span&gt;&lt;/em&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7638858003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5702655003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 7638858003,
+      "updated_at": "2026-03-06T10:52:30-05:00",
+      "requisition_id": "756",
+      "title": "Customer Success Manager",
+      "company_name": "Melio",
+      "first_published": "2026-02-20T16:10:09-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;Customer Success Manager&lt;/strong&gt;&lt;strong&gt;&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in New York City&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;(3 day in-office requirement)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years of experience in Customer Success, Account Management, Sales, or any client facing role.&lt;/li&gt;\n&lt;li&gt;1+ years experience utilizing a CRM software system, Salesforce preferred.&lt;/li&gt;\n&lt;li&gt;Experience in a scaled customer success environment, maximizing impact for a large range of clients through scalable motions executed at key moments in a customer’s journey.&lt;/li&gt;\n&lt;li&gt;Proven ability to adopt new technologies and teach others effectively.&lt;/li&gt;\n&lt;li&gt;Strong communication and sales acumen, with the ability to understand the true needs of the customer, helping them tap into the full value of Melio’s platform for their unique business.&lt;/li&gt;\n&lt;li&gt;Takes an analytical, strategic approach to our customers’ success, constantly iterating to improve the whole customer experience.&lt;/li&gt;\n&lt;li&gt;Excited to bring new processes and procedures to continue to develop the customer journey at Melio.&lt;/li&gt;\n&lt;li&gt;Enjoys working cross-functionally with other teams across the organization on a diverse range of internal and customer-facing initiatives.&lt;/li&gt;\n&lt;li&gt;Excellent time-management skills, as well as the ability to remain flexible as the company and role evolves.&lt;/li&gt;\n&lt;li&gt;Passionate about speaking with and building relationships with small business owners, helping their businesses succeed with Melio.&lt;/li&gt;\n&lt;li&gt;Has a track record of taking on additional responsibilities outside of their direct scope, showing a natural curiosity.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working with small businesses in an account management or customer success capacity.&lt;/li&gt;\n&lt;li&gt;Prior experience working in a SaaS environment and/or in the financial technology space&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Own all strategic actions associated with customer engagement and retention efforts.&lt;/li&gt;\n&lt;li&gt;Build dynamic relationships with your customers through meaningful interactions and comprehensive engagements, developing a deep understanding of their business needs to drive retention.&lt;/li&gt;\n&lt;li&gt;Lead customers through early adoption and proactively guide them through lifecycle stages, educating on best practices, removing friction, and accelerating time-to-value.&lt;/li&gt;\n&lt;li&gt;Continuously evaluate customer health signals and feedback to surface churn risks and growth pathways across the customer lifecycle.&lt;/li&gt;\n&lt;li&gt;Execute proven sales methodologies to guide strategic customer conversations, deepen discovery, and influence outcomes for the customer and the business.&lt;/li&gt;\n&lt;li&gt;Share ownership of “one-to-many” motions (e.g. webinars), when required, to support customer education at scale&lt;/li&gt;\n&lt;li&gt;Work collaboratively alongside relevant Melio departments to ensure the voice of the customer is constantly elevated in a digestible, actionable format, and that the customer is receiving the utmost support and satisfaction.&lt;/li&gt;\n&lt;li&gt;Proactively evaluate best practices when it comes to processes and procedures within the Customer Success role; suggest changes or enhancements to existing procedures to ensure the team’s motions are aligned with the goals of customers and the business.&lt;/li&gt;\n&lt;li&gt;Leverage internal tools, such as Salesforce,Tableau, Outreach, and Gong to ensure effective communication and impact assessment.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the team:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;As a&amp;nbsp;&lt;strong&gt;&lt;em&gt;Customer Success Manager&lt;/em&gt;&lt;/strong&gt;, you will manage Melio’s most valuable customers, overseeing the strategic growth and retention of top-tier accounts. You will act as a consultant at key milestones to ensure long-term success, drive deeper platform usage, and identify new avenues for&amp;nbsp; expansion. Additionally, you will regularly surface customer feedback to internal stakeholders, including leadership, Product, Voice of the Customer, and Strategy teams to continue to enhance the platform. You will own the consolidation of this feedback as well as the packaging and presentation of the insights.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated.&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;The annual base salary range for this position is $70,000 - $85,000 with an with an additional bonus component&amp;nbsp;&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matching and stock options: Feel the investment of working at a hyper-growth startup.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave and wedding days to allow you to take the time you need, when you need it.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City or Denver, in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our&amp;nbsp;&lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt;careers page&lt;/a&gt;&amp;nbsp;(or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt;&amp;nbsp;E-Verify&lt;/a&gt;&amp;nbsp;and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021304003,
+          "name": "Customer Success",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7748138003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5770506003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7748138003,
+      "updated_at": "2026-06-03T08:31:09-04:00",
+      "requisition_id": "796",
+      "title": "Data Scientist ",
+      "company_name": "Melio",
+      "first_published": "2026-06-02T03:17:15-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;As a &lt;strong&gt;Data Scientist&lt;/strong&gt; at Melio you will be working with colleagues from various disciplines - Research Engineers, Analysts, and other Data Scientists - on statistical methods and machine learning techniques and Gen-AI (both supervised and unsupervised) in order to develop classification and anomaly detection algorithms.&lt;/p&gt;\n&lt;h4&gt;&lt;strong&gt;Qualifications:&amp;nbsp;&lt;/strong&gt;&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years of experience as a Data Scientist&lt;/li&gt;\n&lt;li&gt;Experience applying Large Language Models (&lt;strong&gt;LLMs&lt;/strong&gt;) and agent-based frameworks to solve real-world data problems, including prompt engineering, model evaluation, and building agent workflows that interact with data sources and APIs.&lt;/li&gt;\n&lt;li&gt;Experience with ML&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Team player, effective interpersonal skills. Manage relationships with key partners across different functions.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Hands-on approach and an ability to take projects from idea to production&lt;/li&gt;\n&lt;li&gt;Background with big companies working on large scales&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience in big data/ entity resolution - advantage&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;M.Sc/PhD in one of the following: Computer Sciences, Physics, Mathematics, Electrical Engineering, Statistics or a related field - advantage&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Spark- Big advantage&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;How is your day going to look, what will you be doing?&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Designing the next generation of cutting edge methods that will:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&amp;nbsp;Help small businesses manage their finance in a better way using Melio&lt;/li&gt;\n&lt;li&gt;&amp;nbsp;Help Melio grow the customer base by the built-in product network effect&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Drive impact by leveraging LLMs and agentic workflows to enhance user experience, enabling more intuitive, accurate, and efficient interactions with data-driven products.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;You will play a key role in the ability of Melio to keep scaling!&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;\n&lt;h4&gt;About the Hiring Department:&lt;/h4&gt;\n&lt;p&gt;The Data department at Melio collaborates with colleagues from various disciplines—Research Engineers, Analysts, and other Data Scientists—on statistical methods and machine learning techniques (both supervised and unsupervised) in order to develop classification and anomaly detection algorithms.&lt;br&gt;We&#39;re the ones making sure the company is meeting its goals by extracting valuable insights from highly complex data. We ask the right questions and find the right answers all in a fast-paced, results, marketing and data-oriented environment.&amp;nbsp;&lt;br&gt;As part of a data team within a fintech company, you’ll have a unique opportunity to make a real impact on Melio, its product, our users and help the company scale.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them. With offices in New York, Denver, and Tel Aviv and a vibrant work culture, Melio is expanding every day. &lt;br&gt;We are a diverse group of people who love what we do and do what we love. If you are a driven and passionate team player, you will fit right in. We are an equal opportunity employer and are always on the lookout for top-notch talent—please reach out if you would like to join us on this exciting journey!&lt;/p&gt;\n&lt;p&gt;&lt;br&gt;&lt;span style=&quot;color: rgb(236, 240, 241);&quot; data-sheets-root=&quot;1&quot;&gt;#LI-TG&lt;/span&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7747499003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5770256003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7747499003,
+      "updated_at": "2026-06-02T09:19:39-04:00",
+      "requisition_id": "794",
+      "title": "Engineering Manager, AI Platform Enablement",
+      "company_name": "Melio",
+      "first_published": "2026-05-27T11:54:53-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;We believe the next era of how a company operates is one where humans and always-on agents work side by side - and we&#39;re building the platform that gets Melio there. We&#39;re looking for an Engineering Manager to lead AI Platform Enablement: a small, high-leverage team that brings agentic teammates to every function at Melio.&lt;/p&gt;\n&lt;p&gt;You&#39;ll reshape how the org works day to day, leading senior engineers who build the runtime, frameworks, and patterns that let people across Finance, Operations, CX, Risk, Engineering, and beyond stand up always-on agents that work alongside them.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years managing engineering teams at scale, with a track record of shipping production AI or LLM-powered features&lt;/li&gt;\n&lt;li&gt;Deeply technical and passionate about the AI landscape - LLMs, agents, evals, prompting, the trade-offs between frameworks&lt;/li&gt;\n&lt;li&gt;Strong product instincts - you&#39;ve worked closely with PMs, designers, and users, and you make calls about what to build based on outcomes, not output&lt;/li&gt;\n&lt;li&gt;Experience driving org-wide adoption of a new technology - cloud migration, observability rollout, AI tooling, anything where the technical work was the easy part&lt;/li&gt;\n&lt;li&gt;A bias toward adoption and measurable impact, energized by driving org-wide change in a space with no established playbook to inherit - you build the playbook&lt;/li&gt;\n&lt;li&gt;Comfortable operating across technical and non-technical audiences; you can hold your own with engineers on architecture trade-offs and with Finance or Ops leaders on workflow change&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;You&#39;ve built or led a platform team whose primary customers were non-engineers&lt;/li&gt;\n&lt;li&gt;You&#39;ve scaled LLM usage inside a company and have opinions about cost, governance, evals, and paved roads&lt;/li&gt;\n&lt;li&gt;You teach, write, or speak publicly about engineering, AI, or platform work&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you&#39;ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Partnering with leaders across Finance, Operations, CX, Risk, and Engineering to identify the agentic teammates that will most change how their teams work, then prioritizing your roadmap around the ones that will land&lt;/li&gt;\n&lt;li&gt;Working with your tech lead and ICs to shape the platform itself: what capabilities it exposes, which patterns it standardizes, where it stays opinionated vs. flexible&lt;/li&gt;\n&lt;li&gt;Running adoption and education across Melio - documentation, workshops, office hours, success stories, and the unglamorous work of helping the second and third teams ramp up&lt;/li&gt;\n&lt;li&gt;Owning a small portfolio of custom agentic workflows your team delivers for high-leverage use cases, proving the platform&#39;s value with real, in-production agents&lt;/li&gt;\n&lt;li&gt;Measuring success in outcomes: teams actively using agentic teammates, work meaningfully shifted from humans to agents, and the rate at which new internal customers come online&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the hiring department:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The AI Platform Enablement team is Melio&#39;s bet that the next era of how a company operates is one where humans and always-on agents work side by side, and that getting there requires more than handing teams API keys. We build the platform that lets anyone at Melio - engineer or not - stand up an agentic teammate that does real work, persistently, alongside the humans it supports. We build custom agentic workflows for the use cases where the leverage is highest. And we own the harder half of the job: helping people across the company actually change how they work. We sit inside Backend Platform Engineering and partner closely with the Data &amp;amp;amp; AI Infra team that owns model serving and infrastructure, with Data Apps on agentic data workflows, and with the company&#39;s AI Leads forum on direction. Our customers are everyone at Melio, which makes the work unusually broad and unusually impactful.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Melio, now part of Xero, is building the future of business payments for small businesses across America. Following our acquisition by Xero, the leading accounting software for small business, we&#39;re combining Melio&#39;s industry-leading bill pay solution with Xero&#39;s powerful accounting tools to transform how millions of small businesses manage their finances.&lt;/p&gt;\n&lt;p&gt;As the fastest-growing B2B payment platform in the US, processing over $100B annually for more than 100,000 businesses, we&#39;re just getting started. Together with Xero, we&#39;re creating a seamless financial ecosystem that lets small business owners spend less time on back-office tasks and more time doing what they love.&lt;/p&gt;\n&lt;p&gt;With offices in New York and Tel Aviv, Melio offers a vibrant, collaborative culture where your work directly impacts millions of small businesses. We&#39;re a diverse team of passionate individuals who believe in moving fast, thinking big, and building products that truly matter. If you&#39;re ready to help us dominate the US SMB market while being part of something transformative, we&#39;d love to hear from you.&lt;/p&gt;\n&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7768156003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5779238003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7768156003,
+      "updated_at": "2026-06-11T06:12:43-04:00",
+      "requisition_id": "802",
+      "title": "Executive Assistant and Office Manager ",
+      "company_name": "Melio",
+      "first_published": "2026-06-11T06:12:43-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;br&gt;As an&amp;nbsp; Executive Assistant &amp;amp; Office Manager, your role will be to support two of our executives, and later on the role will expand to include office management responsibilities, as well as maternity leave coverage for our Office Manager.&lt;/p&gt;\n&lt;p&gt;This role requires exceptional calendar management skills, strong attention to detail, and the ability to navigate complex organizational structures across multiple time zones.&lt;/p&gt;\n&lt;p&gt;This is a temporary position for one year&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;h3&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&amp;nbsp;&lt;/strong&gt;&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;Executive Support&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Manage complex and dynamic calendars for two senior executives.&lt;/li&gt;\n&lt;li&gt;Coordinate meetings across multiple time zones and global stakeholders.&lt;/li&gt;\n&lt;li&gt;Partner closely with teams across the company and with colleagues from a larger&amp;nbsp; parent corporate organization.&lt;/li&gt;\n&lt;li&gt;Arrange domestic and international travel, including flights, accommodations, transportation, and detailed itineraries.&lt;/li&gt;\n&lt;li&gt;Anticipate scheduling conflicts and proactively resolve them.&lt;/li&gt;\n&lt;li&gt;Support day-to-day administrative needs and ensure smooth executive operations.&lt;/li&gt;\n&lt;li&gt;Demonstrate flexibility and availability beyond standard business hours when required.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Office Operations (Expanded Responsibilities)&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;As part of maternity leave coverage and evolving business needs, the role will gradually take on broader office management responsibilities, including:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Oversee day-to-day office operations.&lt;/li&gt;\n&lt;li&gt;Coordinate catering and food orders for the office daily use.&lt;/li&gt;\n&lt;li&gt;Manage relationships with office vendors and service providers, including cleaning services and building management.&lt;/li&gt;\n&lt;li&gt;Process invoices and support vendor payments.&lt;/li&gt;\n&lt;li&gt;Handle employee requests and office-related needs.&lt;/li&gt;\n&lt;li&gt;Welcome visitors and support guest logistics and hospitality.&lt;/li&gt;\n&lt;li&gt;Assist with office events and employee experience activities.&lt;/li&gt;\n&lt;li&gt;Ensure a positive, organized, and efficient workplace environment.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;h3&gt;&lt;strong&gt;Qualifications&lt;/strong&gt;&lt;/h3&gt;\n&lt;ul&gt;\n&lt;li&gt;3+ years of experience as an Executive Assistant, Office Manager, Administrative Business Partner, or similar role.&lt;/li&gt;\n&lt;li&gt;Proven experience managing complex executive calendars and travel arrangements.&lt;/li&gt;\n&lt;li&gt;Experience supporting senior leadership in a fast-paced environment.&lt;/li&gt;\n&lt;li&gt;Strong understanding of how large organizations operate and the ability to navigate cross-functional processes.&lt;/li&gt;\n&lt;li&gt;Excellent organizational, prioritization, and problem-solving skills.&lt;/li&gt;\n&lt;li&gt;Strong interpersonal skills and a service-oriented mindset.&lt;/li&gt;\n&lt;li&gt;Ability to manage multiple priorities simultaneously while maintaining attention to detail.&lt;/li&gt;\n&lt;li&gt;Comfortable working with global teams across different regions and time zones.&lt;/li&gt;\n&lt;li&gt;High level of discretion and professionalism.&lt;/li&gt;\n&lt;li&gt;Fluent English, both written and verbal.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h3&gt;&lt;strong&gt;About Melio:&lt;/strong&gt;&lt;/h3&gt;\n&lt;p&gt;Melio, a Xero company, is revolutionizing how small businesses handle payments. By combining Melio&#39;s best-in-class bill pay platform with Xero&#39;s global accounting expertise, we&#39;re building the ultimate financial command center for American small businesses. We&#39;re the fastest-growing B2B payment solution in the US—but we&#39;re still small enough that you can make real, visible impact as we scale to reach millions more businesses.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021306003,
+          "name": "Operations",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/6743443003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5284435003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 6743443003,
+      "updated_at": "2026-01-18T07:38:17-05:00",
+      "requisition_id": "713",
+      "title": "Full Stack Engineer",
+      "company_name": "Melio",
+      "first_published": "2025-12-04T07:41:13-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;We are looking for a &lt;strong&gt;Full-Stack Software Engineer&lt;/strong&gt; to join our team!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4 years of Front End experience, utilizing React and Typescript&lt;/li&gt;\n&lt;li&gt;At least 1 year of Back End engineering experience, utilizing Node.js.&lt;/li&gt;\n&lt;li&gt;At least 1 year of experience utilizing SQL databases.&lt;/li&gt;\n&lt;li&gt;Experience designing and delivering features end-to-end for production web systems&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working with AWS.&lt;/li&gt;\n&lt;li&gt;Experience with writing tests (Jest, Cypress, Playwright).&lt;/li&gt;\n&lt;li&gt;Independent, fast learner, and excited about learning new technologies.&lt;/li&gt;\n&lt;li&gt;Proactive team player with a desire to impact our team, our product, and our customers.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Each member of our team is an all-around player who influences the product from the overall experience to the development.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;You’ll be using top technologies like React, Node.js, AWS, and scalable databases to build a unique experience in B2B payments.&lt;/li&gt;\n&lt;li&gt;You should be passionate about engineering and building a product end-to-end, through the design, coding, testing, and deployment phases.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the Engineering department:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The Engineering department is the backbone of Melio. We build, scale, and maintain the technical infrastructure that processes over $100B in annual payments for small businesses nationwide.&lt;/p&gt;\n&lt;p&gt;Following our acquisition by Xero, we&#39;re tackling an even more exciting challenge: integrating Melio&#39;s payment platform with Xero&#39;s accounting software to create a unified financial ecosystem. This means building robust, scalable systems that seamlessly connect two powerful platforms while maintaining the security and reliability that financial services demand.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Our Stack:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;We&#39;re all-in on AWS Serverless—meaning fully managed infrastructure that lets us build and scale faster than ever. We use TypeScript and Python for consistency, combining relational and document databases, and deploy via SAM CLI built on CloudFormation. Serverless gives us the agility to innovate rapidly while maintaining enterprise-grade reliability.&lt;/p&gt;\n&lt;p&gt;As part of our engineering team, you&#39;ll work on problems that matter: real-time payment processing, fraud prevention, API integrations, data synchronization, and user experience optimization. You&#39;ll have the autonomy to make architectural decisions, the support of a world-class team, and the satisfaction of seeing your code impact millions of small businesses.&lt;/p&gt;\n&lt;p&gt;If you&#39;re ready to build systems that scale, solve hard problems, and help small businesses thrive, we want to talk to you.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Read more about our Engineering department on our&lt;/em&gt;&lt;a href=&quot;https://medium.com/melio-engineering&quot;&gt;&lt;em&gt; &lt;/em&gt;&lt;em&gt;tech blog&lt;/em&gt;&lt;/a&gt;&lt;em&gt;.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Melio, a Xero company, is revolutionizing how small businesses handle payments. By combining Melio&#39;s best-in-class bill pay platform with Xero&#39;s global accounting expertise, we&#39;re building the ultimate financial command center for American small businesses. We&#39;re the fastest-growing B2B payment solution in the US—but we&#39;re still small enough that you can make real, visible impact as we scale to reach millions more businesses.&lt;br&gt;&lt;span style=&quot;color: rgb(236, 240, 241);&quot; data-sheets-root=&quot;1&quot;&gt;#LI-TA1&lt;/span&gt;&lt;br&gt;&lt;/em&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7174896003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5251387003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 7174896003,
+      "updated_at": "2026-05-12T11:18:45-04:00",
+      "requisition_id": "704",
+      "title": "Full Stack Engineer",
+      "company_name": "Melio",
+      "first_published": "2025-09-10T11:12:22-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;Full Stack Engineer&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in NYC &lt;/em&gt;&lt;/strong&gt;(3 day in-office requirement)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4-5+ years of professional experience as a software engineer with frontend and backend development.&lt;/li&gt;\n&lt;li&gt;Hands on experience with Node.js and TypeScript (at least 1+ years)&lt;/li&gt;\n&lt;li&gt;Experience working with at least one of the following frameworks: React/Vue/Angular.&lt;/li&gt;\n&lt;li&gt;A familiarity of production systems and the web product architecture.&lt;/li&gt;\n&lt;li&gt;Independent, fast learner and excited about learning new technologies.&lt;/li&gt;\n&lt;li&gt;Proactive team player with a desire to impact our team, our product and our customers.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience working on an API as a product, or other products for engineers&lt;/li&gt;\n&lt;li&gt;Familiarity with AWS, Lambda, and cloud architecture&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;As a Full Stack Engineer in the Partnerships Integration team, your day will involve building and maintaining integrations with high-profile partners such as Capital One, Shopify, and Fiserv, helping bring Melio’s platform capabilities to these partners.&lt;/li&gt;\n&lt;li&gt;You will play a critical role in creating custom solutions for these partners, allowing small businesses to manage their payments more efficiently and at various touch points.&lt;/li&gt;\n&lt;li&gt;We are constantly iterating on our platform to ensure a smooth integration process for partners while maintaining flexibility and speed in launching new features.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Your work will span the entire stack, including building APIs and integrating external systems.&lt;/li&gt;\n&lt;li&gt;You&#39;ll interact with various parts of the system, from the back-end to the front-end, hence your work will involve dealing with diverse data structures and user interfaces.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;You&#39;ll work with technologies like AWS Lambda, Node.js, TypeScript, React, GraphQL, and MySQL to make this possible.&lt;/li&gt;\n&lt;li&gt;We’re building REST APIs that we use internally and share externally, and new products based on these.&lt;/li&gt;\n&lt;li&gt;Cross-collaborate and discuss with other team members about current issues or future improvements, writing code to implement new features or fix bugs, conducting code reviews, and deploying updates.&lt;/li&gt;\n&lt;li&gt;You will collaborate with internal teams and partner stakeholders to ensure the system is robust, scalable, and meets partner requirements.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the team:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;The Partnerships Integration team&lt;/strong&gt; works as a part of our &lt;strong&gt;Product Engineering&lt;/strong&gt; group and acts as the gateway for Melio’s external partners. We maintain long-term relationships, and provide the features and tools that partners need to integrate with our platform. Our integrations enable partners to embed, white-label, or customize Melio’s payment capabilities, opening up new business opportunities.&lt;/p&gt;\n&lt;p&gt;We collaborate with different stakeholders to deliver seamless integrations, build trust with our partners, and push forward Melio’s mission of transforming business payments. We work with modern technologies, including React, Node.js, TypeScript, and AWS microservices, and we are agile and collaborative, constantly looking for ways to improve our partner experience, product reliability, and codebase.&amp;nbsp;In this team, you’ll be part of a high-performance culture that values innovation, problem-solving, and teamwork.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated. The annual base salary range for this position is $135,000-$160,000&lt;/li&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matching: Feel the investment of a high-growth company.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave and wedding days to allow you to take the time you need, when you need it.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City or Denver, in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our&lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt; careers page&lt;/a&gt; (or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt; E-Verify&lt;/a&gt; and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&amp;nbsp;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7770277003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5777657003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 7770277003,
+      "updated_at": "2026-06-11T12:42:03-04:00",
+      "requisition_id": "800",
+      "title": "Partnerships & Go-To-Market Associate",
+      "company_name": "Melio",
+      "first_published": "2026-06-11T12:36:20-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;&lt;strong&gt;Partnerships &amp;amp; GTM Associate&lt;br&gt;&lt;/strong&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in New York City&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;(3 day in-office requirement)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;1–2 years of experience in customer success, client servicing, partnerships, or a related field&lt;/li&gt;\n&lt;li&gt;Strong written and verbal communication skills; comfortable presenting to internal and external stakeholders&lt;/li&gt;\n&lt;li&gt;Highly organized with the ability to manage multiple priorities and partners simultaneously&lt;/li&gt;\n&lt;li&gt;Experience with or willingness to quickly learn: Salesforce, Zendesk, Tableau, Redash, and AI productivity tools&lt;/li&gt;\n&lt;li&gt;Comfortable working in a fast-paced, collaborative environment&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Own day-to-day inbound case management from partner relationship managers, serving as a reliable escalation point and coordinating with internal teams to drive timely resolution of client issues end-to-end across multiple channels&lt;/li&gt;\n&lt;li&gt;Conduct proactive check-ins and engagement activities across a portfolio of high-touch partners&lt;/li&gt;\n&lt;li&gt;Own inbound demo requests, delivering clear and compelling product walkthroughs for partner-referred prospects&lt;/li&gt;\n&lt;li&gt;Conduct outbound Voice of Customer calls with partner-referred clients to gather feedback, surface insights, and support retention and expansion opportunities&lt;/li&gt;\n&lt;li&gt;Act as an extension of the partner&#39;s sales motion — supporting prospect conversations, co-selling alongside partner reps, and helping move qualified deals forward on behalf of the partner&lt;/li&gt;\n&lt;li&gt;Partner closely with Sales, Product, Marketing, CX, and Business Development teams to coordinate launches, trainings, campaigns, and partner enablement initiatives&lt;/li&gt;\n&lt;li&gt;Build and maintain enablement decks, one-pagers, talk tracks, sales assets, and partner-facing materials tailored to each partner&#39;s sales motion and verticals&lt;/li&gt;\n&lt;li&gt;Support training preparation, QBR coordination, and leadership presentations&lt;/li&gt;\n&lt;li&gt;Maintain trackers, documentation, and reporting; compile GTM insights and engagement&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated.&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;The annual base salary range for this position is $76,000 - $86,000 with an with an additional bonus component&amp;nbsp;&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matching: Feel the investment of working at a hyper-growth startup.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave to allow you to take the time you need, when you need it.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our&amp;nbsp;&lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt;careers page&lt;/a&gt;&amp;nbsp;(or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt;&amp;nbsp;E-Verify&lt;/a&gt;&amp;nbsp;and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4036549003,
+          "name": "Business Development ",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7587207003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5698047003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 7587207003,
+      "updated_at": "2026-06-03T16:41:05-04:00",
+      "requisition_id": "750",
+      "title": "Sales Development Representative",
+      "company_name": "Melio",
+      "first_published": "2026-01-12T14:40:34-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;Sales Development Representative&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in New York City &lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;(3 day in-office requirement)&lt;br&gt;&lt;br&gt;Qualifications:&lt;br&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;1+ year of dedicated experience in an Outbound Sales Development or Business Development Representative role&lt;/strong&gt;, with a proven track record of successful cold outreach (cold calling, email, LinkedIn).&lt;/li&gt;\n&lt;li&gt;Demonstrated ability to identify target prospects and key decision-makers within a given territory.&lt;/li&gt;\n&lt;li&gt;Experience conducting high-volume, consistent outbound activities while maintaining quality and personalization.&lt;/li&gt;\n&lt;li&gt;Strong verbal and written communication skills, with the ability to articulate value propositions clearly and handle objections effectively.&lt;/li&gt;\n&lt;li&gt;A results-oriented mindset with a strong drive to meet and exceed targets.&lt;/li&gt;\n&lt;li&gt;Familiarity with CRM software (preferably Salesforce) and sales engagement tools (e.g., Outreach, SalesLoft).&lt;/li&gt;\n&lt;li&gt;Ability to work collaboratively with Account Executives and adapt to evolving sales strategies.&lt;/li&gt;\n&lt;li&gt;Resilience and a positive attitude in the face of challenges, with a strong desire to learn and grow in a sales career.&lt;/li&gt;\n&lt;li&gt;Fintech, SaaS, or startup experience is a plus, demonstrating an ability to thrive in a fast-paced environment.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus Points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience in the payments or SMB market.&lt;/li&gt;\n&lt;li&gt;Familiarity with sales methodologies.&lt;/li&gt;\n&lt;li&gt;Proven ability to leverage data to improve prospecting effectiveness.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Execute Strategic Cold Outreach:&lt;/strong&gt; Conduct high-volume, targeted outbound activities including cold calls, personalized emails, and LinkedIn outreach to engage prospects who are not yet familiar with Melio.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Prospect &amp;amp; Identify Ideal Customers:&lt;/strong&gt; Utilize provided lists and conduct independent research to identify SMB businesses that align with our Ideal Customer Profile (ICP) and pinpoint key decision-makers within those organizations.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Qualify &amp;amp; Convert Prospects:&lt;/strong&gt; Engage prospects in discovery conversations, effectively qualify their needs and pain points, and successfully book introductory meetings for our SMB Account Executives.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Collaborate on Outbound Strategy:&lt;/strong&gt; Work closely with your assigned Account Executives and Sales leadership to develop, refine, and execute outbound strategies, adjusting tactics based on performance and market feedback.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Optimize Lead Handoff:&lt;/strong&gt; Ensure a seamless and effective transition of qualified opportunities to Account Executives, providing comprehensive context to maximize conversion rates.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Contribute to Pipeline Growth:&lt;/strong&gt; Consistently meet and exceed daily, weekly, and monthly activity and meeting-set targets, directly contributing to Melio&#39;s revenue pipeline.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Support Go-to-Market Initiatives:&lt;/strong&gt; From time to time, assist with various initiatives such as event preparation and follow-up, targeted call blitzes, and other revenue-driving projects.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Document &amp;amp; Analyze Performance:&lt;/strong&gt; Maintain accurate and up-to-date records of all prospecting activities and customer interactions within Salesforce, contributing to a data-driven approach to performance improvement.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the team:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;As a Sales&lt;strong&gt; Development Representative (SDR)&lt;/strong&gt; at Melio, you will play a critical role in driving our growth by initiating new business conversations with our small to medium-sized and high value businesses. This is a highly impactful outbound-focused position where your expertise in traditional cold outreach will directly contribute to building pipeline and expanding Melio&#39;s market presence.&lt;/p&gt;\n&lt;p&gt;You will be responsible for identifying, engaging, and qualifying prospective clients who are focused on optimizing their cash flow and workflow. This role requires a proactive, resilient, and data-driven individual with a proven track record in cold prospecting. You will work closely with Account Executives and Sales leadership to strategize, execute, and refine our outbound approach, ensuring a consistent flow of high-quality meetings.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated.\n&lt;ul&gt;\n&lt;li&gt;The annual base salary for this position is $60,000-$63,000 with an additional bonus component.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matching: Feel the investment of working at a high-growth company.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave and wedding days to allow you to take the time you need, when you need it.&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City or Denver, in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our &lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt;careers page&lt;/a&gt; (or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt; E-Verify&lt;/a&gt; and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021307003,
+          "name": "Sales",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7570355003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5680810003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 7570355003,
+      "updated_at": "2026-04-30T13:47:05-04:00",
+      "requisition_id": "734",
+      "title": "Senior Account Executive, Strategic Partnerships & Affiliates",
+      "company_name": "Melio",
+      "first_published": "2025-12-22T14:55:51-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;Senior Account Executive, Strategic Partnerships &amp;amp; Affiliates&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in New York City (3 day in-office requirement)&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;4+ years of sales or partnership experience&lt;/strong&gt;, ideally in a role where you had to build a book of business from scratch.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;A &quot;Hunter-Farmer&quot; Hybrid:&lt;/strong&gt; You are fearless when cold calling potential partners to pitch a revenue-share opportunity, but you also possess the empathy and organization to nurture those relationships into a productive community over time.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Thrives in Ambiguity:&lt;/strong&gt; You don’t need a playbook—you want to write it. You are comfortable testing new pitches, identifying new vertical targets (e.g., insurance, logistics consultants), and pivoting quickly based on what works.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Creative &amp;amp; Scrappy:&lt;/strong&gt; You can see the angle that others miss. You understand how to frame a value proposition not just to a user, but to a partner looking to monetize their influence.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Community Builder Mindset:&lt;/strong&gt; You understand that signing a partner is just day one. You know how to keep affiliates engaged, excited, and producing leads through constant communication and value-add interactions.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Genuinely Curious about Business Models:&lt;/strong&gt; You need to understand how &lt;em&gt;our partners&lt;/em&gt; make money (e.g., how a Credit Card Points Consultant operates) to effectively pitch how Melio fits into their ecosystem.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Proficiency in SalesForce, Outreach.io, and LinkedIn Sales Navigator.&lt;/strong&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Identify &amp;amp; Recruit (The Hunt)&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Prospect and Cold Call: You will aggressively hunt for high-leverage affiliates—think Credit Card Points Consultants, Insurance Brokers who don&#39;t accept cards, or Industry-Specific Consultants.&lt;/li&gt;\n&lt;li&gt;Pitch the &quot;Business in a Box&quot;: You aren&#39;t just selling software; you are selling a revenue stream. You will convince these partners that referring their high-spend clients to Melio is a lucrative way to monetize their existing relationships through our Gross Profit revenue share model.&lt;/li&gt;\n&lt;li&gt;Creative Sourcing: You will experiment with different verticals to find the &quot;hidden gems&quot;—partners who have trusted access to UHV companies but haven&#39;t monetized that influence yet.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Onboard &amp;amp; Enable (The Setup)&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;White-Glove Onboarding: Once a partner says &quot;yes,&quot; you ensure they (and their clients) are set up for success. You will help them identify the low-hanging fruit in their book of business to get their first wins on the board quickly.&lt;/li&gt;\n&lt;li&gt;Technical &amp;amp; Sales Enablement: Teach partners how to spot a Melio opportunity and how to pitch it to their clients.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Community Management &amp;amp; Nurture (The Flywheel)&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Drive Portfolio Adoption: You will manage your book of affiliates like a community manager. Your goal is to keep them active, sending leads, and viewing Melio as a significant revenue driver for their business.&lt;/li&gt;\n&lt;li&gt;Relationship Moats: Build deep, personal relationships with your partners so that Melio remains their exclusive referral of choice.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Feedback Loop: Since this is a new motion, you will constantly feed insights back to growth and marketing teams. What segments provide deep opportunities for UHV? What incentives drive the most behavior?&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About the team:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Melio is on a mission to keep small businesses in business. We simplify B2B payables and receivables so business owners—and the professionals who support them—can focus on what they do best. You will be joining the Ultra High Value team but operating as the spearhead for this specific Affiliate/Partnership motion. This is a role for a pioneer—someone who wants to look back in a year and say, &quot;I built that channel.&quot; You will have high visibility and the autonomy to experiment with creative strategies to drive volume.&lt;br&gt;&lt;br&gt;&lt;/p&gt;\n&lt;div class=&quot;job__description body&quot;&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated.\n&lt;ul&gt;\n&lt;li&gt;The annual base salary range for this position is $88,000-$95,000 with an additional bonus component.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matching: Feel the investment of working at a high-growth company.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave and wedding days to allow you to take the time you need, when you need it.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our&lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt;&amp;nbsp;careers page&lt;/a&gt;&amp;nbsp;(or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt;&amp;nbsp;E-Verify&lt;/a&gt; and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&amp;nbsp;&lt;/p&gt;\n&lt;/div&gt;",
+      "departments": [
+        {
+          "id": 4021307003,
+          "name": "Sales",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7689383003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5745838003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 7689383003,
+      "updated_at": "2026-04-03T12:37:06-04:00",
+      "requisition_id": "774",
+      "title": "Senior Account Executive - UHV Payors",
+      "company_name": "Melio",
+      "first_published": "2026-04-03T12:37:06-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;Senior Account Executive - UHV Payors&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in New York City &lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;(3 day in-office requirement)&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4+ years of proven success in outbound sales and high-level account management, specifically closing net-new business.&lt;/li&gt;\n&lt;li&gt;Strong experience in a Mid-Market sales motion, demonstrating the ability to navigate longer, more complex deal cycles and break into executive teams (VP to C-Suite).&lt;/li&gt;\n&lt;li&gt;Exceptional sales acumen with a deep command of pipeline management. You require minimal hand-holding, ramp up quickly, and know how to independently unblock deals.&lt;/li&gt;\n&lt;li&gt;Skilled in selling complex solutions, including SaaS, cash flow tools, or payments products, ideally in a startup or fintech environment. &lt;strong&gt;Bonus:&lt;/strong&gt; A strong understanding of the payments ecosystem and the high-volume credit cards space is highly preferred and will give you a major edge.&lt;/li&gt;\n&lt;li&gt;A track record of consistently exceeding targets with clear, quantifiable achievements (e.g., % over quota, revenue booked, average deal size).&lt;/li&gt;\n&lt;li&gt;Advanced outbound thinker: You don&#39;t just execute cadences; you build highly strategic, multi-threaded outbound campaigns to crack into target accounts.&lt;/li&gt;\n&lt;li&gt;A collaborative team player who proactively shares winning tactics and market feedback with peers, Product, Marketing, and Enablement.&lt;/li&gt;\n&lt;li&gt;Experience with our target verticals (Wholesalers, Retail, Software, Logistics, and Construction) is a strong plus.&lt;/li&gt;\n&lt;li&gt;Power user of sales tools like Salesforce, Outreach, Gong, Apollo, and LinkedIn Sales Navigator.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Hunt and close complex business: Drive strategic outbound prospecting to identify, engage, and win ultra high-value customers with longer consideration phases.&lt;/li&gt;\n&lt;li&gt;Navigate multi-stakeholder deals: Seamlessly manage the full sales cycle, engaging with buying groups at all levels—from operators up to the C-suite.&lt;/li&gt;\n&lt;li&gt;Deliver advanced, tailored product demos that connect Melio&#39;s value directly to high-level business metrics like cash flow, operational efficiency, and ROI.&lt;/li&gt;\n&lt;li&gt;Manage pipeline with precision: Maintain rigorous Salesforce hygiene and provide accurate forecasting to leadership.&lt;/li&gt;\n&lt;li&gt;Host executive Google Meet meetings and occasionally travel for trade shows, conferences, or strategic client visits.&lt;/li&gt;\n&lt;li&gt;Consistently exceed monthly and quarterly targets, while acting as a senior voice to help shape the go-to-market playbook as we scale the UHV team.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the team:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The&lt;strong&gt;&lt;em&gt; Ultra High Value (UHV) Payors team&lt;/em&gt;&lt;/strong&gt; is a new, high-visibility initiative at Melio. You&#39;ll play a crucial role partnering to build on existing processes, and selling an innovative and dynamic solution poised for dramatic scale. This is a unique opportunity to make a significant and lasting contribution to the company’s growth and future success.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated. The annual base salary range for this position is $88,000 - $95,000 with an additional variable bonus.&amp;nbsp;&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matching: Feel the investment of working at a high-growth company.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave and wedding days to allow you to take the time you need, when you need it.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City or Denver, in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our &lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt;careers page&lt;/a&gt; (or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt; E-Verify&lt;/a&gt; and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021307003,
+          "name": "Sales",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7765818003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5770506003,
+      "location": {
+        "name": "Tel Aviv-Yafo, Tel Aviv District, Israel"
+      },
+      "metadata": null,
+      "id": 7765818003,
+      "updated_at": "2026-06-08T04:40:02-04:00",
+      "requisition_id": "796",
+      "title": "Senior Data Scientist ",
+      "company_name": "Melio",
+      "first_published": "2026-06-08T04:40:02-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;We are seeking a talented and highly experienced&amp;nbsp;&lt;strong&gt;Senior Data Scientist&lt;/strong&gt; to join our Data Science team within the critical &lt;strong&gt;Risk&lt;/strong&gt; domain. This role uniquely combines hands-on development of vital risk prevention models, contributing to the technological strategy, and driving innovation in the field of AI Agents.&lt;/p&gt;\n&lt;h4&gt;Qualifications:&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;7+ years &lt;/strong&gt;of experience as a Data Scientist, with a proven track record of applying advanced statistical and machine learning methods on real-world problems (or 3+ years with a PhD).&lt;/li&gt;\n&lt;li&gt;Strong background and practical experience leading the end-to-end execution of complex Machine Learning projects.&lt;/li&gt;\n&lt;li&gt;Comfort with the realities of risk modeling: highly imbalanced and adversarial data, delayed/noisy labels, and the precision-vs-recall tradeoffs of acting on legitimate users.&lt;/li&gt;\n&lt;li&gt;Full ownership of projects from initial idea through production deployment, working closely with engineering to get there.&lt;/li&gt;\n&lt;li&gt;Experience in Generative AI, defining, building and evaluating AI-agents and leveraging foundational language models for introducing advanced new capabilities within existing products and systems.&lt;/li&gt;\n&lt;li&gt;Experience in working with large-scale data processing pipelines, Cloud Computing and Machine Learning Operations.&lt;/li&gt;\n&lt;li&gt;Demonstrated habit of working with AI: actively use LLMs/agentic tooling in your day-to-day workflow, and you instinctively turn recurring problems into reusable automation.&lt;/li&gt;\n&lt;li&gt;B.Sc in Computer Science, Software Engineering, Mathematics, Electrical, Statistics, or a related quantitative field.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h4&gt;&lt;strong&gt;Bonus points:&amp;nbsp;&lt;/strong&gt;&lt;/h4&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience developing models in the Risk domain (such as Fraud Detection, Anomaly Detection, Anti-Money Laundering) or Fintech.&lt;/li&gt;\n&lt;li&gt;M.Sc/PhD in Computer Science, Software Engineering, Mathematics, Electrical, Statistics, or a related quantitative field.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h4&gt;&lt;strong&gt;How is your day going to look, what will you be doing?&amp;nbsp;&lt;/strong&gt;&lt;/h4&gt;\n&lt;p&gt;As a Senior Data Scientist for Risk, you will be responsible for:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Hands-on Development:&lt;/strong&gt; Actively leading the design, building, and deployment of critical Machine Learning and Gen-AI models for identifying, classifying, and preventing risks and fraud.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Technical Leadership &amp;amp; Strategy: &lt;/strong&gt;Contributing to the Data Science strategy for the Risk domain, identifying critical business and technological opportunities, and setting high technical standards.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;AI Agents Innovation: &lt;/strong&gt;Driving the team&#39;s efforts in the field of AI Agents within Risk, build and evaluate agentic workflows that triage and explain risk decisions, with eval harnesses you can trust to gate releases and ensure reliability and accuracy in production.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Production Ownership:&lt;/strong&gt; Ensuring Data Science solutions transition reliably, scalably, and efficiently from concept to production, making a significant impact on the business.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h4&gt;How You&#39;ll Make an Impact?&lt;/h4&gt;\n&lt;p&gt;This role is critical to Melio&#39;s ability to continue scaling securely. In this position, you will drive the development of the next generation of cutting-edge methods that will:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Help small businesses manage their finances in a better, safer way using Melio.&lt;/li&gt;\n&lt;li&gt;Help Melio grow its customer base while maintaining a low-risk profile.&lt;/li&gt;\n&lt;li&gt;Drive impact by leveraging LLMs and Agentic Workflows to proactively identify sophisticated fraud patterns, mitigating financial risk while maintaining a seamless and secure experience for legitimate users.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h4&gt;About Us&lt;/h4&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them. With offices in New York, Denver, and Tel Aviv, and a vibrant work culture, Melio is expanding every single day. We are a diverse group of people who love what we do and do what we love. If you are a driven and passionate team player, you will fit right in.&lt;/p&gt;\n&lt;p&gt;We are an equal-opportunity employer and are always on the lookout for top-notch talent. Please reach out if you would like to join us on this exciting journey!&lt;/p&gt;\n&lt;h4&gt;About the Hiring Department&lt;/h4&gt;\n&lt;p&gt;The &lt;strong&gt;Risk, Compliance &amp;amp; Policy Group&lt;/strong&gt; plays a critical role in protecting the company from regulatory, financial, and reputational risk. We are an engineering group comprising five specialized teams, one of which is the Data Science team (which you will be a part of). We enforce company policies, compliance obligations, and prevent fraudulent events by evaluating payments and customers based on internal and external data.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;color: rgb(236, 240, 241);&quot; data-sheets-root=&quot;1&quot;&gt;#LI-TG&lt;/span&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7719441003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5757883003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7719441003,
+      "updated_at": "2026-05-05T02:08:01-04:00",
+      "requisition_id": "782",
+      "title": "Senior FP&A Analyst",
+      "company_name": "Melio",
+      "first_published": "2026-05-05T02:08:01-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;We&#39;re looking for a highly motivated Senior FP&amp;amp;A Analyst to join our finance team.&lt;/p&gt;\n&lt;p&gt;As a key financial position supporting our fast-growing company, you will gain exposure to all aspects of finance.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications&lt;/strong&gt;:&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;4-5+ years of experience in an analytical position in high-tech companies. Extensive knowledge of Excel (Pivot table, data formulas, etc).&lt;/li&gt;\n&lt;li&gt;Proven experience in economic modeling&lt;/li&gt;\n&lt;li&gt;Fast learner of business knowledge and for grasping the concept of new modeling software&lt;/li&gt;\n&lt;li&gt;Outstanding communication and interpersonal skills.&lt;/li&gt;\n&lt;li&gt;Excellent organizational skills with an ability to think proactively and prioritize work.&lt;/li&gt;\n&lt;li&gt;Independent&lt;/li&gt;\n&lt;li&gt;Be a business partner to functional owners throughout the organization; provide value-added insights to enable senior management optimization of actual spend.&lt;/li&gt;\n&lt;li&gt;A sharp eye for detail with the ability to audit others&#39; work, identify potential efficiencies, and implement improvements to existing modeling processes.&lt;/li&gt;\n&lt;li&gt;High level of accuracy, efficiency, and accountability.&lt;/li&gt;\n&lt;li&gt;Fluency in English (spoken and written).&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Experience in the Fintech industry&lt;br&gt;Familiar with FP&amp;amp;A tools like Pigment or Anaplan&lt;/p&gt;\n&lt;p&gt;.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead financial models to support forecasts and various ad-hoc requests, providing added-value insights to management to support business decisions.&lt;/li&gt;\n&lt;li&gt;Analyze the business activity and trends.&lt;/li&gt;\n&lt;li&gt;Building and maintaining yearly budget and rolling forecast.&lt;/li&gt;\n&lt;li&gt;Generating periodical financial packages, analyzing the company&#39;s results&lt;/li&gt;\n&lt;li&gt;Working closely with different budget owners&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Melio, now part of Xero, is building the future of business payments for small businesses across America. Following our acquisition by Xero, the leading accounting software for small business, we&#39;re combining Melio&#39;s industry-leading bill pay solution with Xero&#39;s powerful accounting tools to transform how millions of small businesses manage their finances.&lt;/p&gt;\n&lt;p&gt;As the fastest-growing B2B payment platform in the US, processing over $100B annually for more than 100,000 businesses, we&#39;re just getting started. Together with Xero, we&#39;re creating a seamless financial ecosystem that lets small business owners spend less time on back-office tasks and more time doing what they love.&lt;/p&gt;\n&lt;p&gt;With offices in New York and Tel Aviv, Melio offers a vibrant, collaborative culture where your work directly impacts millions of small businesses. We&#39;re a diverse team of passionate individuals who believe in moving fast, thinking big, and building products that truly matter. If you&#39;re ready to help us dominate the US SMB market while being part of something transformative, we&#39;d love to hear from you.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About the hiring department:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The Finance department actively participates in designing features, managing the flow of funds, and making decisions. We monitor Melio’s gross profit and monitor financial data closely.&lt;br&gt;As part of a finance team within a tech company, you’ll have a unique opportunity to make a real impact on Melio, its product, and our users and help the company scale.&lt;br&gt;We support Melio’s fast growth and manage all aspects of finance. We constantly improve our procedures, controls, and reports to help Melio reach new heights.&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4037044003,
+          "name": "Finance",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7572393003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5694127003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7572393003,
+      "updated_at": "2026-04-27T06:49:47-04:00",
+      "requisition_id": "745",
+      "title": "Senior Full Stack Engineer",
+      "company_name": "Melio",
+      "first_published": "2026-01-18T07:39:50-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;We&#39;re looking for a&amp;nbsp;&lt;strong&gt;Senior Full Stack Engineer&lt;/strong&gt; to join our team!&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;7+ years of professional experience as a software engineer with frontend and backend development.&lt;/li&gt;\n&lt;li&gt;Experience working with at least one of the following frameworks: React/Vue/Angular.&lt;/li&gt;\n&lt;li&gt;A deep understanding of production systems and the architecture of web products.&lt;/li&gt;\n&lt;li&gt;Excellent knowledge of JavaScript/html5/CSS.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Independent, fast learner, and excited about learning new technologies.&lt;/li&gt;\n&lt;li&gt;Proactive team player with a desire to impact our team, our product, and our customers.&lt;/li&gt;\n&lt;li&gt;1+ years of experience with Node.js is a big advantage.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Each member of our team is an all-around player who influences the product from the overall experience to the development.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;You’ll be using top technologies like React, Node.js, AWS, and scalable databases to build a unique experience in B2B payments.&lt;/li&gt;\n&lt;li&gt;You should be passionate about engineering and building a product end-to-end, through the design, coding, testing, and deployment phases.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the Engineering department:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The Engineering department is the backbone of Melio. We build, scale, and maintain the technical infrastructure that processes over $100B in annual payments for small businesses nationwide.&lt;/p&gt;\n&lt;p&gt;Following our acquisition by Xero, we&#39;re tackling an even more exciting challenge: integrating Melio&#39;s payment platform with Xero&#39;s accounting software to create a unified financial ecosystem. This means building robust, scalable systems that seamlessly connect two powerful platforms while maintaining the security and reliability that financial services demand.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Our Stack:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;We&#39;re all-in on AWS Serverless—meaning fully managed infrastructure that lets us build and scale faster than ever. We use TypeScript and Python for consistency, combining relational and document databases, and deploy via SAM CLI built on CloudFormation. Serverless gives us the agility to innovate rapidly while maintaining enterprise-grade reliability.&lt;/p&gt;\n&lt;p&gt;As part of our engineering team, you&#39;ll work on problems that matter: real-time payment processing, fraud prevention, API integrations, data synchronization, and user experience optimization. You&#39;ll have the autonomy to make architectural decisions, the support of a world-class team, and the satisfaction of seeing your code impact millions of small businesses.&lt;/p&gt;\n&lt;p&gt;If you&#39;re ready to build systems that scale, solve hard problems, and help small businesses thrive, we want to talk to you.&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Read more about our Engineering department on our&lt;/em&gt;&lt;a href=&quot;https://medium.com/melio-engineering&quot;&gt;&lt;em&gt; &lt;/em&gt;&lt;em&gt;tech blog&lt;/em&gt;&lt;/a&gt;&lt;em&gt;.&lt;br&gt;&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;em&gt;Melio, a Xero company, is revolutionizing how small businesses handle payments. By combining Melio&#39;s best-in-class bill pay platform with Xero&#39;s global accounting expertise, we&#39;re building the ultimate financial command center for American small businesses. We&#39;re the fastest-growing B2B payment solution in the US—but we&#39;re still small enough that you can make real, visible impact as we scale to reach millions more businesses.&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=&quot;color: rgb(236, 240, 241);&quot; data-sheets-root=&quot;1&quot;&gt;#LI-TA1&lt;/span&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7634870003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5708663003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 7634870003,
+      "updated_at": "2026-02-18T09:16:01-05:00",
+      "requisition_id": "759",
+      "title": "Senior FullStack Engineer",
+      "company_name": "Melio",
+      "first_published": "2026-02-17T19:18:58-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;Senior FullStack Engineer&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in NYC &lt;/em&gt;&lt;/strong&gt;(3 day in-office requirement)&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;7+ years of professional experience as a software engineer with frontend and backend development.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;3+ years of hands-on experience with the React framework.&lt;/li&gt;\n&lt;li&gt;2+ years of experience with Node.js, Typescript&lt;/li&gt;\n&lt;li&gt;2+ years of experience with AWS, Lambda, and cloud architecture&lt;/li&gt;\n&lt;li&gt;A deep understanding of production systems and the architecture of web products.&lt;/li&gt;\n&lt;li&gt;Independent, fast learner and excited about learning new technologies.&lt;/li&gt;\n&lt;li&gt;Proactive team player with a desire to impact our team, our product and our customers.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;As a Senior Full Stack Engineer for Product Engineering, your day will be spent creating and maintaining the products that let our customers manage their business payments in new ways.&lt;/li&gt;\n&lt;li&gt;We are building a platform that allows us to quickly iterate and launch custom solutions with high profile partners like Capital One and Shopify. We release features on an ongoing basis, build integrations, and develop tools that help us work more efficiently.&lt;/li&gt;\n&lt;li&gt;You&#39;ll interact with various parts of the system, from the back-end to the front-end, hence your work will involve dealing with diverse data structures and user interfaces. You&#39;ll work with technologies like AWS Lambda, Node.js, TypeScript, React, and MySQL to make this possible. We’re building REST APIs that we use internally and share externally, and new products based on these.&lt;/li&gt;\n&lt;li&gt;Cross-collaborate and discuss with other team members about current issues or future improvements, writing code to implement new features or fix bugs, conducting code reviews, and deploying updates.&lt;/li&gt;\n&lt;li&gt;Having a continuous improvement mindset, you&#39;ll strive to identify areas for improvement in the codebase and propose actionable solutions.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;This role will be vital to ensure we maintain the quality of our products, uptime and availability, and solving our users’ needs.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the team:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;The Partnerships Integration team&lt;/strong&gt; works as a part of our &lt;strong&gt;Product Engineering&lt;/strong&gt; group and acts as the gateway for Melio’s external partners. We maintain long-term relationships, and provide the features and tools that partners need to integrate with our platform. Our integrations enable partners to embed, white-label, or customize Melio’s payment capabilities, opening up new business opportunities.&lt;/p&gt;\n&lt;p&gt;We collaborate with different stakeholders to deliver seamless integrations, build trust with our partners, and push forward Melio’s mission of transforming business payments. We work with modern technologies, including React, Node.js, TypeScript, and AWS microservices, and we are agile and collaborative, constantly looking for ways to improve our partner experience, product reliability, and codebase.&lt;/p&gt;\n&lt;p&gt;In this team, you’ll be part of a high-performance culture that values innovation, problem-solving, and teamwork.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated. The annual base salary range for this position is $170,000-$200,000&lt;/li&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matchings: Feel the investment of working at a fast growing company.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave and wedding days to allow you to take the time you need, when you need it.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City or Denver, in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our&lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt; careers page&lt;/a&gt; (or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt; E-Verify&lt;/a&gt; and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7714782003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5751258003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 7714782003,
+      "updated_at": "2026-05-29T14:08:23-04:00",
+      "requisition_id": "777",
+      "title": "Senior Marketing Manager (12 month Contract-to-Hire)",
+      "company_name": "Melio",
+      "first_published": "2026-04-27T09:30:39-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;Senior Marketing Manager (temp-to-perm)&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in NYC &lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;(3 day in-office requirement)&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;8+ years experience in B2B marketing, ideally within SaaS, FinTech, or the payments sector. You bring a strong generalist toolkit with a clear understanding of how individual channel levers (Performance, Lifecycle, Content, Events) operate, allowing you to effectively partner with channel owners.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Mindset:&lt;/strong&gt; A self-starter with strong ownership, adaptability, and curiosity to ramp up quickly and cover a diverse range of business segments and priorities.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Strategic Acumen:&lt;/strong&gt; Strong ability to translate business goals into actionable GTM strategies and measurable outcomes.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Executional Excellence:&lt;/strong&gt; Highly organized with a proven track record in running successful campaigns and content programs from concept to analysis.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Cross-Functional Collaboration:&lt;/strong&gt; Comfort with navigating a matrixed environment, fostering cross-functional collaboration, and driving clarity in ambiguity.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Customer-Obsessed:&lt;/strong&gt; Track record of translating customer insights into actionable strategies and campaigns that resonate with both prospective and existing users.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Communication &amp;amp; Influence:&lt;/strong&gt; Strong, proactive communicator with experience presenting to senior executives and large audiences. Able to influence internal and external stakeholders of varying levels towards desired outcomes.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Data-driven&lt;/strong&gt;: Confident in using data and insights to inform decisions, optimize campaigns, and communicate results.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Tools&lt;/strong&gt;: Familiarity with Asana, Salesforce, and analytics tools.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience with people management&lt;/li&gt;\n&lt;li&gt;Experience working with small businesses and/or accountants&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Experience with agency or external stakeholder coordination&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;As a Senior Marketing Manager, you will play a pivotal role in marketing strategy and execution for our U.S. Small Business and Accountant &amp;amp; Bookkeeper audiences, owning key initiatives on our marketing campaign calendar—not only ensuring existing strategies are executed flawlessly, but also maintaining the agility to adapt and build upon these plans as the market and our product evolve. Beyond the core campaign calendar, you will also spearhead broader strategic marketing projects such as redesigning customer journeys to optimize the funnel.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;Youʼll be a collaborative problem solver who thrives on working with a diverse mix of teams and stakeholders of varying levels, including GTM, Product, and Strategy. On a day-to-day basis, you’ll partner with channel teams such as Lifecycle, Performance Marketing, Events, and Creative to develop and execute marketing activity ranging from tactical, quick-win initiatives to complex multi-channel campaigns. Together, you will drive high-quality lead generation, accelerate new customer acquisition, deepen existing user engagement, and deliver impactful campaigns that achieve our broader business goals.&lt;/p&gt;\n&lt;p&gt;This role requires strong leadership, exceptional communication and project management skills, and the ability to foster collaboration across remote teams. There is a temporary people management component. &lt;strong&gt;This position will be a 12-month long contract with opportunity to go perm.&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;strong&gt;Campaign Strategy &amp;amp; Budget:&lt;/strong&gt; Take ownership of the inflight marketing strategy, ensuring executional excellence while adapting the plan to shifting internal and external factors; Manage the Melio marketing budget, ensuring initiatives stay on track and on budget.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Multi-Channel Campaign Management:&lt;/strong&gt; Partner closely with channel owners to develop and deliver integrated marketing activities, balancing priorities and resources across multiple concurrent campaigns to achieve brand and business goals for both our Accountant &amp;amp; Bookkeeper (AB) and Small Business (SB) audiences.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Sales Enablement &amp;amp; Content Creation:&lt;/strong&gt; Create compelling external content and sales enablement materials that equip the broader team to effectively communicate Melio&#39;s value proposition and propel Melio’s image in the market; create thoughtful distribution strategies and clear success measurement&amp;nbsp; to amplify content usage.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Event Strategy:&lt;/strong&gt; Drive event strategy, such as how and where Melio shows up in the field, collaborating closely with the in-house Events team to execute; ensure our market presence drives measurable engagement and leads.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Cross-Functional Visibility &amp;amp; Communication:&lt;/strong&gt; Act as the connective tissue between marketing and the broader business. You will proactively share upcoming campaign roadmaps, report on performance metrics, and ensure all internal and executive stakeholders are fully informed and aligned with our marketing activities.&lt;/li&gt;\n&lt;li&gt;&lt;strong&gt;Measurement &amp;amp; Reporting:&lt;/strong&gt; Embed testing, measurement, and optimization into all campaign activity, seeking continuous improvement and fostering a feedback loop across internal marketing channel teams, GTM, and other cross-functional stakeholders.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the team:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;From clever copy to bold campaigns, Melio’s Marketing Team is where creativity meets strategy. We’re a group of sharp thinkers, creative storytellers, and strategic operators who bring Melio’s mission to life. Working closely with teams across the company, including Product, Design, and GTM, we shape our voice, grow our brand, and connect with customers and partners in ways that resonate. A strong understanding of our product, audience, and market drives everything we do. Whether we’re launching campaigns, refining content strategies, or strengthening performance we focus on impact, collaboration, and making sure everything we say reflects the heart of Melio.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated.&amp;nbsp;&lt;/li&gt;\n&lt;ul&gt;\n&lt;li&gt;The annual base salary range for this position is $150,000-180,000.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matching: Feel the investment of working at a high-growth company.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave and wedding days to allow you to take the time you need, when you need it.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City or Denver, in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our &lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt;careers page&lt;/a&gt; (or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt; E-Verify&lt;/a&gt; and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&amp;nbsp;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021128003,
+          "name": "Growth",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7640214003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5722146003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7640214003,
+      "updated_at": "2026-02-25T03:21:24-05:00",
+      "requisition_id": "767",
+      "title": "Senior Product Designer",
+      "company_name": "Melio",
+      "first_published": "2026-02-25T03:21:24-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;As our new&amp;nbsp;&lt;strong&gt;Senior Product Designer at Melio&lt;/strong&gt;, you will be instrumental in solving complex problems for our global users,&amp;nbsp; setting the standards for UI components, interaction patterns, and product and visual design. You should have deep empathy for users and a strong commitment to user-centered design principles.&lt;/p&gt;\n&lt;p&gt;You will take ownership end to end, from research through prototyping to design and usability testing, and partnering with product managers, engineers, and content strategists to oversee people&#39;s experience with the product from conception to launch. You will design flows and experiences that are incredibly simple and elegant.&lt;br&gt;&lt;br&gt;Please submit your portfolio or work samples as part of the application process.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of demonstrated experience with end-to-end (hybrid UX and UI) product design in a software product company&lt;/li&gt;\n&lt;li&gt;Excellent communication skills (able to clearly articulate design decisions)&lt;/li&gt;\n&lt;li&gt;A strong design point-of-view and a high level of comfort with opposing opinions&lt;/li&gt;\n&lt;li&gt;Experience participating in and facilitating design research, design sprints &amp;amp; ideation sessions&lt;/li&gt;\n&lt;li&gt;Demonstrated experience in building and shipping applications or software (mobile/web)&lt;/li&gt;\n&lt;li&gt;Experience working from and contributing to established design systems/design language&lt;/li&gt;\n&lt;li&gt;Ability to handle complex user requirements and translate them into coherent design solutions.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;User-Centered Mindset: Ability to advocate for user needs throughout the design and development process.&lt;/li&gt;\n&lt;li&gt;Strong problem-solving skills, fast learning, and an ability to work with data&lt;/li&gt;\n&lt;li&gt;An understanding of the product life cycle, from research through prototyping to design &amp;amp; usability testing&lt;/li&gt;\n&lt;li&gt;Experience designing for diverse groups of people (international audiences)&lt;/li&gt;\n&lt;li&gt;The ability to think and envision how things should work/move/interact with users to create delightful experiences&lt;/li&gt;\n&lt;li&gt;Extensive mastery of Figma/Sketch/InVision and other prototyping tools&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Expertise in data visualization and hierarchy within workflows. Expertise in creating coherent and readable information&lt;/li&gt;\n&lt;li&gt;Experience in creating tools for B2B enterprise solutions&lt;/li&gt;\n&lt;li&gt;Experience in fintech&lt;/li&gt;\n&lt;li&gt;Having a Bachelor of Design in Visual Communication isn’t a must, but it’ll definitely count in your favor.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;How is your day going to look? What you will be doing?&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Taking broad, conceptual ideas and turning them into something useful and valuable for our users&lt;/li&gt;\n&lt;li&gt;Emphasizing a strong product strategy and vision (not just &#39;how should this look&#39; but also &#39;what should we build next&#39;) to meet and enhance business goals across the company.&lt;/li&gt;\n&lt;li&gt;Designing flows and experiences that are incredibly simple and elegant&lt;/li&gt;\n&lt;li&gt;Taking part in defining a design system to be used across multiple products and platforms&lt;/li&gt;\n&lt;li&gt;Contributing to high-level strategic decisions with the rest of the product and executive teams&lt;/li&gt;\n&lt;li&gt;Giving and soliciting feedback from other designers to continually reiterate and improve&lt;/li&gt;\n&lt;li&gt;Partnering cross-functionally to oversee people&#39;s experience with the product from conception to launch.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Melio, a Xero company, is revolutionizing how small businesses handle payments. By combining Melio&#39;s best-in-class bill pay platform with Xero&#39;s global accounting expertise, we&#39;re building the ultimate financial command center for American small businesses. We&#39;re the fastest-growing B2B payment solution in the US—but we&#39;re still small enough that you can make real, visible impact as we scale to reach millions more businesses.&lt;/p&gt;\n&lt;p&gt;&amp;nbsp;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021133003,
+          "name": "Design ",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7616709003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5712898003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7616709003,
+      "updated_at": "2026-04-13T05:54:33-04:00",
+      "requisition_id": "760",
+      "title": "Senior Technical Services Engineer",
+      "company_name": "Melio",
+      "first_published": "2026-02-05T08:30:17-05:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;We are looking for an experienced Senior Technical Services Engineer to join our dynamic team based in Israel. You will play a critical role in ensuring the smooth operation of our technical infrastructure and product flows. Your responsibilities will include providing tier 3 technical support for escalated issues, taking charge of building monitors, maintaining continuous vigilance over the production environment, and taking the lead in coordinating incident response efforts across different departments.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;5+ years of experience in Tier 3/4 Technical Support, Production Engineering, or a highly technical SRE-adjacent role.&lt;/li&gt;\n&lt;li&gt;A strong technical background with proven experience in troubleshooting and debugging complex issues.&lt;/li&gt;\n&lt;li&gt;Troubleshooting Specialist: Expert at using debugging tools, browser dev tools, Postman, and log aggregators (Datadog/Splunk/ELK).&lt;/li&gt;\n&lt;li&gt;Experience in incident management, including leading cross-domain incident management efforts.&lt;/li&gt;\n&lt;li&gt;SQL Expert: Strong proficiency in SQL with experience handling complex relational databases in a production setting.&lt;/li&gt;\n&lt;li&gt;Proactive approach, taking the initiative to start processes and spot potential issues before they come up&lt;/li&gt;\n&lt;li&gt;Proven ability to read and understand code (JS/TypeScript/Python) to assist in bug isolation.&lt;/li&gt;\n&lt;li&gt;Incident Management: experience with managing the lifecycle of production incidents.&lt;/li&gt;\n&lt;li&gt;Communication: English and Hebrew; ability to translate complex technical &quot;noise&quot; into clear, actionable signals for R&amp;amp;D.&lt;/li&gt;\n&lt;li&gt;Ability to thrive in a fast-paced, dynamic environment.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Experience in the Fintech industry (understanding of ledgers, payments, or clearing).&lt;/li&gt;\n&lt;li&gt;Familiarity with AWS Lambda and serverless architecture.&lt;/li&gt;\n&lt;li&gt;Prior experience as a Software Developer who transitioned into high-level support/production engineering.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Lead cross-functional efforts to identify, analyze, and address intricate technical challenges, fostering seamless collaboration between various support teams and engineering units. Additionally, assume responsibility for addressing complex support tickets and ensuring adherence to stringent SLAs, all while maintaining a commitment to meeting service level objectives.&lt;/li&gt;\n&lt;li&gt;Lead cross-functional efforts to tackle complex technical challenges, ensure smooth collaboration between support and engineering teams, handle complex support tickets, and meet SLAs.&lt;/li&gt;\n&lt;li&gt;Continuously monitor diverse processes across our systems, proactively identifying potential issues before they escalate. Additionally, engage in thorough research of issues arising from these monitoring activities and collaborate closely with the R&amp;amp;D team to develop effective resolutions. Simultaneously, contribute to ongoing improvements to our monitoring systems to elevate their efficacy and reliability.&lt;/li&gt;\n&lt;li&gt;Monitor system processes to spot potential issues early, research problems, collaborate with R&amp;amp;D for solutions, and enhance our monitoring systems.&lt;/li&gt;\n&lt;li&gt;Take an active role in incident management efforts while also contributing to continuous improvements in R&amp;amp;D processes. Diligently track key metrics and maintain proactive oversight to ensure sustained optimization.&lt;/li&gt;\n&lt;li&gt;Develop monitoring tools and drive process improvement initiatives to ensure smooth system operations and enhanced operational efficiency.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Melio, a Xero company, is revolutionizing how small businesses handle payments. By combining Melio&#39;s best-in-class bill pay platform with Xero&#39;s global accounting expertise, we&#39;re building the ultimate financial command center for American small businesses. We&#39;re the fastest-growing B2B payment solution in the US—but we&#39;re still small enough that you can make a real, visible impact as we scale to reach millions more businesses.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About the Engineering department:&lt;/strong&gt;&lt;br&gt;The Engineering department is the backbone of Melio. We provide consultation, support and designs for technical solutions—supporting our customers and the entire organization. We get involved from the early stage of a project, making the connection between customer needs, our product design, and then translating these into solutions.&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;What’s our stack?&lt;/p&gt;\n&lt;p&gt;In Melio, we are all in with AWS Serverless. Meaning all our services are managed by AWS and our infrastructure is deployed using SAM CLI built over CloudFormation.&lt;/p&gt;\n&lt;p&gt;Serverless gives us the freedom to build, scale and deploy applications faster than ever. We combine the usage of relational and document DBS, write mainly in TypeScript and Python for consistency and ability to share resources.&lt;/p&gt;\n&lt;p&gt;As part of an engineering team within a fintech company, you’ll have a unique opportunity to make a real impact on Melio, its product, our users and help the company scale.&lt;/p&gt;\n&lt;p&gt;Read more about our Engineering department &lt;a href=&quot;https://medium.com/meliopayments&quot;&gt;tech blog&lt;/a&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021126003,
+          "name": "Engineering",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/6657538003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5239630003,
+      "location": {
+        "name": "New York City"
+      },
+      "metadata": null,
+      "id": 6657538003,
+      "updated_at": "2026-04-03T10:50:35-04:00",
+      "requisition_id": "693",
+      "title": "Strategic Account Executive - UHV Payors",
+      "company_name": "Melio",
+      "first_published": "2025-07-23T09:13:26-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;&lt;strong&gt;Strategic Account Executive - UHV Payors&lt;br&gt;&lt;/strong&gt;&lt;strong&gt;&lt;em&gt;Location: Hybrid in New York City &lt;/em&gt;&lt;/strong&gt;&lt;strong&gt;(3 day in-office requirement)&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;6+ years of proven, elite sales experience. &lt;strong&gt;Critical Requirement:&lt;/strong&gt; You must have extensive experience in the relevant B2B payments space and a deep, authoritative understanding of the high-volume credit cards ecosystem (e.g., pay-by-card volume, AP/AR automation, or adjacent fintech spaces).&lt;/li&gt;\n&lt;li&gt;Deep industry knowledge and network: You come to the table fully understanding the payments ecosystem, the key players, card networks, and the intricate nuances of payment monetization.&lt;/li&gt;\n&lt;li&gt;Strategic GTM builder: You don&#39;t just work a territory; you build a comprehensive Go-To-Market plan to hit your number, leveraging your knowledge of industry events, target personas, and existing relationships.&lt;/li&gt;\n&lt;li&gt;Mastery of complex, long sales cycles. You are highly confident navigating multifaceted buying groups and negotiating complex pricing/liquidity structures with CFOs and CEOs.&lt;/li&gt;\n&lt;li&gt;A track record of consistently crushing targets, closing &quot;whale&quot; accounts, and driving massive top-line revenue growth.&lt;/li&gt;\n&lt;li&gt;Culture carrier: You are deeply committed to building a positive, collaborative, and high-energy team vibe. You elevate the people around you and naturally step into informal mentorship roles.&lt;/li&gt;\n&lt;li&gt;Exceptional communicator and negotiator who can command a room, whether via Google Meet, phone, or high-stakes in-person meetings.&lt;/li&gt;\n&lt;li&gt;Power user of sales tools (Salesforce, Outreach, Gong, Apollo, LinkedIn Sales Navigator) who uses data to refine territory strategy.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;A day in the life and how you’ll make an impact:&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Architect and execute a territory GTM plan: Build a proactive strategy that utilizes industry events, network relationships, and targeted outbound to capture Melio&#39;s largest potential clients.&lt;/li&gt;\n&lt;li&gt;Hunt the &quot;Whales&quot;: Lead complex, high-stakes sales cycles from initial relationship building through deep financial discovery, negotiation, and close.&lt;/li&gt;\n&lt;li&gt;Act as a trusted advisor to the C-Suite: Deliver highly consultative pitches that speak the language of finance, focusing on cash flow optimization, float, and capital efficiency.&lt;/li&gt;\n&lt;li&gt;Drive cross-functional alignment: Partner deeply with Product, Risk, and Executive leadership to structure complex deals and ensure smooth onboarding for our most critical accounts.&lt;/li&gt;\n&lt;li&gt;Travel strategically: Represent Melio at major trade shows, industry conferences, and key on-site client visits to build pipeline and close deals.&lt;/li&gt;\n&lt;li&gt;Shape the future of UHV: As the most senior IC on the team, you will consistently exceed massive revenue targets while directly influencing product roadmaps and defining the &quot;gold standard&quot; playbook for the entire UHV organization.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the team:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The&lt;strong&gt;&lt;em&gt; Ultra High Value (UHV) Payors team&lt;/em&gt;&lt;/strong&gt; is a new, high-visibility initiative at Melio. You&#39;ll play a crucial role partnering to build on existing processes, and selling an innovative and dynamic solution poised for dramatic scale. This is a unique opportunity to make a significant and lasting contribution to the company’s growth and future success.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio USA:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Competitive compensation packages: We strive to make each and every employee feel valued and appreciated. The annual base salary range for this position is $125,000 - $140,000 with an additional variable bonus.&amp;nbsp;&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Medical, Dental, and Vision: We offer generous and highly competitive plans with up to 100% employer-paid coverage, FSA and HSA.&lt;/li&gt;\n&lt;li&gt;401K matching: Feel the investment of working at a high-growth company.&lt;/li&gt;\n&lt;li&gt;Wellness: We take a holistic approach to wellness at Melio with a focus on providing financial, physical, emotional, social, and community support for our employees.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Time Off: Time to rest and recharge is a priority for us. We offer competitive vacation time, sick days, holidays, parental leave and wedding days to allow you to take the time you need, when you need it.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Food perks: Enjoy our fully stocked kitchens, along with a weekly Seamless stipend and plenty of catered meals each week.&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Office culture: Thrive in our collaborative offices in New York City or Denver, in a hybrid working environment. We are dog friendly as well!&lt;/li&gt;\n&lt;li&gt;Growth and development: Lean on the diverse team to foster professional and personal growth through workshops, mentorship programs, and team building activities.&amp;nbsp;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;Melio builds business-to-business (B2B) payment tools so small business owners can spend less time in the back office and more time on their craft. As the fastest-growing B2B payment platform in the US, Melio is working hard to find new and better ways to help small businesses succeed in the ways that work best for them.&lt;/p&gt;\n&lt;p&gt;Melio&#39;s diversity, equity and inclusion efforts have always been a top priority within our team. We are an Equal Opportunity Employer, and all of our employees encompass different strengths, experiences and backgrounds. DEI within Melio prioritizes race, gender, age, disability status, veteran status, sexual orientation, religion and many other parts that make up one&#39;s identity. Having a diverse team across all offices is key to our success, and inclusion is each #TeaMelio member&#39;s responsibility. Melio accepts job applications on an ongoing basis until the position is filled. If you are interested in applying for this job opportunity, please do so directly on our &lt;a href=&quot;https://www.lifeatmelio.com/&quot;&gt;careers page&lt;/a&gt; (or if you’re here already, scroll down and apply now!). This employer participates in&lt;a href=&quot;https://drive.google.com/file/d/1Hav72jolloAjHVMjwrj4mTymQA7Uw1je/view&quot;&gt; E-Verify&lt;/a&gt; and will provide the federal government with your Form I-9 information to confirm that you are authorized to work in the U.S.&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021307003,
+          "name": "Sales",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012813003,
+          "name": "New York City",
+          "location": "New York, New York, United States",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    },
+    {
+      "absolute_url": "https://job-boards.greenhouse.io/melio/jobs/7737276003",
+      "data_compliance": [
+        {
+          "type": "gdpr",
+          "requires_consent": false,
+          "requires_processing_consent": false,
+          "requires_retention_consent": false,
+          "retention_period": null,
+          "demographic_data_consent_applies": false
+        }
+      ],
+      "internal_job_id": 5767432003,
+      "location": {
+        "name": "Tel Aviv"
+      },
+      "metadata": null,
+      "id": 7737276003,
+      "updated_at": "2026-06-02T05:11:44-04:00",
+      "requisition_id": "792",
+      "title": "TMS Analyst ",
+      "company_name": "Melio",
+      "first_published": "2026-05-26T12:47:36-04:00",
+      "language": "en",
+      "application_deadline": null,
+      "content": "&lt;p&gt;As an&amp;nbsp;&lt;strong&gt;TMS Analyst&lt;/strong&gt;&amp;nbsp; you’d be joining the team working behind the scenes to protect Melio from bad actors; managing the risks that might have adverse impacts on our product, financials and our ability to meet client needs. You’ll support the detection, analysis, and investigation of suspicious activities to ensure compliance with industry regulations and protect both Melio’s and our users’ interests. This role will involve assessing transactions, identifying potential risks, and collaborating with cross-functional teams to ensure suspicious activities are promptly investigated and addressed.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;Qualifications:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;Bachelor’s degree or relevant work experience.&lt;/li&gt;\n&lt;li&gt;Professional English skills&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;A comprehensive understanding of US Regulations;&lt;/li&gt;\n&lt;li&gt;1-3 years experience as an AML, transaction monitoring or relevant compliance analyst role in a FinTech or other closely regulated industry&lt;/li&gt;\n&lt;li&gt;Ability to manage and prioritize simultaneous projects, related to different stakeholders, internal and external to company&lt;/li&gt;\n&lt;li&gt;Excellent interpersonal, verbal, and communication skills, strong professional presence to support regular interactions with senior management&lt;/li&gt;\n&lt;li&gt;Strong research and analytical skills&lt;/li&gt;\n&lt;li&gt;Ability to anticipate and proactively initiate future projects&amp;nbsp;&lt;/li&gt;\n&lt;li&gt;Ability to work on site, central Tel Aviv office, at least 3 days per week&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;Bonus points:&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Experience with SQL- advantage&amp;nbsp;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;A day in a life and how you will make an impact:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;ul&gt;\n&lt;li&gt;The &lt;strong&gt;TMS Analyst &lt;/strong&gt;will lead initiatives, in collaboration with the &lt;strong&gt;TLV Director of Compliance Operations&lt;/strong&gt; and &lt;strong&gt;TLV TMS Team Lead&lt;/strong&gt;, to handle the daily tasks to support our regulatory AML requirements&lt;/li&gt;\n&lt;li&gt;Analyze transaction data and identify potentially suspicious activities in line with BSA/AML laws and regulations.&lt;/li&gt;\n&lt;li&gt;Review and investigate alerts generated by both automated transaction monitoring system as well as internal escalations from within the company, i.e. subpoenas, RFIs, fraud escalations, etc.&lt;/li&gt;\n&lt;li&gt;Conduct enhanced due diligence and escalate potential high-risk activities to senior management.&lt;/li&gt;\n&lt;li&gt;Prepare and submit Suspicious Activity Reports (SARs) in accordance with local regulatory guidelines.&lt;/li&gt;\n&lt;li&gt;Work cross-functionally to continuously improve monitoring processes and workflows.&lt;/li&gt;\n&lt;li&gt;Stay updated on relevant industry regulations and ensure Melio’s transaction monitoring processes are aligned.&lt;/li&gt;\n&lt;li&gt;Participate in ad hoc compliance and risk management projects.&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;&lt;strong&gt;About the hiring department:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;The Risk &amp;amp; Compliance department protects Melio&#39;s platform, reputation, and users from fraud, abuse, and financial crime.&lt;/p&gt;\n&lt;p&gt;As part of Xero, our responsibility has grown: we&#39;re now safeguarding not just Melio&#39;s payment flows, but the broader integrated financial ecosystem that millions of businesses depend on. This means implementing sophisticated controls, monitoring for emerging threats, and ensuring compliance across multiple regulatory frameworks.&lt;/p&gt;\n&lt;p&gt;We identify risks before they become problems, design systems to prevent fraud at scale, and ensure that every user and transaction on our platform is legitimate. We balance security with user experience—keeping bad actors out while making the platform seamless for legitimate businesses.&lt;/p&gt;\n&lt;p&gt;As fintech continues to evolve and fraud techniques become more sophisticated, our work is more critical than ever. You&#39;ll use data science, machine learning, and good old-fashioned investigative skills to stay ahead of threats.&lt;/p&gt;\n&lt;p&gt;If you want to be the shield that protects millions of small businesses, we need you.&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;About Melio:&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;\n&lt;p&gt;Melio, a Xero company, is revolutionizing how small businesses handle payments. By combining Melio&#39;s best-in-class bill pay platform with Xero&#39;s global accounting expertise, we&#39;re building the ultimate financial command center for American small businesses. We&#39;re the fastest-growing B2B payment solution in the US—but we&#39;re still small enough that you can make real, visible impact as we scale to reach millions more businesses.&lt;/p&gt;\n&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;",
+      "departments": [
+        {
+          "id": 4021129003,
+          "name": "Risk",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ],
+      "offices": [
+        {
+          "id": 4012692003,
+          "name": "Tel Aviv",
+          "location": "Tel Aviv-Yafo, Tel Aviv District, Israel",
+          "child_ids": [],
+          "parent_id": null
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "total": 21
+  }
+}

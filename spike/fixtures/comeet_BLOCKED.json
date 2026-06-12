@@ -1,0 +1,4 @@
+{
+  "status": "blocked",
+  "note": "No public REST API found; Comeet loads via embedded widget or requires auth. Need to inspect network calls on a real Comeet careers page."
+}

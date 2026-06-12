@@ -1,0 +1,1754 @@
+[
+  {
+    "name": "Accomplish",
+    "website": "accomplish.ai",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Agora",
+    "website": "agorareal.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "AI21 Labs",
+    "website": "ai21.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Aidoc",
+    "website": "aidoc.com",
+    "sources": [
+      "failory",
+      "curated"
+    ]
+  },
+  {
+    "name": "Aim Security",
+    "website": "aim.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Allegro Artificial Intelligence",
+    "website": "clear.ml",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Allero",
+    "website": "allero.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Amdocs",
+    "website": "amdocs.com",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Amplication",
+    "website": "amplication.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Apiiro",
+    "website": "apiiro.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Apono",
+    "website": "apono.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Aporia",
+    "website": "aporia.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Appcharge",
+    "website": "appcharge.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Applitools",
+    "website": "applitools.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "AppsFlyer",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Appwrite",
+    "website": "appwrite.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Aqua Security",
+    "website": "aquasec.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Ariga",
+    "website": "ariga.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "ARMO",
+    "website": "armosec.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Arnica",
+    "website": "arnica.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Aspecto",
+    "website": "aspecto.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Astrix Security",
+    "website": "astrix.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "At-Bay",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Atera",
+    "website": "atera.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "AutoKitteh",
+    "website": "autokitteh.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Axonius",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Balance",
+    "website": "getbalance.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Ballerine",
+    "website": "ballerine.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "BigPanda",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "BillRun",
+    "website": "bill.run",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "BioCatch",
+    "website": "biocatch.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Bit",
+    "website": "bit.dev",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Blockaid",
+    "website": "blockaid.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Bridgecrew",
+    "website": "bridgecrew.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Briya",
+    "website": "briya.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "capitalise.ai",
+    "website": "capitalise.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Capsule Security",
+    "website": "capsulesecurity.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Cato Networks",
+    "website": "catonetworks.com",
+    "sources": [
+      "failory",
+      "curated"
+    ]
+  },
+  {
+    "name": "Chargeflow",
+    "website": "chargeflow.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Checkmarx",
+    "website": "checkmarx.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Checkpoint",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Claroty",
+    "website": "claroty.com",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Classiq Technologies",
+    "website": "classiq.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Cloudify",
+    "website": "cloudify.co",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "CloudQuery",
+    "website": "cloudquery.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Comet",
+    "website": "comet.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Configu",
+    "website": "configu.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Consultancy",
+    "website": "calendly.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "ControlMonkey",
+    "website": "controlmonkey.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Coralogix",
+    "website": "coralogix.com",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "CropX",
+    "website": "cropx.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Cyberark",
+    "website": "cyberark.com",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Cybereason",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Cycode",
+    "website": "cycode.com",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "CYE",
+    "website": "cyesec.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Cyera",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Cynomi",
+    "website": "cynomi.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "D-Fend Solutions",
+    "website": "d-fendsolutions.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "D-ID",
+    "website": "d-id.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Daily.dev",
+    "website": "daily.dev",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Dataflint",
+    "website": "dataflint.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Deci-AI",
+    "website": "deci.ai",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Deel",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Deepchecks",
+    "website": "deepchecks.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "deepdub",
+    "website": "deepdub.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Dig",
+    "website": "dig.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Dragonfly",
+    "website": "dragonflydb.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Drata",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Dream Security",
+    "website": "dreamgroup.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "DriveNets",
+    "website": "drivenets.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "EarlySense",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Earnix",
+    "website": "earnix.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Elementary Data",
+    "website": "elementary-data.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Elementor",
+    "website": "elementor.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Env0",
+    "website": "env0.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Epsagon",
+    "website": "epsagon.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Ever",
+    "website": "ever.co",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Explorium",
+    "website": "explorium.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "FASHN",
+    "website": "fashn.ai",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Fetcherr",
+    "website": "fetcherr.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Fireblocks",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Firebolt",
+    "website": "firebolt.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Firefly",
+    "website": "firefly.ai",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "Firefly Migration",
+    "website": "fireflymigration.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Flyde",
+    "website": "flyde.dev",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Flytrex",
+    "website": "flytrex.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Forter",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Gong",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Granulate",
+    "website": "granulate.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Grip Security",
+    "website": "grip.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Groundcover",
+    "website": "groundcover.com",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "Guardicore",
+    "website": "guardicore.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Habana Labs",
+    "website": "habana.ai",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Hailo",
+    "website": "hailo.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "HetzVentures",
+    "website": "hetz.vc",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Hunters",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Hush Security",
+    "website": "hush.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Iguazio",
+    "website": "iguazio.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Imperva",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Infinidat",
+    "website": "infinidat.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Innovid",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "InSightec",
+    "website": "insightec.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Intuition Robotics",
+    "website": "intuitionrobotics.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "IronSource",
+    "website": "is.com",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "ironSource Aura",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Island",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "IVIX",
+    "website": "ivix.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "JFrog",
+    "website": "jfrog.com",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Jit",
+    "website": "jit.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Kaltura",
+    "website": "corp.kaltura.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Keep",
+    "website": "keephq.dev",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Kela Technologies",
+    "website": "kelasys.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Koi",
+    "website": "koi.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Komodor",
+    "website": "komodor.com",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "KubeMQ",
+    "website": "kubemq.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Landa Digital Printing",
+    "website": "landanano.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Lasso Security",
+    "website": "lasso.security",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "LayerX",
+    "website": "layerxsecurity.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Legit Security",
+    "website": "legitsecurity.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Lemonade",
+    "website": "lemonade.com",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Leo AI",
+    "website": "getleo.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Lightricks",
+    "website": "lightricks.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "LightSolver",
+    "website": "lightsolver.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Lightspin",
+    "website": "lightspin.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Lighttag",
+    "website": "lighttag.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "LIGHTYX",
+    "website": "lightyx.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Livecycle",
+    "website": "livecycle.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "LiveU",
+    "website": "liveu.tv",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Logz.io",
+    "website": "logz.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Lumen",
+    "website": "lumen.me",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Lumigo",
+    "website": "lumigo.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Lunar.dev",
+    "website": "lunar.dev",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Lusha",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Marketeam.ai",
+    "website": "marketeam.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Melio",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Memphis.dev",
+    "website": "memphis.dev",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "MetalBear",
+    "website": "metalbear.com",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "Mitiga",
+    "website": "mitiga.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Monada",
+    "website": "monada.co",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "monday.com",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Morphisec",
+    "website": "morphisec.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "myInterview",
+    "website": "myinterview.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Nagish",
+    "website": "nagish.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Natural Intelligence",
+    "website": "naturalint.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Neuledge",
+    "website": "neuledge.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "NewPhotonics",
+    "website": "newphotonics.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "NICE",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Noma Security",
+    "website": "noma.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Noname Security",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Novidea",
+    "website": "novidea.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Novu",
+    "website": "novu.co",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Odigos",
+    "website": "odigos.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Oktopost",
+    "website": "oktopost.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Oligo Security",
+    "website": "oligo.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "ONE ZERO",
+    "website": "onezerobank.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Onebeat",
+    "website": "1beat.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "OpenOps",
+    "website": "openops.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Opster",
+    "website": "opster.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Optery",
+    "website": "optery.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Optibus",
+    "website": "optibus.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Optimove",
+    "website": "optimove.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Orca Security",
+    "website": "orca.security",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Ori Biotech",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Orion Innovation",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Otterize",
+    "website": "otterize.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "OtterTune",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Outburn",
+    "website": "outburn.health",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Overwolf",
+    "website": "overwolf.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Ox Security",
+    "website": "ox.security",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "Oxeye",
+    "website": "oxeye.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Papaya Global",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Pecan",
+    "website": "pecan.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Percepto",
+    "website": "percepto.co",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "PerimeterX",
+    "website": "perimeterx.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Perion",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Permit.io",
+    "website": "permit.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Pinecone",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Pixellot",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Playtika",
+    "website": "playtika.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Plurai",
+    "website": "plurai.ai",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "PointFive",
+    "website": "pointfive.co",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Priority Software",
+    "website": "priority-software.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Prompt Security",
+    "website": "prompt.security",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "proteanTecs",
+    "website": "proteantecs.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Qodo",
+    "website": "qodo.ai",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "QuantHealth",
+    "website": "quanthealth.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Radware",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Rafael",
+    "website": "rafael.co.il",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "RavenDB",
+    "website": "ravendb.net",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Red Access",
+    "website": "redaccess.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Redash",
+    "website": "redash.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Redis Labs",
+    "website": "redislabs.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Remedio",
+    "website": "remedio.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Rezilion",
+    "website": "rezilion.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Riskified",
+    "website": "riskified.com",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Riverside",
+    "website": "riverside.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Robusta",
+    "website": "home.robusta.dev",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Run.ai",
+    "website": "run.ai",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Salto",
+    "website": "salto.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Scopio Labs",
+    "website": "scopiolabs.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Scribe Security",
+    "website": "scribesecurity.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Scylla",
+    "website": "scylladb.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Security Joes",
+    "website": "securityjoes.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Seemplicity",
+    "website": "seemplicity.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Sentra",
+    "website": "sentra.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Seraphic Security",
+    "website": "seraphicsecurity.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Shield",
+    "website": "shieldfc.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Similarweb",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Simply",
+    "website": "hellosimply.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Skai",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Skyhook",
+    "website": "skyhook.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Snyk",
+    "website": "snyk.io",
+    "sources": [
+      "github",
+      "curated"
+    ]
+  },
+  {
+    "name": "Sola Security",
+    "website": "sola.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Soluto",
+    "website": "soluto.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Spectralops",
+    "website": "spectralops.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Speedb",
+    "website": "speedb.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Sponsor Us",
+    "website": "passionfroot.me",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "SysAid",
+    "website": "sysaid.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Tabnine",
+    "website": "tabnine.com",
+    "sources": [
+      "failory",
+      "curated"
+    ]
+  },
+  {
+    "name": "Tadata",
+    "website": "tadata.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "TechSee",
+    "website": "techsee.me",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Testim",
+    "website": "testim.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "ThetaRay",
+    "website": "thetaray.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Tipalti",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Token Security",
+    "website": "token.security",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Torii",
+    "website": "toriihq.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Torq",
+    "website": "torq.io",
+    "sources": [
+      "github",
+      "failory"
+    ]
+  },
+  {
+    "name": "Tower Semiconductor",
+    "website": "towersemi.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Traceloop",
+    "website": "traceloop.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Treeverse",
+    "website": "lakefs.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Trigo",
+    "website": "trigoretail.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Triple Whale",
+    "website": "triplewhale.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Tutim",
+    "website": "tutim.io",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "UP9",
+    "website": "up9.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Varonis",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Vega Security",
+    "website": "vega.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Verbit",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Visual Layer",
+    "website": "visual-layer.com",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "WalkMe",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Wiliot",
+    "website": "wiliot.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Windward",
+    "website": "windward.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Wix",
+    "website": "wix.engineering",
+    "sources": [
+      "github"
+    ]
+  },
+  {
+    "name": "Wiz",
+    "website": "",
+    "sources": [
+      "curated"
+    ]
+  },
+  {
+    "name": "Wonderful",
+    "website": "wonderful.ai",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "WSC Sports",
+    "website": "wsc-sports.com",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Zencity",
+    "website": "zencity.io",
+    "sources": [
+      "failory"
+    ]
+  },
+  {
+    "name": "Zooz",
+    "website": "zooz.com",
+    "sources": [
+      "github"
+    ]
+  }
+]
