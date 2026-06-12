@@ -1,0 +1,12 @@
+[
+  {"name": "Fireblocks", "website": "fireblocks.com", "ats_type": "greenhouse", "ats_token": "fireblocks"},
+  {"name": "Melio", "website": "melio.com", "ats_type": "greenhouse", "ats_token": "melio"},
+  {"name": "Riskified", "website": "riskified.com", "ats_type": "greenhouse", "ats_token": "riskified"},
+  {"name": "Gong", "website": "gong.io", "ats_type": "greenhouse", "ats_token": "gongio"},
+  {"name": "At-Bay", "website": "at-bay.com", "ats_type": "greenhouse", "ats_token": "atbay"},
+  {"name": "Pinecone", "website": "pinecone.io", "ats_type": "ashby", "ats_token": "pinecone"},
+  {"name": "Drata", "website": "drata.com", "ats_type": "ashby", "ats_token": "drata"},
+  {"name": "Orca Security", "website": "orca.security", "ats_type": "ashby", "ats_token": "orca"},
+  {"name": "Wiz", "website": "wiz.io", "ats_type": "ashby", "ats_token": "wiz"},
+  {"name": "Snyk", "website": "snyk.io", "ats_type": "ashby", "ats_token": "snyk"}
+]
