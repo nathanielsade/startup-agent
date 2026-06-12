@@ -23,3 +23,11 @@ def test_settings_env_override(monkeypatch):
     s = Settings()
     assert s.db_path == "/tmp/custom.db"
     assert s.shortlist_size == 5
+
+
+def test_settings_llm_defaults(monkeypatch):
+    monkeypatch.delenv("LLM_MODEL", raising=False)
+    from startup_agent.config.settings import Settings
+    s = Settings()
+    assert s.llm_model == "claude-opus-4-8"
+    assert s.llm_threshold == 70
