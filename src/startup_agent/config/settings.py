@@ -10,3 +10,5 @@ class Settings(BaseSettings):
     shortlist_size: int = 20
     anthropic_api_key: str = ""
     digest_dir: str = "digests"
+    match_threshold: float = 0.30
+    preferences_path: str = "data/preferences.yaml"

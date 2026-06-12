@@ -9,6 +9,14 @@ def test_settings_defaults(monkeypatch):
     assert s.shortlist_size == 20
 
 
+def test_settings_match_defaults(monkeypatch):
+    monkeypatch.delenv("MATCH_THRESHOLD", raising=False)
+    from startup_agent.config.settings import Settings
+    s = Settings()
+    assert s.match_threshold == 0.30
+    assert s.preferences_path == "data/preferences.yaml"
+
+
 def test_settings_env_override(monkeypatch):
     monkeypatch.setenv("DB_PATH", "/tmp/custom.db")
     monkeypatch.setenv("SHORTLIST_SIZE", "5")

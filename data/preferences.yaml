@@ -1,0 +1,62 @@
+roles:
+  - Backend Engineer
+  - Software Engineer
+  - AI Engineer
+  - LLM Engineer
+  - GenAI Engineer
+  - Platform Engineer
+  - Infrastructure Engineer
+  - Python Developer
+  - Full Stack Engineer
+seniority:
+  - Junior
+  - Entry-level
+  - Associate
+  - Mid-level
+locations:
+  - Center (Gush Dan / Sharon)
+  - Remote
+must_have: []
+title_include:
+  - engineer
+  - developer
+  - software
+  - programmer
+  - devops
+  - sre
+  - full stack
+  - full-stack
+  - fullstack
+  - machine learning
+  - data scientist
+  - research
+  - sdet
+exclude:
+  - Senior
+  - Staff
+  - Principal
+  - Lead
+  - Manager
+  - Director
+  - Head of
+  - VP
+  - Intern
+  - Internship
+  - Sales Engineer
+  - Solutions Engineer
+  - Support Engineer
+  - Customer Engineer
+  - Field Engineer
+  - Presales
+  - Pre-Sales
+  - Account Executive
+  - Sales Development
+  - Counsel
+  - Marketing
+  - Recruiter
+  - Sourcer
+  - Designer
+  - Accountant
+  - Payroll
+  - Analyst
+  - Revenue Architect

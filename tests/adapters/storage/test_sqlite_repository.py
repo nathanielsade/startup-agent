@@ -60,3 +60,26 @@ def test_upsert_job_for_unknown_company_violates_foreign_key(repo):
     orphan = Job(company_id="does-not-exist", ats_job_id="1", title="X", url="https://x/1")
     with pytest.raises(sqlite3.IntegrityError):
         repo.upsert_job(orphan)
+
+
+def test_save_and_get_cv(repo):
+    repo.save_cv(path="cv.pdf", text="backend engineer python", embedding=b"\x00\x01", model="bge")
+    cv = repo.get_cv()
+    assert cv["text"] == "backend engineer python"
+    assert cv["embedding"] == b"\x00\x01"
+
+
+def test_get_cv_none_when_empty(repo):
+    assert repo.get_cv() is None
+
+
+def test_set_and_read_job_embedding(repo):
+    from startup_agent.domain.models import Company, Job
+    repo.upsert_company(Company(name="Acme"))
+    cid = repo.get_companies()[0].id_hash
+    job = Job(company_id=cid, ats_job_id="1", title="Backend", url="https://x/1")
+    repo.upsert_job(job)
+    repo.set_job_embedding(job.id, b"\x09\x09")
+    jobs = repo.get_jobs()
+    assert len(jobs) == 1
+    assert repo.get_job_embedding(job.id) == b"\x09\x09"

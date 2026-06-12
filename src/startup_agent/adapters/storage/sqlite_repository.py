@@ -96,3 +96,41 @@ class SQLiteJobRepository(JobRepository):
             [(run_id, m.job_id, m.score, m.reason, m.stage, _now()) for m in matches],
         )
         self._conn.commit()
+
+    def save_cv(self, path: str, text: str, embedding: bytes | None, model: str) -> None:
+        self._conn.execute("DELETE FROM cv")  # single-CV store; replace on save
+        self._conn.execute(
+            "INSERT INTO cv (path, text, embedding, model, updated_at) VALUES (?,?,?,?,?)",
+            (path, text, embedding, model, _now()),
+        )
+        self._conn.commit()
+
+    def get_cv(self) -> dict | None:
+        row = self._conn.execute(
+            "SELECT path, text, embedding, model FROM cv ORDER BY id DESC LIMIT 1"
+        ).fetchone()
+        if row is None:
+            return None
+        return {"path": row["path"], "text": row["text"],
+                "embedding": row["embedding"], "model": row["model"]}
+
+    def get_jobs(self) -> list[Job]:
+        rows = self._conn.execute(
+            "SELECT company_id, ats_job_id, title, location, url, description, posted_at FROM jobs"
+        ).fetchall()
+        jobs: list[Job] = []
+        for r in rows:
+            jobs.append(Job(
+                company_id=r["company_id"], ats_job_id=r["ats_job_id"], title=r["title"],
+                location=r["location"], url=r["url"], description=r["description"],
+                posted_at=datetime.fromisoformat(r["posted_at"]) if r["posted_at"] else None,
+            ))
+        return jobs
+
+    def set_job_embedding(self, job_id: str, embedding: bytes) -> None:
+        self._conn.execute("UPDATE jobs SET embedding = ? WHERE id = ?", (embedding, job_id))
+        self._conn.commit()
+
+    def get_job_embedding(self, job_id: str) -> bytes | None:
+        row = self._conn.execute("SELECT embedding FROM jobs WHERE id = ?", (job_id,)).fetchone()
+        return row["embedding"] if row else None

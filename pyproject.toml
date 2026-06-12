@@ -9,8 +9,12 @@ authors = [
 requires-python = ">=3.13"
 dependencies = [
     "httpx>=0.28.1",
+    "numpy>=2.4.6",
     "pydantic>=2.13.4",
     "pydantic-settings>=2.14.1",
+    "pypdf>=6.13.2",
+    "pyyaml>=6.0.3",
+    "sentence-transformers>=5.5.1",
     "structlog>=26.1.0",
     "typer>=0.26.7",
 ]
