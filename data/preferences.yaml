@@ -1,0 +1,30 @@
+roles:
+  - Backend Engineer
+  - Software Engineer
+  - AI Engineer
+  - LLM Engineer
+  - GenAI Engineer
+  - Platform Engineer
+  - Infrastructure Engineer
+  - Python Developer
+  - Full Stack Engineer
+seniority:
+  - Junior
+  - Entry-level
+  - Associate
+  - Mid-level
+locations:
+  - Center (Gush Dan / Sharon)
+  - Remote
+must_have: []
+exclude:
+  - Senior
+  - Staff
+  - Principal
+  - Lead
+  - Manager
+  - Director
+  - Head of
+  - VP
+  - Intern
+  - Internship
