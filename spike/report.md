@@ -270,3 +270,34 @@ GET https://api.smartrecruiters.com/v1/companies/{token}/postings
 GET https://api.smartrecruiters.com/v1/companies/{token}/postings/{id}
 Fields: .content[].{id, name, location} + detail: .applyUrl, .jobAd.sections.*.text(HTML)
 ```
+
+---
+
+## 7. Post-spike decisions
+
+- **v1 scope = "easy group" (REST-only adapters).** Build Greenhouse-v1 and Ashby
+  first (real fixtures captured). Comeet + new-Greenhouse (Playwright) are deferred
+  to a later adapter behind the same `ATSAdapter` interface — no rework needed.
+- **Company list is slow-changing** — refresh cadence ~monthly, NOT daily. The job
+  *fetch* runs daily; the company *universe* is refreshed occasionally.
+
+### Company-list strategy (revised)
+
+Authoritative source is still Startup Nation Central — it is blocked to automation
+(Cloudflare 403) but fully accessible to a logged-in human in a browser. Since the
+list only needs monthly refresh, the plan is:
+
+1. **Bootstrap now:** `spike/fixtures/companies_seed.json` — 247 unique companies
+   (GitHub `israeli-opensource-companies` + Failory + curated), 209 with websites.
+   Lets us build + test the whole pipeline immediately.
+2. **Best source (manual, monthly):** user logs into SNC once and exports / captures
+   the full company list; we ingest it as the authoritative seed and refresh ~monthly.
+   Sidesteps the WAF entirely (real authenticated session).
+
+Caveat on the bootstrap lists: GitHub list is community-maintained (sporadic, skews
+open-source/dev-tools); Failory is editorial/static (goes stale). Fine as a
+bootstrap, not as the long-term authoritative source — hence SNC-via-login monthly.
+
+The company-list loader (Phase 2) will read a normalized seed file regardless of
+which source produced it, so swapping bootstrap → SNC export is a data change, not
+a code change.
