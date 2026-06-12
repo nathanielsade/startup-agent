@@ -9,8 +9,6 @@ from startup_agent.config.settings import Settings
 from startup_agent.cv.loader import read_pdf_text
 from startup_agent.factories.ats_factory import ATSAdapterFactory
 from startup_agent.services.ingestion import IngestionService
-from startup_agent.services.matching import SimilarityMatchingService
-
 app = typer.Typer(help="Israeli startup job agent")
 
 
@@ -55,18 +53,37 @@ def run(db_path: str = typer.Option("jobs.db", "--db-path")) -> None:
 
 
 @app.command("match")
-def match(db_path: str = typer.Option("jobs.db", "--db-path")) -> None:
-    """Rank stored jobs against the CV by similarity (no LLM)."""
+def match(db_path: str = typer.Option("jobs.db", "--db-path"),
+          llm: bool = typer.Option(False, "--llm", help="Also score candidates with Claude")) -> None:
+    """Rank stored jobs against the CV. --llm adds Claude scoring + reasons."""
     settings = Settings()
     repo = SQLiteJobRepository(db_path)
     repo.init_schema()
     prefs = load_preferences(settings.preferences_path)
     embedder = LocalEmbedder(settings.embedding_model)
+    names = {c.id_hash: c.name for c in repo.get_companies()}
+
+    if llm:
+        from startup_agent.adapters.ranking.claude_ranker import ClaudeRanker
+        from startup_agent.services.hybrid_matching import HybridMatchingService
+
+        ranker = ClaudeRanker(api_key=settings.anthropic_api_key, model=settings.llm_model)
+        service = HybridMatchingService(
+            repo=repo, embedder=embedder, ranker=ranker, preferences=prefs,
+            sim_threshold=settings.match_threshold, llm_threshold=settings.llm_threshold,
+        )
+        results = service.run()
+        typer.echo(f"{len(results)} matching jobs (LLM score >= {settings.llm_threshold}):")
+        for job, m in results:
+            typer.echo(f"  [{m.score}] {job.title} @ {names.get(job.company_id, '?')} "
+                       f"— {job.location or 'n/a'} — {m.reason} — {job.url}")
+        return
+
+    from startup_agent.services.matching import SimilarityMatchingService
     service = SimilarityMatchingService(repo=repo, embedder=embedder,
                                         preferences=prefs, threshold=settings.match_threshold)
     results = service.run()
-    names = {c.id_hash: c.name for c in repo.get_companies()}
-    typer.echo(f"{len(results)} matching jobs (threshold {settings.match_threshold}):")
+    typer.echo(f"{len(results)} matching jobs (similarity >= {settings.match_threshold}):")
     for job, score in results:
         typer.echo(f"  [{score:.2f}] {job.title} @ {names.get(job.company_id, '?')} "
                    f"— {job.location or 'n/a'} — {job.url}")
