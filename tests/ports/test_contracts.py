@@ -17,3 +17,7 @@ def test_repository_is_abstract_with_required_methods():
 def test_other_ports_are_abstract():
     for port in (ATSAdapter, Embedder, Ranker, DeliveryChannel):
         assert inspect.isabstract(port)
+
+
+def test_ats_adapter_has_fetch_jobs():
+    assert hasattr(ATSAdapter, "fetch_jobs")
