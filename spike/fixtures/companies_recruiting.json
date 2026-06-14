@@ -1,0 +1,7234 @@
+[
+  {
+    "name": "10D",
+    "website": "https://10d.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "2i Ventures",
+    "website": "https://2ivc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "83North",
+    "website": "https://83north.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "8i",
+    "website": "https://8i.com",
+    "ats_type": "workable",
+    "ats_token": "8i",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "97212 Ventures",
+    "website": "https://97212.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "A.Team",
+    "website": "https://a.team",
+    "ats_type": "ashby",
+    "ats_token": "a-team",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Accel",
+    "website": "https://accel.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Agapé",
+    "website": "https://getdailyagape.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Agave Health",
+    "website": "https://agavehealth.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "AI21 Labs",
+    "website": "https://ai21.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Akooda",
+    "website": "https://akooda.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Alchemy",
+    "website": "https://alchemy.com",
+    "ats_type": "ashby",
+    "ats_token": "alchemy",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Aleo",
+    "website": "https://aleo.org",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Aleph",
+    "website": "https://aleph.vc",
+    "ats_type": "ashby",
+    "ats_token": "alephvc",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Alice",
+    "website": "https://alice.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Alicorn",
+    "website": "https://alicorn-vp.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Aligned",
+    "website": "https://alignedup.com",
+    "ats_type": "greenhouse",
+    "ats_token": "aligned",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Aliro Technologies",
+    "website": "https://aliroquantum.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "ALIVE",
+    "website": "https://alivevc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Alkermes",
+    "website": "https://alkermes.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "taleo"
+  },
+  {
+    "name": "Allianz",
+    "website": "https://allianz.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Alloy Therapeutics",
+    "website": "https://alloytx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Almeda Ventures",
+    "website": "https://almedaventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Alpha Medical",
+    "website": "https://helloalpha.com",
+    "ats_type": "ashby",
+    "ats_token": "alpha",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Alta",
+    "website": "https://altahq.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "aMoon",
+    "website": "https://amoon.fund",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Amplication",
+    "website": "https://amplication.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "amplifAI health",
+    "website": "https://amplifaihealth.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Anchor",
+    "website": "https://sayanchor.com",
+    "ats_type": "comeet",
+    "ats_token": "anchorfintech",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "anecdotes",
+    "website": "https://anecdotes.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Angular Ventures",
+    "website": "https://angularventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Anima",
+    "website": "https://animaapp.com",
+    "ats_type": "ashby",
+    "ats_token": "anima",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Anodot",
+    "website": "https://anodot.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "AnyRoad",
+    "website": "https://anyroad.com",
+    "ats_type": "lever",
+    "ats_token": "anyroad",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Apigee",
+    "website": "https://apigee.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Apiiro",
+    "website": "https://apiiro.com",
+    "ats_type": "greenhouse",
+    "ats_token": "apiiro",
+    "source": "manual_research"
+  },
+  {
+    "name": "Aporia",
+    "website": "https://aporia.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "AppsFlyer",
+    "website": "https://appsflyer.com",
+    "ats_type": "greenhouse",
+    "ats_token": "appsflyer",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Apptest.ai",
+    "website": "https://apptest.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "AppViewX",
+    "website": "https://appviewx.com",
+    "ats_type": "greenhouse",
+    "ats_token": "appviewx",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Aqua Security",
+    "website": "https://aquasec.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Aquant",
+    "website": "https://aquant.ai",
+    "ats_type": "ashby",
+    "ats_token": "aquant",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Arc",
+    "website": "https://joinarc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Arcadia",
+    "website": "https://arcadia.com",
+    "ats_type": "lever",
+    "ats_token": "arcadia",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Archipelo",
+    "website": "https://archipelo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Ariga",
+    "website": "https://ariga.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Aristagora Venture Capital",
+    "website": "https://aristagoravc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Arkin Holdings",
+    "website": "https://arkinholdings.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Armis",
+    "website": "https://armis.com",
+    "ats_type": "greenhouse",
+    "ats_token": "armissecurity",
+    "source": "manual_research"
+  },
+  {
+    "name": "Arrcus",
+    "website": "https://arrcus.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "jazzhr"
+  },
+  {
+    "name": "Aryaka",
+    "website": "https://aryaka.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "jobvite"
+  },
+  {
+    "name": "Ask-AI",
+    "website": "https://ask-ai.com",
+    "ats_type": "comeet",
+    "ats_token": "askai",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "AST SpaceMobile",
+    "website": "https://ast-science.com",
+    "ats_type": "greenhouse",
+    "ats_token": "astspacemobile",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Astra",
+    "website": "https://astra.com",
+    "ats_type": "ashby",
+    "ats_token": "astra",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Atento Capital",
+    "website": "https://atentocapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Atidot",
+    "website": "https://atidot.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Atom Computing",
+    "website": "https://atom-computing.com",
+    "ats_type": "lever",
+    "ats_token": "atomcomputing",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Atomic Form",
+    "website": "https://atomicform.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Atommerce",
+    "website": "https://atommerce.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Aucto",
+    "website": "https://aucto.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Augury",
+    "website": "https://augury.com",
+    "ats_type": "greenhouse",
+    "ats_token": "augury",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Aviron Interactive",
+    "website": "https://avironactive.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "breezy"
+  },
+  {
+    "name": "Aviv Growth Partners",
+    "website": "https://avivgrowth.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Awz",
+    "website": "https://awzventures.ca",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Axie Infinity",
+    "website": "https://axieinfinity.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Axiom Zen",
+    "website": "https://axiomzen.com",
+    "ats_type": "lever",
+    "ats_token": "axiomzen",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Axonius",
+    "website": "https://axonius.com",
+    "ats_type": "greenhouse",
+    "ats_token": "axonius",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Azra Games",
+    "website": "https://azragames.com",
+    "ats_type": "greenhouse",
+    "ats_token": "azragames",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Babson Diagnostics",
+    "website": "https://babsondx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Balbix",
+    "website": "https://balbix.com",
+    "ats_type": "lever",
+    "ats_token": "balbix",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Baobab Studios",
+    "website": "https://baobabstudios.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Bark-ai",
+    "website": "https://bark-ai.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Base",
+    "website": "https://base.ai",
+    "ats_type": "ashby",
+    "ats_token": "base",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Battery Ventures",
+    "website": "https://battery.com",
+    "ats_type": "greenhouse",
+    "ats_token": "batteryventures",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "BeeHero",
+    "website": "https://beehero.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Beekeeper",
+    "website": "https://beekeeper.io",
+    "ats_type": "workday",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "Beewise",
+    "website": "https://beewise.ag",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Beoble",
+    "website": "https://beoble.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Bessemer Venture Partners",
+    "website": "https://bvp.com",
+    "ats_type": "greenhouse",
+    "ats_token": "bessemerventurepartners",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Beteende",
+    "website": "https://beteende.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Beyond1435",
+    "website": "https://beyond1435.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Biconomy",
+    "website": "https://biconomy.io",
+    "ats_type": "ashby",
+    "ats_token": "biconomy",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Biconomy",
+    "website": "https://biconomy.com",
+    "ats_type": "ashby",
+    "ats_token": "biconomy",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Big Health",
+    "website": "https://bighealth.com",
+    "ats_type": "lever",
+    "ats_token": "bighealth",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Big Whale Labs",
+    "website": "https://bigwhalelabs.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "BigPanda",
+    "website": "https://bigpanda.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Binah.ai",
+    "website": "https://binah.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "BioCatch",
+    "website": "https://biocatch.com",
+    "ats_type": "lever",
+    "ats_token": "biocatch",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Biolojic Design",
+    "website": "https://biolojic.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Bionaut Labs",
+    "website": "https://bionautlabs.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "BionicHIVE",
+    "website": "https://bionichive.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "BioRaptor",
+    "website": "https://bioraptor.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "BIScience",
+    "website": "https://biscience.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Bites",
+    "website": "https://mybites.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Bitwise Asset Management",
+    "website": "https://bitwiseinvestments.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "phenom"
+  },
+  {
+    "name": "Bizzabo",
+    "website": "https://bizzabo.com",
+    "ats_type": "comeet",
+    "ats_token": "bizzabo",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Blameless",
+    "website": "https://blameless.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "BlazingSQL",
+    "website": "https://blazingsql.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "cornerstone"
+  },
+  {
+    "name": "Blings.io",
+    "website": "https://blings.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Blink",
+    "website": "https://blinkops.com",
+    "ats_type": "ashby",
+    "ats_token": "blink",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Blinkmoon",
+    "website": "https://blinkmoon.com",
+    "ats_type": "bamboohr",
+    "ats_token": "blinkmoongames",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "BlockBuilders",
+    "website": "https://blockbuilders.capital",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Bloom",
+    "website": "https://bloomapp.com",
+    "ats_type": "greenhouse",
+    "ats_token": "bloom",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "BlueGreen Water Technologies",
+    "website": "https://bluegreenwatertech.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "BlueNalu",
+    "website": "https://bluenalu.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "BlueVoyant",
+    "website": "https://bluevoyant.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Bluewhite",
+    "website": "https://bluewhite.co",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Blumberg Capital",
+    "website": "https://blumbergcapital.com",
+    "ats_type": "greenhouse",
+    "ats_token": "braze",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Bombas",
+    "website": "https://bombas.com",
+    "ats_type": "greenhouse",
+    "ats_token": "bombas",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Bored Ape Yacht Club",
+    "website": "https://boredapeyachtclub.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "BRAIN.Q",
+    "website": "https://brainqtech.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Branch",
+    "website": "https://branch.io",
+    "ats_type": "greenhouse",
+    "ats_token": "branch",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Brave Health",
+    "website": "https://bebravehealth.com",
+    "ats_type": "ashby",
+    "ats_token": "bravehealth",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Bria",
+    "website": "https://bria.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Bridges Fund Management",
+    "website": "https://bridgesfundmanagement.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Bright Moments",
+    "website": "https://brightmoments.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "BrightInsight",
+    "website": "https://brightinsight.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Brighton Park Capital",
+    "website": "https://bpc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Brinqa",
+    "website": "https://brinqa.com",
+    "ats_type": "greenhouse",
+    "ats_token": "brinqa",
+    "source": "manual_research"
+  },
+  {
+    "name": "Buildots",
+    "website": "https://buildots.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "C2A Security",
+    "website": "https://c2a-sec.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "C2FO",
+    "website": "https://c2fo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "C2i Genomics",
+    "website": "https://c2i-genomics.com",
+    "ats_type": "greenhouse",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "C8 Health",
+    "website": "https://c8health.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "CalmiGo",
+    "website": "https://calmigo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Candex",
+    "website": "https://candex.com",
+    "ats_type": "ashby",
+    "ats_token": "candex",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Canela Media",
+    "website": "https://canelamedia.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Canopy",
+    "website": "https://canopycare.us",
+    "ats_type": "greenhouse",
+    "ats_token": "canopycare",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Capella Space",
+    "website": "https://capellaspace.com",
+    "ats_type": "greenhouse",
+    "ats_token": "capellaspace",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Capital Nature",
+    "website": "https://capitalnature.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Capitolis",
+    "website": "https://capitolis.com",
+    "ats_type": "greenhouse",
+    "ats_token": "capitolis",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Capri Ventures",
+    "website": "https://capriventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Carbon Health",
+    "website": "https://carbonhealth.com",
+    "ats_type": "ashby",
+    "ats_token": "carbonhealth",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Cardumen Capital",
+    "website": "https://cardumencapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Casper",
+    "website": "https://casper.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "CAST AI",
+    "website": "https://cast.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Catalyst Investments",
+    "website": "https://catalyst-fund.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Catalytic Data Science",
+    "website": "https://catalyticds.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Cato Networks",
+    "website": "https://catonetworks.com",
+    "ats_type": "greenhouse",
+    "ats_token": "catonetworks",
+    "source": "manual_research"
+  },
+  {
+    "name": "CB4",
+    "website": "https://cb4.com",
+    "ats_type": "greenhouse",
+    "ats_token": "cb4",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "CBC Group",
+    "website": "https://cbridgecap.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Centivax",
+    "website": "https://centivax.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Ception",
+    "website": "https://ceptiontx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Cerca Partners",
+    "website": "https://cerca-partners.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "CHAI",
+    "website": "https://chai.finance",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Chainalysis",
+    "website": "https://chainalysis.com",
+    "ats_type": "ashby",
+    "ats_token": "chainalysis-careers",
+    "source": "manual_research"
+  },
+  {
+    "name": "Champel Capital",
+    "website": "https://champelcapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Channel Medsystems",
+    "website": "https://cerene.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Chaos Labs",
+    "website": "https://chaoslabs.xyz",
+    "ats_type": "lever",
+    "ats_token": "chaoslabs",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Charles and Lynn Schusterman Family Philanthropies",
+    "website": "https://schusterman.org",
+    "ats_type": "greenhouse",
+    "ats_token": "charlesandlynnschustermanfamilyphilanthropies",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Cisco Investments",
+    "website": "https://ciscoinvestments.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Clarative",
+    "website": "https://clarative.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Claridge Israel",
+    "website": "https://claridgeil.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Claroty",
+    "website": "https://claroty.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Classiq",
+    "website": "https://classiq.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Clinch",
+    "website": "https://clinch.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Clubbi",
+    "website": "https://clubbi.com.br",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Codefresh",
+    "website": "https://codefresh.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Codex",
+    "website": "https://usecodex.com",
+    "ats_type": "greenhouse",
+    "ats_token": "codex",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "CodiumAI",
+    "website": "https://codium.ai",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Confetti",
+    "website": "https://withconfetti.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "ConsenSys",
+    "website": "https://consensys.net",
+    "ats_type": "greenhouse",
+    "ats_token": "consensys",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Constellation Software",
+    "website": "https://csisoftware.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Constrafor",
+    "website": "https://constrafor.com",
+    "ats_type": "greenhouse",
+    "ats_token": "constrafor",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Copper Banking",
+    "website": "https://getcopper.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Copyleaks",
+    "website": "https://copyleaks.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Coralogix",
+    "website": "https://coralogix.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Cord",
+    "website": "https://cord.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Cordio Medical",
+    "website": "https://cordio-med.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Corelight",
+    "website": "https://corelight.com",
+    "ats_type": "greenhouse",
+    "ats_token": "corelight",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Corner Ventures",
+    "website": "https://cornerventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "CorrActions",
+    "website": "https://corractions.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Cortica",
+    "website": "https://cortica.com",
+    "ats_type": "greenhouse",
+    "ats_token": "cortica",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Corundum Open Innovations",
+    "website": "https://corundumoi.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Covariant",
+    "website": "https://covariant.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Covver",
+    "website": "https://covver.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "CRADLE",
+    "website": "https://cradleinc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "successfactors"
+  },
+  {
+    "name": "Craft.io",
+    "website": "https://craft.io",
+    "ats_type": "recruitee",
+    "ats_token": "craftio",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Creednz",
+    "website": "https://creednz.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "CropX",
+    "website": "https://cropx.com",
+    "ats_type": "workable",
+    "ats_token": "assets",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Crystal",
+    "website": "https://crystalcomputing.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Cyabra",
+    "website": "https://cyabra.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "CyanoCapture",
+    "website": "https://cyanocapture.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Cybereason",
+    "website": "https://cybereason.com",
+    "ats_type": "greenhouse",
+    "ats_token": "cybereason",
+    "source": "manual_research"
+  },
+  {
+    "name": "Cybersixgill",
+    "website": "https://cybersixgill.com",
+    "ats_type": "workday",
+    "ats_token": "wd1",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Cyberstarts",
+    "website": "https://cyberstarts.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Cylera",
+    "website": "https://cylera.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Cylus",
+    "website": "https://cylus.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Cymbio",
+    "website": "https://cym.bio",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Cymulate",
+    "website": "https://cymulate.com",
+    "ats_type": "greenhouse",
+    "ats_token": "cymulate",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Cynet",
+    "website": "https://cynet.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Cypago",
+    "website": "https://cypago.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Cypher (Yc W'22)",
+    "website": "https://cypherwallet.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "CytoReason",
+    "website": "https://cytoreason.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "CyVers",
+    "website": "https://cyvers.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "D-Fend Solutions",
+    "website": "https://d-fendsolutions.com",
+    "ats_type": "lever",
+    "ats_token": "d-fendsolutions",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "D-ID",
+    "website": "https://d-id.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "DailyPay",
+    "website": "https://dailypay.com",
+    "ats_type": "ashby",
+    "ats_token": "dailypay",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Dandelion Energy",
+    "website": "https://dandelionenergy.com",
+    "ats_type": "ashby",
+    "ats_token": "dandelion",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Dank Bank",
+    "website": "https://dankbank.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "DAOstack",
+    "website": "https://daostack.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Dapper Labs",
+    "website": "https://dapperlabs.com",
+    "ats_type": "ashby",
+    "ats_token": "dapper",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Darktrace",
+    "website": "https://darktrace.com",
+    "ats_type": "workday",
+    "ats_token": "wd3",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Darrow",
+    "website": "https://darrow.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Dashbot",
+    "website": "https://dashbot.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Data.world",
+    "website": "https://data.world",
+    "ats_type": "greenhouse",
+    "ats_token": "embed",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "DataGrail",
+    "website": "https://datagrail.io",
+    "ats_type": "greenhouse",
+    "ats_token": "datagrail",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Dataloop AI",
+    "website": "https://dataloop.ai",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Dataminr",
+    "website": "https://dataminr.com",
+    "ats_type": "workday",
+    "ats_token": "wd12",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "DataRails",
+    "website": "https://datarails.com",
+    "ats_type": "greenhouse",
+    "ats_token": "datarails",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "DataVisor",
+    "website": "https://datavisor.com",
+    "ats_type": "workable",
+    "ats_token": "assets",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Datorios",
+    "website": "https://datorios.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Datos Health",
+    "website": "https://datos-health.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Datree",
+    "website": "https://datree.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "DayTwo",
+    "website": "https://daytwo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "DBMaestro",
+    "website": "https://dbmaestro.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Decart.ai",
+    "website": "https://decart.ai",
+    "ats_type": "ashby",
+    "ats_token": "decart-ai",
+    "source": "manual_research"
+  },
+  {
+    "name": "Deel",
+    "website": "https://deel.com",
+    "ats_type": "ashby",
+    "ats_token": "deel",
+    "source": "manual_research"
+  },
+  {
+    "name": "Deep Insight",
+    "website": "https://deepinsight.io",
+    "ats_type": "teamtailor",
+    "ats_token": "app",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "DeepChecks",
+    "website": "https://deepchecks.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Dell Technologies Capital",
+    "website": "https://delltechnologiescapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Diagnostic Robotics",
+    "website": "https://diagnosticrobotics.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Didi",
+    "website": "https://didiglobal.com",
+    "ats_type": "greenhouse",
+    "ats_token": "didi",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Direct Round",
+    "website": "https://directround.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Directly",
+    "website": "https://directly.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Disruptive AI",
+    "website": "https://disruptiveai.fund",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Docugami",
+    "website": "https://docugami.com",
+    "ats_type": "greenhouse",
+    "ats_token": "docugami",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "DOT Compliance",
+    "website": "https://dotcompliance.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "DreaMed Diabetes",
+    "website": "https://dreamed-diabetes.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "DSRV",
+    "website": "https://dsrvlabs.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "DTCP",
+    "website": "https://dtcp.capital",
+    "ats_type": "ashby",
+    "ats_token": "dash0",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "Duco Experts",
+    "website": "https://ducoexperts.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "DustPhotonics",
+    "website": "https://dustphotonics.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Dynamo AI",
+    "website": "https://dynamo.ai",
+    "ats_type": "rippling",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "E44 Ventures",
+    "website": "https://e44ventures.earth",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Earth & Beyond Ventures",
+    "website": "https://earthandbeyond.ventures",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "EasySend",
+    "website": "https://easysend.io",
+    "ats_type": "comeet",
+    "ats_token": "easysend",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Edgybees",
+    "website": "https://edgybees.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Eight Roads Ventures",
+    "website": "https://eightroads.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "eko",
+    "website": "https://eko.com",
+    "ats_type": "greenhouse",
+    "ats_token": "eko",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Eko",
+    "website": "https://ekohealth.com",
+    "ats_type": "lever",
+    "ats_token": "ekohealth",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Elaia",
+    "website": "https://elaia.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Eleos Health",
+    "website": "https://eleos.health",
+    "ats_type": "greenhouse",
+    "ats_token": "eleoshealth",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Elevance Health",
+    "website": "https://elevancehealth.com",
+    "ats_type": "workday",
+    "ats_token": "wd1",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Eleven Therapeutics",
+    "website": "https://eleventx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Elron Ventures",
+    "website": "https://elronventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Elvie",
+    "website": "https://elvie.com",
+    "ats_type": "greenhouse",
+    "ats_token": "willow-blossom",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Emcie",
+    "website": "https://emcie.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Emerge",
+    "website": "https://emerge.ventures",
+    "ats_type": "greenhouse",
+    "ats_token": "emerge",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Empathy",
+    "website": "https://empathy.com",
+    "ats_type": "comeet",
+    "ats_token": "empathy",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "EMQ",
+    "website": "https://emq.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Enigma Technologies",
+    "website": "https://enigma.com",
+    "ats_type": "greenhouse",
+    "ats_token": "enigmaio",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Enphase Energy",
+    "website": "https://enphase.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "jobvite"
+  },
+  {
+    "name": "Entrée Capital",
+    "website": "https://entreecapital.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Enuma",
+    "website": "https://enuma.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "env0",
+    "website": "https://env0.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "enVerid Systems",
+    "website": "https://enverid.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Epic Games",
+    "website": "https://epicgames.com",
+    "ats_type": "greenhouse",
+    "ats_token": "epicgames",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "EquityBee",
+    "website": "https://equitybee.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Essentia",
+    "website": "https://essentia.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Eternal",
+    "website": "https://eternal.plus",
+    "ats_type": "lever",
+    "ats_token": "eternal",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "EvenUp",
+    "website": "https://evenuplaw.com",
+    "ats_type": "ashby",
+    "ats_token": "evenup",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "EverAfter",
+    "website": "https://everafter.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Exodigo",
+    "website": "https://exodigo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Expanso",
+    "website": "https://expanso.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "breezy"
+  },
+  {
+    "name": "Expeto",
+    "website": "https://expeto.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Explorium",
+    "website": "https://explorium.ai",
+    "ats_type": "comeet",
+    "ats_token": "explorium",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "F2 Capital",
+    "website": "https://f2vc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Faddom",
+    "website": "https://faddom.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "FeelBetter",
+    "website": "https://feelbetter.healthcare",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "FightCamp",
+    "website": "https://joinfightcamp.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Figure 1",
+    "website": "https://figure1.com",
+    "ats_type": "bamboohr",
+    "ats_token": "figure1",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Findable",
+    "website": "https://findable.no",
+    "ats_type": "teamtailor",
+    "ats_token": "app",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Firebolt",
+    "website": "https://firebolt.io",
+    "ats_type": "comeet",
+    "ats_token": "firebolt",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Firefly",
+    "website": "https://fireflyon.com",
+    "ats_type": "lever",
+    "ats_token": "fireflyon",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Firefly",
+    "website": "https://firefly.ai",
+    "ats_type": "lever",
+    "ats_token": "fireflyon",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Firmbase",
+    "website": "https://firmbase.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Firstime",
+    "website": "https://firstime.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Flash Forest",
+    "website": "https://flashforest.ca",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Flashpoint",
+    "website": "https://flashpointvc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Flint Capital",
+    "website": "https://flintcap.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "FloatMe",
+    "website": "https://floatme.com",
+    "ats_type": "ashby",
+    "ats_token": "floatme",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "FloLIVE",
+    "website": "https://flolive.net",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Flora Ventures",
+    "website": "https://floraventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Flori Ventures",
+    "website": "https://floriventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Flowcarbon",
+    "website": "https://flowcarbon.com",
+    "ats_type": "greenhouse",
+    "ats_token": "flowcarbon",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Flox",
+    "website": "https://flox.dev",
+    "ats_type": "ashby",
+    "ats_token": "flox",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Flytrex",
+    "website": "https://flytrex.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Fondue",
+    "website": "https://getfondue.com",
+    "ats_type": "greenhouse",
+    "ats_token": "embed",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Foretellix",
+    "website": "https://foretellix.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Fornova",
+    "website": "https://fornova.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Forte",
+    "website": "https://forte.io",
+    "ats_type": "greenhouse",
+    "ats_token": "forte",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Forter",
+    "website": "https://forter.com",
+    "ats_type": "greenhouse",
+    "ats_token": "forter",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Fortissimo",
+    "website": "https://ffcapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Forum Brands",
+    "website": "https://forumbrands.com",
+    "ats_type": "lever",
+    "ats_token": "LyraCollective",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "FreedomFi",
+    "website": "https://freedomfi.com",
+    "ats_type": "greenhouse",
+    "ats_token": "helium",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "fruitcore robotics",
+    "website": "https://fruitcore-robotics.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Funnel",
+    "website": "https://funnel.io",
+    "ats_type": "teamtailor",
+    "ats_token": "www",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Fuse Games",
+    "website": "https://fusegames.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Fusion VC",
+    "website": "https://fusion-vc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "cornerstone"
+  },
+  {
+    "name": "Future Energy Ventures",
+    "website": "https://fev.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Future Family",
+    "website": "https://futurefamily.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Gankster",
+    "website": "https://gankster.gg",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Garden",
+    "website": "https://garden.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Gelt",
+    "website": "https://joingelt.com",
+    "ats_type": "comeet",
+    "ats_token": "gelt",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "General Atlantic",
+    "website": "https://generalatlantic.com",
+    "ats_type": "greenhouse",
+    "ats_token": "generalatlantic",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "General Motors Ventures",
+    "website": "https://gmventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Gentex Corporation",
+    "website": "https://gentex.com",
+    "ats_type": "workday",
+    "ats_token": "wd5",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Genvid Technologies",
+    "website": "https://genvidtech.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Get Pixie",
+    "website": "https://getpixie.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "GFT Technologies",
+    "website": "https://gft.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "successfactors"
+  },
+  {
+    "name": "Gilboa Therapeutics",
+    "website": "https://gilboa.bio",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Glassbox",
+    "website": "https://glassbox.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "GlenRock",
+    "website": "https://glenrock.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Glilot Capital",
+    "website": "https://glilotcapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Glooko",
+    "website": "https://glooko.com",
+    "ats_type": "greenhouse",
+    "ats_token": "glooko",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "GoSource",
+    "website": "https://gosource.us",
+    "ats_type": "lever",
+    "ats_token": "source",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Grab",
+    "website": "https://grab.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Grabr",
+    "website": "https://grabr.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "GraphiteRx",
+    "website": "https://graphiterx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Greenfield Partners",
+    "website": "https://greenfield-growth.com",
+    "ats_type": "workday",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "GreenfieldCities.org",
+    "website": "https://greenfieldcities.org",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Greensoil Investments",
+    "website": "https://greensoil-investments.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Ground Up Ventures",
+    "website": "https://groundup.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Grove Ventures",
+    "website": "https://grovevc.com",
+    "ats_type": "comeet",
+    "ats_token": "alice",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Grover",
+    "website": "https://grover.com",
+    "ats_type": "greenhouse",
+    "ats_token": "grover",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "GrowthSpace",
+    "website": "https://growthspace.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Guardio",
+    "website": "https://guard.io",
+    "ats_type": "comeet",
+    "ats_token": "guardio",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Guesty",
+    "website": "https://guesty.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "H2Pro",
+    "website": "https://h2pro.co",
+    "ats_type": "comeet",
+    "ats_token": "h2pro",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Hailo",
+    "website": "https://hailo.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Hanaco Ventures",
+    "website": "https://hanacovc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "HarbourVest Partners",
+    "website": "https://harbourvest.com",
+    "ats_type": "workday",
+    "ats_token": "wd5",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Harris",
+    "website": "https://harriscomputer.com",
+    "ats_type": "workday",
+    "ats_token": "wd3",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "HawkEye 360",
+    "website": "https://he360.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Healthee",
+    "website": "https://healthee.com",
+    "ats_type": "workable",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "HealthifyMe",
+    "website": "https://healthifyme.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Healthy.io",
+    "website": "https://healthy.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Hearst",
+    "website": "https://hearst.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Helios",
+    "website": "https://heliosmatters.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "cornerstone"
+  },
+  {
+    "name": "Hetz Ventures",
+    "website": "https://hetz.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Hexagate",
+    "website": "https://hexagate.com",
+    "ats_type": "ashby",
+    "ats_token": "chainalysis-careers",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Hibob",
+    "website": "https://hibob.com",
+    "ats_type": "greenhouse",
+    "ats_token": "bob",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Home365",
+    "website": "https://home365.co",
+    "ats_type": "bamboohr",
+    "ats_token": "home365",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Hometalk",
+    "website": "https://hometalk.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "HoneyBook",
+    "website": "https://honeybook.com",
+    "ats_type": "ashby",
+    "ats_token": "honeybook",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "HQ",
+    "website": "https://hqtravel.com",
+    "ats_type": "lever",
+    "ats_token": "hq",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Htec",
+    "website": "https://htec.com",
+    "ats_type": "workday",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "hubraum",
+    "website": "https://hubraum.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Huma",
+    "website": "https://huma.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "HUMAN",
+    "website": "https://humansecurity.com",
+    "ats_type": "ashby",
+    "ats_token": "HUMAN",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Human Interest",
+    "website": "https://humaninterest.com",
+    "ats_type": "greenhouse",
+    "ats_token": "humaninterest",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Hyperithm",
+    "website": "https://hyperithm.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Hyperscience",
+    "website": "https://hyperscience.com",
+    "ats_type": "ashby",
+    "ats_token": "hyperscience",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "HYPR",
+    "website": "https://hypr.com",
+    "ats_type": "greenhouse",
+    "ats_token": "hypr",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Hyundai Motor Company",
+    "website": "https://hyundai.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "iAngels",
+    "website": "https://iangels.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Ibex Investors",
+    "website": "https://ibexinvestors.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "cornerstone"
+  },
+  {
+    "name": "iboss",
+    "website": "https://iboss.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "jobvite"
+  },
+  {
+    "name": "iCarbonX",
+    "website": "https://icarbonx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "ICON",
+    "website": "https://iconbuild.com",
+    "ats_type": "greenhouse",
+    "ats_token": "icon",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Icy Ghost",
+    "website": "https://icyghost.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Identiq",
+    "website": "https://identiq.com",
+    "ats_type": "comeet",
+    "ats_token": "identiq",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "IKIDO",
+    "website": "https://ikido.tech",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Imagen",
+    "website": "https://imagen-ai.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Imagen Technologies",
+    "website": "https://imagen.ai",
+    "ats_type": "greenhouse",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "Imagindairy",
+    "website": "https://imagindairy.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Immunai",
+    "website": "https://immunai.com",
+    "ats_type": "comeet",
+    "ats_token": "immunai",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Immuta",
+    "website": "https://immuta.com",
+    "ats_type": "lever",
+    "ats_token": "immuta",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Impartner",
+    "website": "https://impartner.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "IN Venture",
+    "website": "https://in-venture.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "INcapital Ventures",
+    "website": "https://incapitalvc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Incredible Health",
+    "website": "https://incrediblehealth.com",
+    "ats_type": "greenhouse",
+    "ats_token": "embed",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Indegene",
+    "website": "https://indegene.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "successfactors"
+  },
+  {
+    "name": "Infinipoint",
+    "website": "https://infinipoint.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Influitive",
+    "website": "https://influitive.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "InNegev",
+    "website": "https://innegev.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Innoviz Technologies",
+    "website": "https://innoviz.tech",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Insight Partners",
+    "website": "https://insightpartners.com",
+    "ats_type": "ashby",
+    "ats_token": "insightpartners",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Insightec",
+    "website": "https://insightec.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Instashowing",
+    "website": "https://instashowing.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Intel Capital",
+    "website": "https://intelcapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Intempo Ventures",
+    "website": "https://intempo.ventures",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "International Health-Tech Pilot Program",
+    "website": "https://innovationisrael.org.il",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Interos",
+    "website": "https://interos.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Intezer",
+    "website": "https://intezer.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Intuition Robotics",
+    "website": "https://intuitionrobotics.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "IoTeX",
+    "website": "https://iotex.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Iron Nation",
+    "website": "https://ironnation.org",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "IronScales",
+    "website": "https://ironscales.com",
+    "ats_type": "comeet",
+    "ats_token": "ironscales",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "ironSource",
+    "website": "https://is.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "IRP Systems",
+    "website": "https://irpsystems.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "ISEE",
+    "website": "https://isee.ai",
+    "ats_type": "lever",
+    "ats_token": "isee",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Israel Insurtech Alliance",
+    "website": "https://israelinsurtechalliance.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "ITsMine",
+    "website": "https://itsmine.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "IXDen",
+    "website": "https://ixden.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "JAL Ventures Fund",
+    "website": "https://jalventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Jane Technologies",
+    "website": "https://iheartjane.com",
+    "ats_type": "lever",
+    "ats_token": "iheartjane",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Jennifer Airobotics",
+    "website": "https://airoboticsdrones.com",
+    "ats_type": "comeet",
+    "ats_token": "airobotics",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "JetInsight",
+    "website": "https://jetinsight.com",
+    "ats_type": "greenhouse",
+    "ats_token": "jetinsight",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "JFrog",
+    "website": "https://jfrog.com",
+    "ats_type": "greenhouse",
+    "ats_token": "jfrog",
+    "source": "manual_research"
+  },
+  {
+    "name": "Jigso",
+    "website": "https://jigso.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Johnson & Johnson Innovation",
+    "website": "https://jnjinnovation.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "JOIN",
+    "website": "https://join.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Jones",
+    "website": "https://getjones.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Jotit",
+    "website": "https://jotit.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Joule Ventures",
+    "website": "https://joulevc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "JUGANU",
+    "website": "https://juganu.com",
+    "ats_type": "workable",
+    "ats_token": "assets",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "JumpCloud",
+    "website": "https://jumpcloud.com",
+    "ats_type": "lever",
+    "ats_token": "jumpcloud",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Jumpspeed Ventures",
+    "website": "https://jumpspeed.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Juno",
+    "website": "https://joinjuno.com",
+    "ats_type": "greenhouse",
+    "ats_token": "juno",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Juvo",
+    "website": "https://juvo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "JVP",
+    "website": "https://jvpvc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Karma",
+    "website": "https://karmanow.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "KdT Ventures",
+    "website": "https://kdtvc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Kentik",
+    "website": "https://kentik.com",
+    "ats_type": "greenhouse",
+    "ats_token": "kentik",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Key 1 Capital",
+    "website": "https://key1capital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Khora Venture Partners",
+    "website": "https://khora.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Kidoz",
+    "website": "https://kidoz.net",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "kimkim",
+    "website": "https://kimkim.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "pinpoint"
+  },
+  {
+    "name": "Kipp",
+    "website": "https://letskipp.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Klook",
+    "website": "https://klook.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Komodor",
+    "website": "https://komodor.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "KOMPAS VC",
+    "website": "https://kompas.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Konnecto",
+    "website": "https://konnecto.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Kooply",
+    "website": "https://kooply.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Kraftful",
+    "website": "https://kraftful.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Kraus Hamdani Aerospace",
+    "website": "https://krausaerospace.com",
+    "ats_type": "greenhouse",
+    "ats_token": "khaerospace",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Krypton",
+    "website": "https://krypton.exchange",
+    "ats_type": "lever",
+    "ats_token": "krypton",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "La Haus",
+    "website": "https://lahaus.com",
+    "ats_type": "lever",
+    "ats_token": "lahaus",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "La Jolla Labs",
+    "website": "https://lajollalabs.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Labs/02",
+    "website": "https://labs02.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Lasso Security",
+    "website": "https://lasso.security",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Latitude",
+    "website": "https://latitude.io",
+    "ats_type": "greenhouse",
+    "ats_token": "latitude",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Launchbay Capital",
+    "website": "https://launchbaycapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "LAVA",
+    "website": "https://lavapower.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "LawGeex",
+    "website": "https://lawgeex.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Ledge",
+    "website": "https://ledge.co",
+    "ats_type": "ashby",
+    "ats_token": "ledge",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Lendai",
+    "website": "https://lendai.us",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Let’s Do This",
+    "website": "https://letsdothis.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Lev",
+    "website": "https://lev.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "LG Technology Ventures",
+    "website": "https://lgtechventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "LifeSci Venture Partners",
+    "website": "https://lifesciventure.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Lightblocks",
+    "website": "https://lightblocks.org",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Lightico",
+    "website": "https://lightico.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Lightricks",
+    "website": "https://lightricks.com",
+    "ats_type": "greenhouse",
+    "ats_token": "lightricks",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "LightSolver Ltd.",
+    "website": "https://lightsolver.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Lightspeed Financial Services",
+    "website": "https://lightspeed.com",
+    "ats_type": "ashby",
+    "ats_token": "lightspeed",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Lingopie",
+    "website": "https://lingopie.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Link Ventures",
+    "website": "https://linkventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "LionBird",
+    "website": "https://lionbird.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "LIQUiDITY",
+    "website": "https://liquiditygroup.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "LiquidSpace",
+    "website": "https://liquidspace.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "LitePoint",
+    "website": "https://litepoint.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "successfactors"
+  },
+  {
+    "name": "Liv",
+    "website": "https://liv.tv",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "LiveLong.Life",
+    "website": "https://livelong.life",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "LivePerson",
+    "website": "https://liveperson.com",
+    "ats_type": "greenhouse",
+    "ats_token": "liveperson",
+    "source": "manual_research"
+  },
+  {
+    "name": "Livez",
+    "website": "https://livez.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Locusview",
+    "website": "https://locusview.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Longevity Venture Partners",
+    "website": "https://longevityventurepartners.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "lool Ventures",
+    "website": "https://lool.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Lorie&Co",
+    "website": "https://lorieco.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "LucidLink",
+    "website": "https://lucidlink.com",
+    "ats_type": "ashby",
+    "ats_token": "lucidlink",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Lumigo",
+    "website": "https://lumigo.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Lyft",
+    "website": "https://lyft.com",
+    "ats_type": "greenhouse",
+    "ats_token": "lyft",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Lyric",
+    "website": "https://lyric.com",
+    "ats_type": "ashby",
+    "ats_token": "lyric",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Mabaya",
+    "website": "https://mabaya.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Maccabee Ventures",
+    "website": "https://maccabee.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "pinpoint"
+  },
+  {
+    "name": "Macquarie Group",
+    "website": "https://macquarie.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Mad Mobile",
+    "website": "https://madmobile.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "MagniLearn",
+    "website": "https://magnilearn.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "MagnusMetal",
+    "website": "https://magnusmetal.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "phenom"
+  },
+  {
+    "name": "Mainstream",
+    "website": "https://mainstream.so",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Makersite",
+    "website": "https://makersite.io",
+    "ats_type": "recruitee",
+    "ats_token": "makersitegmbh",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Mana.bio",
+    "website": "https://mana.bio",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Mangrove Capital Partners",
+    "website": "https://mangrove.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Maniv",
+    "website": "https://maniv.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Maple Capital Management",
+    "website": "https://maplecapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Marine Edge",
+    "website": "https://marine-edge.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Marketman",
+    "website": "https://marketman.com",
+    "ats_type": "bamboohr",
+    "ats_token": "mealticket",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Marpipe",
+    "website": "https://marpipe.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "MasterClass",
+    "website": "https://masterclass.com",
+    "ats_type": "greenhouse",
+    "ats_token": "masterclass",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Material Evolution",
+    "website": "https://materialevolution.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "MaterialsZone",
+    "website": "https://materials.zone",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Matrix",
+    "website": "https://mtx.gg",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Maverick Ventures Israel",
+    "website": "https://maverick.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Medal",
+    "website": "https://medal.tv",
+    "ats_type": "ashby",
+    "ats_token": "medal",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "MedAware",
+    "website": "https://medaware.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Medinas Health",
+    "website": "https://medinas.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Medisafe",
+    "website": "https://medisafe.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Mellie",
+    "website": "https://mellie.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "MeMed",
+    "website": "https://me-med.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Merlin Ventures",
+    "website": "https://merlin.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Meron Capital",
+    "website": "https://meron.co",
+    "ats_type": "greenhouse",
+    "ats_token": "eonio",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Mesh Payments",
+    "website": "https://meshpayments.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Metrika",
+    "website": "https://metrika.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Mezmo",
+    "website": "https://mezmo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "MigVax",
+    "website": "https://migvax.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Milky Way AI",
+    "website": "https://milkyway.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Mindset Ventures",
+    "website": "https://mindset.ventures",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Minut",
+    "website": "https://minut.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Mirato",
+    "website": "https://mirato.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Mixtiles",
+    "website": "https://mixtiles.com",
+    "ats_type": "greenhouse",
+    "ats_token": "mixtiles",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "MizMaa",
+    "website": "https://mizmaa.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Mobilion Ventures",
+    "website": "https://mobilion-vc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Modular Cloud",
+    "website": "https://modular.cloud",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Modulize",
+    "website": "https://modulize.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Molekule",
+    "website": "https://molekule.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "monday.com",
+    "website": "https://monday.com",
+    "ats_type": "comeet",
+    "ats_token": "monday",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Moneta VC",
+    "website": "https://monetavc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Moov Technologies",
+    "website": "https://moov.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Morphisec",
+    "website": "https://morphisec.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Mozper",
+    "website": "https://mozper.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "mPrest",
+    "website": "https://mprest.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Multiverse",
+    "website": "https://multiverse.ai",
+    "ats_type": "ashby",
+    "ats_token": "multiverse",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "myInterview",
+    "website": "https://myinterview.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "talentbrew"
+  },
+  {
+    "name": "Mysten Labs",
+    "website": "https://mystenlabs.com",
+    "ats_type": "ashby",
+    "ats_token": "mystenlabs",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "N26",
+    "website": "https://n26.com",
+    "ats_type": "greenhouse",
+    "ats_token": "n26",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Nagish",
+    "website": "https://nagish.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "NanoLock",
+    "website": "https://nanolocksecurity.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Navina",
+    "website": "https://navina.ai",
+    "ats_type": "comeet",
+    "ats_token": "navina",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Neolithics",
+    "website": "https://neolithics.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "NeoLogic",
+    "website": "https://neologicvlsi.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Nest Genomics",
+    "website": "https://nestgenomics.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "NetOp CLD",
+    "website": "https://netop.cloud",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "NeuraLight",
+    "website": "https://neuralight.ai",
+    "ats_type": "greenhouse",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "NeuroBlade",
+    "website": "https://neuroblade.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "New Era Companies",
+    "website": "https://neweracompanies.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Nexar",
+    "website": "https://getnexar.com",
+    "ats_type": "teamtailor",
+    "ats_token": "app",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Nexite",
+    "website": "https://nexite.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Next Gear Ventures",
+    "website": "https://nextgear.fund",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Next Insurance",
+    "website": "https://nextinsurance.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "phenom"
+  },
+  {
+    "name": "Next Silicon",
+    "website": "https://nextsilicon.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "NFX",
+    "website": "https://nfx.com",
+    "ats_type": "lever",
+    "ats_token": "nfx",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Nice",
+    "website": "https://nice.com",
+    "ats_type": "greenhouse",
+    "ats_token": "nice",
+    "source": "manual_research"
+  },
+  {
+    "name": "Nielsen Innovate Fund",
+    "website": "https://nif.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "NightDragon",
+    "website": "https://nightdragon.com",
+    "ats_type": "greenhouse",
+    "ats_token": "epirus",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Nirmata",
+    "website": "https://nirmata.com",
+    "ats_type": "greenhouse",
+    "ats_token": "nirmata",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Noble",
+    "website": "https://benoble.io",
+    "ats_type": "greenhouse",
+    "ats_token": "noble",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Nodal",
+    "website": "https://nodal.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "breezy"
+  },
+  {
+    "name": "Nokod Security",
+    "website": "https://nokodsecurity.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Noox",
+    "website": "https://noox.world",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "North First Ventures",
+    "website": "https://n1v.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Norwest Venture Partners",
+    "website": "https://nvp.com",
+    "ats_type": "bamboohr",
+    "ats_token": "norwestventure",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "NoTraffic",
+    "website": "https://notraffic.tech",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Novidea",
+    "website": "https://novidea.com",
+    "ats_type": "ashby",
+    "ats_token": "novidea",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Novu",
+    "website": "https://novu.co",
+    "ats_type": "teamtailor",
+    "ats_token": "app",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Nuvocargo",
+    "website": "https://nuvocargo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "NVision Imaging Technologies",
+    "website": "https://nvision-imaging.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Oak HC/FT",
+    "website": "https://oakhcft.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Obligo",
+    "website": "https://myobligo.com",
+    "ats_type": "greenhouse",
+    "ats_token": "obligo",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "obé Fitness",
+    "website": "https://obefitness.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Offchain Labs",
+    "website": "https://offchainlabs.com",
+    "ats_type": "lever",
+    "ats_token": "offchainlabs",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Oligo Security",
+    "website": "https://oligo.security",
+    "ats_type": "ashby",
+    "ats_token": "oligo",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "OM2",
+    "website": "https://om2.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Omnix Medical",
+    "website": "https://omnixmedical.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "On Ventures",
+    "website": "https://on-ventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Onapsis",
+    "website": "https://onapsis.com",
+    "ats_type": "greenhouse",
+    "ats_token": "onapsis",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "One Line Venture Capital",
+    "website": "https://oneline.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "OneLayer",
+    "website": "https://onelayer.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "OnRamp",
+    "website": "https://onramp.us",
+    "ats_type": "ashby",
+    "ats_token": "onramp",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "OpenLegacy",
+    "website": "https://openlegacy.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "OpenWeb",
+    "website": "https://openweb.com",
+    "ats_type": "greenhouse",
+    "ats_token": "openweb",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Opmed.ai",
+    "website": "https://opmed.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Opster",
+    "website": "https://opster.com",
+    "ats_type": "workday",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "OPSWAT",
+    "website": "https://opswat.com",
+    "ats_type": "greenhouse",
+    "ats_token": "opswat",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Optimove",
+    "website": "https://optimove.com",
+    "ats_type": "greenhouse",
+    "ats_token": "optimove",
+    "source": "manual_research"
+  },
+  {
+    "name": "Orca Security",
+    "website": "https://orca.security",
+    "ats_type": "greenhouse",
+    "ats_token": "orcasecurity",
+    "source": "manual_research"
+  },
+  {
+    "name": "Orchard",
+    "website": "https://orchard.com",
+    "ats_type": "greenhouse",
+    "ats_token": "orchard",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Ordergroove",
+    "website": "https://ordergroove.com",
+    "ats_type": "greenhouse",
+    "ats_token": "ordergroove",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Oriient",
+    "website": "https://oriient.me",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Oryzn Capital",
+    "website": "https://oryzncapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "OSSIO",
+    "website": "https://ossio.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Otoma",
+    "website": "https://otoma.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "OTV",
+    "website": "https://otv.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "OurCrowd",
+    "website": "https://ourcrowd.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Outdoorsy",
+    "website": "https://outdoorsy.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "OUTLOCKS",
+    "website": "https://outlocks.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Overline",
+    "website": "https://overline.vc",
+    "ats_type": "greenhouse",
+    "ats_token": "overline",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Overwolf",
+    "website": "https://overwolf.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Own Company",
+    "website": "https://owndata.com",
+    "ats_type": "workday",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "OXIO",
+    "website": "https://oxio.com",
+    "ats_type": "ashby",
+    "ats_token": "oxio",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Pagaya",
+    "website": "https://pagaya.com",
+    "ats_type": "greenhouse",
+    "ats_token": "pagaya",
+    "source": "manual_research"
+  },
+  {
+    "name": "Paladin Cloud",
+    "website": "https://paladincloud.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Palantir Technologies",
+    "website": "https://palantir.com",
+    "ats_type": "lever",
+    "ats_token": "palantir",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Panax",
+    "website": "https://thepanax.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Panorama",
+    "website": "https://panorama.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Panorays",
+    "website": "https://panorays.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Papaya Global",
+    "website": "https://papayaglobal.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Paradox",
+    "website": "https://paradox.ai",
+    "ats_type": "ashby",
+    "ats_token": "paradox",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Particula",
+    "website": "https://particula-tech.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Pasqal",
+    "website": "https://pasqal.com",
+    "ats_type": "teamtailor",
+    "ats_token": "app",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Payoneer",
+    "website": "https://payoneer.com",
+    "ats_type": "greenhouse",
+    "ats_token": "payoneer",
+    "source": "manual_research"
+  },
+  {
+    "name": "Peak",
+    "website": "https://peak.ai",
+    "ats_type": "greenhouse",
+    "ats_token": "peak",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "People.ai",
+    "website": "https://people.ai",
+    "ats_type": "lever",
+    "ats_token": "people-ai",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Pepper Bio",
+    "website": "https://pepper.bio",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Perception Point",
+    "website": "https://perception-point.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Peregrine Venture Capital",
+    "website": "https://peregrinevc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Perimeter 81",
+    "website": "https://perimeter81.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Permit.io",
+    "website": "https://permit.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Pitango",
+    "website": "https://pitango.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Planck",
+    "website": "https://planckdata.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "PlaySight Interactive",
+    "website": "https://playsight.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "PlayVS",
+    "website": "https://playvs.com",
+    "ats_type": "lever",
+    "ats_token": "playvs",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Plenty",
+    "website": "https://plenty.ag",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "PointFive",
+    "website": "https://pointfive.co",
+    "ats_type": "ashby",
+    "ats_token": "pointfive",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "PointFive",
+    "website": "https://pointfive.com",
+    "ats_type": "ashby",
+    "ats_token": "pointfive",
+    "source": "manual_research"
+  },
+  {
+    "name": "Polaris Quantum Biotech",
+    "website": "https://polarisqb.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Pontifax Venture Capital",
+    "website": "https://pontifax.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Porsche Ventures",
+    "website": "https://porsche.ventures",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Port",
+    "website": "https://getport.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Posit",
+    "website": "https://posit.co",
+    "ats_type": "greenhouse",
+    "ats_token": "embed",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Praso",
+    "website": "https://praso.com.br",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Precigen",
+    "website": "https://precigen.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "PrecisionHawk",
+    "website": "https://precisionhawk.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Premise",
+    "website": "https://premise.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "PrettyDamnQuick",
+    "website": "https://prettydamnquick.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Prewave",
+    "website": "https://prewave.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Proof of Learn",
+    "website": "https://proofoflearn.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Propel",
+    "website": "https://propelmypr.com",
+    "ats_type": "ashby",
+    "ats_token": "propel",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "ProSiebenSat.1 Media SE",
+    "website": "https://prosiebensat1.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Protai",
+    "website": "https://protai.bio",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "PsiQuantum",
+    "website": "https://psiquantum.com",
+    "ats_type": "greenhouse",
+    "ats_token": "psiquantum",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "PulmOne",
+    "website": "https://pulm-one.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Puls",
+    "website": "https://puls.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "PVML",
+    "website": "https://pvml.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "QB1 Ventures",
+    "website": "https://qb1ventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "QEDIT",
+    "website": "https://qed-it.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "phenom"
+  },
+  {
+    "name": "Qedma",
+    "website": "https://qedma.com",
+    "ats_type": "comeet",
+    "ats_token": "qedma",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "QP Ventures",
+    "website": "https://qpventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "quadraScope",
+    "website": "https://quadrascope.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Quai.MD",
+    "website": "https://quai.md",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Qualcomm Ventures",
+    "website": "https://qualcommventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Quali",
+    "website": "https://quali.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Quantum Machines",
+    "website": "https://quantum-machines.co",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "Quantum Source",
+    "website": "https://qs-labs.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Qubex",
+    "website": "https://qubex.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Qumra Capital",
+    "website": "https://qumracapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Radius",
+    "website": "https://radiusagent.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Ramon.Space",
+    "website": "https://ramon.space",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Ramp",
+    "website": "https://ramp.network",
+    "ats_type": "greenhouse",
+    "ats_token": "rampnetwork",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Ramper",
+    "website": "https://ramper.xyz",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Random Forest VC",
+    "website": "https://randomforestvc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "RapidSOS",
+    "website": "https://rapidsos.com",
+    "ats_type": "greenhouse",
+    "ats_token": "rapidsos",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Rappi",
+    "website": "https://rappi.com.mx",
+    "ats_type": "workday",
+    "ats_token": "wd12",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Rapyd",
+    "website": "https://rapyd.net",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Ravin AI",
+    "website": "https://ravin.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Ready Player Me",
+    "website": "https://readyplayer.me",
+    "ats_type": "greenhouse",
+    "ats_token": "readyplayerme",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "RealView Imaging",
+    "website": "https://realviewimaging.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Rec",
+    "website": "https://rec.us",
+    "ats_type": "ashby",
+    "ats_token": "rec",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Red Access",
+    "website": "https://redaccess.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Redefine Meat",
+    "website": "https://redefinemeat.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Regatta",
+    "website": "https://regatta.dev",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Relatient",
+    "website": "https://relatient.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "jobvite"
+  },
+  {
+    "name": "Reltio",
+    "website": "https://reltio.com",
+    "ats_type": "greenhouse",
+    "ats_token": "reltio",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Remagine Ventures",
+    "website": "https://remagineventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Remilk",
+    "website": "https://remilk.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Renegade Insurance",
+    "website": "https://renegadeinsurance.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Renewal Bio",
+    "website": "https://renewal.bio",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Resistancebio",
+    "website": "https://resistance.bio",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "ReSource Chemical",
+    "website": "https://resourcechemicalcorp.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "retrain.ai",
+    "website": "https://retrain.ai",
+    "ats_type": "greenhouse",
+    "ats_token": "embed",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "ReturnGO",
+    "website": "https://returngo.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Rhino Eco",
+    "website": "https://rhino-eco.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Rhodium",
+    "website": "https://rhodium.co.il",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "RideVision",
+    "website": "https://ride.vision",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Ripple Foods",
+    "website": "https://ripplefoods.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Riskified",
+    "website": "https://riskified.com",
+    "ats_type": "greenhouse",
+    "ats_token": "riskified",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Rivery.io",
+    "website": "https://rivery.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Rivian",
+    "website": "https://rivian.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "icims"
+  },
+  {
+    "name": "Ro",
+    "website": "https://ro.co",
+    "ats_type": "lever",
+    "ats_token": "ro",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "RocketReach",
+    "website": "https://rocketreach.co",
+    "ats_type": "greenhouse",
+    "ats_token": "rocketreach",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Rookout",
+    "website": "https://rookout.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "RUNI Ventures",
+    "website": "https://runiventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "S Capital VC",
+    "website": "https://scapitalvc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Saban Ventures",
+    "website": "https://saban.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Saga Education",
+    "website": "https://saga.org",
+    "ats_type": "greenhouse",
+    "ats_token": "sagaeducation",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Saga.xyz",
+    "website": "https://saga.xyz",
+    "ats_type": "lever",
+    "ats_token": "saga-xyz",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Sagetap",
+    "website": "https://sagetap.io",
+    "ats_type": "ashby",
+    "ats_token": "sagetap",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Salt Security",
+    "website": "https://salt.security",
+    "ats_type": "greenhouse",
+    "ats_token": "saltsecurity",
+    "source": "manual_research"
+  },
+  {
+    "name": "Salted",
+    "website": "https://hellosalted.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "SAM Seamless Network",
+    "website": "https://securingsam.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Samsung Catalyst Fund",
+    "website": "https://samsungcatalyst.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Samsung Next",
+    "website": "https://samsungnext.com",
+    "ats_type": "greenhouse",
+    "ats_token": "samsungnext",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Samsung Ventures",
+    "website": "https://samsungventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "SaNOtize",
+    "website": "https://sanotize.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Sarona Ventures",
+    "website": "https://sarona.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Sauce",
+    "website": "https://getsauce.com",
+    "ats_type": "lever",
+    "ats_token": "Sauce",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Savyon Ventures",
+    "website": "https://savyonventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sayata",
+    "website": "https://sayata.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Scala Biodesign",
+    "website": "https://scala-bio.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "ScaleOps",
+    "website": "https://scaleops.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Scopio Labs",
+    "website": "https://scopiolabs.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "Scopus Ventures",
+    "website": "https://scopusventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "ScyllaDB",
+    "website": "https://scylladb.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "phenom"
+  },
+  {
+    "name": "Seal Security",
+    "website": "https://seal.security",
+    "ats_type": "comeet",
+    "ats_token": "seasecuirty",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "SeedIL Ventures 1",
+    "website": "https://seedil.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "SeeTrue",
+    "website": "https://seetrue.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sensi.AI",
+    "website": "https://sensi.ai",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Sensibo",
+    "website": "https://sensibo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Serinus Biosciences",
+    "website": "https://serinus.bio",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "SESO",
+    "website": "https://sesolabor.com",
+    "ats_type": "greenhouse",
+    "ats_token": "sesolabor",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Shavit Capital",
+    "website": "https://shavitcapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "SheerID",
+    "website": "https://sheerid.com",
+    "ats_type": "rippling",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Sheva",
+    "website": "https://sheva.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Shield.",
+    "website": "https://shieldfc.com",
+    "ats_type": "greenhouse",
+    "ats_token": "shield",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Shookit",
+    "website": "https://shookit.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Shop Circle",
+    "website": "https://shopcircle.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sidelines Group",
+    "website": "https://sidelinesgroup.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Sight Diagnostics",
+    "website": "https://sightdx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "SignalWire",
+    "website": "https://signalwire.com",
+    "ats_type": "ashby",
+    "ats_token": "signalwire",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Silverfort",
+    "website": "https://silverfort.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "SimilarWeb",
+    "website": "https://similarweb.com",
+    "ats_type": "greenhouse",
+    "ats_token": "similarweb",
+    "source": "manual_research"
+  },
+  {
+    "name": "Singtel",
+    "website": "https://singtel.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "successfactors"
+  },
+  {
+    "name": "Sisense",
+    "website": "https://sisense.com",
+    "ats_type": "greenhouse",
+    "ats_token": "sisense",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "SiteAware",
+    "website": "https://siteaware.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sitenna",
+    "website": "https://sitenna.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Skai",
+    "website": "https://skai.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "SmartAsset",
+    "website": "https://smartasset.com",
+    "ats_type": "greenhouse",
+    "ats_token": "smartasset",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "SnapCalorie",
+    "website": "https://snapcalorie.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Sodot",
+    "website": "https://sodot.dev",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "SoFi",
+    "website": "https://sofi.com",
+    "ats_type": "greenhouse",
+    "ats_token": "sofi",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Solvo",
+    "website": "https://solvo.cloud",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Source Defense",
+    "website": "https://sourcedefense.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "breezy"
+  },
+  {
+    "name": "Space and Time",
+    "website": "https://spaceandtime.io",
+    "ats_type": "lever",
+    "ats_token": "space-time",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Spatial",
+    "website": "https://spatial.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Spectral",
+    "website": "https://spectrallabs.xyz",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Spider Capital",
+    "website": "https://spidercapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "SpiderVille",
+    "website": "https://spiderville.xyz",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Stae",
+    "website": "https://stae.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "StageOne Ventures",
+    "website": "https://stageonevc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Stardom Ventures",
+    "website": "https://stardom.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Stardust",
+    "website": "https://stardust.app",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Starfish Space",
+    "website": "https://starfishspace.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Start.io",
+    "website": "https://start.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Stellar Cyber",
+    "website": "https://stellarcyber.ai",
+    "ats_type": "workable",
+    "ats_token": "api",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Storyblok",
+    "website": "https://storyblok.com",
+    "ats_type": "greenhouse",
+    "ats_token": "storyblok",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Stream Security",
+    "website": "https://stream.security",
+    "ats_type": "ashby",
+    "ats_token": "stream",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "StreamElements",
+    "website": "https://streamelements.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Stripe",
+    "website": "https://stripe.com",
+    "ats_type": "greenhouse",
+    "ats_token": "stripe",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "StructShare",
+    "website": "https://structshare.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sufresca",
+    "website": "https://sufresca.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sunvest Capital Partners",
+    "website": "https://sunvestcap.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "super.AI",
+    "website": "https://super.ai",
+    "ats_type": "greenhouse",
+    "ats_token": "super",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Superlegal",
+    "website": "https://superlegal.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Superpedestrian",
+    "website": "https://superpedestrian.com",
+    "ats_type": "lever",
+    "ats_token": "superpedestrian",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "SuperRare",
+    "website": "https://superrare.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Survios",
+    "website": "https://survios.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sustain.Life",
+    "website": "https://sustain.life",
+    "ats_type": "workday",
+    "ats_token": "wd503",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "SWAPP - Revolutionizing Architecture",
+    "website": "https://swapp.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sweet Security",
+    "website": "https://sweet.security",
+    "ats_type": "greenhouse",
+    "ats_token": "sweetsecurity",
+    "source": "manual_research"
+  },
+  {
+    "name": "Sweetch",
+    "website": "https://sweetch.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Sweetwood Ventures",
+    "website": "https://sweetwoodventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Swiftly",
+    "website": "https://goswift.ly",
+    "ats_type": "lever",
+    "ats_token": "goswift",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Swiftly",
+    "website": "https://swiftly.com",
+    "ats_type": "lever",
+    "ats_token": "SwiftlySystems",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Swish AI",
+    "website": "https://swish.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Sysdig",
+    "website": "https://sysdig.com",
+    "ats_type": "lever",
+    "ats_token": "sysdig",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Tabit",
+    "website": "https://tabit.cloud",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Tabnine",
+    "website": "https://tabnine.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Taboola",
+    "website": "https://taboola.com",
+    "ats_type": "greenhouse",
+    "ats_token": "taboola",
+    "source": "manual_research"
+  },
+  {
+    "name": "Tachles VC",
+    "website": "https://tachlesvc.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Tailor Brands",
+    "website": "https://tailorbrands.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Tala",
+    "website": "https://tala.co",
+    "ats_type": "lever",
+    "ats_token": "tala",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Talus Bio",
+    "website": "https://talus.bio",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Tamnoon",
+    "website": "https://tamnoon.io",
+    "ats_type": "workable",
+    "ats_token": "tamnoon-dot-i-o",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Taranis",
+    "website": "https://taranisbrasil.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Target Global",
+    "website": "https://targetglobal.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "TaTiO",
+    "website": "https://tatio.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "TAU Ventures",
+    "website": "https://tauventures.com",
+    "ats_type": "greenhouse",
+    "ats_token": "iterativehealth",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Tavily",
+    "website": "https://tavily.com",
+    "ats_type": "ashby",
+    "ats_token": "tavily",
+    "source": "manual_research"
+  },
+  {
+    "name": "Team8",
+    "website": "https://team8.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Teampay",
+    "website": "https://teampay.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "TechSee",
+    "website": "https://techsee.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "TELUS",
+    "website": "https://telus.com",
+    "ats_type": "workday",
+    "ats_token": "wd3",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Tenchi Security",
+    "website": "https://tenchisecurity.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Teradata",
+    "website": "https://teradata.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Teramount",
+    "website": "https://teramount.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "TermScout",
+    "website": "https://termscout.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Terra",
+    "website": "https://tryterra.co",
+    "ats_type": "ashby",
+    "ats_token": "terra",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Tetrate",
+    "website": "https://tetrate.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Tevel Aerobotics Technologies",
+    "website": "https://tevel-tech.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "The Bouqs Company",
+    "website": "https://bouqs.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "The Freightos Group",
+    "website": "https://freightos.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "The Garage",
+    "website": "https://thegarage.vc",
+    "ats_type": "ashby",
+    "ats_token": "garage",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "The Hotels Network",
+    "website": "https://thehotelsnetwork.com",
+    "ats_type": "greenhouse",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "The Kitchen FoodTech Hub",
+    "website": "https://thekitchenhub.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "The Sandbox",
+    "website": "https://sandbox.game",
+    "ats_type": "comeet",
+    "ats_token": "thesandbox",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "theDOCK",
+    "website": "https://thedockinnovation.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "TheMathCompany",
+    "website": "https://mathco.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "THETA.tv",
+    "website": "https://theta.tv",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "ThetaRay",
+    "website": "https://thetaray.com",
+    "ats_type": "comeet",
+    "ats_token": "thetaray",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Third Point Ventures",
+    "website": "https://thirdpointventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "ThriveDX",
+    "website": "https://thrivedx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Titan Capital Partners",
+    "website": "https://titan-capital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "TLV Partners",
+    "website": "https://tlv.partners",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "pinpoint"
+  },
+  {
+    "name": "toDay Ventures",
+    "website": "https://today.ventures",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Toka",
+    "website": "https://tokagroup.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Tomo",
+    "website": "https://tomo.com",
+    "ats_type": "ashby",
+    "ats_token": "tomo",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Torii",
+    "website": "https://toriihq.com",
+    "ats_type": "greenhouse",
+    "ats_token": "toriihq",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Torq",
+    "website": "https://torq.io",
+    "ats_type": "greenhouse",
+    "ats_token": "torq",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Tovala",
+    "website": "https://tovala.com",
+    "ats_type": "lever",
+    "ats_token": "tovala",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "TPG",
+    "website": "https://tpg.com",
+    "ats_type": "greenhouse",
+    "ats_token": "tpgcareers",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "TPY Capital",
+    "website": "https://tpycapital.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Travel Wallet",
+    "website": "https://travel-wallet.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Travelier",
+    "website": "https://travelier.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "TravelJoy",
+    "website": "https://traveljoy.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Travelstride",
+    "website": "https://travelstride.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "trebu",
+    "website": "https://trebu.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Treedom",
+    "website": "https://treedom.net",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "phenom"
+  },
+  {
+    "name": "TriEye",
+    "website": "https://trieye.tech",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "known_ats_missed"
+  },
+  {
+    "name": "Trigo",
+    "website": "https://trigovision.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Tripledot Studios",
+    "website": "https://tripledotstudios.com",
+    "ats_type": "greenhouse",
+    "ats_token": "tripledotstudios",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Triventures",
+    "website": "https://triventures.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "True Global Ventures",
+    "website": "https://tgv4plus.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Trullion",
+    "website": "https://trullion.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Trusona",
+    "website": "https://trusona.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Tulu",
+    "website": "https://tulu.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "taleo"
+  },
+  {
+    "name": "Tymely AI",
+    "website": "https://tymely.ai",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Tynt Technologies",
+    "website": "https://tynt.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "TytoCare",
+    "website": "https://tytocare.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "UltraHorse",
+    "website": "https://ultra.horse",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Ume",
+    "website": "https://ume.com.br",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Unbabel",
+    "website": "https://unbabel.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Unicorn Technologies",
+    "website": "https://unicorntechnologies.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "UniKey",
+    "website": "https://unikey.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "UNIPaaS",
+    "website": "https://unipaas.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "UNISON",
+    "website": "https://unison.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Unispectral",
+    "website": "https://unispectral.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Unit",
+    "website": "https://unit.co",
+    "ats_type": "ashby",
+    "ats_token": "unit",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Unity SCM",
+    "website": "https://unityscm.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Unravel Data",
+    "website": "https://unraveldata.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "UPnRIDE",
+    "website": "https://upnride.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Upsie",
+    "website": "https://upsie.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "Upstart",
+    "website": "https://upstart.com",
+    "ats_type": "greenhouse",
+    "ats_token": "upstart",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Upwest",
+    "website": "https://upwest.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Ushur",
+    "website": "https://ushur.com",
+    "ats_type": "greenhouse",
+    "ats_token": "embed",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Vanta",
+    "website": "https://vanta.com",
+    "ats_type": "ashby",
+    "ats_token": "vanta",
+    "source": "manual_research"
+  },
+  {
+    "name": "Vayyar",
+    "website": "https://vayyar.com",
+    "ats_type": "workable",
+    "ats_token": "vayyar",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Vee",
+    "website": "https://vee.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Velocity",
+    "website": "https://velocity.tech",
+    "ats_type": "ashby",
+    "ats_token": "velocity",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Velocity X",
+    "website": "https://velocityx.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Velox",
+    "website": "https://velox-digital.com",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Vendict",
+    "website": "https://vendict.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Ventyx Biosciences",
+    "website": "https://ventyxbio.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Veracode",
+    "website": "https://veracode.com",
+    "ats_type": "greenhouse",
+    "ats_token": "veracode",
+    "source": "manual_research"
+  },
+  {
+    "name": "Verbit",
+    "website": "https://verbit.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Verissimo Ventures",
+    "website": "https://verissimo.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Versatile",
+    "website": "https://versatile.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Vertex Ventures Israel",
+    "website": "https://vertexventures.co.il",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Vesey Ventures",
+    "website": "https://vesey.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Vine Stone Ventures",
+    "website": "https://vine-stone.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Vine Ventures",
+    "website": "https://vine.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Vinli",
+    "website": "https://vin.li",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "breezy"
+  },
+  {
+    "name": "Vintage Investment Partners",
+    "website": "https://vintage-ip.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Vinthera",
+    "website": "https://vinthera.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Viola Ventures",
+    "website": "https://viola-group.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Viridian Analytics",
+    "website": "https://viridian.earth",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Virtru",
+    "website": "https://virtru.com",
+    "ats_type": "greenhouse",
+    "ats_token": "virtru",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "VisIC Technologies",
+    "website": "https://visic-tech.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Visitt",
+    "website": "https://visitt.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Vizcab",
+    "website": "https://vizcab.io",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Viziblezone",
+    "website": "https://vizible.zone",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "VMware",
+    "website": "https://vmware.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Vocai",
+    "website": "https://vocai.tech",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "VocalZoom",
+    "website": "https://vocalzoom.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Volley",
+    "website": "https://volleygames.com",
+    "ats_type": "ashby",
+    "ats_token": "weekend",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Vonage (Israel)",
+    "website": "https://vonage.com",
+    "ats_type": "greenhouse",
+    "ats_token": "vonage",
+    "source": "manual_research"
+  },
+  {
+    "name": "VOOM Insurance",
+    "website": "https://voominsurance.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Walnut",
+    "website": "https://walnut.io",
+    "ats_type": "greenhouse",
+    "ats_token": "walnut",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Watchful",
+    "website": "https://watchful.ai",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Waymont",
+    "website": "https://waymont.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "WayUp",
+    "website": "https://wayup.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Webiny",
+    "website": "https://webiny.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "wefox",
+    "website": "https://wefox.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Western Digital",
+    "website": "https://westerndigital.com",
+    "ats_type": "smartrecruiters",
+    "ats_token": "WesternDigital",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Wevr",
+    "website": "https://wevr.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Wilco",
+    "website": "https://trywilco.com",
+    "ats_type": "greenhouse",
+    "ats_token": "wil",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Wild",
+    "website": "https://wildbio.tech",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "Wiliot",
+    "website": "https://wiliot.com",
+    "ats_type": "comeet",
+    "ats_token": "F6.003",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Wilson's Bird Capital",
+    "website": "https://wilsonsbird.co",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "WireX Cube",
+    "website": "https://wirexsystems.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "WisePal",
+    "website": "https://wisepal.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Wish",
+    "website": "https://wish.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "withco",
+    "website": "https://with.co",
+    "ats_type": "ashby",
+    "ats_token": "withco",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Wiz",
+    "website": "https://wiz.io",
+    "ats_type": "greenhouse",
+    "ats_token": "wizinc",
+    "source": "manual_research"
+  },
+  {
+    "name": "Wonder Dynamics",
+    "website": "https://wonderdynamics.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Wyre",
+    "website": "https://sendwyre.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Xsolis",
+    "website": "https://xsolis.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "XTEND",
+    "website": "https://xtend.me",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Yellowbrick Data",
+    "website": "https://yellowbrick.com",
+    "ats_type": "greenhouse",
+    "ats_token": "yellowbrickdata",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "YL Ventures",
+    "website": "https://ylventures.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Ynsect",
+    "website": "https://ynsect.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Yotpo",
+    "website": "https://yotpo.com",
+    "ats_type": "greenhouse",
+    "ats_token": "yotpo",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Yuga Labs",
+    "website": "https://yuga.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link",
+    "looks_like_spa": true
+  },
+  {
+    "name": "YuLife",
+    "website": "https://yulife.com",
+    "ats_type": "teamtailor",
+    "ats_token": "api",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "ZaiNar",
+    "website": "https://zainartech.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "ZEDEDA",
+    "website": "https://zededa.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "Zencity",
+    "website": "https://zencity.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Zengaming",
+    "website": "https://zengaming.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Zengo",
+    "website": "https://zengo.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "bot_blocked"
+  },
+  {
+    "name": "zenity",
+    "website": "https://zenity.io",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Zerto",
+    "website": "https://zerto.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "unknown_ats_detected",
+    "detected_other_ats": "phenom"
+  },
+  {
+    "name": "Zesty",
+    "website": "https://zesty.co",
+    "ats_type": "comeet",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  },
+  {
+    "name": "Zeus Living",
+    "website": "https://zeusliving.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "dead_or_unreachable"
+  },
+  {
+    "name": "Zimperium",
+    "website": "https://zimperium.com",
+    "ats_type": "lever",
+    "ats_token": "zimperium",
+    "source": "getro_israel_vc_forum"
+  },
+  {
+    "name": "Zippin",
+    "website": "https://getzippin.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats"
+  },
+  {
+    "name": "ZoomCar",
+    "website": "https://zoomcar.com",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "careers_no_ats",
+    "looks_like_spa": true
+  },
+  {
+    "name": "ZORA Ventures",
+    "website": "https://zora.vc",
+    "ats_type": "unknown",
+    "ats_token": "",
+    "source": "getro_israel_vc_forum",
+    "unknown_reason": "no_careers_link"
+  },
+  {
+    "name": "Zubale",
+    "website": "https://zubale.com",
+    "ats_type": "bamboohr",
+    "ats_token": "zubale",
+    "source": "getro_israel_vc_forum",
+    "detection_pass": 2
+  }
+]
