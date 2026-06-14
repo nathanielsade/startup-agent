@@ -19,3 +19,10 @@ def test_factory_supported_types():
     factory = ATSAdapterFactory()
     assert AtsType.GREENHOUSE in factory.supported_types()
     assert AtsType.ASHBY in factory.supported_types()
+
+
+def test_factory_lever():
+    from startup_agent.adapters.ats.lever import LeverAdapter
+    factory = ATSAdapterFactory()
+    assert isinstance(factory.for_company(Company(name="x", ats_type=AtsType.LEVER)), LeverAdapter)
+    assert AtsType.LEVER in factory.supported_types()
