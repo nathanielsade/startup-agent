@@ -83,3 +83,24 @@ def test_set_and_read_job_embedding(repo):
     jobs = repo.get_jobs()
     assert len(jobs) == 1
     assert repo.get_job_embedding(job.id) == b"\x09\x09"
+
+
+def test_get_notified_job_ids_empty_initially(repo):
+    repo.upsert_company(Company(name="Acme"))
+    cid = repo.get_companies()[0].id_hash
+    job1 = Job(company_id=cid, ats_job_id="j1", title="Eng", url="https://x/1")
+    job2 = Job(company_id=cid, ats_job_id="j2", title="PM", url="https://x/2")
+    repo.upsert_job(job1)
+    repo.upsert_job(job2)
+    assert repo.get_notified_job_ids() == set()
+
+
+def test_mark_notified_and_get_notified_job_ids(repo):
+    repo.upsert_company(Company(name="Acme"))
+    cid = repo.get_companies()[0].id_hash
+    job1 = Job(company_id=cid, ats_job_id="j1", title="Eng", url="https://x/1")
+    job2 = Job(company_id=cid, ats_job_id="j2", title="PM", url="https://x/2")
+    repo.upsert_job(job1)
+    repo.upsert_job(job2)
+    repo.mark_notified([job1.id])
+    assert repo.get_notified_job_ids() == {job1.id}

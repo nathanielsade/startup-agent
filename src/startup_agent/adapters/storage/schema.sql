@@ -24,7 +24,8 @@ CREATE TABLE IF NOT EXISTS jobs (
     posted_at     TEXT,
     first_seen_at TEXT NOT NULL,
     embedding     BLOB,
-    raw_json      TEXT
+    raw_json      TEXT,
+    notified_at   TEXT
 );
 CREATE INDEX IF NOT EXISTS idx_jobs_company ON jobs(company_id);
 CREATE INDEX IF NOT EXISTS idx_jobs_first_seen ON jobs(first_seen_at);

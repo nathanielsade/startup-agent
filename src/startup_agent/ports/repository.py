@@ -37,3 +37,9 @@ class JobRepository(ABC):
 
     @abstractmethod
     def get_job_embedding(self, job_id: str) -> bytes | None: ...
+
+    @abstractmethod
+    def get_notified_job_ids(self) -> set[str]: ...
+
+    @abstractmethod
+    def mark_notified(self, job_ids: list[str]) -> None: ...
