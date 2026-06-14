@@ -23,6 +23,10 @@ class SQLiteJobRepository(JobRepository):
     def init_schema(self) -> None:
         self._conn.executescript(_SCHEMA_PATH.read_text())
         self._conn.commit()
+        cols = {r["name"] for r in self._conn.execute("PRAGMA table_info(jobs)")}
+        if "notified_at" not in cols:
+            self._conn.execute("ALTER TABLE jobs ADD COLUMN notified_at TEXT")
+        self._conn.commit()
 
     def upsert_company(self, company: Company) -> str:
         cid = company.id_hash
@@ -134,3 +138,14 @@ class SQLiteJobRepository(JobRepository):
     def get_job_embedding(self, job_id: str) -> bytes | None:
         row = self._conn.execute("SELECT embedding FROM jobs WHERE id = ?", (job_id,)).fetchone()
         return row["embedding"] if row else None
+
+    def get_notified_job_ids(self) -> set[str]:
+        rows = self._conn.execute("SELECT id FROM jobs WHERE notified_at IS NOT NULL").fetchall()
+        return {r["id"] for r in rows}
+
+    def mark_notified(self, job_ids: list[str]) -> None:
+        self._conn.executemany(
+            "UPDATE jobs SET notified_at = ? WHERE id = ?",
+            [(_now(), jid) for jid in job_ids],
+        )
+        self._conn.commit()
