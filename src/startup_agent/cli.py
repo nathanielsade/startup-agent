@@ -1,3 +1,5 @@
+from collections import Counter
+
 import typer
 
 from startup_agent.adapters.embedding.local_embedder import LocalEmbedder
@@ -8,6 +10,7 @@ from startup_agent.config.preferences_loader import load_preferences
 from startup_agent.config.settings import Settings
 from startup_agent.cv.loader import read_pdf_text
 from startup_agent.factories.ats_factory import ATSAdapterFactory
+from startup_agent.services.health_check import CompanyHealthChecker
 from startup_agent.services.ingestion import IngestionService
 app = typer.Typer(help="Israeli startup job agent")
 
@@ -101,6 +104,34 @@ def load_cv(path: str = typer.Option(..., "--path"),
     vector = embedder.embed([text])[0]
     repo.save_cv(path=path, text=text, embedding=to_bytes(vector), model=settings.embedding_model)
     typer.echo(f"Loaded CV ({len(text)} chars) and stored its embedding.")
+
+
+@app.command("check-companies")
+def check_companies(
+    db_path: str = typer.Option("jobs.db", "--db-path"),
+    show: str = typer.Option(
+        "failed,empty", "--show",
+        help="comma list of statuses to list (ok,empty,failed,unsupported)",
+    ),
+) -> None:
+    """Health-check every company: can we actually fetch jobs from it?"""
+    repo = SQLiteJobRepository(db_path)
+    repo.init_schema()
+    results = CompanyHealthChecker(repo, ATSAdapterFactory()).check()
+    counts = Counter(r.status for r in results)
+    typer.echo(
+        f"total={len(results)}  ok={counts['ok']}  empty={counts['empty']}  "
+        f"failed={counts['failed']}  unsupported={counts['unsupported']}"
+    )
+    wanted = {s.strip() for s in show.split(",") if s.strip()}
+    for r in sorted(results, key=lambda r: (r.status, r.name)):
+        if r.status in wanted:
+            line = f"  [{r.status}] {r.name} ({r.ats_type})"
+            if r.status == "ok":
+                line += f" — {r.job_count} jobs"
+            if r.error:
+                line += f" — {r.error}"
+            typer.echo(line)
 
 
 if __name__ == "__main__":

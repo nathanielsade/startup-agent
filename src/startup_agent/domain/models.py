@@ -69,3 +69,11 @@ class RunReport(BaseModel):
     jobs_matched: int = 0
     status: str = "success"
     error: str | None = None
+
+
+class CompanyHealth(BaseModel):
+    name: str
+    ats_type: str
+    status: str        # "ok" | "empty" | "failed" | "unsupported"
+    job_count: int = 0
+    error: str | None = None
