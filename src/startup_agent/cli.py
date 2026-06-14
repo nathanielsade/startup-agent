@@ -169,7 +169,10 @@ def digest(db_path: str = typer.Option("jobs.db", "--db-path"),
     channel = FileChannel(settings.digest_dir)
     title = date.today().isoformat()
     fresh = DigestService(repo, channel, render_markdown).run(title, entries, names)
-    typer.echo(f"{len(fresh)} new jobs -> {channel.path_for(title)}")
+    if fresh:
+        typer.echo(f"{len(fresh)} new jobs -> {channel.path_for(title)}")
+    else:
+        typer.echo("0 new jobs — no digest written")
 
 
 if __name__ == "__main__":

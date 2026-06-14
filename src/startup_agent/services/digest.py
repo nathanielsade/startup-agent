@@ -22,6 +22,10 @@ class DigestService:
         notified = self._repo.get_notified_job_ids()
         fresh = [(j, s, r) for (j, s, r) in entries if j.id not in notified]
         fresh.sort(key=lambda e: e[1], reverse=True)
+        if not fresh:
+            # Nothing new: don't deliver (avoids clobbering an existing digest).
+            logger.info("digest_empty", title=title)
+            return []
         body = self._renderer(title, fresh, company_names)
         self._channel.deliver(title, body)
         self._repo.mark_notified([j.id for j, _, _ in fresh])

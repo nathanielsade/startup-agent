@@ -66,6 +66,22 @@ def test_digest_service_deduplicates_on_second_run(repo):
     assert len(second) == 0
 
 
+def test_digest_service_skips_delivery_when_nothing_new(repo):
+    repo.upsert_company(Company(name="Acme"))
+    cid = repo.get_companies()[0].id_hash
+    job1 = _make_job(cid, "j1", "Backend")
+    repo.upsert_job(job1)
+    entries = [(job1, 80, None)]
+    channel = FakeChannel()
+    service = DigestService(repo, channel, _renderer)
+
+    service.run("2026-06-14", entries, {})        # delivers once
+    again = service.run("2026-06-15", entries, {})  # nothing new
+
+    assert again == []
+    assert len(channel.calls) == 1                 # no second (clobbering) write
+
+
 def test_digest_service_sorts_by_score_descending(repo):
     repo.upsert_company(Company(name="Acme"))
     cid = repo.get_companies()[0].id_hash
