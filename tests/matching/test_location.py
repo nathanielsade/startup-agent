@@ -27,3 +27,23 @@ def test_location_allowed_rule():
     assert location_allowed("United States") is False        # foreign -> drop
     assert location_allowed("London") is False
     assert location_allowed(None) is False                   # missing -> drop
+
+
+def test_foreign_remote_dropped_but_israel_and_bare_remote_kept():
+    # foreign-pinned remote -> drop (any place name, no country list needed)
+    assert location_allowed("India- Remote") is False
+    assert location_allowed("Australia - Remote") is False
+    assert location_allowed("United Kingdom - Remote") is False
+    assert location_allowed("Remote (US)") is False
+    assert location_allowed("Bulgaria- Remote") is False
+    assert location_allowed("Ankara, Türkiye - Remote") is False
+    assert location_allowed("Remote - Europe") is False
+    assert location_allowed("Washington, DC - Remote") is False
+    assert location_allowed("Remote U.S.") is False
+    # Israel / location-agnostic remote -> keep
+    assert location_allowed("Remote - Israel") is True
+    assert location_allowed("Tel Aviv (Remote)") is True
+    assert location_allowed("Remote") is True            # bare remote (could be global/IL)
+    assert location_allowed("Fully Remote") is True
+    assert location_allowed("100% Remote") is True
+    assert location_allowed("Remote - EMEA") is True     # EMEA includes Israel

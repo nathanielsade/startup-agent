@@ -1,3 +1,4 @@
+import re
 from enum import Enum
 
 
@@ -49,13 +50,38 @@ def classify_location(location: str | None) -> Region:
     return Region.UNKNOWN
 
 
+# Non-geographic words in a location string. If, after removing these and "remote",
+# nothing remains, the listing is location-agnostic remote (keep). If a place name
+# remains, it's pinned to a specific (foreign) place (drop). This allowlist approach
+# avoids maintaining an ever-growing country blocklist.
+_REMOTE_FILLER = {
+    "remote", "hybrid", "onsite", "on", "site", "global", "globally", "worldwide",
+    "anywhere", "fully", "partially", "mostly", "optional", "friendly", "first",
+    "work", "from", "home", "wfh", "based", "position", "role", "distributed",
+    "flexible", "location", "locations", "any", "or", "and", "the", "in", "at",
+    "international", "multiple",
+}
+
+
+def _is_location_agnostic_remote(text: str) -> bool:
+    """True if no specific place name remains after stripping remote/filler words."""
+    tokens = [t for t in re.sub(r"[^a-z]+", " ", text).split() if t not in _REMOTE_FILLER]
+    return not tokens
+
+
 def location_allowed(location: str | None) -> bool:
     if not location:
         return False
+    text = location.lower()
     region = classify_location(location)
-    if region in (Region.REMOTE, Region.CENTER):
-        return True
     if region in (Region.NORTH, Region.SOUTH, Region.JERUSALEM):
         return False
-    # UNKNOWN region: keep only if the string clearly says Israel (unlisted Israeli city)
-    return "israel" in location.lower()
+    if region == Region.CENTER:
+        return True
+    if "israel" in text or "emea" in text or any(city in text for city in _CENTER):
+        return True
+    if region == Region.REMOTE:
+        # Remote is OK only if it's not pinned to a specific (foreign) place.
+        return _is_location_agnostic_remote(text)
+    # UNKNOWN region, no Israel marker -> drop.
+    return False
