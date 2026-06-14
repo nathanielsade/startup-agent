@@ -1,7 +1,9 @@
 from collections import Counter
+from datetime import date
 
 import typer
 
+from startup_agent.adapters.delivery.file_channel import FileChannel
 from startup_agent.adapters.embedding.local_embedder import LocalEmbedder
 from startup_agent.adapters.embedding.serialization import to_bytes
 from startup_agent.adapters.storage.sqlite_repository import SQLiteJobRepository
@@ -9,7 +11,9 @@ from startup_agent.companies.loader import load_companies_from_seed
 from startup_agent.config.preferences_loader import load_preferences
 from startup_agent.config.settings import Settings
 from startup_agent.cv.loader import read_pdf_text
+from startup_agent.digest.renderer import render_markdown
 from startup_agent.factories.ats_factory import ATSAdapterFactory
+from startup_agent.services.digest import DigestService
 from startup_agent.services.health_check import CompanyHealthChecker
 from startup_agent.services.ingestion import IngestionService
 app = typer.Typer(help="Israeli startup job agent")
@@ -132,6 +136,40 @@ def check_companies(
             if r.error:
                 line += f" — {r.error}"
             typer.echo(line)
+
+
+@app.command("digest")
+def digest(db_path: str = typer.Option("jobs.db", "--db-path"),
+           llm: bool = typer.Option(False, "--llm", help="Use Claude scoring + reasons")) -> None:
+    """Build a digest of NEW matching jobs and write it to a dated markdown file."""
+    settings = Settings()
+    repo = SQLiteJobRepository(db_path)
+    repo.init_schema()
+    prefs = load_preferences(settings.preferences_path)
+    embedder = LocalEmbedder(settings.embedding_model)
+    names = {c.id_hash: c.name for c in repo.get_companies()}
+
+    if llm:
+        from startup_agent.adapters.ranking.claude_ranker import ClaudeRanker
+        from startup_agent.services.hybrid_matching import HybridMatchingService
+
+        ranker = ClaudeRanker(api_key=settings.anthropic_api_key, model=settings.llm_model)
+        results = HybridMatchingService(
+            repo=repo, embedder=embedder, ranker=ranker, preferences=prefs,
+            sim_threshold=settings.match_threshold, llm_threshold=settings.llm_threshold,
+        ).run()
+        entries = [(job, m.score, m.reason) for job, m in results]
+    else:
+        from startup_agent.services.matching import SimilarityMatchingService
+        results = SimilarityMatchingService(
+            repo=repo, embedder=embedder, preferences=prefs, threshold=settings.match_threshold
+        ).run()
+        entries = [(job, int(score * 100), None) for job, score in results]
+
+    channel = FileChannel(settings.digest_dir)
+    title = date.today().isoformat()
+    fresh = DigestService(repo, channel, render_markdown).run(title, entries, names)
+    typer.echo(f"{len(fresh)} new jobs -> {channel.path_for(title)}")
 
 
 if __name__ == "__main__":
