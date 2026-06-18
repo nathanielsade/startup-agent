@@ -12,7 +12,7 @@ def test_factory_returns_adapter_per_ats_type():
 
 def test_factory_returns_none_for_unsupported():
     factory = ATSAdapterFactory()
-    assert factory.for_company(Company(name="C", ats_type=AtsType.COMEET)) is None
+    assert factory.for_company(Company(name="C", ats_type=AtsType.UNKNOWN)) is None
 
 
 def test_factory_supported_types():
@@ -26,3 +26,13 @@ def test_factory_lever():
     factory = ATSAdapterFactory()
     assert isinstance(factory.for_company(Company(name="x", ats_type=AtsType.LEVER)), LeverAdapter)
     assert AtsType.LEVER in factory.supported_types()
+
+
+def test_factory_comeet():
+    from startup_agent.adapters.ats.comeet import ComeetAdapter
+    factory = ATSAdapterFactory()
+    assert isinstance(
+        factory.for_company(Company(name="x", ats_type=AtsType.COMEET, ats_token="91.001:tok")),
+        ComeetAdapter,
+    )
+    assert AtsType.COMEET in factory.supported_types()

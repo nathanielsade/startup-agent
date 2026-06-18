@@ -1,4 +1,5 @@
 from startup_agent.adapters.ats.ashby import AshbyAdapter
+from startup_agent.adapters.ats.comeet import ComeetAdapter
 from startup_agent.adapters.ats.greenhouse import GreenhouseAdapter
 from startup_agent.adapters.ats.http_fetcher import JsonFetcher
 from startup_agent.adapters.ats.lever import LeverAdapter
@@ -8,6 +9,7 @@ from startup_agent.ports.ats import ATSAdapter
 # Registry: add a new ATS by registering its adapter class here. Nothing else changes.
 _REGISTRY: dict[AtsType, type[ATSAdapter]] = {
     AtsType.ASHBY: AshbyAdapter,
+    AtsType.COMEET: ComeetAdapter,
     AtsType.GREENHOUSE: GreenhouseAdapter,
     AtsType.LEVER: LeverAdapter,
 }
