@@ -86,7 +86,6 @@ def main() -> None:
                     token = None
                 if token:
                     print(f"  -> OK (browser) via {fallback_url}: {token}")
-                    via_browser = True
                     browser_ok += 1
 
             # Reject template placeholders like ${TOKEN}
