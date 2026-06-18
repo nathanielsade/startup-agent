@@ -5,6 +5,7 @@ from pathlib import Path
 
 _ROOT = Path(__file__).parent.parent
 _SOURCE = _ROOT / "spike" / "fixtures" / "companies_recruiting.json"
+_COMEET_SOURCE = _ROOT / "spike" / "fixtures" / "comeet_tokens.json"
 _DEST = _ROOT / "data" / "companies.json"
 _SUPPORTED = {"greenhouse", "ashby", "lever"}
 
@@ -30,6 +31,23 @@ def main() -> None:
             "ats_type": ats_type,
             "ats_token": ats_token,
         })
+
+    # Add comeet companies from harvested tokens
+    if _COMEET_SOURCE.exists():
+        for entry in json.loads(_COMEET_SOURCE.read_text()):
+            ats_token = (entry.get("ats_token") or "").strip()
+            if not ats_token or "${" in ats_token:
+                continue
+            key = ("comeet", ats_token)
+            if key in seen:
+                continue
+            seen.add(key)
+            companies.append({
+                "name": entry.get("name") or "",
+                "website": entry.get("website") or None,
+                "ats_type": "comeet",
+                "ats_token": ats_token,
+            })
 
     companies.sort(key=lambda c: c["name"].lower())
 
