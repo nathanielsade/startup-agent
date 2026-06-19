@@ -14,3 +14,8 @@ class Settings(BaseSettings):
     preferences_path: str = "data/preferences.yaml"
     llm_model: str = "claude-opus-4-8"
     llm_threshold: int = 70
+    llm_provider: str = "anthropic"
+    openai_api_key: str = ""
+    openai_model: str = "gpt-4o"
+    openai_base_url: str = ""
+    llm_recent_hours: int = 24
