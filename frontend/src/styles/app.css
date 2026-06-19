@@ -372,3 +372,14 @@
 /* ── Shared muted / error ─────────────────────────────── */
 .muted { color: var(--muted); font-size: 14px; }
 .error { color: #b91c1c; font-size: 14px; }
+
+/* ── Preferences form ─────────────────────────────────── */
+.prefs { max-width: 560px; text-align: left; }
+.prefs-label { display: block; font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; margin: 16px 0 6px; }
+.hard { color: #b91c1c; } .soft { color: var(--accent); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { background: var(--accent-soft); color: var(--accent); border: 1px solid transparent; border-radius: 20px; padding: 5px 12px; font-size: 13px; cursor: pointer; }
+.chip-on { background: var(--accent); color: #fff; }
+.prefs-check { display: block; margin-top: 8px; font-size: 14px; }
+.prefs-num { width: 120px; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 8px; }
+.primary { margin-top: 20px; width: 100%; background: var(--accent); color: #fff; border: none; border-radius: 10px; padding: 11px; font-weight: 700; cursor: pointer; }
