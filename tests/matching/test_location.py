@@ -1,4 +1,4 @@
-from startup_agent.matching.location import classify_location, location_allowed, Region
+from startup_agent.matching.location import classify_location, region_allowed, Region
 
 
 def test_classifies_regions():
@@ -14,36 +14,18 @@ def test_classifies_regions():
     assert classify_location(None) is Region.UNKNOWN
 
 
-def test_location_allowed_rule():
-    assert location_allowed("Tel Aviv") is True
-    assert location_allowed("Tel Aviv-Yafo, Tel Aviv District, Israel") is True
-    assert location_allowed("Kiryat Ono, Israel") is True   # unlisted Israeli city, has "israel"
-    assert location_allowed("Remote") is True
-    assert location_allowed("Remote - EMEA") is True
-    assert location_allowed("Haifa") is False
-    assert location_allowed("Beer Sheva") is False
-    assert location_allowed("Jerusalem") is False
-    assert location_allowed("Dublin") is False              # foreign -> drop
-    assert location_allowed("United States") is False        # foreign -> drop
-    assert location_allowed("London") is False
-    assert location_allowed(None) is False                   # missing -> drop
-
-
-def test_foreign_remote_dropped_but_israel_and_bare_remote_kept():
-    # foreign-pinned remote -> drop (any place name, no country list needed)
-    assert location_allowed("India- Remote") is False
-    assert location_allowed("Australia - Remote") is False
-    assert location_allowed("United Kingdom - Remote") is False
-    assert location_allowed("Remote (US)") is False
-    assert location_allowed("Bulgaria- Remote") is False
-    assert location_allowed("Ankara, Türkiye - Remote") is False
-    assert location_allowed("Remote - Europe") is False
-    assert location_allowed("Washington, DC - Remote") is False
-    assert location_allowed("Remote U.S.") is False
-    # Israel / location-agnostic remote -> keep
-    assert location_allowed("Remote - Israel") is True
-    assert location_allowed("Tel Aviv (Remote)") is True
-    assert location_allowed("Remote") is True            # bare remote (could be global/IL)
-    assert location_allowed("Fully Remote") is True
-    assert location_allowed("100% Remote") is True
-    assert location_allowed("Remote - EMEA") is True     # EMEA includes Israel
+def test_region_allowed_respects_chosen_districts():
+    # center selected, remote on
+    assert region_allowed("Tel Aviv", {"center"}, True) is True
+    assert region_allowed("Haifa", {"center"}, True) is False          # north not selected
+    assert region_allowed("Haifa", {"center", "north"}, True) is True  # north selected
+    assert region_allowed("Jerusalem", {"jerusalem"}, True) is True
+    # remote handling
+    assert region_allowed("Remote", {"center"}, True) is True
+    assert region_allowed("Remote", {"center"}, False) is False        # remote off
+    assert region_allowed("India - Remote", {"center"}, True) is False # foreign-pinned remote
+    # empty districts = no location constraint (keep all non-foreign)
+    assert region_allowed("Haifa", set(), True) is True
+    # unknown w/ israel marker kept; missing dropped
+    assert region_allowed("Kiryat Ono, Israel", {"center"}, True) is True
+    assert region_allowed(None, {"center"}, True) is False
