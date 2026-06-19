@@ -104,3 +104,20 @@ def test_mark_notified_and_get_notified_job_ids(repo):
     repo.upsert_job(job2)
     repo.mark_notified([job1.id])
     assert repo.get_notified_job_ids() == {job1.id}
+
+
+def test_save_and_get_preferences(repo):
+    from startup_agent.domain.preferences import Preferences
+    assert repo.get_preferences() is None
+    repo.save_preferences(Preferences(districts=["center"], max_years=3, roles=["backend"]))
+    loaded = repo.get_preferences()
+    assert loaded.districts == ["center"]
+    assert loaded.max_years == 3
+    assert loaded.roles == ["backend"]
+
+
+def test_save_preferences_replaces(repo):
+    from startup_agent.domain.preferences import Preferences
+    repo.save_preferences(Preferences(max_years=3))
+    repo.save_preferences(Preferences(max_years=5))
+    assert repo.get_preferences().max_years == 5

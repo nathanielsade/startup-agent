@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
 from startup_agent.domain.models import Company, Job, MatchResult, RunReport
+from startup_agent.domain.preferences import Preferences
 
 
 class JobRepository(ABC):
@@ -43,3 +44,9 @@ class JobRepository(ABC):
 
     @abstractmethod
     def mark_notified(self, job_ids: list[str]) -> None: ...
+
+    @abstractmethod
+    def save_preferences(self, preferences: "Preferences") -> None: ...
+
+    @abstractmethod
+    def get_preferences(self) -> "Preferences | None": ...
