@@ -10,8 +10,11 @@ from startup_agent.domain.models import Company, Job, AtsType
 
 
 def _blank_pdf():
-    w = PdfWriter(); w.add_blank_page(width=200, height=200)
-    b = io.BytesIO(); w.write(b); return b.getvalue()
+    w = PdfWriter()
+    w.add_blank_page(width=200, height=200)
+    b = io.BytesIO()
+    w.write(b)
+    return b.getvalue()
 
 
 class _FakeAdapter:
@@ -34,7 +37,8 @@ def _events(resp):
 
 def test_run_streams_progress_then_done(client, settings):
     # seed a company into the same tmp db the client uses
-    repo = SQLiteJobRepository(settings.db_path); repo.init_schema()
+    repo = SQLiteJobRepository(settings.db_path)
+    repo.init_schema()
     repo.upsert_company(Company(name="Acme", ats_type=AtsType.GREENHOUSE, ats_token="acme"))
     # upload CV
     client.post("/api/cv", files={"file": ("cv.pdf", _blank_pdf(), "application/pdf")})
@@ -48,7 +52,8 @@ def test_run_streams_progress_then_done(client, settings):
 
 
 def test_run_without_cv_returns_400(client, settings):
-    repo = SQLiteJobRepository(settings.db_path); repo.init_schema()
+    repo = SQLiteJobRepository(settings.db_path)
+    repo.init_schema()
     repo.upsert_company(Company(name="Acme", ats_type=AtsType.GREENHOUSE, ats_token="acme"))
     app.dependency_overrides[deps.get_factory] = lambda: _FakeFactory()
     resp = client.get("/api/run")
