@@ -50,3 +50,6 @@ class JobRepository(ABC):
 
     @abstractmethod
     def get_preferences(self) -> "Preferences | None": ...
+
+    @abstractmethod
+    def get_job(self, job_id: str) -> "Job | None": ...

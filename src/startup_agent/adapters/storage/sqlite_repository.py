@@ -166,3 +166,16 @@ class SQLiteJobRepository(JobRepository):
         if row is None:
             return None
         return Preferences.model_validate_json(row["json"])
+
+    def get_job(self, job_id: str):
+        row = self._conn.execute(
+            "SELECT company_id, ats_job_id, title, location, url, description, posted_at "
+            "FROM jobs WHERE id = ?", (job_id,)
+        ).fetchone()
+        if row is None:
+            return None
+        return Job(
+            company_id=row["company_id"], ats_job_id=row["ats_job_id"], title=row["title"],
+            location=row["location"], url=row["url"], description=row["description"],
+            posted_at=datetime.fromisoformat(row["posted_at"]) if row["posted_at"] else None,
+        )
