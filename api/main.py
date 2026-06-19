@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.routes import cv, health
+from api.routes import cv, health, run
 
 app = FastAPI(title="Startup Job Agent")
 
@@ -14,3 +14,4 @@ app.add_middleware(
 
 app.include_router(health.router, prefix="/api")
 app.include_router(cv.router, prefix="/api")
+app.include_router(run.router, prefix="/api")
