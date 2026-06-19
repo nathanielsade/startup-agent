@@ -45,6 +45,21 @@ export function RunProgress({ last }: { last: RunEvent | null }) {
     );
   }
 
+  if (last.stage === "rating") {
+    return (
+      <div className="progress-card">
+        <div className="progress-spinner" />
+        <div className="progress-bar-wrap">
+          <div className="progress-bar-indeterminate" />
+        </div>
+        <div className="progress-label">
+          <span className="progress-pulsedot" />
+          Rating {last.count} fresh jobs with AI…
+        </div>
+      </div>
+    );
+  }
+
   if (last.stage === "error") {
     return (
       <div className="progress-card">
