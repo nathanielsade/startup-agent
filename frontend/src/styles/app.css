@@ -1,13 +1,374 @@
-.app { max-width: 760px; margin: 0 auto; padding: 24px 16px; }
-.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
-.brand { font-weight: 800; color: var(--accent); font-size: 20px; }
+/* ── Layout ─────────────────────────────────────────────── */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+/* Sticky header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(247,248,250,.88);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 56px;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--accent);
+  letter-spacing: -0.3px;
+}
+
+.header-summary {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* ── Main viewport centering ─────────────────────────── */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+/* ── Upload phase ──────────────────────────────────────── */
+.upload-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.upload-hero-text {
+  text-align: center;
+}
+
+.upload-hero-text h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.upload-hero-text p {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* ── Dropzone ──────────────────────────────────────────── */
+.dropzone {
+  width: 100%;
+  border: 2px dashed var(--accent);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: border-color .18s, background .18s;
+  position: relative;
+  box-shadow: var(--shadow);
+}
+
+.dropzone:hover,
+.dropzone.drag-over {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.dropzone.busy {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.dropzone-icon {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.dropzone-primary {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.dropzone-secondary {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.dropzone-busy {
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.dropzone-error {
+  font-size: 14px;
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+/* hidden native input, full-cover so drag events land */
+.dropzone input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.dropzone.busy input[type="file"] {
+  pointer-events: none;
+}
+
+/* ── Progress / Running phase ─────────────────────────── */
+.progress-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 40px 48px;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.progress-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--accent-soft);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.progress-bar-wrap {
+  width: 100%;
+  background: #e5e7eb;
+  border-radius: 8px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 8px;
+  transition: width .25s ease;
+}
+
+.progress-bar-indeterminate {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 8px;
+  width: 40%;
+  animation: indeterminate 1.4s ease-in-out infinite;
+}
+
+@keyframes indeterminate {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(350%); }
+}
+
+.progress-label {
+  font-size: 15px;
+  color: var(--text);
+  font-weight: 500;
+  text-align: center;
+}
+
+.progress-sub {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+}
+
+.progress-pulsedot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-right: 6px;
+  vertical-align: middle;
+  animation: pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: .4; transform: scale(.7); }
+}
+
+/* ── Results ──────────────────────────────────────────── */
+.results-wrap {
+  width: 100%;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0;
+}
+
+.results-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.results-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.3px;
+}
+
+.results-sub {
+  font-size: 14px;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+.results-new-search {
+  background: none;
+  border: none;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  font-family: var(--font);
+}
+
+.results-new-search:hover {
+  text-decoration: underline;
+}
+
+/* ── Job list ─────────────────────────────────────────── */
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── Job card ─────────────────────────────────────────── */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  transition: transform .15s ease, box-shadow .15s ease;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent-soft);
+}
+
+.company-avatar {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.score {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 20px;
+  padding: 2px 10px;
+  font-weight: 700;
+  font-size: 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card-meta {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.apply {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity .15s;
+}
+
+.apply:hover { opacity: .88; }
+
+/* ── Shared muted / error ─────────────────────────────── */
 .muted { color: var(--muted); font-size: 14px; }
 .error { color: #b91c1c; font-size: 14px; }
-.card { background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); padding: 16px; margin-bottom: 12px; }
-.card-top { display: flex; justify-content: space-between; align-items: center; }
-.score { background: var(--accent-soft); color: var(--accent); border-radius: 20px; padding: 2px 10px; font-weight: 700; font-size: 13px; }
-.apply { display: inline-block; margin-top: 10px; background: var(--accent); color: #fff; text-decoration: none; border-radius: 8px; padding: 6px 14px; font-size: 13px; }
-.upload h3 { margin-top: 0; }
-.progress .bar { background: #e5e7eb; border-radius: 8px; height: 10px; overflow: hidden; }
-.progress .fill { background: var(--accent); height: 100%; transition: width .2s; }
-.job-list { display: flex; flex-direction: column; }
