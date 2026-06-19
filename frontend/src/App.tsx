@@ -21,18 +21,31 @@ export default function App() {
     });
   }
 
-  const summary = phase === "results" ? `${jobs.length} matches` : "";
-
   return (
     <div className="app">
       <header className="header">
         <span className="brand">JobScout</span>
-        <span className="muted">{summary}</span>
+        {phase === "results" && (
+          <span className="header-summary">{jobs.length} matches found</span>
+        )}
       </header>
       <main className="main">
         {phase === "upload" && <CvUpload onReady={start} />}
         {phase === "running" && <RunProgress last={last} />}
-        {phase === "results" && <JobList jobs={jobs} />}
+        {phase === "results" && (
+          <div className="results-wrap">
+            <div className="results-header">
+              <div>
+                <div className="results-title">{jobs.length} matches</div>
+                <div className="results-sub">across 250+ companies, ranked to your CV</div>
+              </div>
+              <button className="results-new-search" onClick={() => window.location.reload()}>
+                ↻ New search
+              </button>
+            </div>
+            <JobList jobs={jobs} />
+          </div>
+        )}
       </main>
     </div>
   );

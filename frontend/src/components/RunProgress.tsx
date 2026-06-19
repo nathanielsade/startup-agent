@@ -1,17 +1,61 @@
 import type { RunEvent } from "../api/client";
 
 export function RunProgress({ last }: { last: RunEvent | null }) {
-  if (!last) return <p className="muted">Starting…</p>;
-  if (last.stage === "fetching") {
-    const pct = Math.round((last.done / last.total) * 100);
+  if (!last || last.stage === "fetching" && last.done === 0) {
     return (
-      <div className="progress">
-        <div className="bar"><div className="fill" style={{ width: `${pct}%` }} /></div>
-        <p className="muted">Fetching {last.done}/{last.total} — {last.company} · {last.jobs_fetched} jobs</p>
+      <div className="progress-card">
+        <div className="progress-spinner" />
+        <div className="progress-bar-wrap">
+          <div className="progress-bar-indeterminate" />
+        </div>
+        <div className="progress-label">Starting up…</div>
       </div>
     );
   }
-  if (last.stage === "matching") return <p className="muted">Matching {last.candidates} candidates…</p>;
-  if (last.stage === "error") return <p className="error">Error: {last.message}</p>;
-  return <p className="muted">Done.</p>;
+
+  if (last.stage === "fetching") {
+    const pct = Math.round((last.done / last.total) * 100);
+    return (
+      <div className="progress-card">
+        <div className="progress-spinner" />
+        <div className="progress-bar-wrap">
+          <div className="progress-bar-fill" style={{ width: `${pct}%` }} />
+        </div>
+        <div className="progress-label">
+          <span className="progress-pulsedot" />
+          Scanning {last.done}/{last.total} companies — {last.company}
+        </div>
+        <div className="progress-sub">{last.jobs_fetched} jobs found so far</div>
+      </div>
+    );
+  }
+
+  if (last.stage === "matching") {
+    return (
+      <div className="progress-card">
+        <div className="progress-spinner" />
+        <div className="progress-bar-wrap">
+          <div className="progress-bar-indeterminate" />
+        </div>
+        <div className="progress-label">
+          <span className="progress-pulsedot" />
+          Matching {last.candidates} roles to your CV…
+        </div>
+      </div>
+    );
+  }
+
+  if (last.stage === "error") {
+    return (
+      <div className="progress-card">
+        <div className="error">Error: {last.message}</div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="progress-card">
+      <div className="progress-label">Done.</div>
+    </div>
+  );
 }
