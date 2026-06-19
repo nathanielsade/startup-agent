@@ -7,3 +7,4 @@ jobs.db
 .env
 digests/
 # spike/fixtures/*.json intentionally tracked — test data for phase 0
+.superpowers/
