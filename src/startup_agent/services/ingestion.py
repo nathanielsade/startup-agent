@@ -12,27 +12,33 @@ class IngestionService:
         self._repo = repo
         self._factory = factory
 
-    def run(self) -> RunReport:
+    def run(self, progress=None) -> RunReport:
         companies = self._repo.get_companies()
-        report = RunReport(companies_count=len(companies))
+        total = len(companies)
+        report = RunReport(companies_count=total)
         had_failure = False
 
-        for company in companies:
+        for index, company in enumerate(companies, start=1):
             adapter = self._factory.for_company(company)
             if adapter is None:
                 logger.info("skip_unsupported_ats", company=company.name,
                             ats_type=company.ats_type.value)
-                continue
-            try:
-                jobs = adapter.fetch_jobs(company)
-            except Exception as error:  # per-company isolation
-                had_failure = True
-                logger.warning("fetch_failed", company=company.name, error=str(error))
-                continue
-            report.jobs_fetched += len(jobs)
-            for job in jobs:
-                if self._repo.upsert_job(job):
-                    report.jobs_new += 1
+            else:
+                try:
+                    jobs = adapter.fetch_jobs(company)
+                    report.jobs_fetched += len(jobs)
+                    for job in jobs:
+                        if self._repo.upsert_job(job):
+                            report.jobs_new += 1
+                except Exception as error:  # per-company isolation
+                    had_failure = True
+                    logger.warning("fetch_failed", company=company.name, error=str(error))
+
+            if progress is not None:
+                progress({
+                    "done": index, "total": total, "company": company.name,
+                    "jobs_fetched": report.jobs_fetched, "jobs_new": report.jobs_new,
+                })
 
         report.status = "partial" if had_failure else "success"
         self._repo.record_run(report)

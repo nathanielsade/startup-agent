@@ -64,3 +64,15 @@ def test_ingestion_isolates_company_failure():
     # greenhouse company failed, ashby still ingested
     assert report.jobs_new == 7
     assert report.status == "partial"
+
+
+def test_ingestion_progress_callback_fires_per_company():
+    repo = _seeded_repo()
+    factory = ATSAdapterFactory(fetch_json=_routing_fetcher)
+    events = []
+    IngestionService(repo=repo, factory=factory).run(progress=events.append)
+    # one event per company (3 seeded), each carrying counters
+    assert len(events) == 3
+    assert events[0]["total"] == 3
+    assert {"done", "total", "company", "jobs_fetched", "jobs_new"} <= events[-1].keys()
+    assert events[-1]["done"] == 3
