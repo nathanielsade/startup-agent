@@ -21,3 +21,10 @@ def compute_matches(repo: JobRepository, embedder: Embedder,
     ).run()
     names = {c.id_hash: c.name for c in repo.get_companies()}
     return [to_job_match(job, score, names) for job, score in results]
+
+
+def match_pairs(repo, embedder, preferences_path, threshold):
+    prefs = _load_prefs(repo, preferences_path)
+    return SimilarityMatchingService(
+        repo=repo, embedder=embedder, preferences=prefs, threshold=threshold
+    ).run()
