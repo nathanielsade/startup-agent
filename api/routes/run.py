@@ -8,8 +8,9 @@ from fastapi.responses import StreamingResponse
 from startup_agent.adapters.storage.sqlite_repository import SQLiteJobRepository
 from startup_agent.services.ingestion import IngestionService
 
-from api.deps import get_embedder, get_factory, get_settings
-from api.matching_view import compute_matches
+from api.deps import get_embedder, get_factory, get_ranker, get_settings
+from api.matching_view import match_pairs, _load_prefs
+from startup_agent.services.recent_rescore import rescore_recent
 
 router = APIRouter()
 
@@ -18,7 +19,7 @@ _SENTINEL = object()
 
 @router.get("/run")
 def run(factory=Depends(get_factory), embedder=Depends(get_embedder),
-        settings=Depends(get_settings)) -> StreamingResponse:
+        ranker=Depends(get_ranker), settings=Depends(get_settings)) -> StreamingResponse:
     # Fail fast if no CV — clean 400 instead of a mid-stream error.
     precheck = SQLiteJobRepository(settings.db_path)
     precheck.init_schema()
@@ -32,11 +33,20 @@ def run(factory=Depends(get_factory), embedder=Depends(get_embedder),
             repo = SQLiteJobRepository(settings.db_path)  # own connection in this thread
             repo.init_schema()
             IngestionService(repo=repo, factory=factory).run(
-                progress=lambda ev: events.put({"stage": "fetching", **ev})
-            )
-            matches = compute_matches(repo, embedder, settings.preferences_path,
-                                      settings.match_threshold)
-            events.put({"stage": "matching", "candidates": len(matches)})
+                progress=lambda ev: events.put({"stage": "fetching", **ev}))
+            pairs = match_pairs(repo, embedder, settings.preferences_path, settings.match_threshold)
+            events.put({"stage": "matching", "candidates": len(pairs)})
+            names = {c.id_hash: c.name for c in repo.get_companies()}
+            if ranker is not None:
+                events.put({"stage": "rating", "count": len(pairs)})
+                cv = repo.get_cv()
+                prefs = _load_prefs(repo, settings.preferences_path)
+                matches = rescore_recent(pairs, ranker, cv["text"], prefs,
+                                         settings.llm_recent_hours, names)
+            else:
+                from api.schemas import to_job_match
+                matches = sorted([to_job_match(j, s, names) for j, s in pairs],
+                                 key=lambda m: m.score, reverse=True)
             events.put({"stage": "done", "matched": len(matches),
                         "matches": [m.model_dump() for m in matches]})
         except Exception as error:  # noqa: BLE001 - surface any failure to the UI
