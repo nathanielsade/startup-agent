@@ -22,3 +22,22 @@ def get_embedder() -> Embedder:
 
 def get_factory() -> ATSAdapterFactory:
     return ATSAdapterFactory()
+
+
+def build_ranker(settings):
+    """Return a configured Ranker, or None when no key is present."""
+    provider = (settings.llm_provider or "anthropic").lower()
+    if provider == "openai":
+        if not settings.openai_api_key:
+            return None
+        from startup_agent.adapters.ranking.openai_ranker import OpenAIRanker
+        return OpenAIRanker(api_key=settings.openai_api_key, model=settings.openai_model,
+                            base_url=settings.openai_base_url)
+    if not settings.anthropic_api_key:
+        return None
+    from startup_agent.adapters.ranking.claude_ranker import ClaudeRanker
+    return ClaudeRanker(api_key=settings.anthropic_api_key, model=settings.llm_model)
+
+
+def get_ranker():
+    return build_ranker(get_settings())

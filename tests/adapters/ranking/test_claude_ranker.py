@@ -48,3 +48,13 @@ def test_claude_ranker_caches_cv_in_system_block():
     assert any("MY CV TEXT" in t for t in system_texts)
     assert any(b.get("cache_control") == {"type": "ephemeral"} for b in kw["system"])
     assert "Backend Engineer" in kw["messages"][0]["content"]
+
+
+def test_claude_ranker_injects_preferences_into_prompt():
+    from startup_agent.domain.preferences import Preferences
+    client = _FakeClient()
+    ranker = ClaudeRanker(client=client, model="claude-opus-4-8")
+    ranker.rank("cv", [_job("Backend Engineer")], Preferences(roles=["backend"], max_years=3))
+    system_texts = [b["text"] for b in client.messages.calls[0]["system"]]
+    assert any("backend" in t.lower() for t in system_texts)
+    assert any("3 years" in t for t in system_texts)

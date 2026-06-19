@@ -121,3 +121,14 @@ def test_save_preferences_replaces(repo):
     repo.save_preferences(Preferences(max_years=3))
     repo.save_preferences(Preferences(max_years=5))
     assert repo.get_preferences().max_years == 5
+
+
+def test_get_job_by_id(repo):
+    from startup_agent.domain.models import Company, Job
+    repo.upsert_company(Company(name="Acme"))
+    cid = repo.get_companies()[0].id_hash
+    job = Job(company_id=cid, ats_job_id="1", title="Backend", url="https://x/1")
+    repo.upsert_job(job)
+    got = repo.get_job(job.id)
+    assert got is not None and got.title == "Backend"
+    assert repo.get_job("nope") is None

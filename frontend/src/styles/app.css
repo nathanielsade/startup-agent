@@ -383,3 +383,10 @@
 .prefs-check { display: block; margin-top: 8px; font-size: 14px; }
 .prefs-num { width: 120px; padding: 6px 10px; border: 1px solid #d1d5db; border-radius: 8px; }
 .primary { margin-top: 20px; width: 100%; background: var(--accent); color: #fff; border: none; border-radius: 10px; padding: 11px; font-weight: 700; cursor: pointer; }
+
+/* ── LLM score + Rate button ─────────────────────────── */
+.score-ai { background: #4f46e5; color: #fff; }
+.reason { margin-top: 6px; font-size: 13px; color: #374151; font-style: italic; }
+.card-actions { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
+.rate-btn { background: var(--accent-soft); color: var(--accent); border: 1px solid #c7d2fe; border-radius: 8px; padding: 6px 12px; font-size: 13px; cursor: pointer; }
+.rate-btn:disabled { opacity: .6; cursor: default; }

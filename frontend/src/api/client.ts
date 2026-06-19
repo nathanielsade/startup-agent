@@ -1,4 +1,5 @@
 export interface JobMatch {
+  job_id: string;
   title: string;
   company: string;
   location: string | null;
@@ -6,11 +7,14 @@ export interface JobMatch {
   url: string;
   posted_at: string | null;
   age_label: string;
+  reason: string | null;
+  rated: boolean;
 }
 
 export type RunEvent =
   | { stage: "fetching"; done: number; total: number; company: string; jobs_fetched: number; jobs_new: number }
   | { stage: "matching"; candidates: number }
+  | { stage: "rating"; count: number }
   | { stage: "done"; matched: number; matches: JobMatch[] }
   | { stage: "error"; message: string };
 
@@ -47,6 +51,19 @@ export async function uploadCv(file: File): Promise<{ status: string; chars: num
   body.append("file", file);
   const resp = await fetch("/api/cv", { method: "POST", body });
   if (!resp.ok) throw new Error(`Upload failed (${resp.status})`);
+  return resp.json();
+}
+
+export async function rateJob(jobId: string): Promise<{ score: number; reason: string }> {
+  const resp = await fetch("/api/rate", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ job_id: jobId }),
+  });
+  if (!resp.ok) {
+    const detail = await resp.json().catch(() => ({}));
+    throw new Error((detail as { detail?: string }).detail || `Rate failed (${resp.status})`);
+  }
   return resp.json();
 }
 

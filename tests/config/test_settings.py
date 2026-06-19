@@ -31,3 +31,12 @@ def test_settings_llm_defaults(monkeypatch):
     s = Settings()
     assert s.llm_model == "claude-opus-4-8"
     assert s.llm_threshold == 70
+
+
+def test_settings_llm_provider_defaults(monkeypatch):
+    monkeypatch.delenv("LLM_PROVIDER", raising=False)
+    from startup_agent.config.settings import Settings
+    s = Settings()
+    assert s.llm_provider == "anthropic"
+    assert s.llm_recent_hours == 24
+    assert s.openai_model == "gpt-4o"

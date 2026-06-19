@@ -1,16 +1,10 @@
 import anthropic
 from pydantic import BaseModel, Field
 
+from startup_agent.adapters.ranking.prompt import INSTRUCTIONS, job_text, preferences_clause
 from startup_agent.domain.models import Job, MatchResult
+from startup_agent.domain.preferences import Preferences
 from startup_agent.ports.ranker import Ranker
-
-_SYSTEM = (
-    "You are a job-matching assistant. Given a candidate's CV and a single job "
-    "posting, score how well the job fits the candidate from 0 to 100 and give a "
-    "one-line reason (max ~20 words). Weigh role, seniority, skills, and domain. "
-    "Be strict: 70+ means a genuinely strong fit worth applying to; 40-69 a "
-    "stretch; below 40 a poor fit."
-)
 
 
 class _Score(BaseModel):
@@ -26,24 +20,24 @@ class ClaudeRanker(Ranker):
         )
         self._model = model
 
-    def rank(self, cv_text: str, jobs: list[Job]) -> list[MatchResult]:
+    def rank(self, cv_text: str, jobs: list[Job],
+             preferences: Preferences | None = None) -> list[MatchResult]:
+        instructions = INSTRUCTIONS
+        clause = preferences_clause(preferences)
+        if clause:
+            instructions = f"{INSTRUCTIONS}\n\n{clause}"
         results: list[MatchResult] = []
         for job in jobs:
-            job_text = (
-                f"Title: {job.title}\n"
-                f"Location: {job.location or 'n/a'}\n\n"
-                f"{(job.description or '')[:4000]}"
-            )
             message = self._client.messages.parse(
                 model=self._model,
                 max_tokens=1000,
                 system=[
-                    {"type": "text", "text": _SYSTEM},
+                    {"type": "text", "text": instructions},
                     {"type": "text", "text": f"CANDIDATE CV:\n{cv_text}",
                      "cache_control": {"type": "ephemeral"}},
                 ],
                 messages=[{"role": "user",
-                           "content": f"JOB POSTING:\n{job_text}\n\nScore this job for the candidate."}],
+                           "content": f"JOB POSTING:\n{job_text(job)}\n\nScore this job for the candidate."}],
                 output_format=_Score,
             )
             parsed = message.parsed_output
