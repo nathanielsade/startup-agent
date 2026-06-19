@@ -149,3 +149,20 @@ class SQLiteJobRepository(JobRepository):
             [(_now(), jid) for jid in job_ids],
         )
         self._conn.commit()
+
+    def save_preferences(self, preferences) -> None:
+        self._conn.execute("DELETE FROM preferences")
+        self._conn.execute(
+            "INSERT INTO preferences (json, updated_at) VALUES (?, ?)",
+            (preferences.model_dump_json(), _now()),
+        )
+        self._conn.commit()
+
+    def get_preferences(self):
+        from startup_agent.domain.preferences import Preferences
+        row = self._conn.execute(
+            "SELECT json FROM preferences ORDER BY id DESC LIMIT 1"
+        ).fetchone()
+        if row is None:
+            return None
+        return Preferences.model_validate_json(row["json"])

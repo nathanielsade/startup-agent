@@ -1,37 +1,44 @@
+from datetime import datetime, timedelta, timezone
+
 from startup_agent.domain.models import Job
 from startup_agent.domain.preferences import Preferences
 from startup_agent.matching.prefilter import passes_prefilter
 
-PREFS = Preferences(
-    title_include=["engineer", "developer", "software", "data scientist"],
-    exclude=["Senior", "Manager", "Intern", "Sales Engineer", "Account Executive", "Counsel"],
-)
+NOW = datetime(2026, 6, 19, tzinfo=timezone.utc)
 
 
-def _job(title, location):
-    return Job(company_id="c", ats_job_id="1", title=title, url="https://x/1", location=location)
+def _job(title, location="Tel Aviv", description="", posted_days_ago=1):
+    return Job(company_id="c", ats_job_id="1", title=title, url="https://x/1",
+               location=location, description=description,
+               posted_at=NOW - timedelta(days=posted_days_ago))
 
 
-def test_drops_excluded_seniority_and_non_eng():
-    assert passes_prefilter(_job("Senior Backend Engineer", "Tel Aviv"), PREFS) is False
-    assert passes_prefilter(_job("Engineering Manager", "Tel Aviv"), PREFS) is False
-    assert passes_prefilter(_job("Account Executive", "Tel Aviv"), PREFS) is False
-    assert passes_prefilter(_job("Sales Engineer", "Tel Aviv"), PREFS) is False
-    assert passes_prefilter(_job("Corporate Counsel", "Tel Aviv"), PREFS) is False
+def test_title_include_and_exclude():
+    p = Preferences(title_include=["engineer"], exclude=["senior"])
+    assert passes_prefilter(_job("Backend Engineer"), p, now=NOW) is True
+    assert passes_prefilter(_job("Senior Backend Engineer"), p, now=NOW) is False
+    assert passes_prefilter(_job("Product Manager"), p, now=NOW) is False  # no include kw
 
 
-def test_drops_non_engineering_titles_via_positive_filter():
-    assert passes_prefilter(_job("Product Designer", "Tel Aviv"), PREFS) is False
-    assert passes_prefilter(_job("Payroll Accountant", "Tel Aviv"), PREFS) is False
+def test_district_filter():
+    p = Preferences(districts=["center"], title_include=["engineer"])
+    assert passes_prefilter(_job("Engineer", location="Haifa"), p, now=NOW) is False
+    assert passes_prefilter(_job("Engineer", location="Tel Aviv"), p, now=NOW) is True
 
 
-def test_drops_excluded_location():
-    assert passes_prefilter(_job("Backend Engineer", "Haifa"), PREFS) is False
-    assert passes_prefilter(_job("Backend Engineer", "Jerusalem"), PREFS) is False
-    assert passes_prefilter(_job("Backend Engineer", "Dublin"), PREFS) is False
+def test_max_years_filter():
+    p = Preferences(max_years=3, title_include=["engineer"])
+    assert passes_prefilter(_job("Engineer", description="requires 7+ years"), p, now=NOW) is False
+    assert passes_prefilter(_job("Engineer", description="2 years experience"), p, now=NOW) is True
+    assert passes_prefilter(_job("Engineer", description="no years mentioned"), p, now=NOW) is True  # unknown kept
 
 
-def test_keeps_central_and_remote_eng_roles():
-    assert passes_prefilter(_job("Backend Engineer", "Tel Aviv"), PREFS) is True
-    assert passes_prefilter(_job("Software Engineer", "Remote"), PREFS) is True
-    assert passes_prefilter(_job("Data Scientist", "Tel Aviv"), PREFS) is True
+def test_freshness_filter():
+    p = Preferences(posted_within_days=7, title_include=["engineer"])
+    assert passes_prefilter(_job("Engineer", posted_days_ago=2), p, now=NOW) is True
+    assert passes_prefilter(_job("Engineer", posted_days_ago=30), p, now=NOW) is False
+
+
+def test_empty_prefs_keep_everything_relevant():
+    p = Preferences()  # no constraints
+    assert passes_prefilter(_job("Anything", location="Haifa"), p, now=NOW) is True

@@ -61,3 +61,9 @@ CREATE TABLE IF NOT EXISTS matches (
     created_at TEXT NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_matches_run ON matches(run_id);
+
+CREATE TABLE IF NOT EXISTS preferences (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    json       TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);

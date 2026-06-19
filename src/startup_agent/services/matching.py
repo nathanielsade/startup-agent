@@ -5,6 +5,7 @@ from startup_agent.domain.models import Job
 from startup_agent.domain.preferences import Preferences
 from startup_agent.matching.prefilter import passes_prefilter
 from startup_agent.matching.similarity import cosine
+from startup_agent.matching.soft_score import soft_adjust
 from startup_agent.ports.embedder import Embedder
 from startup_agent.ports.repository import JobRepository
 
@@ -38,7 +39,8 @@ class SimilarityMatchingService:
                       if passes_prefilter(j, self._preferences)]
         scored: list[tuple[Job, float]] = []
         for job in candidates:
-            score = cosine(cv_vector, self._job_vector(job))
+            base = cosine(cv_vector, self._job_vector(job))
+            score = soft_adjust(job, self._preferences, base)
             if score >= self._threshold:
                 scored.append((job, score))
         scored.sort(key=lambda pair: pair[1], reverse=True)
