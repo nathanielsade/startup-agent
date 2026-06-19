@@ -69,24 +69,6 @@ def _is_location_agnostic_remote(text: str) -> bool:
     return not tokens
 
 
-def location_allowed(location: str | None) -> bool:
-    if not location:
-        return False
-    text = location.lower()
-    region = classify_location(location)
-    if region in (Region.NORTH, Region.SOUTH, Region.JERUSALEM):
-        return False
-    if region == Region.CENTER:
-        return True
-    if "israel" in text or "emea" in text or any(city in text for city in _CENTER):
-        return True
-    if region == Region.REMOTE:
-        # Remote is OK only if it's not pinned to a specific (foreign) place.
-        return _is_location_agnostic_remote(text)
-    # UNKNOWN region, no Israel marker -> drop.
-    return False
-
-
 _REGION_NAME = {
     Region.CENTER: "center", Region.NORTH: "north",
     Region.SOUTH: "south", Region.JERUSALEM: "jerusalem",
