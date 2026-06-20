@@ -1,7 +1,10 @@
 import html as _html
 import json
 import re
+from collections.abc import Callable
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
+import httpx
 import structlog
 
 from startup_agent.adapters.ats._dates import parse_dt
@@ -12,6 +15,8 @@ from startup_agent.ports.ats import ATSAdapter
 logger = structlog.get_logger()
 
 _BASE = "https://www.comeet.co/careers-api/2.0/company/{uid}/positions?token={token}"
+_MAX_WORKERS = 8
+_PAGE_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
 _DESC_RE = re.compile(r'"description"\s*:\s*"((?:[^"\\]|\\.)*)"')
 _TAG_RE = re.compile(r"<[^>]+>")
@@ -33,11 +38,19 @@ def extract_description(page_html: str) -> str | None:
     return text or None
 
 
+def _default_fetch_page(url: str) -> str:
+    resp = httpx.get(url, timeout=10.0, follow_redirects=True, headers={"User-Agent": _PAGE_UA})
+    resp.raise_for_status()
+    return resp.text
+
+
 class ComeetAdapter(ATSAdapter):
     ats_type = AtsType.COMEET
 
-    def __init__(self, fetch_json: JsonFetcher | None = None) -> None:
+    def __init__(self, fetch_json: JsonFetcher | None = None,
+                 fetch_page: Callable[[str], str] | None = None) -> None:
         self._fetch = fetch_json or HttpJsonFetcher()
+        self._fetch_page = fetch_page or _default_fetch_page
 
     def fetch_jobs(self, company: Company) -> list[Job]:
         token_field = company.ats_token or ""
@@ -47,10 +60,11 @@ class ComeetAdapter(ATSAdapter):
         uid, token = token_field.split(":", 1)
         payload = self._fetch(_BASE.format(uid=uid, token=token))
         jobs: list[Job] = []
+        job_pages: list[tuple[Job, str]] = []
         for raw in payload:  # Comeet returns a top-level list
             try:
                 location = raw.get("location") or {}
-                jobs.append(Job(
+                job = Job(
                     company_id=company.id_hash,
                     ats_job_id=str(raw["uid"]),
                     title=raw["name"],
@@ -59,8 +73,31 @@ class ComeetAdapter(ATSAdapter):
                     location=location.get("name"),
                     description=None,
                     posted_at=parse_dt(raw.get("time_updated")),
-                ))
+                )
             except Exception as error:
                 logger.warning("skip_bad_job", company=company.name, ats="comeet", error=str(error))
                 continue
+            jobs.append(job)
+            hosted = raw.get("url_comeet_hosted_page") or raw.get("position_url")
+            if hosted:
+                job_pages.append((job, hosted))
+
+        self._enrich_descriptions(company, job_pages)
         return jobs
+
+    def _enrich_descriptions(self, company: Company,
+                             job_pages: list[tuple[Job, str]]) -> None:
+        if not job_pages:
+            return
+        with ThreadPoolExecutor(max_workers=_MAX_WORKERS) as pool:
+            futures = {pool.submit(self._fetch_page, url): job for job, url in job_pages}
+            for future in as_completed(futures):
+                job = futures[future]
+                try:
+                    desc = extract_description(future.result())
+                except Exception as error:
+                    logger.warning("comeet_description_failed", company=company.name,
+                                   job=job.title, error=str(error))
+                    continue
+                if desc:
+                    job.description = desc
