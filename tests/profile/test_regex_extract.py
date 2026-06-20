@@ -40,3 +40,8 @@ def test_local_10_digit_phone_extracted():
 
 def test_email_trailing_dot_stripped():
     assert regex_extract("reach me at a@b.io.")["email"] == "a@b.io"
+
+
+def test_email_tolerates_pdf_spaces_around_at():
+    # PDF text extraction often inserts a space, e.g. "name @gmail.com"
+    assert regex_extract("Developer\nNetanelsbt @gmail.com\n")["email"] == "Netanelsbt@gmail.com"
