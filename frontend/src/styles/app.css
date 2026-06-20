@@ -416,3 +416,10 @@
 .profile-field-label { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; }
 .profile-field input { padding: 7px 10px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 14px; }
 @media (max-width: 520px) { .profile-fields { grid-template-columns: 1fr; } }
+.apply-panel { margin-top: 12px; padding-top: 10px; border-top: 1px solid #eee; display: flex; flex-direction: column; gap: 8px; }
+.li-link { color: var(--accent); font-size: 13px; font-weight: 600; }
+.apply-fields { display: flex; flex-direction: column; gap: 6px; }
+.apply-row { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.apply-row-label { width: 80px; color: var(--muted); font-weight: 700; flex-shrink: 0; }
+.apply-row-val { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.copy-btn { background: var(--accent-soft); color: var(--accent); border: 1px solid #c7d2fe; border-radius: 6px; padding: 3px 10px; font-size: 12px; cursor: pointer; flex-shrink: 0; }
