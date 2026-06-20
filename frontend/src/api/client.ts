@@ -102,6 +102,41 @@ export async function clearLlmConfig(): Promise<void> {
   if (!resp.ok) throw new Error(`Remove key failed (${resp.status})`);
 }
 
+export interface ApplicantProfile {
+  first_name: string;
+  last_name: string;
+  email: string;
+  phone: string;
+  linkedin_url: string;
+  github_url: string;
+  location: string;
+  current_title: string;
+}
+
+export async function getProfile(): Promise<ApplicantProfile> {
+  const resp = await fetch("/api/profile");
+  if (!resp.ok) throw new Error(`Load profile failed (${resp.status})`);
+  return resp.json();
+}
+
+export async function saveProfile(profile: ApplicantProfile): Promise<void> {
+  const resp = await fetch("/api/profile", {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(profile),
+  });
+  if (!resp.ok) throw new Error(`Save profile failed (${resp.status})`);
+}
+
+export async function extractProfile(): Promise<ApplicantProfile> {
+  const resp = await fetch("/api/profile/extract", { method: "POST" });
+  if (!resp.ok) {
+    const detail = await resp.json().catch(() => ({}));
+    throw new Error((detail as { detail?: string }).detail || `Extract failed (${resp.status})`);
+  }
+  return resp.json();
+}
+
 // SSE via EventSource (GET). onEvent fires per progress event; resolves on done/error.
 export function runStream(onEvent: (e: RunEvent) => void): EventSource {
   const es = new EventSource("/api/run");
