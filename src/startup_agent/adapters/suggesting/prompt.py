@@ -25,5 +25,8 @@ def to_preferences(data: dict) -> Preferences:
             max_years = int(max_years)
         except (ValueError, TypeError):
             max_years = None
+        else:
+            if max_years <= 0:
+                max_years = None
     return Preferences(max_years=max_years, roles=roles, seniority=seniority,
                        title_include=title_include)

@@ -34,7 +34,10 @@ def suggest_preferences(suggester=Depends(get_suggester),
     if cv is None:
         raise HTTPException(status_code=400, detail="No CV uploaded.")
     current = repo.get_preferences() or Preferences()
-    suggestion = suggester.suggest(cv["text"])
+    try:
+        suggestion = suggester.suggest(cv["text"])
+    except Exception as exc:
+        raise HTTPException(status_code=502, detail="Auto-fill failed, please try again.") from exc
     return current.model_copy(update={
         "max_years": suggestion.max_years,
         "roles": suggestion.roles,

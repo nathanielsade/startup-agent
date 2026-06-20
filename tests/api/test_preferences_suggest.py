@@ -21,6 +21,11 @@ class _FakeSuggester:
                            title_include=["engineer"])
 
 
+class _RaisingSuggester:
+    def suggest(self, cv_text):
+        raise RuntimeError("provider exploded")
+
+
 def test_suggest_merges_inferable_onto_current(client, settings):
     repo = SQLiteJobRepository(settings.db_path)
     repo.init_schema()
@@ -51,3 +56,12 @@ def test_suggest_without_cv_returns_400(client, settings):
     app.dependency_overrides[deps.get_suggester] = lambda: _FakeSuggester()
     resp = client.post("/api/preferences/suggest")  # no CV uploaded
     assert resp.status_code == 400
+
+
+def test_suggest_provider_error_returns_502(client, settings):
+    repo = SQLiteJobRepository(settings.db_path)
+    repo.init_schema()
+    client.post("/api/cv", files={"file": ("cv.pdf", _pdf(), "application/pdf")})
+    app.dependency_overrides[deps.get_suggester] = lambda: _RaisingSuggester()
+    resp = client.post("/api/preferences/suggest")
+    assert resp.status_code == 502
