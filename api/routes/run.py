@@ -36,16 +36,18 @@ def run(factory=Depends(get_factory), embedder=Depends(get_embedder),
                 progress=lambda ev: events.put({"stage": "fetching", **ev}))
             pairs = match_pairs(repo, embedder, settings.preferences_path, settings.match_threshold)
             events.put({"stage": "matching", "candidates": len(pairs)})
-            names = {c.id_hash: c.name for c in repo.get_companies()}
+            companies = repo.get_companies()
+            names = {c.id_hash: c.name for c in companies}
+            links = {c.id_hash: c.linkedin_url for c in companies}
             if ranker is not None:
                 events.put({"stage": "rating", "count": len(pairs)})
                 cv = repo.get_cv()
                 prefs = _load_prefs(repo, settings.preferences_path)
                 matches = rescore_recent(pairs, ranker, cv["text"], prefs,
-                                         settings.llm_recent_hours, names)
+                                         settings.llm_recent_hours, names, company_links=links)
             else:
                 from api.schemas import to_job_match
-                matches = sorted([to_job_match(j, s, names) for j, s in pairs],
+                matches = sorted([to_job_match(j, s, names, company_links=links) for j, s in pairs],
                                  key=lambda m: m.score, reverse=True)
             events.put({"stage": "done", "matched": len(matches),
                         "matches": [m.model_dump() for m in matches]})

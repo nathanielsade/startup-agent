@@ -3,6 +3,7 @@ import "./styles/tokens.css";
 import "./styles/app.css";
 import { CvUpload } from "./components/CvUpload";
 import { PreferencesForm } from "./components/PreferencesForm";
+import { ProfileForm } from "./components/ProfileForm";
 import { RunProgress } from "./components/RunProgress";
 import { JobList } from "./components/JobList";
 import { runStream, type RunEvent, type JobMatch } from "./api/client";
@@ -32,7 +33,12 @@ export default function App() {
       </header>
       <main className="main">
         {phase === "upload" && <CvUpload onReady={() => setPhase("preferences")} />}
-        {phase === "preferences" && <PreferencesForm onSaved={start} />}
+        {phase === "preferences" && (
+          <>
+            <ProfileForm />
+            <PreferencesForm onSaved={start} />
+          </>
+        )}
         {phase === "running" && <RunProgress last={last} />}
         {phase === "results" && (
           <div className="results-wrap">

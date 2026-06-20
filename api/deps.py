@@ -74,3 +74,27 @@ def get_suggester():
         return build_suggester_from("openai", settings.openai_api_key,
                                     settings.openai_model, settings.openai_base_url)
     return build_suggester_from("anthropic", settings.anthropic_api_key, settings.llm_model)
+
+
+def build_profile_extractor_from(provider: str, api_key: str, model: str = "", base_url: str = ""):
+    """Build a CvProfileExtractor from raw config, or None when no key is given."""
+    if not api_key:
+        return None
+    if (provider or "anthropic").lower() == "openai":
+        from startup_agent.adapters.profiling.openai_extractor import OpenAIProfileExtractor
+        return OpenAIProfileExtractor(api_key=api_key, model=model or "gpt-4o", base_url=base_url)
+    from startup_agent.adapters.profiling.claude_extractor import ClaudeProfileExtractor
+    return ClaudeProfileExtractor(api_key=api_key, model=model or "claude-opus-4-8")
+
+
+def get_profile_extractor():
+    from api.llm_config import get_config
+    cfg = get_config()
+    if cfg is not None:
+        return build_profile_extractor_from(cfg["provider"], cfg["api_key"], cfg.get("model", ""))
+    settings = get_settings()
+    provider = (settings.llm_provider or "anthropic").lower()
+    if provider == "openai":
+        return build_profile_extractor_from("openai", settings.openai_api_key,
+                                            settings.openai_model, settings.openai_base_url)
+    return build_profile_extractor_from("anthropic", settings.anthropic_api_key, settings.llm_model)

@@ -25,6 +25,7 @@ class Company(BaseModel):
     size: str | None = None
     source: str = "snc"
     active: bool = True
+    linkedin_url: str | None = None
 
     @computed_field
     @property

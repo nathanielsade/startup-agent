@@ -16,6 +16,7 @@ class JobMatch(BaseModel):
     age_label: str
     reason: str | None = None
     rated: bool = False
+    company_linkedin_url: str | None = None
 
 
 def _age_label(posted_at: datetime | None, now: datetime) -> str:
@@ -28,7 +29,8 @@ def _age_label(posted_at: datetime | None, now: datetime) -> str:
 
 
 def to_job_match(job: Job, score: float, company_names: dict[str, str],
-                 now: datetime | None = None) -> JobMatch:
+                 now: datetime | None = None,
+                 company_links: dict[str, str | None] | None = None) -> JobMatch:
     now = now or datetime.now(timezone.utc)
     return JobMatch(
         job_id=job.id,
@@ -39,11 +41,13 @@ def to_job_match(job: Job, score: float, company_names: dict[str, str],
         url=job.url,
         posted_at=job.posted_at.isoformat() if job.posted_at else None,
         age_label=_age_label(job.posted_at, now),
+        company_linkedin_url=(company_links or {}).get(job.company_id),
     )
 
 
 def job_match_from_result(job: Job, result: MatchResult, company_names: dict[str, str],
-                          now: datetime | None = None) -> JobMatch:
-    base = to_job_match(job, 0.0, company_names, now)
+                          now: datetime | None = None,
+                          company_links: dict[str, str | None] | None = None) -> JobMatch:
+    base = to_job_match(job, 0.0, company_names, now, company_links)
     return base.model_copy(update={"score": result.score, "reason": result.reason,
                                    "rated": True})

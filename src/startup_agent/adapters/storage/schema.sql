@@ -10,7 +10,8 @@ CREATE TABLE IF NOT EXISTS companies (
     source       TEXT NOT NULL DEFAULT 'snc',
     active       INTEGER NOT NULL DEFAULT 1,
     added_at     TEXT NOT NULL,
-    last_fetched_at TEXT
+    last_fetched_at TEXT,
+    linkedin_url TEXT
 );
 
 CREATE TABLE IF NOT EXISTS jobs (
@@ -63,6 +64,12 @@ CREATE TABLE IF NOT EXISTS matches (
 CREATE INDEX IF NOT EXISTS idx_matches_run ON matches(run_id);
 
 CREATE TABLE IF NOT EXISTS preferences (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    json       TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS profile (
     id         INTEGER PRIMARY KEY AUTOINCREMENT,
     json       TEXT NOT NULL,
     updated_at TEXT NOT NULL
