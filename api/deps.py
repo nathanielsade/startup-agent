@@ -24,20 +24,29 @@ def get_factory() -> ATSAdapterFactory:
     return ATSAdapterFactory()
 
 
+def build_ranker_from(provider: str, api_key: str, model: str = "", base_url: str = ""):
+    """Build a Ranker from raw config, or None when no key is given."""
+    if not api_key:
+        return None
+    if (provider or "anthropic").lower() == "openai":
+        from startup_agent.adapters.ranking.openai_ranker import OpenAIRanker
+        return OpenAIRanker(api_key=api_key, model=model or "gpt-4o", base_url=base_url)
+    from startup_agent.adapters.ranking.claude_ranker import ClaudeRanker
+    return ClaudeRanker(api_key=api_key, model=model or "claude-opus-4-8")
+
+
 def build_ranker(settings):
-    """Return a configured Ranker, or None when no key is present."""
+    """Build a Ranker from .env settings, or None when no key is present."""
     provider = (settings.llm_provider or "anthropic").lower()
     if provider == "openai":
-        if not settings.openai_api_key:
-            return None
-        from startup_agent.adapters.ranking.openai_ranker import OpenAIRanker
-        return OpenAIRanker(api_key=settings.openai_api_key, model=settings.openai_model,
-                            base_url=settings.openai_base_url)
-    if not settings.anthropic_api_key:
-        return None
-    from startup_agent.adapters.ranking.claude_ranker import ClaudeRanker
-    return ClaudeRanker(api_key=settings.anthropic_api_key, model=settings.llm_model)
+        return build_ranker_from("openai", settings.openai_api_key,
+                                 settings.openai_model, settings.openai_base_url)
+    return build_ranker_from("anthropic", settings.anthropic_api_key, settings.llm_model)
 
 
 def get_ranker():
+    from api.llm_config import get_config
+    cfg = get_config()
+    if cfg is not None:
+        return build_ranker_from(cfg["provider"], cfg["api_key"], cfg.get("model", ""))
     return build_ranker(get_settings())

@@ -67,6 +67,32 @@ export async function rateJob(jobId: string): Promise<{ score: number; reason: s
   return resp.json();
 }
 
+export interface LlmConfig {
+  configured: boolean;
+  provider: string | null;
+}
+
+export async function getLlmConfig(): Promise<LlmConfig> {
+  const resp = await fetch("/api/llm-config");
+  if (!resp.ok) throw new Error(`Load LLM config failed (${resp.status})`);
+  return resp.json();
+}
+
+export async function setLlmConfig(provider: string, apiKey: string, model?: string): Promise<LlmConfig> {
+  const resp = await fetch("/api/llm-config", {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ provider, api_key: apiKey, model }),
+  });
+  if (!resp.ok) throw new Error(`Save key failed (${resp.status})`);
+  return resp.json();
+}
+
+export async function clearLlmConfig(): Promise<void> {
+  const resp = await fetch("/api/llm-config", { method: "DELETE" });
+  if (!resp.ok) throw new Error(`Remove key failed (${resp.status})`);
+}
+
 // SSE via EventSource (GET). onEvent fires per progress event; resolves on done/error.
 export function runStream(onEvent: (e: RunEvent) => void): EventSource {
   const es = new EventSource("/api/run");

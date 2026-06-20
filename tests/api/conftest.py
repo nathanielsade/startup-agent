@@ -6,6 +6,14 @@ from api import deps
 from startup_agent.config.settings import Settings
 
 
+@pytest.fixture(autouse=True)
+def _clear_llm_config():
+    from api import llm_config
+    llm_config.clear_config()
+    yield
+    llm_config.clear_config()
+
+
 class FakeEmbedder:
     def embed(self, texts):
         return [[1.0, 0.0] if "backend" in t.lower() else [0.0, 1.0] for t in texts]
