@@ -374,7 +374,7 @@
 .error { color: #b91c1c; font-size: 14px; }
 
 /* ── Preferences form ─────────────────────────────────── */
-.prefs { max-width: 560px; text-align: left; }
+.prefs { display: block; width: 100%; max-width: 560px; text-align: left; }
 .prefs-label { display: block; font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; margin: 16px 0 6px; }
 .hard { color: #b91c1c; } .soft { color: var(--accent); }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
