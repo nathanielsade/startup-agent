@@ -50,3 +50,27 @@ def get_ranker():
     if cfg is not None:
         return build_ranker_from(cfg["provider"], cfg["api_key"], cfg.get("model", ""))
     return build_ranker(get_settings())
+
+
+def build_suggester_from(provider: str, api_key: str, model: str = "", base_url: str = ""):
+    """Build a CvPreferenceSuggester from raw config, or None when no key is given."""
+    if not api_key:
+        return None
+    if (provider or "anthropic").lower() == "openai":
+        from startup_agent.adapters.suggesting.openai_suggester import OpenAICvSuggester
+        return OpenAICvSuggester(api_key=api_key, model=model or "gpt-4o", base_url=base_url)
+    from startup_agent.adapters.suggesting.claude_suggester import ClaudeCvSuggester
+    return ClaudeCvSuggester(api_key=api_key, model=model or "claude-opus-4-8")
+
+
+def get_suggester():
+    from api.llm_config import get_config
+    cfg = get_config()
+    if cfg is not None:
+        return build_suggester_from(cfg["provider"], cfg["api_key"], cfg.get("model", ""))
+    settings = get_settings()
+    provider = (settings.llm_provider or "anthropic").lower()
+    if provider == "openai":
+        return build_suggester_from("openai", settings.openai_api_key,
+                                    settings.openai_model, settings.openai_base_url)
+    return build_suggester_from("anthropic", settings.anthropic_api_key, settings.llm_model)

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getPreferences, savePreferences, type Preferences } from "../api/client";
+import { getLlmConfig, getPreferences, savePreferences, suggestPreferences, type Preferences } from "../api/client";
 import { AiScoringPanel } from "./AiScoringPanel";
 
 const DISTRICTS = ["center", "north", "south", "jerusalem"];
@@ -21,8 +21,26 @@ function Chips({ options, selected, onToggle }:
 
 export function PreferencesForm({ onSaved }: { onSaved: () => void }) {
   const [p, setP] = useState<Preferences | null>(null);
+  const [aiOn, setAiOn] = useState(false);
+  const [autofilling, setAutofilling] = useState(false);
+  const [autofillErr, setAutofillErr] = useState<string | null>(null);
 
   useEffect(() => { getPreferences().then(setP); }, []);
+  useEffect(() => { getLlmConfig().then((c) => setAiOn(c.configured)); }, []);
+
+  async function autofill() {
+    setAutofilling(true); setAutofillErr(null);
+    try {
+      const s = await suggestPreferences();
+      setP((cur) => cur && ({
+        ...cur,
+        max_years: s.max_years, roles: s.roles,
+        seniority: s.seniority, title_include: s.title_include,
+      }));
+    } catch (e) { setAutofillErr(e instanceof Error ? e.message : "Auto-fill failed"); }
+    finally { setAutofilling(false); }
+  }
+
   if (!p) return <p className="muted">Loading preferences…</p>;
 
   const toggle = (key: "districts" | "roles" | "seniority", v: string) =>
@@ -33,6 +51,14 @@ export function PreferencesForm({ onSaved }: { onSaved: () => void }) {
   return (
     <div className="card prefs">
       <h3>Your preferences</h3>
+
+      <button className="autofill-btn" onClick={autofill}
+              disabled={!aiOn || autofilling}
+              title={aiOn ? "" : "Add a key in AI scoring below to enable"}>
+        {autofilling ? "Reading your CV…" : "✨ Auto-fill from CV"}
+      </button>
+      {!aiOn && <p className="muted autofill-hint">Enable AI scoring below to auto-fill from your CV.</p>}
+      {autofillErr && <p className="error">{autofillErr}</p>}
 
       <label className="prefs-label">Districts <span className="hard">· hard</span></label>
       <Chips options={DISTRICTS} selected={p.districts} onToggle={(v) => toggle("districts", v)} />

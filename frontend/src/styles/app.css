@@ -401,3 +401,8 @@
 .ai-on { display: flex; align-items: center; gap: 10px; }
 .ai-badge { background: #ecfdf5; color: #047857; border-radius: 20px; padding: 3px 10px; font-size: 13px; font-weight: 600; }
 .link-btn { background: none; border: none; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: 13px; }
+
+/* ✨ Auto-fill from CV button */
+.autofill-btn { margin: 4px 0 10px; background: #fff; color: var(--accent); border: 1px solid #c7d2fe; border-radius: 8px; padding: 7px 14px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.autofill-btn:disabled { opacity: .55; cursor: default; }
+.autofill-hint { margin: 0 0 8px; }
