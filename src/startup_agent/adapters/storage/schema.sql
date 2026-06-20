@@ -67,3 +67,9 @@ CREATE TABLE IF NOT EXISTS preferences (
     json       TEXT NOT NULL,
     updated_at TEXT NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS profile (
+    id         INTEGER PRIMARY KEY AUTOINCREMENT,
+    json       TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);

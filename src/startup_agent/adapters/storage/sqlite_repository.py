@@ -167,6 +167,23 @@ class SQLiteJobRepository(JobRepository):
             return None
         return Preferences.model_validate_json(row["json"])
 
+    def save_profile(self, profile) -> None:
+        self._conn.execute("DELETE FROM profile")
+        self._conn.execute(
+            "INSERT INTO profile (json, updated_at) VALUES (?, ?)",
+            (profile.model_dump_json(), _now()),
+        )
+        self._conn.commit()
+
+    def get_profile(self):
+        from startup_agent.domain.applicant_profile import ApplicantProfile
+        row = self._conn.execute(
+            "SELECT json FROM profile ORDER BY id DESC LIMIT 1"
+        ).fetchone()
+        if row is None:
+            return None
+        return ApplicantProfile.model_validate_json(row["json"])
+
     def get_job(self, job_id: str):
         row = self._conn.execute(
             "SELECT company_id, ats_job_id, title, location, url, description, posted_at "
