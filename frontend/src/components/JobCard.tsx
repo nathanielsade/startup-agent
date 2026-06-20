@@ -72,7 +72,7 @@ export function JobCard({ job, profile }: { job: JobMatch; profile: ApplicantPro
         </div>
         {open && (
           <div className="apply-panel">
-            <a className="li-link" href={linkedinCompanyUrl(j.company)} target="_blank" rel="noreferrer">
+            <a className="li-link" href={j.company_linkedin_url || linkedinCompanyUrl(j.company)} target="_blank" rel="noreferrer">
               View {j.company} on LinkedIn ↗
             </a>
             {!profile || PANEL_FIELDS.every((f) => !profile[f.key]) ? (

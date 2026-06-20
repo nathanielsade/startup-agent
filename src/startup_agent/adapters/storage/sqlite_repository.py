@@ -26,21 +26,26 @@ class SQLiteJobRepository(JobRepository):
         cols = {r["name"] for r in self._conn.execute("PRAGMA table_info(jobs)")}
         if "notified_at" not in cols:
             self._conn.execute("ALTER TABLE jobs ADD COLUMN notified_at TEXT")
+        ccols = {r["name"] for r in self._conn.execute("PRAGMA table_info(companies)")}
+        if "linkedin_url" not in ccols:
+            self._conn.execute("ALTER TABLE companies ADD COLUMN linkedin_url TEXT")
         self._conn.commit()
 
     def upsert_company(self, company: Company) -> str:
         cid = company.id_hash
         self._conn.execute(
             """INSERT INTO companies
-               (id,name,website,careers_url,ats_type,ats_token,sector,size,source,active,added_at)
-               VALUES (?,?,?,?,?,?,?,?,?,?,?)
+               (id,name,website,careers_url,ats_type,ats_token,sector,size,source,active,added_at,linkedin_url)
+               VALUES (?,?,?,?,?,?,?,?,?,?,?,?)
                ON CONFLICT(id) DO UPDATE SET
                  website=excluded.website, careers_url=excluded.careers_url,
                  ats_type=excluded.ats_type, ats_token=excluded.ats_token,
-                 sector=excluded.sector, size=excluded.size, active=excluded.active""",
+                 sector=excluded.sector, size=excluded.size, active=excluded.active,
+                 linkedin_url=excluded.linkedin_url""",
             (cid, company.name, company.website, company.careers_url,
              company.ats_type.value, company.ats_token, company.sector,
-             company.size, company.source, int(company.active), _now()),
+             company.size, company.source, int(company.active), _now(),
+             company.linkedin_url),
         )
         self._conn.commit()
         return cid
@@ -55,7 +60,7 @@ class SQLiteJobRepository(JobRepository):
                 name=r["name"], website=r["website"], careers_url=r["careers_url"],
                 ats_type=AtsType(r["ats_type"]), ats_token=r["ats_token"],
                 sector=r["sector"], size=r["size"], source=r["source"],
-                active=bool(r["active"]),
+                active=bool(r["active"]), linkedin_url=r["linkedin_url"],
             )
             for r in rows
         ]

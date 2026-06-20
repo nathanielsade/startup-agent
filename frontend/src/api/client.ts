@@ -9,6 +9,7 @@ export interface JobMatch {
   age_label: string;
   reason: string | null;
   rated: boolean;
+  company_linkedin_url: string | null;
 }
 
 export type RunEvent =

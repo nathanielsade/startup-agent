@@ -49,6 +49,12 @@ def test_get_companies_round_trip_preserves_fields_and_id(repo):
     assert fetched.id_hash == stored_id
 
 
+def test_company_linkedin_url_round_trip(repo):
+    repo.upsert_company(Company(
+        name="Acme", linkedin_url="https://www.linkedin.com/company/acme"))
+    assert repo.get_companies()[0].linkedin_url == "https://www.linkedin.com/company/acme"
+
+
 def test_get_companies_active_only_filter(repo):
     repo.upsert_company(Company(name="ActiveCo", active=True))
     repo.upsert_company(Company(name="InactiveCo", active=False))

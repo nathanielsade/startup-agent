@@ -10,7 +10,8 @@ CREATE TABLE IF NOT EXISTS companies (
     source       TEXT NOT NULL DEFAULT 'snc',
     active       INTEGER NOT NULL DEFAULT 1,
     added_at     TEXT NOT NULL,
-    last_fetched_at TEXT
+    last_fetched_at TEXT,
+    linkedin_url TEXT
 );
 
 CREATE TABLE IF NOT EXISTS jobs (
