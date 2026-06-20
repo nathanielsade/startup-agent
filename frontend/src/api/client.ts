@@ -67,6 +67,15 @@ export async function rateJob(jobId: string): Promise<{ score: number; reason: s
   return resp.json();
 }
 
+export async function suggestPreferences(): Promise<Preferences> {
+  const resp = await fetch("/api/preferences/suggest", { method: "POST" });
+  if (!resp.ok) {
+    const detail = await resp.json().catch(() => ({}));
+    throw new Error((detail as { detail?: string }).detail || `Auto-fill failed (${resp.status})`);
+  }
+  return resp.json();
+}
+
 export interface LlmConfig {
   configured: boolean;
   provider: string | null;
