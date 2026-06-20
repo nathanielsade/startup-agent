@@ -1741,5 +1741,54 @@
     "ats_type": "lever",
     "ats_token": "zimperium",
     "linkedin_url": "https://www.linkedin.com/company/zimperium"
+  },
+  {
+    "name": "Hexagate",
+    "website": "https://hexagate.com",
+    "ats_type": "ashby",
+    "ats_token": "chainalysis-careers",
+    "linkedin_url": null
+  },
+  {
+    "name": "6sense",
+    "website": "https://6sense.com",
+    "ats_type": "greenhouse",
+    "ats_token": "6sense",
+    "linkedin_url": null
+  },
+  {
+    "name": "A Place for Mom",
+    "website": "https://aplaceformom.com",
+    "ats_type": "ashby",
+    "ats_token": "a-place-for-mom",
+    "linkedin_url": null
+  },
+  {
+    "name": "acceldata",
+    "website": "https://acceldata.io",
+    "ats_type": "lever",
+    "ats_token": "acceldata",
+    "linkedin_url": null
+  },
+  {
+    "name": "Afresh Technologies",
+    "website": "https://afresh.com",
+    "ats_type": "greenhouse",
+    "ats_token": "afresh",
+    "linkedin_url": null
+  },
+  {
+    "name": "Unframe",
+    "website": "https://unframe.ai",
+    "ats_type": "greenhouse",
+    "ats_token": "unframe",
+    "linkedin_url": null
+  },
+  {
+    "name": "REAL",
+    "website": "https://real.dev",
+    "ats_type": "ashby",
+    "ats_token": "real",
+    "linkedin_url": null
   }
 ]
