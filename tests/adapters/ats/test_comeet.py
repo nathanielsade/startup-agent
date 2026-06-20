@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from startup_agent.adapters.ats.comeet import ComeetAdapter
+from startup_agent.adapters.ats.comeet import ComeetAdapter, extract_description
 from startup_agent.domain.models import AtsType, Company
 
 FIXTURE = Path("spike/fixtures/comeet_aqua.json")
@@ -15,7 +15,7 @@ def test_comeet_builds_url_and_parses_positions():
         captured["url"] = url
         return payload
 
-    adapter = ComeetAdapter(fetch_json=fetch)
+    adapter = ComeetAdapter(fetch_json=fetch, fetch_page=lambda url: "")
     company = Company(name="Aqua", ats_type=AtsType.COMEET, ats_token="91.001:SECRETTOKEN")
     jobs = adapter.fetch_jobs(company)
 
@@ -31,6 +31,67 @@ def test_comeet_builds_url_and_parses_positions():
 
 
 def test_comeet_missing_token_returns_empty():
-    adapter = ComeetAdapter(fetch_json=lambda url: [])
+    adapter = ComeetAdapter(fetch_json=lambda url: [], fetch_page=lambda url: "")
     assert adapter.fetch_jobs(Company(name="X", ats_type=AtsType.COMEET, ats_token=None)) == []
     assert adapter.fetch_jobs(Company(name="X", ats_type=AtsType.COMEET, ats_token="no-colon")) == []
+
+
+HOSTED = Path("spike/fixtures/comeet_hosted_page.html")
+
+
+def test_extract_description_from_real_hosted_page():
+    desc = extract_description(HOSTED.read_text())
+    assert desc is not None
+    assert len(desc) > 100
+    assert "Aqua" in desc          # real content from the fixture
+    assert "<" not in desc         # HTML tags stripped
+    assert "&nbsp;" not in desc    # entities unescaped
+
+
+def test_extract_description_none_when_absent():
+    assert extract_description("<html><body>no description here</body></html>") is None
+    assert extract_description("") is None
+
+
+def test_comeet_attaches_descriptions_from_hosted_pages():
+    payload = [
+        {"uid": "P1", "name": "Backend Engineer", "url_active_page": "https://x/1",
+         "url_comeet_hosted_page": "https://www.comeet.com/jobs/acme/9/be/P1",
+         "location": {"name": "Tel Aviv"}, "time_updated": "2026-01-01T00:00:00+00:00"},
+        {"uid": "P2", "name": "Data Engineer", "url_active_page": "https://x/2",
+         "url_comeet_hosted_page": "https://www.comeet.com/jobs/acme/9/de/P2",
+         "location": {"name": "Tel Aviv"}, "time_updated": "2026-01-01T00:00:00+00:00"},
+    ]
+    pages = {
+        "https://www.comeet.com/jobs/acme/9/be/P1":
+            '<script>{"description":"Build \\u003cb\\u003ebackend\\u003c/b\\u003e services and APIs."}</script>',
+        "https://www.comeet.com/jobs/acme/9/de/P2":
+            '<script>{"description":"Own the data pipelines."}</script>',
+    }
+    adapter = ComeetAdapter(fetch_json=lambda url: payload, fetch_page=lambda url: pages[url])
+    jobs = adapter.fetch_jobs(Company(name="Acme", ats_type=AtsType.COMEET, ats_token="9:tok"))
+    by_title = {j.title: j for j in jobs}
+    assert "backend services" in by_title["Backend Engineer"].description
+    assert "<b>" not in by_title["Backend Engineer"].description   # tags stripped
+    assert by_title["Data Engineer"].description == "Own the data pipelines."
+
+
+def test_comeet_description_failure_is_graceful():
+    payload = [
+        {"uid": "P1", "name": "Backend Engineer", "url_active_page": "https://x/1",
+         "url_comeet_hosted_page": "https://ok", "location": {"name": "Tel Aviv"}},
+        {"uid": "P2", "name": "Data Engineer", "url_active_page": "https://x/2",
+         "url_comeet_hosted_page": "https://boom", "location": {"name": "Tel Aviv"}},
+    ]
+
+    def fetch_page(url):
+        if url == "https://boom":
+            raise RuntimeError("network down")
+        return '<script>{"description":"Good description."}</script>'
+
+    adapter = ComeetAdapter(fetch_json=lambda url: payload, fetch_page=fetch_page)
+    jobs = adapter.fetch_jobs(Company(name="Acme", ats_type=AtsType.COMEET, ats_token="9:tok"))
+    by_title = {j.title: j for j in jobs}
+    assert by_title["Backend Engineer"].description == "Good description."
+    assert by_title["Data Engineer"].description is None   # failed page → no desc, still returned
+    assert len(jobs) == 2
