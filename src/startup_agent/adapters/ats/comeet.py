@@ -1,3 +1,7 @@
+import html as _html
+import json
+import re
+
 import structlog
 
 from startup_agent.adapters.ats._dates import parse_dt
@@ -8,6 +12,25 @@ from startup_agent.ports.ats import ATSAdapter
 logger = structlog.get_logger()
 
 _BASE = "https://www.comeet.co/careers-api/2.0/company/{uid}/positions?token={token}"
+
+_DESC_RE = re.compile(r'"description"\s*:\s*"((?:[^"\\]|\\.)*)"')
+_TAG_RE = re.compile(r"<[^>]+>")
+_WS_RE = re.compile(r"\s+")
+
+
+def extract_description(page_html: str) -> str | None:
+    """Pull the embedded JSON "description" out of a Comeet hosted page → plain text."""
+    if not page_html:
+        return None
+    match = _DESC_RE.search(page_html)
+    if not match:
+        return None
+    try:
+        raw = json.loads('"' + match.group(1) + '"')  # unescape the JSON string
+    except (ValueError, json.JSONDecodeError):
+        return None
+    text = _WS_RE.sub(" ", _html.unescape(_TAG_RE.sub(" ", raw))).strip()
+    return text or None
 
 
 class ComeetAdapter(ATSAdapter):
