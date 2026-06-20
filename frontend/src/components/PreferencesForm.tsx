@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { getPreferences, savePreferences, type Preferences } from "../api/client";
+import { AiScoringPanel } from "./AiScoringPanel";
 
 const DISTRICTS = ["center", "north", "south", "jerusalem"];
 const ROLES = ["backend", "frontend", "full-stack", "ai", "data", "devops", "security"];
@@ -56,6 +57,7 @@ export function PreferencesForm({ onSaved }: { onSaved: () => void }) {
       <label className="prefs-label">Seniority <span className="soft">★ soft</span></label>
       <Chips options={SENIORITY} selected={p.seniority} onToggle={(v) => toggle("seniority", v)} />
 
+      <AiScoringPanel />
       <button className="primary" onClick={save}>Save & Find jobs →</button>
     </div>
   );

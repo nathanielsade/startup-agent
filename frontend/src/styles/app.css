@@ -390,3 +390,14 @@
 .card-actions { display: flex; gap: 10px; align-items: center; margin-top: 10px; }
 .rate-btn { background: var(--accent-soft); color: var(--accent); border: 1px solid #c7d2fe; border-radius: 8px; padding: 6px 12px; font-size: 13px; cursor: pointer; }
 .rate-btn:disabled { opacity: .6; cursor: default; }
+
+.ai-panel { margin-top: 18px; padding-top: 14px; border-top: 1px solid #eee; }
+.ai-hint { margin: 4px 0 8px; }
+.ai-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.ai-row select, .ai-row input { padding: 7px 10px; border: 1px solid #d1d5db; border-radius: 8px; }
+.ai-row input { flex: 1; min-width: 160px; }
+.primary-sm { background: var(--accent); color: #fff; border: none; border-radius: 8px; padding: 7px 14px; cursor: pointer; }
+.primary-sm:disabled { opacity: .6; cursor: default; }
+.ai-on { display: flex; align-items: center; gap: 10px; }
+.ai-badge { background: #ecfdf5; color: #047857; border-radius: 20px; padding: 3px 10px; font-size: 13px; font-weight: 600; }
+.link-btn { background: none; border: none; color: var(--muted); text-decoration: underline; cursor: pointer; font-size: 13px; }
