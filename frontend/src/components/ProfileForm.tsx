@@ -29,7 +29,15 @@ export function ProfileForm() {
     setBusy(true); setErr(null); setSaved(false);
     try {
       const ex = await extractProfile();
-      setP((cur) => ({ ...(cur as ApplicantProfile), ...ex }));
+      // merge only non-empty extracted values, so a re-extract without a key
+      // doesn't blank a name/location you typed in by hand
+      setP((cur) => {
+        const merged = { ...(cur as ApplicantProfile) };
+        (Object.keys(ex) as (keyof ApplicantProfile)[]).forEach((k) => {
+          if (ex[k]) merged[k] = ex[k];
+        });
+        return merged;
+      });
     } catch (e) { setErr(e instanceof Error ? e.message : "Extract failed"); }
     finally { setBusy(false); }
   }
