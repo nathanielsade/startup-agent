@@ -11,7 +11,7 @@
     "website": "https://alchemy.com",
     "ats_type": "ashby",
     "ats_token": "alchemy",
-    "linkedin_url": null
+    "linkedin_url": "https://www.linkedin.com/company/alchemyinc"
   },
   {
     "name": "Aleph",
@@ -375,7 +375,7 @@
     "website": "https://consensys.net",
     "ats_type": "greenhouse",
     "ats_token": "consensys",
-    "linkedin_url": null
+    "linkedin_url": "https://www.linkedin.com/company/consensys-software-inc"
   },
   {
     "name": "Constrafor",
@@ -837,7 +837,7 @@
     "website": "https://joinjuno.com",
     "ats_type": "greenhouse",
     "ats_token": "juno",
-    "linkedin_url": null
+    "linkedin_url": "https://www.linkedin.com/company/leveredgeorg"
   },
   {
     "name": "Kentik",
@@ -956,7 +956,7 @@
     "website": "https://mixtiles.com",
     "ats_type": "greenhouse",
     "ats_token": "mixtiles",
-    "linkedin_url": null
+    "linkedin_url": "https://www.linkedin.com/company/mixtiles"
   },
   {
     "name": "Multiverse",
@@ -970,7 +970,7 @@
     "website": "https://mystenlabs.com",
     "ats_type": "ashby",
     "ats_token": "mystenlabs",
-    "linkedin_url": null
+    "linkedin_url": "https://www.linkedin.com/company/mysten-labs"
   },
   {
     "name": "N26",
@@ -1250,7 +1250,7 @@
     "website": "https://rec.us",
     "ats_type": "ashby",
     "ats_token": "rec",
-    "linkedin_url": null
+    "linkedin_url": "https://www.linkedin.com/company/rec-technologies"
   },
   {
     "name": "Redefine Meat",
