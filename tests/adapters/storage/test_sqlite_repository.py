@@ -55,6 +55,17 @@ def test_company_linkedin_url_round_trip(repo):
     assert repo.get_companies()[0].linkedin_url == "https://www.linkedin.com/company/acme"
 
 
+def test_same_name_different_website_do_not_collide(repo):
+    a = Company(name="Swiftly", website="https://goswift.ly")
+    b = Company(name="Swiftly", website="https://swiftly.com")
+    assert a.id_hash != b.id_hash
+    repo.upsert_company(a)
+    repo.upsert_company(b)
+    fetched = repo.get_companies()
+    assert len(fetched) == 2
+    assert {c.website for c in fetched} == {"https://goswift.ly", "https://swiftly.com"}
+
+
 def test_get_companies_active_only_filter(repo):
     repo.upsert_company(Company(name="ActiveCo", active=True))
     repo.upsert_company(Company(name="InactiveCo", active=False))

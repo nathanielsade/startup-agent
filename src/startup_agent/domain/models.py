@@ -30,7 +30,10 @@ class Company(BaseModel):
     @computed_field
     @property
     def id_hash(self) -> str:
-        return hashlib.sha256(self.name.encode()).hexdigest()[:16]
+        # include website so two companies sharing a name (e.g. "Swiftly")
+        # get distinct ids instead of colliding on a name-only hash
+        raw = f"{self.name}|{self.website or ''}"
+        return hashlib.sha256(raw.encode()).hexdigest()[:16]
 
 
 class RawJob(BaseModel):

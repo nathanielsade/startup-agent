@@ -10,9 +10,13 @@ def test_company_requires_name_and_defaults_active():
     assert c.active is True
 
 
-def test_company_id_hash_is_stable_and_derives_from_name():
-    assert Company(name="Acme").id_hash == Company(name="Acme", website="x.com").id_hash
+def test_company_id_hash_derives_from_name_and_website():
+    # stable for the same name+website
+    assert Company(name="Acme", website="x.com").id_hash == Company(name="Acme", website="x.com").id_hash
+    # different name → different id
     assert Company(name="Acme").id_hash != Company(name="Other").id_hash
+    # same name, different website → different id (no collision)
+    assert Company(name="Acme", website="a.com").id_hash != Company(name="Acme", website="b.com").id_hash
 
 
 def test_job_id_is_stable_hash_of_company_and_ats_job_id():
