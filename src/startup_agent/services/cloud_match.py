@@ -47,18 +47,21 @@ def match_for_user(scoped_repo, user_repo, user_id: str, embedder: Embedder,
         if cached and cached.get("llm_score") is not None:
             r = MatchResult(job_id=job.id, score=cached["llm_score"],
                             reason=cached.get("llm_reason") or "", stage="llm")
-            out.append(job_match_from_result(job, r, names, now, links, sites))
+            jm = job_match_from_result(job, r, names, now, links, sites)
         elif ranker is not None and used < cap and _is_recent(job, now, recent_hours):
             try:
                 r = ranker.rank(cv_text, [job], prefs)[0]
                 user_repo.cache_llm_score(user_id, job.id, r.score, r.reason)
                 used = user_repo.bump_llm_usage(user_id)
-                out.append(job_match_from_result(job, r, names, now, links, sites))
+                jm = job_match_from_result(job, r, names, now, links, sites)
             except Exception as error:
                 logger.warning("llm_rank_failed", job=job.title, error=str(error))
-                out.append(to_job_match(job, score, names, now, links, sites))
+                jm = to_job_match(job, score, names, now, links, sites)
         else:
-            out.append(to_job_match(job, score, names, now, links, sites))
+            jm = to_job_match(job, score, names, now, links, sites)
+        if cached and cached.get("status"):
+            jm = jm.model_copy(update={"status": cached["status"]})
+        out.append(jm)
 
     out.sort(key=lambda m: m.score, reverse=True)
     user_repo.record_event(user_id, "search_run", metadata={"matched": len(out),

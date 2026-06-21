@@ -37,3 +37,11 @@ def get_scoped_repo(user_id: str = Depends(get_current_user),
     repo = SQLiteJobRepository(settings.db_path)
     repo.init_schema()
     return repo
+
+
+def get_user_ctx(user_id: str = Depends(get_current_user), settings=Depends(get_settings)):
+    """(user_repo, user_id) in cloud mode, or None locally (no per-user store)."""
+    if not settings.database_url:
+        return None
+    _, users = _pg(settings.database_url)
+    return (users, user_id)

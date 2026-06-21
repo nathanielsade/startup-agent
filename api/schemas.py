@@ -34,6 +34,7 @@ class JobMatch(BaseModel):
     company_linkedin_url: str | None = None
     company_website: str | None = None
     description: str | None = None
+    status: str = "new"   # per-user tracking: new|seen|saved|applied|dismissed
 
 
 def _age_label(posted_at: datetime | None, now: datetime) -> str:
