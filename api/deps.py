@@ -1,7 +1,7 @@
-from startup_agent.adapters.embedding.local_embedder import LocalEmbedder
 from startup_agent.adapters.storage.sqlite_repository import SQLiteJobRepository
 from startup_agent.config.settings import Settings
 from startup_agent.factories.ats_factory import ATSAdapterFactory
+from startup_agent.factories.embedder_factory import build_embedder
 from startup_agent.ports.embedder import Embedder
 from startup_agent.ports.repository import JobRepository
 
@@ -17,7 +17,7 @@ def get_repo() -> JobRepository:
 
 
 def get_embedder() -> Embedder:
-    return LocalEmbedder(get_settings().embedding_model)
+    return build_embedder(get_settings())
 
 
 def get_factory() -> ATSAdapterFactory:

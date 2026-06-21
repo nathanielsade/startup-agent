@@ -187,11 +187,12 @@ def batch(seed: str = typer.Option("data/companies.json", "--seed"),
         raise typer.Exit(1)
     from startup_agent.adapters.storage.postgres_repository import PostgresJobRepository
     from startup_agent.companies.batch import run_batch
+    from startup_agent.factories.embedder_factory import build_embedder
     repo = PostgresJobRepository(dsn)
     repo.init_schema()
-    embedder = LocalEmbedder(settings.embedding_model)
+    embedder = build_embedder(settings)
     result = run_batch(repo, ATSAdapterFactory(), embedder,
-                       model=settings.embedding_model, seed_path=seed)
+                       model=settings.active_embedding_model, seed_path=seed)
     typer.echo(f"batch done: {result}")
 
 
