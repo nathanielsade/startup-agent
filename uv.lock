@@ -1410,7 +1410,6 @@ dependencies = [
     { name = "pypdf" },
     { name = "python-multipart" },
     { name = "pyyaml" },
-    { name = "sentence-transformers" },
     { name = "structlog" },
     { name = "typer" },
     { name = "uvicorn" },
@@ -1423,6 +1422,7 @@ dev = [
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "ruff" },
+    { name = "sentence-transformers" },
 ]
 
 [package.metadata]
@@ -1439,7 +1439,6 @@ requires-dist = [
     { name = "pypdf", specifier = ">=6.13.2" },
     { name = "python-multipart", specifier = ">=0.0.32" },
     { name = "pyyaml", specifier = ">=6.0.3" },
-    { name = "sentence-transformers", specifier = ">=5.5.1" },
     { name = "structlog", specifier = ">=26.1.0" },
     { name = "typer", specifier = ">=0.26.7" },
     { name = "uvicorn", specifier = ">=0.49.0" },
@@ -1452,6 +1451,7 @@ dev = [
     { name = "pytest", specifier = ">=9.0.3" },
     { name = "pytest-cov", specifier = ">=7.1.0" },
     { name = "ruff", specifier = ">=0.15.17" },
+    { name = "sentence-transformers", specifier = ">=5.5.1" },
 ]
 
 [[package]]
