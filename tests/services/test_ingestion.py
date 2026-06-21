@@ -39,6 +39,34 @@ def test_ingestion_fetches_and_stores_new_jobs():
     assert report.status == "success"
 
 
+def test_ingestion_logs_per_company_outcomes_and_summary():
+    import structlog
+    repo = _seeded_repo()  # 2 companies return jobs; the 3rd returns none
+    factory = ATSAdapterFactory(fetch_json=_routing_fetcher)
+    with structlog.testing.capture_logs() as logs:
+        IngestionService(repo=repo, factory=factory).run()
+    summary = next(log for log in logs if log["event"] == "ingest_summary")
+    assert summary["ok"] == 2
+    # the tally accounts for every company exactly once
+    assert sum(summary[k] for k in
+               ("ok", "failed", "empty", "filtered_foreign", "unsupported")) == 3
+    results = [log for log in logs if log["event"] == "company_result"]
+    assert len(results) == 3
+    assert any(r["company"] == "Fireblocks" and r["outcome"] == "ok" and r["stored"] == 50
+               for r in results)
+
+
+def test_ingestion_logs_filtered_foreign_when_all_jobs_dropped():
+    import structlog
+    repo = _seeded_repo()
+    factory = ATSAdapterFactory(fetch_json=_routing_fetcher)
+    with structlog.testing.capture_logs() as logs:
+        IngestionService(repo=repo, factory=factory, job_filter=lambda j: False).run()
+    summary = next(log for log in logs if log["event"] == "ingest_summary")
+    # both job-returning companies had all their jobs filtered out -> filtered_foreign
+    assert summary["filtered_foreign"] == 2 and summary["ok"] == 0
+
+
 def test_ingestion_job_filter_skips_filtered_jobs():
     repo = _seeded_repo()
     factory = ATSAdapterFactory(fetch_json=_routing_fetcher)
