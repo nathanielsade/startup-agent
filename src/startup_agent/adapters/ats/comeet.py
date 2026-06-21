@@ -19,21 +19,43 @@ _MAX_WORKERS = 8
 _PAGE_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"
 
 _DESC_RE = re.compile(r'"description"\s*:\s*"((?:[^"\\]|\\.)*)"')
+# Comeet's full content lives in a "details" array of {order, name, value} sections
+# (Description / Responsibilities / Requirements / …). The top-level "description"
+# field is only the intro, so requirements (e.g. "5+ years") were being missed.
+_DETAIL_RE = re.compile(
+    r'"name"\s*:\s*"((?:[^"\\]|\\.)*)"\s*,\s*"value"\s*:\s*"((?:[^"\\]|\\.)*)"')
 _TAG_RE = re.compile(r"<[^>]+>")
 _WS_RE = re.compile(r"\s+")
 
 
-def extract_description(page_html: str) -> str | None:
-    """Pull the embedded JSON "description" out of a Comeet hosted page → plain text."""
-    if not page_html:
-        return None
-    match = _DESC_RE.search(page_html)
-    if not match:
-        return None
+def _unescape_json_str(raw: str) -> str | None:
     try:
-        raw = json.loads('"' + match.group(1) + '"')  # unescape the JSON string
+        return json.loads('"' + raw + '"')
     except (ValueError, json.JSONDecodeError):
         return None
+
+
+def extract_description(page_html: str) -> str | None:
+    """Plain-text job description from a Comeet hosted page.
+
+    Prefers the full "details" sections (Description/Responsibilities/Requirements);
+    falls back to the intro-only "description" field when no details are present.
+    """
+    if not page_html:
+        return None
+    sections: list[str] = []
+    for name, value in _DETAIL_RE.findall(page_html):
+        n, v = _unescape_json_str(name), _unescape_json_str(value)
+        if n is not None and v is not None:
+            sections.append(f"{n}: {v}")
+    raw = " ".join(sections)
+    if not raw:  # no details on the page → fall back to the intro description field
+        match = _DESC_RE.search(page_html)
+        if not match:
+            return None
+        raw = _unescape_json_str(match.group(1))
+        if raw is None:
+            return None
     text = _WS_RE.sub(" ", _html.unescape(_TAG_RE.sub(" ", raw))).strip()
     return text or None
 

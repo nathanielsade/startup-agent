@@ -48,6 +48,27 @@ def test_extract_description_from_real_hosted_page():
     assert "&nbsp;" not in desc    # entities unescaped
 
 
+def test_extract_description_captures_details_sections_not_just_intro():
+    # Comeet embeds the full content as a "details" array of {order,name,value};
+    # the requirements (with the years) must be captured, not just the intro.
+    page = (
+        '<script>{"description":"Short intro blurb only.",'
+        '"details":['
+        '{"order":1,"name":"Description","value":"\\u003cp\\u003eBuild backend.\\u003c/p\\u003e"},'
+        '{"order":2,"name":"Requirements","value":"\\u003cul\\u003e\\u003cli\\u003e5+ years experience.\\u003c/li\\u003e\\u003c/ul\\u003e"}'
+        ']}</script>'
+    )
+    desc = extract_description(page)
+    assert "5+ years experience." in desc      # requirements captured
+    assert "Requirements:" in desc              # section labelled
+    assert "<" not in desc                      # tags stripped
+
+
+def test_extract_description_falls_back_to_intro_when_no_details():
+    desc = extract_description('<script>{"description":"Just the intro."}</script>')
+    assert desc == "Just the intro."
+
+
 def test_extract_description_none_when_absent():
     assert extract_description("<html><body>no description here</body></html>") is None
     assert extract_description("") is None
