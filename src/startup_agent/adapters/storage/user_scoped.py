@@ -19,6 +19,14 @@ class UserScopedRepository(JobRepository):
         self._users = users
         self._uid = user_id
 
+    @property
+    def users(self) -> UserRepository:
+        return self._users
+
+    @property
+    def user_id(self) -> str:
+        return self._uid
+
     # ── shared → delegate ────────────────────────────────────────────────
     def upsert_company(self, company: Company) -> str:
         return self._jobs.upsert_company(company)
