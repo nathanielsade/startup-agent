@@ -191,8 +191,13 @@ def batch(seed: str = typer.Option("data/companies.json", "--seed"),
     repo = PostgresJobRepository(dsn)
     repo.init_schema()
     embedder = build_embedder(settings)
+    from startup_agent.adapters.summarizing.openai_summarizer import OpenAIJobSummarizer
+    summarizer = OpenAIJobSummarizer(api_key=settings.openai_api_key,
+                                     model=settings.llm_rerank_model,
+                                     base_url=settings.openai_base_url)
     result = run_batch(repo, ATSAdapterFactory(), embedder,
-                       model=settings.active_embedding_model, seed_path=seed)
+                       model=settings.active_embedding_model, seed_path=seed,
+                       summarizer=summarizer)
     typer.echo(f"batch done: {result}")
 
 

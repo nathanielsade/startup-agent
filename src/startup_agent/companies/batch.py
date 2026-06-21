@@ -8,7 +8,7 @@ logger = structlog.get_logger()
 
 
 def run_batch(repo, factory, embedder, *, model: str,
-              seed_path: str | None = None, progress=None) -> dict:
+              seed_path: str | None = None, progress=None, summarizer=None) -> dict:
     """The every-N-hours batch: (re)load companies, fetch jobs, embed the new ones,
     retire vanished jobs. Writes everything to the shared store (Postgres in cloud).
 
@@ -36,11 +36,21 @@ def run_batch(repo, factory, embedder, *, model: str,
         for (job_id, _), vector in zip(pending, vectors):
             repo.store_embedding(job_id, to_bytes(vector), model)
 
+    # 2b. build rank cards for jobs that lack one (incremental, shared across users)
+    carded = 0
+    if summarizer is not None:
+        for job_id, title, description in repo.jobs_needing_rank_card():
+            try:
+                repo.store_rank_card(job_id, summarizer.summarize(title, description))
+                carded += 1
+            except Exception as error:  # noqa: BLE001 - one bad job shouldn't abort the batch
+                logger.warning("rank_card_failed", job_id=job_id, error=str(error))
+
     # 3. retire jobs no longer returned (soft-delete; user history preserved)
     retired = repo.retire_stale(run_start)
 
     result = {"companies": report.companies_count, "fetched": report.jobs_fetched,
               "new": report.jobs_new, "embedded": len(pending), "retired": retired,
-              "status": report.status}
+              "carded": carded, "status": report.status}
     logger.info("batch_complete", **result)
     return result
