@@ -31,6 +31,7 @@ class JobMatch(BaseModel):
     age_label: str
     reason: str | None = None
     rated: bool = False
+    ai_scored: bool = False
     company_linkedin_url: str | None = None
     company_website: str | None = None
     description: str | None = None
@@ -72,4 +73,4 @@ def job_match_from_result(job: Job, result: MatchResult, company_names: dict[str
                           company_websites: dict[str, str | None] | None = None) -> JobMatch:
     base = to_job_match(job, 0.0, company_names, now, company_links, company_websites)
     return base.model_copy(update={"score": result.score, "reason": result.reason,
-                                   "rated": True})
+                                   "rated": True, "ai_scored": True})

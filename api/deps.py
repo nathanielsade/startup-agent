@@ -52,6 +52,11 @@ def get_ranker():
     return build_ranker(get_settings())
 
 
+def get_rerank_ranker():
+    s = get_settings()
+    return build_ranker_from("openai", s.openai_api_key, s.llm_rerank_model, s.openai_base_url)
+
+
 def build_suggester_from(provider: str, api_key: str, model: str = "", base_url: str = ""):
     """Build a CvPreferenceSuggester from raw config, or None when no key is given."""
     if not api_key:

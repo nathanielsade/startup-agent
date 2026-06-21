@@ -52,6 +52,9 @@ class UserScopedRepository(JobRepository):
     def get_job_embedding(self, job_id: str) -> bytes | None:
         return self._jobs.get_job_embedding(job_id)
 
+    def get_rank_card(self, job_id: str) -> dict | None:
+        return self._jobs.get_rank_card(job_id)
+
     def get_notified_job_ids(self) -> set[str]:
         return self._jobs.get_notified_job_ids()
 
