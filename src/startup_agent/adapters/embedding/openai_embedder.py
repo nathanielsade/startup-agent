@@ -10,20 +10,24 @@ class OpenAIEmbedder(Embedder):
 
     def __init__(self, api_key: str = "", model: str = "text-embedding-3-small",
                  base_url: str = "", client: object | None = None) -> None:
-        if client is not None:
-            self._client = client
-        else:
+        self._api_key = api_key
+        self._base_url = base_url
+        self._model = model
+        self._client = client  # lazy: only build (and require a key) on first embed
+
+    def _ensure(self):
+        if self._client is None:
             from openai import OpenAI
             kwargs = {}
-            if api_key:
-                kwargs["api_key"] = api_key
-            if base_url:
-                kwargs["base_url"] = base_url
+            if self._api_key:
+                kwargs["api_key"] = self._api_key
+            if self._base_url:
+                kwargs["base_url"] = self._base_url
             self._client = OpenAI(**kwargs)
-        self._model = model
+        return self._client
 
     def embed(self, texts: list[str]) -> list[list[float]]:
         if not texts:
             return []
-        resp = self._client.embeddings.create(model=self._model, input=texts)
+        resp = self._ensure().embeddings.create(model=self._model, input=texts)
         return [item.embedding for item in resp.data]
