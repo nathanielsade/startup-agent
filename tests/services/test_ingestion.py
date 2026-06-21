@@ -39,6 +39,17 @@ def test_ingestion_fetches_and_stores_new_jobs():
     assert report.status == "success"
 
 
+def test_ingestion_job_filter_skips_filtered_jobs():
+    repo = _seeded_repo()
+    factory = ATSAdapterFactory(fetch_json=_routing_fetcher)
+    # reject everything → still counts fetched, but stores nothing
+    service = IngestionService(repo=repo, factory=factory, job_filter=lambda j: False)
+    report = service.run()
+    assert report.jobs_fetched == 57
+    assert report.jobs_new == 0
+    assert repo.get_jobs() == []
+
+
 def test_ingestion_is_idempotent_no_duplicate_new():
     repo = _seeded_repo()
     factory = ATSAdapterFactory(fetch_json=_routing_fetcher)

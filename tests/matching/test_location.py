@@ -1,4 +1,18 @@
-from startup_agent.matching.location import classify_location, region_allowed, Region
+from startup_agent.matching.location import (
+    classify_location, is_israel_relevant, region_allowed, Region,
+)
+
+
+def test_is_israel_relevant_keeps_israel_drops_foreign():
+    assert is_israel_relevant("Tel Aviv") is True
+    assert is_israel_relevant("Haifa") is True
+    assert is_israel_relevant("Jerusalem") is True
+    assert is_israel_relevant("Remote") is True              # location-agnostic remote
+    assert is_israel_relevant("Kiryat Ono, Israel") is True
+    assert is_israel_relevant("San Francisco") is False
+    assert is_israel_relevant("New York, NY") is False
+    assert is_israel_relevant("Anywhere in the US") is False
+    assert is_israel_relevant(None) is False
 
 
 def test_classifies_regions():

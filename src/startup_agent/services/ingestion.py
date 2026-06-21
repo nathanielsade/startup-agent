@@ -8,9 +8,11 @@ logger = structlog.get_logger()
 
 
 class IngestionService:
-    def __init__(self, repo: JobRepository, factory: ATSAdapterFactory) -> None:
+    def __init__(self, repo: JobRepository, factory: ATSAdapterFactory,
+                 job_filter=None) -> None:
         self._repo = repo
         self._factory = factory
+        self._job_filter = job_filter  # optional Callable[[Job], bool]; None = keep all
 
     def run(self, progress=None) -> RunReport:
         companies = self._repo.get_companies()
@@ -28,6 +30,8 @@ class IngestionService:
                     jobs = adapter.fetch_jobs(company)
                     report.jobs_fetched += len(jobs)
                     for job in jobs:
+                        if self._job_filter is not None and not self._job_filter(job):
+                            continue  # e.g. drop non-Israel jobs at the source
                         if self._repo.upsert_job(job):
                             report.jobs_new += 1
                 except Exception as error:  # per-company isolation
