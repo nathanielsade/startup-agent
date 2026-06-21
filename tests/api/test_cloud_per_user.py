@@ -73,3 +73,21 @@ def test_profile_is_isolated_per_user(client):
 
     app.dependency_overrides[get_current_user] = lambda: USER_A
     assert c.get("/api/profile").json()["email"] == "a@b.com"  # A: their own
+
+
+def test_job_status_tracking_is_per_user(client):
+    c, app, get_current_user = client
+
+    app.dependency_overrides[get_current_user] = lambda: USER_A
+    r = c.put("/api/jobs/job-1/status", json={"status": "applied",
+                                              "snapshot": {"title": "Eng", "company": "Acme"}})
+    assert r.status_code == 200 and r.json()["status"] == "applied"
+    tracked = c.get("/api/tracked").json()["tracked"]
+    assert len(tracked) == 1 and tracked[0]["status"] == "applied"
+
+    # invalid status rejected
+    assert c.put("/api/jobs/job-1/status", json={"status": "bogus"}).status_code == 422
+
+    # user B has no tracking
+    app.dependency_overrides[get_current_user] = lambda: USER_B
+    assert c.get("/api/tracked").json()["tracked"] == []

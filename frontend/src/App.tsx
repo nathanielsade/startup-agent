@@ -7,10 +7,20 @@ import { ProfileForm } from "./components/ProfileForm";
 import { RunProgress } from "./components/RunProgress";
 import { JobList } from "./components/JobList";
 import { runStream, type RunEvent, type JobMatch } from "./api/client";
+import { AuthGate } from "./components/AuthGate";
+import { authConfigured, signOut } from "./api/auth";
 
 type Phase = "upload" | "preferences" | "running" | "results";
 
 export default function App() {
+  return (
+    <AuthGate>
+      <AppInner />
+    </AuthGate>
+  );
+}
+
+function AppInner() {
   const [phase, setPhase] = useState<Phase>("upload");
   const [last, setLast] = useState<RunEvent | null>(null);
   const [jobs, setJobs] = useState<JobMatch[]>([]);
@@ -27,9 +37,16 @@ export default function App() {
     <div className="app">
       <header className="header">
         <span className="brand">JobScout</span>
-        {phase === "results" && (
-          <span className="header-summary">{jobs.length} matches found</span>
-        )}
+        <span style={{ display: "flex", gap: 14, alignItems: "center" }}>
+          {phase === "results" && (
+            <span className="header-summary">{jobs.length} matches found</span>
+          )}
+          {authConfigured && (
+            <button className="link-btn" onClick={() => signOut().then(() => window.location.reload())}>
+              Sign out
+            </button>
+          )}
+        </span>
       </header>
       <main className="main">
         {phase === "upload" && <CvUpload onReady={() => setPhase("preferences")} />}
