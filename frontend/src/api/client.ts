@@ -11,6 +11,7 @@ export interface JobMatch {
   age_label: string;
   reason: string | null;
   rated: boolean;
+  ai_scored: boolean;
   company_linkedin_url: string | null;
   company_website: string | null;
   description: string | null;

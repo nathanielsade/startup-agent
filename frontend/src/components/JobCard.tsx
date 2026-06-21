@@ -26,8 +26,8 @@ function companyLinkedin(j: JobMatch): string {
 }
 
 function matchTier(score: number): { label: string; cls: string } {
-  if (score >= 75) return { label: "Strong", cls: "tier-strong" };
-  if (score >= 55) return { label: "Good", cls: "tier-good" };
+  if (score >= 70) return { label: "Strong", cls: "tier-strong" };
+  if (score >= 40) return { label: "Stretch", cls: "tier-good" };
   return { label: "Weak", cls: "tier-weak" };
 }
 
@@ -106,8 +106,9 @@ export function JobCard({ job, profile }: { job: JobMatch; profile: ApplicantPro
       <div className="card-body">
         <div className="card-top">
           <span className="card-title">{j.title}</span>
-          <span className={`score-pill ${tier.cls}`}>
-            {tier.label} · {j.rated ? `✨${j.score}` : j.score}
+          <span className={`score-pill ${tier.cls}`}
+                title={j.ai_scored ? "" : "Ranked by similarity, not AI-scored"}>
+            {tier.label} · {j.ai_scored ? `✨${j.score}` : `~${j.score}`}
           </span>
         </div>
         <div className="card-meta">{meta}</div>
