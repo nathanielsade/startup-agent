@@ -20,13 +20,11 @@ jobs:
       - uses: astral-sh/setup-uv@v5
         with:
           enable-cache: true
-      - name: Cache the embedding model
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/huggingface
-          key: hf-bge-small
-      - run: uv sync --frozen
+      # Hosted embeddings → no torch / HF model download needed.
+      - run: uv sync --frozen --no-dev
       - name: Run batch
         env:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
-        run: uv run startup-agent batch --seed data/companies.json
+          EMBEDDING_PROVIDER: openai
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: uv run --no-dev startup-agent batch --seed data/companies.json

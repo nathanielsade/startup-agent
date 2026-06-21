@@ -1,0 +1,24 @@
+# Render Blueprint for the API. Create via Render → "New" → "Blueprint" pointed at
+# this repo. Secrets (sync: false) are entered in the Render dashboard, not committed.
+services:
+  - type: web
+    name: startup-agent-api
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL          # Supabase: Settings → Database → Connection string (URI)
+        sync: false
+      - key: SUPABASE_JWT_SECRET   # Supabase: Settings → API → JWT Secret
+        sync: false
+      - key: EMBEDDING_PROVIDER
+        value: openai
+      - key: OPENAI_API_KEY        # used for hosted embeddings (and OpenAI LLM if chosen)
+        sync: false
+      - key: ANTHROPIC_API_KEY     # server-side LLM key for match rationale (optional)
+        sync: false
+      - key: CORS_ORIGINS          # the Vercel frontend origin, e.g. https://jobscout.vercel.app
+        sync: false
+      - key: LLM_DAILY_CAP
+        value: "30"
