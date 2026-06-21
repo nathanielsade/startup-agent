@@ -21,28 +21,27 @@ class OpenAIRanker(Ranker):
             self._client = OpenAI(**kwargs)
         self._model = model
 
-    def rank(self, cv_text: str, jobs: list[Job],
-             preferences: Preferences | None = None) -> list[MatchResult]:
+    def rank_one(self, cv_text: str, job: Job, preferences: Preferences | None = None,
+                 card: dict | None = None, district: str | None = None) -> MatchResult:
         instructions = INSTRUCTIONS
         clause = preferences_clause(preferences)
         if clause:
             instructions = f"{INSTRUCTIONS}\n\n{clause}"
-        instructions += (
-            '\n\nRespond ONLY with JSON: {"score": <int 0-100>, "reason": "<one line>"}'
+        instructions += '\n\nRespond ONLY with JSON: {"score": <int 0-100>, "reason": "<one line>"}'
+        completion = self._client.chat.completions.create(
+            model=self._model,
+            response_format={"type": "json_object"},
+            messages=[
+                {"role": "system", "content": instructions},
+                {"role": "user",
+                 "content": f"CANDIDATE CV:\n{cv_text}\n\nJOB:\n{job_text(job, card, district)}\n\nScore this job."},
+            ],
         )
-        results: list[MatchResult] = []
-        for job in jobs:
-            completion = self._client.chat.completions.create(
-                model=self._model,
-                response_format={"type": "json_object"},
-                messages=[
-                    {"role": "system", "content": instructions},
-                    {"role": "user",
-                     "content": f"CANDIDATE CV:\n{cv_text}\n\nJOB POSTING:\n{job_text(job)}\n\nScore this job."},
-                ],
-            )
-            data = json.loads(completion.choices[0].message.content)
-            score = max(0, min(100, int(data.get("score", 0))))
-            results.append(MatchResult(job_id=job.id, score=score,
-                                       reason=str(data.get("reason", "")), stage="llm"))
-        return results
+        data = json.loads(completion.choices[0].message.content)
+        score = max(0, min(100, int(data.get("score", 0))))
+        return MatchResult(job_id=job.id, score=score,
+                           reason=str(data.get("reason", "")), stage="llm")
+
+    def rank(self, cv_text: str, jobs: list[Job],
+             preferences: Preferences | None = None) -> list[MatchResult]:
+        return [self.rank_one(cv_text, j, preferences) for j in jobs]
