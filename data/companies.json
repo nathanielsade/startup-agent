@@ -1790,5 +1790,61 @@
     "ats_type": "ashby",
     "ats_token": "real",
     "linkedin_url": null
+  },
+  {
+    "name": "Craft.io",
+    "website": "https://craft.io",
+    "ats_type": "recruitee",
+    "ats_token": "craftio",
+    "linkedin_url": null
+  },
+  {
+    "name": "Figure 1",
+    "website": "https://figure1.com",
+    "ats_type": "bamboohr",
+    "ats_token": "figure1",
+    "linkedin_url": null
+  },
+  {
+    "name": "Home365",
+    "website": "https://home365.co",
+    "ats_type": "bamboohr",
+    "ats_token": "home365",
+    "linkedin_url": null
+  },
+  {
+    "name": "Makersite",
+    "website": "https://makersite.io",
+    "ats_type": "recruitee",
+    "ats_token": "makersitegmbh",
+    "linkedin_url": null
+  },
+  {
+    "name": "Marketman",
+    "website": "https://marketman.com",
+    "ats_type": "bamboohr",
+    "ats_token": "mealticket",
+    "linkedin_url": null
+  },
+  {
+    "name": "Norwest Venture Partners",
+    "website": "https://nvp.com",
+    "ats_type": "bamboohr",
+    "ats_token": "norwestventure",
+    "linkedin_url": null
+  },
+  {
+    "name": "Western Digital",
+    "website": "https://westerndigital.com",
+    "ats_type": "smartrecruiters",
+    "ats_token": "WesternDigital",
+    "linkedin_url": null
+  },
+  {
+    "name": "Zubale",
+    "website": "https://zubale.com",
+    "ats_type": "bamboohr",
+    "ats_token": "zubale",
+    "linkedin_url": null
   }
 ]
