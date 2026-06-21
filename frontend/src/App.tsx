@@ -6,7 +6,7 @@ import { PreferencesForm } from "./components/PreferencesForm";
 import { ProfileForm } from "./components/ProfileForm";
 import { RunProgress } from "./components/RunProgress";
 import { JobList } from "./components/JobList";
-import { runStream, type RunEvent, type JobMatch } from "./api/client";
+import { getResults, runStream, type RunEvent, type JobMatch } from "./api/client";
 import { AuthGate } from "./components/AuthGate";
 import { authConfigured, signOut } from "./api/auth";
 
@@ -27,6 +27,14 @@ function AppInner() {
 
   function start() {
     setPhase("running"); setLast(null);
+    if (authConfigured) {
+      // cloud: matches are precomputed by the batch — just fetch + sort, no live run
+      setLast({ stage: "matching", candidates: 0 });
+      getResults()
+        .then((matches) => { setJobs(matches); setPhase("results"); })
+        .catch((e) => setLast({ stage: "error", message: e instanceof Error ? e.message : "Failed" }));
+      return;
+    }
     runStream((ev) => {
       setLast(ev);
       if (ev.stage === "done") { setJobs(ev.matches); setPhase("results"); }

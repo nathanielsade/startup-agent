@@ -27,6 +27,14 @@ export async function setJobStatus(jobId: string, status: string,
   if (!resp.ok) throw new Error(`Update status failed (${resp.status})`);
 }
 
+// Cloud mode: fetch the per-user matches precomputed by the batch (no live fetch/embed).
+export async function getResults(): Promise<JobMatch[]> {
+  const resp = await authFetch("/api/results");
+  if (!resp.ok) throw new Error(`Load results failed (${resp.status})`);
+  const data = (await resp.json()) as { matches: JobMatch[] };
+  return data.matches;
+}
+
 export type RunEvent =
   | { stage: "fetching"; done: number; total: number; company: string; jobs_fetched: number; jobs_new: number }
   | { stage: "matching"; candidates: number }
