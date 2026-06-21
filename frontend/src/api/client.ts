@@ -10,6 +10,8 @@ export interface JobMatch {
   reason: string | null;
   rated: boolean;
   company_linkedin_url: string | null;
+  company_website: string | null;
+  description: string | null;
 }
 
 export type RunEvent =
