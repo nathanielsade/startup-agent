@@ -68,3 +68,11 @@ class UserScopedRepository(JobRepository):
 
     def get_preferences(self) -> Preferences | None:
         return self._users.get_preferences(self._uid)
+
+    # applicant profile (not on the JobRepository ABC; routes call these directly,
+    # available on both SQLiteJobRepository and here)
+    def save_profile(self, profile) -> None:
+        self._users.save_applicant_profile(self._uid, profile)
+
+    def get_profile(self):
+        return self._users.get_applicant_profile(self._uid)
