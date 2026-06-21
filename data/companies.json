@@ -1846,5 +1846,565 @@
     "ats_type": "bamboohr",
     "ats_token": "zubale",
     "linkedin_url": null
+  },
+  {
+    "name": "Aerospike",
+    "website": "https://aerospike.com",
+    "ats_type": "greenhouse",
+    "ats_token": "aerospike",
+    "linkedin_url": null
+  },
+  {
+    "name": "Airwallex",
+    "website": null,
+    "ats_type": "ashby",
+    "ats_token": "airwallex",
+    "linkedin_url": null
+  },
+  {
+    "name": "Arago",
+    "website": null,
+    "ats_type": "ashby",
+    "ats_token": "arago",
+    "linkedin_url": null
+  },
+  {
+    "name": "Asteralabs",
+    "website": "https://www.asteralabs.com",
+    "ats_type": "greenhouse",
+    "ats_token": "asteralabs",
+    "linkedin_url": null
+  },
+  {
+    "name": "Atbayjobs",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "atbayjobs",
+    "linkedin_url": null
+  },
+  {
+    "name": "Autods",
+    "website": "https://www.autods.com",
+    "ats_type": "greenhouse",
+    "ats_token": "autods",
+    "linkedin_url": null
+  },
+  {
+    "name": "Axon",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "axon",
+    "linkedin_url": null
+  },
+  {
+    "name": "Beamup",
+    "website": "https://www.beamup.ai",
+    "ats_type": "greenhouse",
+    "ats_token": "beamup",
+    "linkedin_url": null
+  },
+  {
+    "name": "Beyondtrust",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "beyondtrust",
+    "linkedin_url": null
+  },
+  {
+    "name": "Bottomline",
+    "website": "https://www.bottomline.com",
+    "ats_type": "greenhouse",
+    "ats_token": "bottomlinetechnologies",
+    "linkedin_url": null
+  },
+  {
+    "name": "Brainpop",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "brainpop",
+    "linkedin_url": null
+  },
+  {
+    "name": "Clickhouse",
+    "website": "https://clickhouse.com",
+    "ats_type": "greenhouse",
+    "ats_token": "clickhouse",
+    "linkedin_url": null
+  },
+  {
+    "name": "Comet",
+    "website": "https://www.comet.com",
+    "ats_type": "greenhouse",
+    "ats_token": "comet",
+    "linkedin_url": null
+  },
+  {
+    "name": "Contentsquare",
+    "website": "https://contentsquare.com/",
+    "ats_type": "lever",
+    "ats_token": "contentsquare",
+    "linkedin_url": null
+  },
+  {
+    "name": "Crusoe",
+    "website": "https://www.crusoe.ai",
+    "ats_type": "ashby",
+    "ats_token": "crusoe",
+    "linkedin_url": null
+  },
+  {
+    "name": "Cylus",
+    "website": "https://www.cylus.com",
+    "ats_type": "greenhouse",
+    "ats_token": "cyluscybersecurity",
+    "linkedin_url": null
+  },
+  {
+    "name": "Databricks",
+    "website": "https://www.databricks.com",
+    "ats_type": "greenhouse",
+    "ats_token": "databricks",
+    "linkedin_url": null
+  },
+  {
+    "name": "Dataiku",
+    "website": "https://www.dataiku.com",
+    "ats_type": "greenhouse",
+    "ats_token": "dataiku",
+    "linkedin_url": null
+  },
+  {
+    "name": "Descope",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "descope",
+    "linkedin_url": null
+  },
+  {
+    "name": "Devrev",
+    "website": "https://devrev.ai",
+    "ats_type": "greenhouse",
+    "ats_token": "devrev",
+    "linkedin_url": null
+  },
+  {
+    "name": "Digitalai",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "digitalai",
+    "linkedin_url": null
+  },
+  {
+    "name": "Drw",
+    "website": "https://www.drw.com",
+    "ats_type": "greenhouse",
+    "ats_token": "drweng",
+    "linkedin_url": null
+  },
+  {
+    "name": "Earthforce",
+    "website": null,
+    "ats_type": "ashby",
+    "ats_token": "earthforce",
+    "linkedin_url": null
+  },
+  {
+    "name": "Elastic",
+    "website": "https://www.elastic.co",
+    "ats_type": "greenhouse",
+    "ats_token": "elastic",
+    "linkedin_url": null
+  },
+  {
+    "name": "Expressvpn",
+    "website": "https://www.expressvpn.com",
+    "ats_type": "greenhouse",
+    "ats_token": "expressvpn",
+    "linkedin_url": null
+  },
+  {
+    "name": "Feverup",
+    "website": "https://feverup.com",
+    "ats_type": "greenhouse",
+    "ats_token": "feverup",
+    "linkedin_url": null
+  },
+  {
+    "name": "Figma",
+    "website": "https://www.figma.com",
+    "ats_type": "greenhouse",
+    "ats_token": "figma",
+    "linkedin_url": null
+  },
+  {
+    "name": "Finout",
+    "website": "https://www.finout.io",
+    "ats_type": "ashby",
+    "ats_token": "finout",
+    "linkedin_url": null
+  },
+  {
+    "name": "About",
+    "website": "https://about.gitlab.com",
+    "ats_type": "greenhouse",
+    "ats_token": "gitlab",
+    "linkedin_url": null
+  },
+  {
+    "name": "Guidde",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "guidde",
+    "linkedin_url": null
+  },
+  {
+    "name": "Houzz",
+    "website": null,
+    "ats_type": "lever",
+    "ats_token": "houzz",
+    "linkedin_url": null
+  },
+  {
+    "name": "Innovid",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "innovid",
+    "linkedin_url": null
+  },
+  {
+    "name": "Jamf",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "jamf",
+    "linkedin_url": null
+  },
+  {
+    "name": "Lendbuzz",
+    "website": null,
+    "ats_type": "lever",
+    "ats_token": "lendbuzz",
+    "linkedin_url": null
+  },
+  {
+    "name": "Lightforceorthodontics",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "lightforceorthodontics",
+    "linkedin_url": null
+  },
+  {
+    "name": "Lilt-production",
+    "website": null,
+    "ats_type": "ashby",
+    "ats_token": "lilt-production",
+    "linkedin_url": null
+  },
+  {
+    "name": "Matia",
+    "website": "https://www.matia.io",
+    "ats_type": "ashby",
+    "ats_token": "matia",
+    "linkedin_url": null
+  },
+  {
+    "name": "Menlosecurity",
+    "website": null,
+    "ats_type": "ashby",
+    "ats_token": "menlosecurity",
+    "linkedin_url": null
+  },
+  {
+    "name": "Mixpanel",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "mixpanel",
+    "linkedin_url": null
+  },
+  {
+    "name": "Mongodb",
+    "website": "https://www.mongodb.com",
+    "ats_type": "greenhouse",
+    "ats_token": "mongodb",
+    "linkedin_url": null
+  },
+  {
+    "name": "Montecarlodata",
+    "website": "https://www.montecarlodata.com/about-us/",
+    "ats_type": "ashby",
+    "ats_token": "montecarlodata",
+    "linkedin_url": null
+  },
+  {
+    "name": "Nanit",
+    "website": "https://www.nanit.com",
+    "ats_type": "greenhouse",
+    "ats_token": "nanit",
+    "linkedin_url": null
+  },
+  {
+    "name": "Nasstudios",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "nasstudios",
+    "linkedin_url": null
+  },
+  {
+    "name": "Nebius",
+    "website": "https://nebius.com",
+    "ats_type": "greenhouse",
+    "ats_token": "nebius",
+    "linkedin_url": null
+  },
+  {
+    "name": "Nextinsurance",
+    "website": "https://www.nextinsurance.com",
+    "ats_type": "greenhouse",
+    "ats_token": "nextinsurance66",
+    "linkedin_url": null
+  },
+  {
+    "name": "Nift",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "nift",
+    "linkedin_url": null
+  },
+  {
+    "name": "Oasis",
+    "website": "https://www.oasis.security",
+    "ats_type": "greenhouse",
+    "ats_token": "oasissecurity",
+    "linkedin_url": null
+  },
+  {
+    "name": "Okta",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "okta",
+    "linkedin_url": null
+  },
+  {
+    "name": "Pendo",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "pendo",
+    "linkedin_url": null
+  },
+  {
+    "name": "Penumbrainc",
+    "website": "http://www.penumbrainc.com/",
+    "ats_type": "lever",
+    "ats_token": "penumbrainc",
+    "linkedin_url": null
+  },
+  {
+    "name": "Phasevtrials",
+    "website": "https://www.phasevtrials.com",
+    "ats_type": "greenhouse",
+    "ats_token": "phasev",
+    "linkedin_url": null
+  },
+  {
+    "name": "Pingidentity",
+    "website": "https://www.pingidentity.com",
+    "ats_type": "greenhouse",
+    "ats_token": "pingidentity",
+    "linkedin_url": null
+  },
+  {
+    "name": "Placerlabs",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "placerlabs",
+    "linkedin_url": null
+  },
+  {
+    "name": "Playtech",
+    "website": null,
+    "ats_type": "smartrecruiters",
+    "ats_token": "Playtech",
+    "linkedin_url": null
+  },
+  {
+    "name": "Pontera",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "pontera",
+    "linkedin_url": null
+  },
+  {
+    "name": "Postman",
+    "website": "https://www.postman.com",
+    "ats_type": "greenhouse",
+    "ats_token": "postman",
+    "linkedin_url": null
+  },
+  {
+    "name": "Quanthealth",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "quanthealth",
+    "linkedin_url": null
+  },
+  {
+    "name": "Residenthome",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "residenthome",
+    "linkedin_url": null
+  },
+  {
+    "name": "Rubrik",
+    "website": "https://www.rubrik.com",
+    "ats_type": "greenhouse",
+    "ats_token": "rubrik",
+    "linkedin_url": null
+  },
+  {
+    "name": "Safebreach",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "safebreach",
+    "linkedin_url": null
+  },
+  {
+    "name": "Sayari",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "sayari",
+    "linkedin_url": null
+  },
+  {
+    "name": "Scopely",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "scopely",
+    "linkedin_url": null
+  },
+  {
+    "name": "Sentinelone",
+    "website": "https://www.sentinelone.com",
+    "ats_type": "greenhouse",
+    "ats_token": "sentinellabs",
+    "linkedin_url": null
+  },
+  {
+    "name": "ServiceNow",
+    "website": null,
+    "ats_type": "smartrecruiters",
+    "ats_token": "ServiceNow",
+    "linkedin_url": null
+  },
+  {
+    "name": "Shift4",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "shift4",
+    "linkedin_url": null
+  },
+  {
+    "name": "Hellosimply",
+    "website": "https://www.hellosimply.com",
+    "ats_type": "greenhouse",
+    "ats_token": "simply",
+    "linkedin_url": null
+  },
+  {
+    "name": "Speechify",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "speechify",
+    "linkedin_url": null
+  },
+  {
+    "name": "Teads",
+    "website": "https://www.teads.com",
+    "ats_type": "greenhouse",
+    "ats_token": "teads1",
+    "linkedin_url": null
+  },
+  {
+    "name": "Tenableinc",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "tenableinc",
+    "linkedin_url": null
+  },
+  {
+    "name": "Testlio",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "testlio",
+    "linkedin_url": null
+  },
+  {
+    "name": "Tomorrow",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "tomorrow",
+    "linkedin_url": null
+  },
+  {
+    "name": "Tulip",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "tulip",
+    "linkedin_url": null
+  },
+  {
+    "name": "Twingate",
+    "website": "https://www.twingate.com/",
+    "ats_type": "lever",
+    "ats_token": "twingate",
+    "linkedin_url": null
+  },
+  {
+    "name": "Veeam",
+    "website": "https://www.veeam.com",
+    "ats_type": "greenhouse",
+    "ats_token": "veeamsoftware",
+    "linkedin_url": null
+  },
+  {
+    "name": "Venncity",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "venncity",
+    "linkedin_url": null
+  },
+  {
+    "name": "Versapay",
+    "website": null,
+    "ats_type": "lever",
+    "ats_token": "versapay",
+    "linkedin_url": null
+  },
+  {
+    "name": "Zefr",
+    "website": null,
+    "ats_type": "ashby",
+    "ats_token": "zefr",
+    "linkedin_url": null
+  },
+  {
+    "name": "Ziphq",
+    "website": "https://ziphq.com",
+    "ats_type": "ashby",
+    "ats_token": "zip",
+    "linkedin_url": null
+  },
+  {
+    "name": "Leadspace",
+    "website": "https://www.leadspace.com/about/customers-and-partners/",
+    "ats_type": "lever",
+    "ats_token": "leadspace",
+    "linkedin_url": null
+  },
+  {
+    "name": "Root",
+    "website": null,
+    "ats_type": "greenhouse",
+    "ats_token": "root",
+    "linkedin_url": null
   }
 ]
