@@ -19,11 +19,15 @@ OpenAI embeddings), so it fits Render's free tier.
 ## 1. Supabase (database + auth)
 
 1. Create a project. Pick a region near you (e.g. Frankfurt).
-2. **Settings → Database → Connection string → URI** → this is `DATABASE_URL`.
-   Use the **pooled** connection (port 6543) for the API.
-3. **Settings → API**: copy the **Project URL** (`SUPABASE_URL` / `VITE_SUPABASE_URL`),
-   the **anon public** key (`VITE_SUPABASE_ANON_KEY`), and the **JWT Secret**
-   (`SUPABASE_JWT_SECRET`).
+2. **Connect → Session pooler → URI** → this is `DATABASE_URL` (substitute your
+   saved DB password for the `[YOUR-PASSWORD]` placeholder). Session pooler is the
+   IPv4-friendly, persistent-connection variant Render/Actions need.
+3. **Settings → API Keys**: copy the **Publishable key** (`sb_publishable_…`) →
+   `VITE_SUPABASE_ANON_KEY`. **Settings → General / project page**: the **Project URL**
+   (`https://<ref>.supabase.co`) → both `SUPABASE_URL` (API) and `VITE_SUPABASE_URL`
+   (frontend). Modern projects (JWT Keys = ECC/RSA) verify logins via JWKS, so the
+   API needs only `SUPABASE_URL` — no JWT secret. (Disable the **Data API** at
+   project creation so the public key can't read your tables directly.)
 4. **Authentication → Providers → Email**: enable it. (Optionally turn off
    "Confirm email" while testing so sign-ups are instant.)
 
@@ -33,8 +37,9 @@ No SQL to run — the API creates its tables on first boot (`init_schema()`).
 
 1. **New → Blueprint**, point it at this repo. Render reads `render.yaml`.
 2. Fill the `sync: false` env vars in the dashboard:
-   - `DATABASE_URL` — from step 1.2
-   - `SUPABASE_JWT_SECRET` — from step 1.3
+   - `DATABASE_URL` — from step 1.2 (Session pooler URI, password substituted)
+   - `SUPABASE_URL` — your project URL, e.g. `https://<ref>.supabase.co` (used to
+     verify logins via the project's public keys / JWKS — no secret needed)
    - `OPENAI_API_KEY` — your OpenAI key
    - `ANTHROPIC_API_KEY` — your Anthropic key (optional; omit to disable LLM rationale)
    - `CORS_ORIGINS` — set after step 3 (your Vercel URL); redeploy once known

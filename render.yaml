@@ -8,9 +8,9 @@ services:
     plan: free
     healthCheckPath: /api/health
     envVars:
-      - key: DATABASE_URL          # Supabase: Settings → Database → Connection string (URI)
+      - key: DATABASE_URL          # Supabase → Connect → Session pooler URI (sub in your password)
         sync: false
-      - key: SUPABASE_JWT_SECRET   # Supabase: Settings → API → JWT Secret
+      - key: SUPABASE_URL          # Supabase project URL; used to verify logins (JWKS)
         sync: false
       - key: EMBEDDING_PROVIDER
         value: openai
