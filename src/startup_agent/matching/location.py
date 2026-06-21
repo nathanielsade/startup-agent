@@ -75,6 +75,14 @@ _REGION_NAME = {
 }
 
 
+def is_israel_relevant(location: str | None) -> bool:
+    """Ingestion-time gate: keep only jobs an Israeli applicant could take —
+    any Israeli district, a location-agnostic remote, or an Israel/EMEA mention.
+    Foreign-pinned jobs (e.g. 'San Francisco', 'Anywhere in the US') are dropped,
+    so the database stays Israel-only instead of filling with worldwide postings."""
+    return region_allowed(location, set(), include_remote=True)
+
+
 def region_allowed(location: str | None, districts: set[str], include_remote: bool) -> bool:
     if not location:
         return False

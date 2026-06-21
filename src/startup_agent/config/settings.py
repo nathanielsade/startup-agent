@@ -6,7 +6,9 @@ class Settings(BaseSettings):
 
     db_path: str = "jobs.db"
     cv_path: str = ""
+    embedding_provider: str = "local"     # "local" (sentence-transformers) | "openai"
     embedding_model: str = "BAAI/bge-small-en-v1.5"
+    openai_embedding_model: str = "text-embedding-3-small"
     shortlist_size: int = 20
     anthropic_api_key: str = ""
     digest_dir: str = "digests"
@@ -24,3 +26,11 @@ class Settings(BaseSettings):
     supabase_jwt_secret: str = ""       # verifies Supabase auth JWTs (HS256)
     supabase_url: str = ""
     llm_daily_cap: int = 30             # per-user LLM calls/day
+    cors_origins: str = ""              # comma-separated extra allowed origins (deploy)
+
+    @property
+    def active_embedding_model(self) -> str:
+        """Model name stored alongside each vector — also the re-embed key."""
+        if self.embedding_provider == "openai":
+            return self.openai_embedding_model
+        return self.embedding_model

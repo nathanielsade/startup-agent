@@ -32,9 +32,13 @@ def suggest_preferences(suggester=Depends(get_suggester),
         suggestion = suggester.suggest(cv["text"])
     except Exception as exc:
         raise HTTPException(status_code=502, detail="Auto-fill failed, please try again.") from exc
+    # Clear title_include — it's a hard prefilter the UI doesn't expose, so an
+    # auto-filled value (e.g. "Backend Software Engineer") silently filters out
+    # almost every job. Setting it to [] also heals stale values on re-run.
+    # Roles/seniority capture role intent instead.
     return current.model_copy(update={
         "max_years": suggestion.max_years,
         "roles": suggestion.roles,
         "seniority": suggestion.seniority,
-        "title_include": suggestion.title_include,
+        "title_include": [],
     })

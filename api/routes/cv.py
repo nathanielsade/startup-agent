@@ -28,5 +28,5 @@ def upload_cv(file: UploadFile,
 
     vector = embedder.embed([text])[0]
     repo.save_cv(path=file.filename or "cv.pdf", text=text,
-                 embedding=to_bytes(vector), model=settings.embedding_model)
+                 embedding=to_bytes(vector), model=settings.active_embedding_model)
     return {"status": "ready", "chars": len(text)}

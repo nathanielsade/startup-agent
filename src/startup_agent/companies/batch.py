@@ -1,6 +1,7 @@
 import structlog
 
 from startup_agent.adapters.embedding.serialization import to_bytes
+from startup_agent.matching.location import is_israel_relevant
 from startup_agent.services.ingestion import IngestionService
 
 logger = structlog.get_logger()
@@ -22,8 +23,11 @@ def run_batch(repo, factory, embedder, *, model: str,
         for company in load_companies_from_seed(seed_path):
             repo.upsert_company(company)
 
-    # 1. fetch + upsert jobs (upsert stamps last_seen_at / active=TRUE)
-    report = IngestionService(repo, factory).run(progress=progress)
+    # 1. fetch + upsert jobs (upsert stamps last_seen_at / active=TRUE).
+    #    Israel-only: foreign-pinned jobs are dropped at the source, never stored.
+    report = IngestionService(
+        repo, factory, job_filter=lambda j: is_israel_relevant(j.location)
+    ).run(progress=progress)
 
     # 2. embed jobs that lack an up-to-date vector — one batched encode call
     pending = repo.jobs_needing_embedding(model)

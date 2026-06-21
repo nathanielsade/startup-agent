@@ -6,6 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import StreamingResponse
 
 from startup_agent.adapters.storage.sqlite_repository import SQLiteJobRepository
+from startup_agent.matching.location import is_israel_relevant
 from startup_agent.services.ingestion import IngestionService
 
 from api.deps import get_embedder, get_factory, get_ranker, get_settings
@@ -32,7 +33,8 @@ def run(factory=Depends(get_factory), embedder=Depends(get_embedder),
         try:
             repo = SQLiteJobRepository(settings.db_path)  # own connection in this thread
             repo.init_schema()
-            IngestionService(repo=repo, factory=factory).run(
+            IngestionService(repo=repo, factory=factory,
+                             job_filter=lambda j: is_israel_relevant(j.location)).run(
                 progress=lambda ev: events.put({"stage": "fetching", **ev}))
             pairs = match_pairs(repo, embedder, settings.preferences_path, settings.match_threshold)
             events.put({"stage": "matching", "candidates": len(pairs)})

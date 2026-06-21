@@ -47,8 +47,8 @@ def repo():
 
 def test_batch_ingests_embeds_then_retires_vanished(repo):
     cid = repo.upsert_company(Company(name="Acme", ats_type=AtsType.GREENHOUSE, ats_token="acme"))
-    j1 = Job(company_id=cid, ats_job_id="1", title="Backend Eng", url="https://x/1", description="go")
-    j2 = Job(company_id=cid, ats_job_id="2", title="Product Manager", url="https://x/2", description="pm")
+    j1 = Job(company_id=cid, ats_job_id="1", title="Backend Eng", url="https://x/1", description="go", location="Tel Aviv")
+    j2 = Job(company_id=cid, ats_job_id="2", title="Product Manager", url="https://x/2", description="pm", location="Tel Aviv")
 
     # run 1: both jobs present
     r1 = run_batch(repo, _FakeFactory([j1, j2]), _FakeEmbedder(), model="bge")
@@ -65,7 +65,7 @@ def test_batch_ingests_embeds_then_retires_vanished(repo):
 
 def test_batch_reembeds_on_model_change(repo):
     cid = repo.upsert_company(Company(name="Acme"))
-    j1 = Job(company_id=cid, ats_job_id="1", title="Eng", url="https://x/1", description="d")
+    j1 = Job(company_id=cid, ats_job_id="1", title="Eng", url="https://x/1", description="d", location="Tel Aviv")
     run_batch(repo, _FakeFactory([j1]), _FakeEmbedder(), model="modelA")
     # a different embed model → re-embed everything
     r = run_batch(repo, _FakeFactory([j1]), _FakeEmbedder(), model="modelB")
