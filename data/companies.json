@@ -3372,5 +3372,12 @@
     "ats_type": "comeet",
     "ats_token": "DA.006:AD64BDA41044BDAAD656B02B5802B584104",
     "linkedin_url": null
+  },
+  {
+    "name": "Cymbio",
+    "website": "https://cym.bio",
+    "ats_type": "comeet",
+    "ats_token": "96.00F:69F27BAD3E69F69F1A7C3B971A7C34F83B97",
+    "linkedin_url": null
   }
 ]
