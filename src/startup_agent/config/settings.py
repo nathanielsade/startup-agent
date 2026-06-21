@@ -19,3 +19,8 @@ class Settings(BaseSettings):
     openai_model: str = "gpt-4o"
     openai_base_url: str = ""
     llm_recent_hours: int = 24
+    # cloud (Phase 1)
+    database_url: str = ""              # Postgres DSN (Supabase / local docker)
+    supabase_jwt_secret: str = ""       # verifies Supabase auth JWTs (HS256)
+    supabase_url: str = ""
+    llm_daily_cap: int = 30             # per-user LLM calls/day
