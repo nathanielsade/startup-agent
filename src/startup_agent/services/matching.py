@@ -20,14 +20,27 @@ class SimilarityMatchingService:
         self._preferences = preferences
         self._threshold = threshold
 
-    def _job_vector(self, job: Job) -> list[float]:
-        cached = self._repo.get_job_embedding(job.id)
-        if cached is not None:
-            return from_bytes(cached)
-        text = f"{job.title}\n{(job.description or '')[:2000]}"
-        vector = self._embedder.embed([text])[0]
-        self._repo.set_job_embedding(job.id, to_bytes(vector))
-        return vector
+    @staticmethod
+    def _job_text(job: Job) -> str:
+        return f"{job.title}\n{(job.description or '')[:2000]}"
+
+    def _vectors_for(self, jobs: list[Job]) -> dict[str, list[float]]:
+        """Return id -> embedding for every job, reusing cached vectors and
+        batch-embedding only the un-cached ones in a single model call."""
+        vectors: dict[str, list[float]] = {}
+        to_embed: list[Job] = []
+        for job in jobs:
+            cached = self._repo.get_job_embedding(job.id)
+            if cached is not None:
+                vectors[job.id] = from_bytes(cached)
+            else:
+                to_embed.append(job)
+        if to_embed:
+            new_vectors = self._embedder.embed([self._job_text(j) for j in to_embed])
+            for job, vector in zip(to_embed, new_vectors):
+                vectors[job.id] = vector
+                self._repo.set_job_embedding(job.id, to_bytes(vector))
+        return vectors
 
     def run(self) -> list[tuple[Job, float]]:
         cv = self._repo.get_cv()
@@ -37,9 +50,10 @@ class SimilarityMatchingService:
 
         candidates = [j for j in self._repo.get_jobs()
                       if passes_prefilter(j, self._preferences)]
+        vectors = self._vectors_for(candidates)
         scored: list[tuple[Job, float]] = []
         for job in candidates:
-            base = cosine(cv_vector, self._job_vector(job))
+            base = cosine(cv_vector, vectors[job.id])
             score = soft_adjust(job, self._preferences, base)
             if score >= self._threshold:
                 scored.append((job, score))

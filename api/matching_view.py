@@ -22,7 +22,9 @@ def compute_matches(repo: JobRepository, embedder: Embedder,
     companies = repo.get_companies()
     names = {c.id_hash: c.name for c in companies}
     links = {c.id_hash: c.linkedin_url for c in companies}
-    return [to_job_match(job, score, names, company_links=links) for job, score in results]
+    sites = {c.id_hash: c.website for c in companies}
+    return [to_job_match(job, score, names, company_links=links, company_websites=sites)
+            for job, score in results]
 
 
 def match_pairs(repo, embedder, preferences_path, threshold):
