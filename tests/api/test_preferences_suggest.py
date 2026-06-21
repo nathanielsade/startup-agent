@@ -40,7 +40,9 @@ def test_suggest_merges_inferable_onto_current(client, settings):
     body = resp.json()
     # inferable fields came from the suggester
     assert body["max_years"] == 3 and body["roles"] == ["backend"]
-    assert body["seniority"] == ["junior"] and body["title_include"] == ["engineer"]
+    assert body["seniority"] == ["junior"]
+    # title_include intentionally NOT applied (hidden hard filter) — stays as current
+    assert body["title_include"] == []
     # pure-preference fields preserved from current
     assert body["districts"] == ["center"] and body["include_remote"] is False
     assert body["posted_within_days"] == 14
