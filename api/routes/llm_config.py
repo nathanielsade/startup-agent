@@ -10,10 +10,13 @@ router = APIRouter()
 
 
 def _server_side_llm(settings) -> str | None:
-    """The LLM provider configured via server env (cloud), or None."""
-    provider = (settings.llm_provider or "anthropic").lower()
-    key = settings.openai_api_key if provider == "openai" else settings.anthropic_api_key
-    return provider if key else None
+    """The LLM provider configured via server env (cloud), auto-detected from
+    whichever key is set (OpenAI preferred), or None. No LLM_PROVIDER needed."""
+    if settings.openai_api_key:
+        return "openai"
+    if settings.anthropic_api_key:
+        return "anthropic"
+    return None
 
 
 class LlmConfigIn(BaseModel):
