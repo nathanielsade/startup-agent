@@ -43,9 +43,11 @@ tooling, not product code, consistent with the LinkedIn-URL curation.
 
 ## Deferred / fallback
 
-- **Comeet (~164 candidates).** Goozali has many Comeet companies, but Comeet needs a
-  `uid:token` harvested per company (flaky), so they were **not** merged in this pass.
-  A follow-up Comeet-harvest pass could add a meaningful fraction.
+- **Comeet — DONE (+138).** Harvested per-company `uid:token` via a headless browser
+  capturing Comeet's `comeet.co/jobs/{uid}/…?token=…` network call (Comeet changed its
+  URL pattern from the old `careers-api/2.0/.../positions`). 161/164 resolved; after
+  uid-dedup and health-check, **138 actively-posting Comeet companies merged**
+  (~2,150 jobs). Only `ok` (currently-posting) merged; 15 empty boards skipped.
 - **OPTION 2 — direct jobs feed (PARKED).** Goozali's "job openings" table
   (`appwewqLk7iUY4azc/shrQBuWjXd0YgPqV6`) is a list of actual postings. We could ingest
   those **directly as jobs** (bypassing ATS detection) as a *fallback* source later —
