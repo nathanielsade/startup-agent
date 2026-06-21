@@ -12,6 +12,8 @@ class AtsType(str, Enum):
     WORKABLE = "workable"
     ASHBY = "ashby"
     SMARTRECRUITERS = "smartrecruiters"
+    BAMBOOHR = "bamboohr"
+    RECRUITEE = "recruitee"
     UNKNOWN = "unknown"
 
 
