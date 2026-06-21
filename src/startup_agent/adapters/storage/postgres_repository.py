@@ -158,3 +158,30 @@ class PostgresJobRepository(JobRepository):
             "SELECT json FROM preferences ORDER BY id DESC LIMIT 1"
         ).fetchone()
         return Preferences.model_validate_json(r["json"]) if r else None
+
+    # ── batch-specific (not on the JobRepository ABC) ────────────────────
+    def now(self):
+        """The DB clock — used as the batch run-start so retire comparisons use one clock."""
+        return self._conn.execute("SELECT now() AS t").fetchone()["t"]
+
+    def jobs_needing_embedding(self, model: str) -> list[tuple[str, str]]:
+        """Active jobs with no embedding or a stale embed_model → (id, embed_text)."""
+        rows = self._conn.execute(
+            "SELECT id, title, description FROM jobs "
+            "WHERE active = TRUE AND (embedding IS NULL OR embed_model IS DISTINCT FROM %s)",
+            (model,)).fetchall()
+        return [(r["id"], f"{r['title']}\n{(r['description'] or '')[:2000]}") for r in rows]
+
+    def store_embedding(self, job_id: str, embedding: bytes, model: str) -> None:
+        self._conn.execute("UPDATE jobs SET embedding=%s, embed_model=%s WHERE id=%s",
+                           (embedding, model, job_id))
+        self._conn.commit()
+
+    def retire_stale(self, before) -> int:
+        """Soft-retire (active=FALSE) jobs not seen since `before`; never hard-delete."""
+        cur = self._conn.execute(
+            "UPDATE jobs SET active=FALSE "
+            "WHERE active = TRUE AND (last_seen_at IS NULL OR last_seen_at < %s)", (before,))
+        n = cur.rowcount
+        self._conn.commit()
+        return n

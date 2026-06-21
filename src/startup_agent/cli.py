@@ -175,5 +175,25 @@ def digest(db_path: str = typer.Option("jobs.db", "--db-path"),
         typer.echo("0 new jobs — no digest written")
 
 
+@app.command("batch")
+def batch(seed: str = typer.Option("data/companies.json", "--seed"),
+          database_url: str = typer.Option("", "--database-url")) -> None:
+    """Cloud batch: load companies, fetch all jobs, embed new ones, retire vanished
+    jobs — writing to Postgres. Run on a schedule (GitHub Actions)."""
+    settings = Settings()
+    dsn = database_url or settings.database_url
+    if not dsn:
+        typer.echo("No DATABASE_URL configured (set it or pass --database-url)")
+        raise typer.Exit(1)
+    from startup_agent.adapters.storage.postgres_repository import PostgresJobRepository
+    from startup_agent.companies.batch import run_batch
+    repo = PostgresJobRepository(dsn)
+    repo.init_schema()
+    embedder = LocalEmbedder(settings.embedding_model)
+    result = run_batch(repo, ATSAdapterFactory(), embedder,
+                       model=settings.embedding_model, seed_path=seed)
+    typer.echo(f"batch done: {result}")
+
+
 if __name__ == "__main__":
     app()

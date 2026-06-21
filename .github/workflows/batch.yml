@@ -1,0 +1,32 @@
+name: jobs-batch
+
+# Every-N-hours batch: fetch all companies' jobs, embed them, retire vanished ones,
+# writing to the cloud Postgres (Supabase). Free on GitHub Actions.
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours (UTC)
+  workflow_dispatch: {}      # manual trigger
+
+concurrency:
+  group: jobs-batch
+  cancel-in-progress: false
+
+jobs:
+  batch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - name: Cache the embedding model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-bge-small
+      - run: uv sync --frozen
+      - name: Run batch
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: uv run startup-agent batch --seed data/companies.json
