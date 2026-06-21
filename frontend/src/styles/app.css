@@ -438,3 +438,35 @@
 .li-chip:hover { text-decoration: underline; }
 .job-desc { margin-top: 9px; font-size: 13px; color: #4b5563; line-height: 1.45; }
 .job-desc .more { color: var(--accent); font-weight: 600; cursor: pointer; }
+
+/* ── Auth gate ────────────────────────────────────────── */
+.auth-card {
+  background: var(--surface);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+}
+.auth-card .primary { margin-top: 8px; }
+
+/* ── Job tracking buttons ─────────────────────────────── */
+.track-group { display: inline-flex; gap: 6px; margin-left: auto; }
+.track-btn {
+  background: #fff;
+  color: var(--muted);
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: var(--font);
+}
+.track-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+.track-btn:disabled { opacity: .6; cursor: default; }
+.track-btn.on { background: var(--accent); color: #fff; border-color: var(--accent); }

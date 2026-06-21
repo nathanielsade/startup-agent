@@ -1,3 +1,5 @@
+import { authFetch } from "./auth";
+
 export interface JobMatch {
   job_id: string;
   title: string;
@@ -12,6 +14,17 @@ export interface JobMatch {
   company_linkedin_url: string | null;
   company_website: string | null;
   description: string | null;
+  status: string;
+}
+
+export async function setJobStatus(jobId: string, status: string,
+                                   snapshot?: Record<string, unknown>): Promise<void> {
+  const resp = await authFetch(`/api/jobs/${jobId}/status`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ status, snapshot }),
+  });
+  if (!resp.ok) throw new Error(`Update status failed (${resp.status})`);
 }
 
 export type RunEvent =
@@ -35,13 +48,13 @@ export interface Preferences {
 }
 
 export async function getPreferences(): Promise<Preferences> {
-  const resp = await fetch("/api/preferences");
+  const resp = await authFetch("/api/preferences");
   if (!resp.ok) throw new Error(`Load prefs failed (${resp.status})`);
   return resp.json();
 }
 
 export async function savePreferences(prefs: Preferences): Promise<void> {
-  const resp = await fetch("/api/preferences", {
+  const resp = await authFetch("/api/preferences", {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(prefs),
@@ -52,13 +65,13 @@ export async function savePreferences(prefs: Preferences): Promise<void> {
 export async function uploadCv(file: File): Promise<{ status: string; chars: number }> {
   const body = new FormData();
   body.append("file", file);
-  const resp = await fetch("/api/cv", { method: "POST", body });
+  const resp = await authFetch("/api/cv", { method: "POST", body });
   if (!resp.ok) throw new Error(`Upload failed (${resp.status})`);
   return resp.json();
 }
 
 export async function rateJob(jobId: string): Promise<{ score: number; reason: string }> {
-  const resp = await fetch("/api/rate", {
+  const resp = await authFetch("/api/rate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ job_id: jobId }),
@@ -71,7 +84,7 @@ export async function rateJob(jobId: string): Promise<{ score: number; reason: s
 }
 
 export async function suggestPreferences(): Promise<Preferences> {
-  const resp = await fetch("/api/preferences/suggest", { method: "POST" });
+  const resp = await authFetch("/api/preferences/suggest", { method: "POST" });
   if (!resp.ok) {
     const detail = await resp.json().catch(() => ({}));
     throw new Error((detail as { detail?: string }).detail || `Auto-fill failed (${resp.status})`);
@@ -85,13 +98,13 @@ export interface LlmConfig {
 }
 
 export async function getLlmConfig(): Promise<LlmConfig> {
-  const resp = await fetch("/api/llm-config");
+  const resp = await authFetch("/api/llm-config");
   if (!resp.ok) throw new Error(`Load LLM config failed (${resp.status})`);
   return resp.json();
 }
 
 export async function setLlmConfig(provider: string, apiKey: string, model?: string): Promise<LlmConfig> {
-  const resp = await fetch("/api/llm-config", {
+  const resp = await authFetch("/api/llm-config", {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ provider, api_key: apiKey, model }),
@@ -101,7 +114,7 @@ export async function setLlmConfig(provider: string, apiKey: string, model?: str
 }
 
 export async function clearLlmConfig(): Promise<void> {
-  const resp = await fetch("/api/llm-config", { method: "DELETE" });
+  const resp = await authFetch("/api/llm-config", { method: "DELETE" });
   if (!resp.ok) throw new Error(`Remove key failed (${resp.status})`);
 }
 
@@ -117,13 +130,13 @@ export interface ApplicantProfile {
 }
 
 export async function getProfile(): Promise<ApplicantProfile> {
-  const resp = await fetch("/api/profile");
+  const resp = await authFetch("/api/profile");
   if (!resp.ok) throw new Error(`Load profile failed (${resp.status})`);
   return resp.json();
 }
 
 export async function saveProfile(profile: ApplicantProfile): Promise<void> {
-  const resp = await fetch("/api/profile", {
+  const resp = await authFetch("/api/profile", {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(profile),
@@ -132,7 +145,7 @@ export async function saveProfile(profile: ApplicantProfile): Promise<void> {
 }
 
 export async function extractProfile(): Promise<ApplicantProfile> {
-  const resp = await fetch("/api/profile/extract", { method: "POST" });
+  const resp = await authFetch("/api/profile/extract", { method: "POST" });
   if (!resp.ok) {
     const detail = await resp.json().catch(() => ({}));
     throw new Error((detail as { detail?: string }).detail || `Extract failed (${resp.status})`);

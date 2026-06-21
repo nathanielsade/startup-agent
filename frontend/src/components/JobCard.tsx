@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { rateJob, type ApplicantProfile, type JobMatch } from "../api/client";
+import { rateJob, setJobStatus, type ApplicantProfile, type JobMatch } from "../api/client";
+import { authConfigured } from "../api/auth";
 
 function initials(company: string): string {
   const words = company.trim().split(/\s+/).filter(Boolean);
@@ -51,6 +52,8 @@ export function JobCard({ job, profile }: { job: JobMatch; profile: ApplicantPro
   const [showDesc, setShowDesc] = useState(false);  // description expand
   const [logoOk, setLogoOk] = useState(true);
   const [copied, setCopied] = useState<string | null>(null);
+  const [status, setStatus] = useState(job.status);
+  const [savingStatus, setSavingStatus] = useState(false);
 
   const meta = [j.company, j.location, j.age_label].filter(Boolean).join(" · ");
   const tier = matchTier(j.score);
@@ -67,6 +70,23 @@ export function JobCard({ job, profile }: { job: JobMatch; profile: ApplicantPro
       setErr(e instanceof Error ? e.message : "Rate failed");
     } finally {
       setBusy(false);
+    }
+  }
+
+  async function track(next: string) {
+    const target = status === next ? "seen" : next;  // tap again to clear
+    setSavingStatus(true); setErr(null);
+    const prev = status;
+    setStatus(target);
+    try {
+      await setJobStatus(j.job_id, target, {
+        title: j.title, company: j.company, location: j.location, url: j.url,
+      });
+    } catch (e) {
+      setStatus(prev);
+      setErr(e instanceof Error ? e.message : "Update failed");
+    } finally {
+      setSavingStatus(false);
     }
   }
 
@@ -116,6 +136,22 @@ export function JobCard({ job, profile }: { job: JobMatch; profile: ApplicantPro
             <button className="rate-btn" onClick={rate} disabled={busy}>
               {busy ? "Rating…" : "✨ Rate"}
             </button>
+          )}
+          {authConfigured && (
+            <span className="track-group">
+              <button className={`track-btn ${status === "applied" ? "on" : ""}`}
+                      onClick={() => track("applied")} disabled={savingStatus}>
+                {status === "applied" ? "✓ Applied" : "Applied"}
+              </button>
+              <button className={`track-btn ${status === "saved" ? "on" : ""}`}
+                      onClick={() => track("saved")} disabled={savingStatus}>
+                {status === "saved" ? "✓ Saved" : "Save"}
+              </button>
+              <button className={`track-btn ${status === "dismissed" ? "on" : ""}`}
+                      onClick={() => track("dismissed")} disabled={savingStatus}>
+                {status === "dismissed" ? "✓ Dismissed" : "Dismiss"}
+              </button>
+            </span>
           )}
         </div>
         {open && (
