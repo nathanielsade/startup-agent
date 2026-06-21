@@ -26,11 +26,12 @@ def test_district_filter():
     assert passes_prefilter(_job("Engineer", location="Tel Aviv"), p, now=NOW) is True
 
 
-def test_max_years_filter():
+def test_max_years_no_longer_a_hard_filter_legacy():
+    # max_years is now a soft signal — prefilter passes all jobs regardless of stated years
     p = Preferences(max_years=3, title_include=["engineer"])
-    assert passes_prefilter(_job("Engineer", description="requires 7+ years"), p, now=NOW) is False
+    assert passes_prefilter(_job("Engineer", description="requires 7+ years"), p, now=NOW) is True
     assert passes_prefilter(_job("Engineer", description="2 years experience"), p, now=NOW) is True
-    assert passes_prefilter(_job("Engineer", description="no years mentioned"), p, now=NOW) is True  # unknown kept
+    assert passes_prefilter(_job("Engineer", description="no years mentioned"), p, now=NOW) is True
 
 
 def test_freshness_filter():
@@ -42,3 +43,12 @@ def test_freshness_filter():
 def test_empty_prefs_keep_everything_relevant():
     p = Preferences()  # no constraints
     assert passes_prefilter(_job("Anything", location="Haifa"), p, now=NOW) is True
+
+
+def test_max_years_no_longer_hard_filters():
+    from startup_agent.matching.prefilter import passes_prefilter
+    from startup_agent.domain.models import Job
+    from startup_agent.domain.preferences import Preferences
+    job = Job(company_id="c", ats_job_id="1", title="Engineer", url="u",
+              location="Tel Aviv", description="requires 10 years of experience")
+    assert passes_prefilter(job, Preferences(max_years=3, districts=["center"])) is True
