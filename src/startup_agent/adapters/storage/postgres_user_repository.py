@@ -17,7 +17,8 @@ def _b(value) -> bytes | None:
 
 class PostgresUserRepository(UserRepository):
     def __init__(self, dsn: str) -> None:
-        self._conn = psycopg.connect(dsn, row_factory=dict_row)
+        # autocommit: reads don't leave a transaction open (which would hold locks)
+        self._conn = psycopg.connect(dsn, row_factory=dict_row, autocommit=True)
 
     def init_schema(self) -> None:
         self._conn.execute(_SCHEMA_PATH.read_text())
