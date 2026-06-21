@@ -31,6 +31,7 @@ CREATE TABLE IF NOT EXISTS jobs (
     active        BOOLEAN NOT NULL DEFAULT TRUE,
     embedding     BYTEA,
     embed_model   TEXT,
+    rank_card     JSONB,
     notified_at   TIMESTAMPTZ
 );
 CREATE INDEX IF NOT EXISTS idx_jobs_company ON jobs(company_id);
@@ -115,3 +116,6 @@ CREATE TABLE IF NOT EXISTS events (
     created_at TIMESTAMPTZ NOT NULL DEFAULT now()
 );
 CREATE INDEX IF NOT EXISTS idx_events_user ON events(user_id, created_at);
+
+-- idempotent migrations
+ALTER TABLE jobs ADD COLUMN IF NOT EXISTS rank_card JSONB;

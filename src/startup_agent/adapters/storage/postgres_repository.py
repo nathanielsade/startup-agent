@@ -3,6 +3,7 @@ from pathlib import Path
 
 import psycopg
 from psycopg.rows import dict_row
+from psycopg.types.json import Jsonb
 
 from startup_agent.domain.models import AtsType, Company, Job, MatchResult, RunReport
 from startup_agent.domain.preferences import Preferences
@@ -177,6 +178,23 @@ class PostgresJobRepository(JobRepository):
         self._conn.execute("UPDATE jobs SET embedding=%s, embed_model=%s WHERE id=%s",
                            (embedding, model, job_id))
         self._conn.commit()
+
+    def jobs_needing_rank_card(self) -> list[tuple[str, str, str]]:
+        """Active jobs with no rank card -> (id, title, description)."""
+        rows = self._conn.execute(
+            "SELECT id, title, description FROM jobs "
+            "WHERE active = TRUE AND rank_card IS NULL"
+        ).fetchall()
+        return [(r["id"], r["title"], r["description"] or "") for r in rows]
+
+    def store_rank_card(self, job_id: str, card: dict) -> None:
+        self._conn.execute("UPDATE jobs SET rank_card=%s WHERE id=%s",
+                           (Jsonb(card), job_id))
+        self._conn.commit()
+
+    def get_rank_card(self, job_id: str) -> dict | None:
+        r = self._conn.execute("SELECT rank_card FROM jobs WHERE id=%s", (job_id,)).fetchone()
+        return r["rank_card"] if r and r["rank_card"] is not None else None
 
     def retire_stale(self, before) -> int:
         """Soft-retire (active=FALSE) jobs not seen since `before`; never hard-delete."""
