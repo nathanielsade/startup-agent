@@ -39,3 +39,13 @@ def test_embed_empty_short_circuits_without_api_call():
     emb = OpenAIEmbedder(client=client)
     assert emb.embed([]) == []
     assert client.embeddings.calls == []
+
+
+def test_embed_chunks_requests_over_the_api_limit():
+    client = _FakeClient()
+    emb = OpenAIEmbedder(client=client)
+    texts = [f"job {i}" for i in range(600)]  # > 256, must split into 3 requests
+    out = emb.embed(texts)
+    assert len(out) == 600
+    assert len(client.embeddings.calls) == 3
+    assert [len(inp) for _, inp in client.embeddings.calls] == [256, 256, 88]

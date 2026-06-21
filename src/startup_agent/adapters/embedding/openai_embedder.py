@@ -1,5 +1,9 @@
 from startup_agent.ports.embedder import Embedder
 
+# OpenAI's embeddings endpoint caps each request at 2048 inputs, and has a total
+# token budget per request — so embed in conservative chunks to stay well under both.
+_MAX_BATCH = 256
+
 
 class OpenAIEmbedder(Embedder):
     """Embedder backed by a hosted OpenAI embedding model (no torch dependency).
@@ -29,5 +33,10 @@ class OpenAIEmbedder(Embedder):
     def embed(self, texts: list[str]) -> list[list[float]]:
         if not texts:
             return []
-        resp = self._ensure().embeddings.create(model=self._model, input=texts)
-        return [item.embedding for item in resp.data]
+        client = self._ensure()
+        vectors: list[list[float]] = []
+        for start in range(0, len(texts), _MAX_BATCH):
+            chunk = texts[start:start + _MAX_BATCH]
+            resp = client.embeddings.create(model=self._model, input=chunk)
+            vectors.extend(item.embedding for item in resp.data)
+        return vectors
