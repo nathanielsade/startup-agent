@@ -21,3 +21,30 @@ def required_years(description: str | None) -> int | None:
             if 0 < value <= 20:  # sane bound; ignore noise like "2024 years"
                 candidates.append(value)
     return min(candidates) if candidates else None
+
+
+_SENIORITY_YEARS = (
+    ("director", 10), ("principal", 8), ("staff", 8), ("lead", 8),
+    ("senior", 6), ("sr.", 6), ("junior", 1), ("entry", 1),
+    ("associate", 1), ("intern", 0),
+)
+
+
+def years_from_title(title: str) -> int:
+    t = title.lower()
+    for marker, years in _SENIORITY_YEARS:
+        if marker in t:
+            return years
+    return 3  # no seniority marker -> assume mid-level
+
+
+def inferred_required_years(title: str, description: str | None,
+                            card_years: int | None = None) -> int | None:
+    """Best estimate of a job's required years: explicit card value, then a number
+    parsed from the description, then an inference from the title's seniority."""
+    if card_years is not None:
+        return card_years
+    parsed = required_years(description)
+    if parsed is not None:
+        return parsed
+    return years_from_title(title)

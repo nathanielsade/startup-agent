@@ -470,3 +470,4 @@
 .track-btn:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .track-btn:disabled { opacity: .6; cursor: default; }
 .track-btn.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+.score-pill[title]:not([title=""]) { opacity: .85; }

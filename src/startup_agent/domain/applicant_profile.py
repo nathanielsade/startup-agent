@@ -10,3 +10,4 @@ class ApplicantProfile(BaseModel):
     github_url: str = ""
     location: str = ""
     current_title: str = ""
+    years_experience: int | None = None

@@ -70,3 +70,24 @@ def test_batch_reembeds_on_model_change(repo):
     # a different embed model → re-embed everything
     r = run_batch(repo, _FakeFactory([j1]), _FakeEmbedder(), model="modelB")
     assert r["embedded"] == 1
+
+
+class _FakeSummarizer:
+    def __init__(self): self.calls = 0
+    def summarize(self, title, description):
+        self.calls += 1
+        return {"tech_stack": ["Go"], "required_years": 4, "seniority": "mid",
+                "role_domain": "backend", "must_haves": [], "domain_industry": "",
+                "summary": "mid backend"}
+
+
+def test_batch_builds_rank_cards_incrementally(repo):
+    cid = repo.upsert_company(Company(name="Acme", ats_type=AtsType.GREENHOUSE, ats_token="a"))
+    j1 = Job(company_id=cid, ats_job_id="1", title="Backend Eng", url="u",
+             description="go", location="Tel Aviv")
+    summ = _FakeSummarizer()
+    r1 = run_batch(repo, _FakeFactory([j1]), _FakeEmbedder(), model="bge", summarizer=summ)
+    assert r1["carded"] == 1 and summ.calls == 1
+    assert repo.get_rank_card(j1.id)["required_years"] == 4
+    r2 = run_batch(repo, _FakeFactory([j1]), _FakeEmbedder(), model="bge", summarizer=summ)
+    assert r2["carded"] == 0 and summ.calls == 1

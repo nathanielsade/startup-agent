@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     embedding_provider: str = "local"     # "local" (sentence-transformers) | "openai"
     embedding_model: str = "BAAI/bge-small-en-v1.5"
     openai_embedding_model: str = "text-embedding-3-small"
+    llm_rerank_model: str = "gpt-4o-mini"
     shortlist_size: int = 20
     anthropic_api_key: str = ""
     digest_dir: str = "digests"
@@ -25,7 +26,7 @@ class Settings(BaseSettings):
     database_url: str = ""              # Postgres DSN (Supabase / local docker)
     supabase_jwt_secret: str = ""       # verifies Supabase auth JWTs (HS256)
     supabase_url: str = ""
-    llm_daily_cap: int = 30             # per-user LLM calls/day
+    llm_daily_cap: int = 60             # per-user LLM calls/day
     cors_origins: str = ""              # comma-separated extra allowed origins (deploy)
 
     @property

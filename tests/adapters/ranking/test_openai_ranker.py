@@ -46,3 +46,22 @@ def test_openai_ranker_injects_prefs_and_cv():
     assert "MY CV" in blob
     assert "backend" in blob.lower()
     assert "Backend Engineer" in blob
+
+
+def test_rank_one_passes_card_and_district_into_prompt():
+    import json
+    from startup_agent.adapters.ranking.openai_ranker import OpenAIRanker
+    from startup_agent.domain.models import Job
+    captured = {}
+    class _Comp:
+        def create(self, model, response_format, messages):
+            captured["user"] = messages[-1]["content"]
+            class R:
+                choices = [type("c", (), {"message": type("m", (), {"content": json.dumps({"score": 80, "reason": "good"})})})]
+            return R()
+    class _Client: chat = type("C", (), {"completions": _Comp()})()
+    r = OpenAIRanker(model="gpt-4o-mini", client=_Client())
+    job = Job(company_id="c", ats_job_id="1", title="Backend Eng", url="u", location="Tel Aviv")
+    out = r.rank_one("CV", job, card={"tech_stack": ["Go"]}, district="center")
+    assert out.score == 80
+    assert "Go" in captured["user"] and "center" in captured["user"]

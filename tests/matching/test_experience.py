@@ -12,3 +12,16 @@ def test_no_years_returns_none():
     assert required_years("Great backend role, join us!") is None
     assert required_years(None) is None
     assert required_years("") is None
+
+
+def test_inferred_required_years_prefers_explicit_card_then_regex_then_title():
+    from startup_agent.matching.experience import inferred_required_years
+    # explicit card value wins
+    assert inferred_required_years("Backend Engineer", "needs 4 years", card_years=7) == 7
+    # regex from description
+    assert inferred_required_years("Backend Engineer", "5+ years required") == 5
+    # title fallback when nothing stated
+    assert inferred_required_years("Senior Backend Engineer", "great team") == 6
+    assert inferred_required_years("Junior Developer", "great team") == 1
+    assert inferred_required_years("Staff Engineer", None) == 8
+    assert inferred_required_years("Backend Engineer", None) == 3   # no marker -> mid
