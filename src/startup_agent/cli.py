@@ -138,6 +138,31 @@ def check_companies(
             typer.echo(line)
 
 
+@app.command("health-report")
+def health_report(
+    out: str = typer.Option("docs/integration-status.md", "--out"),
+    database_url: str = typer.Option("", "--database-url"),
+) -> None:
+    """Probe every company live and write a Markdown integration-status report."""
+    from datetime import datetime, timezone
+    from pathlib import Path
+
+    from startup_agent.adapters.storage.postgres_repository import PostgresJobRepository
+    from startup_agent.services.health_report import render_health_report
+
+    dsn = database_url or Settings().database_url
+    if not dsn:
+        typer.echo("No DATABASE_URL configured (set it or pass --database-url)")
+        raise typer.Exit(1)
+    repo = PostgresJobRepository(dsn)
+    repo.init_schema()
+    results = CompanyHealthChecker(repo, ATSAdapterFactory()).check()
+    generated = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    Path(out).parent.mkdir(parents=True, exist_ok=True)
+    Path(out).write_text(render_health_report(results, generated))
+    typer.echo(f"wrote {out}: {dict(Counter(r.status for r in results))}")
+
+
 @app.command("digest")
 def digest(db_path: str = typer.Option("jobs.db", "--db-path"),
            llm: bool = typer.Option(False, "--llm", help="Use Claude scoring + reasons")) -> None:

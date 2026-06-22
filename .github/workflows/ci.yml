@@ -1,0 +1,38 @@
+name: ci
+
+# Code correctness on every push/PR: lint + the full test suite (unit + the
+# deterministic, fixture-based adapter integration tests). A Postgres service
+# lets the DB-backed tests run instead of skipping. This does NOT hit live
+# company feeds — that's the separate scheduled integration-status workflow.
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: pgvector/pgvector:pg16
+        env:
+          POSTGRES_PASSWORD: devpass
+          POSTGRES_DB: startup_agent
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      STARTUP_AGENT_TEST_PG: postgresql://postgres:devpass@localhost:5432/startup_agent
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --frozen
+      - name: Lint
+        run: uv run ruff check .
+      - name: Tests
+        run: uv run pytest -q

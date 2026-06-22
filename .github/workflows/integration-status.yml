@@ -1,0 +1,36 @@
+name: integration-status
+
+# Daily company-integration health report. Probes every company's feed live
+# (read-only — writes nothing to the DB), classifies each (ok / filtered_foreign /
+# empty / failed / unsupported), and commits docs/integration-status.md so the
+# coverage state is visible and version-controlled. NOT a CI gate — third-party
+# feeds change constantly, so this is monitoring, not a pass/fail check.
+on:
+  schedule:
+    - cron: "0 5 * * *"   # daily 05:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write          # commit the updated report back to the repo
+
+jobs:
+  status:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+        with:
+          enable-cache: true
+      - run: uv sync --frozen --no-dev
+      - name: Generate report
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: uv run --no-dev startup-agent health-report --out docs/integration-status.md
+      - name: Commit report if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/integration-status.md
+          git diff --staged --quiet || git commit -m "chore: update integration-status report [skip ci]"
+          git push
