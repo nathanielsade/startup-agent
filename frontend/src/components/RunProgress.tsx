@@ -39,7 +39,9 @@ export function RunProgress({ last }: { last: RunEvent | null }) {
         </div>
         <div className="progress-label">
           <span className="progress-pulsedot" />
-          Matching {last.candidates} roles to your CV…
+          {last.candidates > 0
+            ? `Matching ${last.candidates} roles to your CV…`
+            : "Finding your best matches…"}
         </div>
       </div>
     );

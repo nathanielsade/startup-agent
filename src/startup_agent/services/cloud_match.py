@@ -1,3 +1,4 @@
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 
 import structlog
@@ -12,6 +13,8 @@ from startup_agent.services.matching import SimilarityMatchingService
 from api.schemas import job_match_from_result, to_job_match
 
 logger = structlog.get_logger()
+
+_RERANK_WORKERS = 8   # concurrent LLM rerank calls (HTTP-bound; OpenAI client is thread-safe)
 
 _DNAME = {Region.CENTER: "center", Region.NORTH: "north",
           Region.SOUTH: "south", Region.JERUSALEM: "jerusalem"}
@@ -57,25 +60,53 @@ def match_for_user(scoped_repo, user_repo, user_id: str, embedder: Embedder,
     candidate_ids = {job.id for job, _ in pairs[:top_n]}
     candidate_ids |= {job.id for job, _ in pairs if _is_recent(job, now, recent_hours)}
 
+    # Read per-user state + rank cards up front (main thread only — psycopg is not
+    # safe for concurrent use). Cards fetched once and reused for scoring + penalty.
+    states = {job.id: user_repo.get_job_state(user_id, job.id) for job, _ in pairs}
+    cards = {job.id: scoped_repo.get_rank_card(job.id)
+             for job, _ in pairs if job.id in candidate_ids}
+
+    def _is_cached(job_id: str) -> bool:
+        st = states[job_id]
+        return bool(st and st.get("llm_score") is not None)
+
+    # candidates needing a fresh score, top-cosine first, capped to the daily budget
+    need = [job for job, _ in pairs
+            if job.id in candidate_ids and ranker is not None and not _is_cached(job.id)]
+    need = need[:max(0, cap - used)]
+
+    # score them concurrently — each thread only does the LLM HTTP call (no DB)
+    fresh: dict[str, MatchResult] = {}
+    if need:
+        with ThreadPoolExecutor(max_workers=_RERANK_WORKERS) as pool:
+            futures = {pool.submit(ranker.rank_one, cv_text, job, prefs,
+                                   cards.get(job.id), _district_name(job.location)): job
+                       for job in need}
+            for future in as_completed(futures):
+                job = futures[future]
+                try:
+                    fresh[job.id] = future.result()
+                except Exception as error:  # noqa: BLE001 - keep embedding score on failure
+                    logger.warning("llm_rank_failed", job=job.title, error=str(error))
+
+    # persist fresh scores sequentially (DB writes back on the main thread)
+    for job in need:
+        result = fresh.get(job.id)
+        if result is not None:
+            user_repo.cache_llm_score(user_id, job.id, result.score, result.reason)
+            used = user_repo.bump_llm_usage(user_id)
+
     out = []
     for job, score in pairs:
-        cached = user_repo.get_job_state(user_id, job.id)
+        cached = states[job.id]
         ai_score, reason = None, ""
         if cached and cached.get("llm_score") is not None:
             ai_score, reason = cached["llm_score"], cached.get("llm_reason") or ""
-        elif job.id in candidate_ids and ranker is not None and used < cap:
-            try:
-                card = scoped_repo.get_rank_card(job.id)
-                r = ranker.rank_one(cv_text, job, prefs, card=card,
-                                    district=_district_name(job.location))
-                user_repo.cache_llm_score(user_id, job.id, r.score, r.reason)
-                used = user_repo.bump_llm_usage(user_id)
-                ai_score, reason = r.score, r.reason
-            except Exception as error:  # noqa: BLE001 - keep embedding score on failure
-                logger.warning("llm_rank_failed", job=job.title, error=str(error))
+        elif job.id in fresh:
+            ai_score, reason = fresh[job.id].score, fresh[job.id].reason
 
         if ai_score is not None:
-            card = scoped_repo.get_rank_card(job.id) or {}
+            card = cards.get(job.id) or {}
             req = inferred_required_years(job.title, job.description,
                                           card.get("required_years"))
             penalty = experience_penalty(user_years, req)
