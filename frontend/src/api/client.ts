@@ -71,6 +71,12 @@ export async function savePreferences(prefs: Preferences): Promise<void> {
   if (!resp.ok) throw new Error(`Save prefs failed (${resp.status})`);
 }
 
+export async function getCvStatus(): Promise<{ has_cv: boolean; filename: string | null; chars: number }> {
+  const resp = await authFetch("/api/cv");
+  if (!resp.ok) throw new Error(`CV status failed (${resp.status})`);
+  return resp.json();
+}
+
 export async function uploadCv(file: File): Promise<{ status: string; chars: number }> {
   const body = new FormData();
   body.append("file", file);

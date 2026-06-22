@@ -13,6 +13,16 @@ from api.repos import get_scoped_repo
 router = APIRouter()
 
 
+@router.get("/cv")
+def cv_status(repo=Depends(get_scoped_repo)) -> dict:
+    """Whether this user already has a stored CV — so the UI can skip re-uploading."""
+    cv = repo.get_cv()
+    if not cv:
+        return {"has_cv": False, "filename": None, "chars": 0}
+    return {"has_cv": True, "filename": cv.get("path") or "cv.pdf",
+            "chars": len(cv.get("text") or "")}
+
+
 @router.post("/cv")
 def upload_cv(file: UploadFile,
               embedder: Embedder = Depends(get_embedder),
