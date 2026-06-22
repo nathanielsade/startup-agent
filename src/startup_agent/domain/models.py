@@ -80,6 +80,7 @@ class RunReport(BaseModel):
 class CompanyHealth(BaseModel):
     name: str
     ats_type: str
-    status: str        # "ok" | "empty" | "failed" | "unsupported"
-    job_count: int = 0
+    status: str        # "ok" | "filtered_foreign" | "empty" | "failed" | "unsupported"
+    job_count: int = 0          # jobs the feed returned
+    israeli_count: int = 0      # of those, how many are Israel-relevant
     error: str | None = None

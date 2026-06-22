@@ -29,8 +29,8 @@ def _repo_with(*companies):
     return r
 
 
-def _job():
-    return Job(company_id="c", ats_job_id="1", title="Eng", url="https://x/1")
+def _job(location="Tel Aviv"):
+    return Job(company_id="c", ats_job_id="1", title="Eng", url="https://x/1", location=location)
 
 
 def test_health_classifies_all_four_statuses():
@@ -48,6 +48,18 @@ def test_health_classifies_all_four_statuses():
     })
     results = {r.name: r for r in CompanyHealthChecker(repo, factory).check()}
     assert results["OkCo"].status == "ok" and results["OkCo"].job_count == 2
+    assert results["OkCo"].israeli_count == 2
     assert results["EmptyCo"].status == "empty"
     assert results["FailCo"].status == "failed" and "boom" in results["FailCo"].error
     assert results["UnsupCo"].status == "unsupported"
+
+
+def test_health_flags_foreign_only_company():
+    repo = _repo_with(Company(name="GlobalCo", ats_type=AtsType.GREENHOUSE))
+    factory = _FakeFactory({
+        "GlobalCo": _FakeAdapter(jobs=[_job(location="San Francisco"),
+                                       _job(location="New York")]),
+    })
+    res = CompanyHealthChecker(repo, factory).check()[0]
+    assert res.status == "filtered_foreign"
+    assert res.job_count == 2 and res.israeli_count == 0
