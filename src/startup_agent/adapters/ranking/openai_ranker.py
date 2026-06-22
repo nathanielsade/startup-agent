@@ -27,7 +27,7 @@ class OpenAIRanker(Ranker):
         clause = preferences_clause(preferences)
         if clause:
             instructions = f"{INSTRUCTIONS}\n\n{clause}"
-        instructions += '\n\nRespond ONLY with JSON: {"score": <int 0-100>, "reason": "<one line>"}'
+        instructions += '\n\nRespond ONLY with JSON: {"score": <int 0-100>, "reason": "<2-3 sentences>"}'
         completion = self._client.chat.completions.create(
             model=self._model,
             response_format={"type": "json_object"},

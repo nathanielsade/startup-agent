@@ -4,12 +4,16 @@ from startup_agent.domain.preferences import Preferences
 INSTRUCTIONS = (
     "You are a job-matching assistant. Given a candidate's CV and a single job's "
     "summary card, score how well the job fits the candidate's SKILLS and ROLE from "
-    "0 to 100, and give a one-line reason (max ~20 words). "
-    "Weigh: tech-stack overlap (high), role/domain alignment (high), must-have "
-    "requirements met (medium-high), domain/industry match and skill recency (medium). "
-    "IGNORE experience level, seniority, years, and location - those are handled "
-    "separately; do not raise or lower the score for them. "
-    "Be strict: 70+ a genuinely strong skills fit; 40-69 a stretch; below 40 poor."
+    "0 to 100. Weigh: tech-stack overlap (high), role/domain alignment (high), "
+    "must-have requirements met (medium-high), domain/industry match and skill "
+    "recency (medium). For the SCORE, ignore experience level/seniority/years and "
+    "location (handled separately). "
+    "Then write a concise reason of 2-3 sentences (not a list) that names the "
+    "CONCRETE overlap — which of the candidate's skills, tech-stack, and prior "
+    "experience match this role and domain — and the main gap (including if the "
+    "role needs more years/seniority than the candidate has). Be specific, not "
+    "generic. Be strict on the score: 70+ a genuinely strong skills fit; 40-69 a "
+    "stretch; below 40 poor."
 )
 
 

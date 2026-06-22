@@ -82,9 +82,8 @@ def match_for_user(scoped_repo, user_repo, user_id: str, embedder: Embedder,
             if prefs.max_years is not None and req is not None and req > prefs.max_years:
                 penalty += 10
             final = max(0, min(100, ai_score - penalty))
-            note = (f" · needs ~{req} yrs vs your {user_years}"
-                    if penalty and user_years is not None and req is not None else "")
-            mr = MatchResult(job_id=job.id, score=final, reason=(reason + note), stage="llm")
+            # the 2-3 sentence LLM reason already covers skills/experience fit + gap
+            mr = MatchResult(job_id=job.id, score=final, reason=reason, stage="llm")
             jm = job_match_from_result(job, mr, names, now, links, sites)
         else:
             jm = to_job_match(job, score, names, now, links, sites)
