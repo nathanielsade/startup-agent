@@ -62,7 +62,6 @@ def main() -> None:
 
             candidates = _candidate_urls(name, website)
             token: str | None = None
-            via_browser = False
 
             # Phase 1: HTML-only across all 5 candidate URLs
             for url in candidates:

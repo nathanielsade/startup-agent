@@ -189,7 +189,7 @@ def try_alternative_sources(client: httpx.Client) -> dict:
 
 def main() -> None:
     print("Phase 0 — SNC access probe")
-    print(f"Target: https://finder.startupnationcentral.org")
+    print("Target: https://finder.startupnationcentral.org")
     print()
 
     with httpx.Client(headers=HEADERS, follow_redirects=True) as client:
@@ -198,7 +198,7 @@ def main() -> None:
 
     # Compile summary
     working_endpoints = [k for k, v in snc_results.items() if isinstance(v, dict) and v.get("status") == 200]
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"Working SNC endpoints: {working_endpoints}")
     print(f"SNC accessible: {bool(working_endpoints)}")
 

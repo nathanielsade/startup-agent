@@ -14,7 +14,8 @@ def repo():
         psycopg.connect(DSN).close()
     except Exception:
         pytest.skip("no test Postgres reachable")
-    r = PostgresJobRepository(DSN); r.init_schema()
+    r = PostgresJobRepository(DSN)
+    r.init_schema()
     r._conn.execute("TRUNCATE matches, runs, jobs, companies RESTART IDENTITY CASCADE")
     return r
 
