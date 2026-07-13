@@ -1,6 +1,6 @@
 # Integration Status
 
-_Generated: 2026-07-12 07:36 UTC_
+_Generated: 2026-07-13 08:25 UTC_
 
 **483 companies** scanned.
 
@@ -37,7 +37,7 @@ _Generated: 2026-07-12 07:36 UTC_
 
 | Company | ATS | Jobs (all non-Israel) |
 |---|---|---|
-| 6sense | greenhouse | 42 |
+| 6sense | greenhouse | 41 |
 | Afresh Technologies | greenhouse | 20 |
 | Alchemy | ashby | 17 |
 | AnyRoad | lever | 1 |
@@ -52,7 +52,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Balbix | lever | 11 |
 | Bessemer Venture Partners | greenhouse | 2 |
 | Blink | ashby | 7 |
-| Blumberg Capital | greenhouse | 227 |
+| Blumberg Capital | greenhouse | 228 |
 | Bombas | greenhouse | 13 |
 | Branch | greenhouse | 9 |
 | Brave Health | ashby | 41 |
@@ -65,7 +65,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Contentsquare | lever | 32 |
 | Corelight | greenhouse | 26 |
 | Cybereason | greenhouse | 7 |
-| DOT Compliance | comeet | 6 |
+| DOT Compliance | comeet | 5 |
 | DTCP | ashby | 36 |
 | DailyPay | ashby | 26 |
 | Dandelion Energy | ashby | 18 |
@@ -78,7 +78,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Earthforce | ashby | 3 |
 | Eko | lever | 8 |
 | Enigma Technologies | greenhouse | 9 |
-| Epic Games | greenhouse | 127 |
+| Epic Games | greenhouse | 129 |
 | Eteacher | comeet | 10 |
 | Eternal | lever | 4 |
 | Explorium | comeet | 2 |
@@ -92,7 +92,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Grover | greenhouse | 11 |
 | HYPR | greenhouse | 6 |
 | Home365 | bamboohr | 11 |
-| Human Interest | greenhouse | 66 |
+| Human Interest | greenhouse | 65 |
 | Hyperscience | ashby | 2 |
 | ISEE | lever | 24 |
 | Immuta | lever | 9 |
@@ -117,7 +117,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Medal | ashby | 13 |
 | Mixpanel | greenhouse | 41 |
 | Montecarlodata | ashby | 9 |
-| Multiverse | ashby | 32 |
+| Multiverse | ashby | 31 |
 | Mysten Labs | ashby | 2 |
 | N26 | greenhouse | 70 |
 | NFX | lever | 1 |
@@ -159,7 +159,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Sysdig | lever | 5 |
 | TAU Ventures | greenhouse | 47 |
 | TPG | greenhouse | 17 |
-| Tailor Brands | comeet | 6 |
+| Tailor Brands | comeet | 7 |
 | Tala | lever | 9 |
 | Testlio | greenhouse | 18 |
 | The Garage | ashby | 14 |
@@ -167,8 +167,8 @@ _Generated: 2026-07-12 07:36 UTC_
 | Tovala | lever | 10 |
 | Tripledot Studios | greenhouse | 65 |
 | Upstart | greenhouse | 96 |
-| Vanta | ashby | 115 |
-| Veeam | greenhouse | 270 |
+| Vanta | ashby | 114 |
+| Veeam | greenhouse | 268 |
 | Velocity | ashby | 4 |
 | Veracode | greenhouse | 17 |
 | Versapay | lever | 15 |
@@ -205,7 +205,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Shift4 | greenhouse | failed | 0 | 0 |
 | Space and Time | lever | failed | 0 | 0 |
 | zenity | comeet | failed | 0 | 0 |
-| 6sense | greenhouse | filtered_foreign | 42 | 0 |
+| 6sense | greenhouse | filtered_foreign | 41 | 0 |
 | Afresh Technologies | greenhouse | filtered_foreign | 20 | 0 |
 | Alchemy | ashby | filtered_foreign | 17 | 0 |
 | AnyRoad | lever | filtered_foreign | 1 | 0 |
@@ -220,7 +220,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Balbix | lever | filtered_foreign | 11 | 0 |
 | Bessemer Venture Partners | greenhouse | filtered_foreign | 2 | 0 |
 | Blink | ashby | filtered_foreign | 7 | 0 |
-| Blumberg Capital | greenhouse | filtered_foreign | 227 | 0 |
+| Blumberg Capital | greenhouse | filtered_foreign | 228 | 0 |
 | Bombas | greenhouse | filtered_foreign | 13 | 0 |
 | Branch | greenhouse | filtered_foreign | 9 | 0 |
 | Brave Health | ashby | filtered_foreign | 41 | 0 |
@@ -233,7 +233,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Contentsquare | lever | filtered_foreign | 32 | 0 |
 | Corelight | greenhouse | filtered_foreign | 26 | 0 |
 | Cybereason | greenhouse | filtered_foreign | 7 | 0 |
-| DOT Compliance | comeet | filtered_foreign | 6 | 0 |
+| DOT Compliance | comeet | filtered_foreign | 5 | 0 |
 | DTCP | ashby | filtered_foreign | 36 | 0 |
 | DailyPay | ashby | filtered_foreign | 26 | 0 |
 | Dandelion Energy | ashby | filtered_foreign | 18 | 0 |
@@ -246,7 +246,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Earthforce | ashby | filtered_foreign | 3 | 0 |
 | Eko | lever | filtered_foreign | 8 | 0 |
 | Enigma Technologies | greenhouse | filtered_foreign | 9 | 0 |
-| Epic Games | greenhouse | filtered_foreign | 127 | 0 |
+| Epic Games | greenhouse | filtered_foreign | 129 | 0 |
 | Eteacher | comeet | filtered_foreign | 10 | 0 |
 | Eternal | lever | filtered_foreign | 4 | 0 |
 | Explorium | comeet | filtered_foreign | 2 | 0 |
@@ -260,7 +260,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Grover | greenhouse | filtered_foreign | 11 | 0 |
 | HYPR | greenhouse | filtered_foreign | 6 | 0 |
 | Home365 | bamboohr | filtered_foreign | 11 | 0 |
-| Human Interest | greenhouse | filtered_foreign | 66 | 0 |
+| Human Interest | greenhouse | filtered_foreign | 65 | 0 |
 | Hyperscience | ashby | filtered_foreign | 2 | 0 |
 | ISEE | lever | filtered_foreign | 24 | 0 |
 | Immuta | lever | filtered_foreign | 9 | 0 |
@@ -285,7 +285,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Medal | ashby | filtered_foreign | 13 | 0 |
 | Mixpanel | greenhouse | filtered_foreign | 41 | 0 |
 | Montecarlodata | ashby | filtered_foreign | 9 | 0 |
-| Multiverse | ashby | filtered_foreign | 32 | 0 |
+| Multiverse | ashby | filtered_foreign | 31 | 0 |
 | Mysten Labs | ashby | filtered_foreign | 2 | 0 |
 | N26 | greenhouse | filtered_foreign | 70 | 0 |
 | NFX | lever | filtered_foreign | 1 | 0 |
@@ -327,7 +327,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Sysdig | lever | filtered_foreign | 5 | 0 |
 | TAU Ventures | greenhouse | filtered_foreign | 47 | 0 |
 | TPG | greenhouse | filtered_foreign | 17 | 0 |
-| Tailor Brands | comeet | filtered_foreign | 6 | 0 |
+| Tailor Brands | comeet | filtered_foreign | 7 | 0 |
 | Tala | lever | filtered_foreign | 9 | 0 |
 | Testlio | greenhouse | filtered_foreign | 18 | 0 |
 | The Garage | ashby | filtered_foreign | 14 | 0 |
@@ -335,8 +335,8 @@ _Generated: 2026-07-12 07:36 UTC_
 | Tovala | lever | filtered_foreign | 10 | 0 |
 | Tripledot Studios | greenhouse | filtered_foreign | 65 | 0 |
 | Upstart | greenhouse | filtered_foreign | 96 | 0 |
-| Vanta | ashby | filtered_foreign | 115 | 0 |
-| Veeam | greenhouse | filtered_foreign | 270 | 0 |
+| Vanta | ashby | filtered_foreign | 114 | 0 |
+| Veeam | greenhouse | filtered_foreign | 268 | 0 |
 | Velocity | ashby | filtered_foreign | 4 | 0 |
 | Veracode | greenhouse | filtered_foreign | 17 | 0 |
 | Versapay | lever | filtered_foreign | 15 | 0 |
@@ -406,11 +406,11 @@ _Generated: 2026-07-12 07:36 UTC_
 | A Place for Mom | ashby | ok | 56 | 1 |
 | A.Team | ashby | ok | 2 | 1 |
 | AST SpaceMobile | greenhouse | ok | 194 | 1 |
-| About | greenhouse | ok | 151 | 6 |
-| Abra-it | comeet | ok | 121 | 13 |
+| About | greenhouse | ok | 155 | 6 |
+| Abra-it | comeet | ok | 109 | 10 |
 | Activefence | comeet | ok | 19 | 14 |
 | Aerospike | greenhouse | ok | 17 | 2 |
-| Agora | comeet | ok | 8 | 5 |
+| Agora | comeet | ok | 7 | 5 |
 | Airwallex | ashby | ok | 596 | 4 |
 | Aka Food | comeet | ok | 1 | 1 |
 | Aligned | greenhouse | ok | 5 | 3 |
@@ -420,7 +420,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Anima | ashby | ok | 7 | 1 |
 | Apiiro | greenhouse | ok | 4 | 3 |
 | AppViewX | greenhouse | ok | 27 | 4 |
-| AppsFlyer | greenhouse | ok | 54 | 21 |
+| AppsFlyer | greenhouse | ok | 53 | 21 |
 | Appsforce | comeet | ok | 3 | 3 |
 | Appstock | comeet | ok | 2 | 2 |
 | Aqua Security | comeet | ok | 7 | 4 |
@@ -428,13 +428,13 @@ _Generated: 2026-07-12 07:36 UTC_
 | Armis | greenhouse | ok | 31 | 14 |
 | Arpeely | comeet | ok | 7 | 7 |
 | Askai | comeet | ok | 6 | 4 |
-| Asteralabs | greenhouse | ok | 164 | 28 |
-| Atera | comeet | ok | 17 | 10 |
+| Asteralabs | greenhouse | ok | 162 | 28 |
+| Atera | comeet | ok | 18 | 11 |
 | Augury | greenhouse | ok | 24 | 8 |
 | Autobrains | comeet | ok | 10 | 5 |
 | Automatit | comeet | ok | 16 | 6 |
-| Axon | greenhouse | ok | 501 | 3 |
-| Axonius | greenhouse | ok | 29 | 9 |
+| Axon | greenhouse | ok | 502 | 4 |
+| Axonius | greenhouse | ok | 28 | 8 |
 | Base | ashby | ok | 6 | 4 |
 | Beamup | greenhouse | ok | 4 | 4 |
 | Beyondtrust | greenhouse | ok | 46 | 3 |
@@ -446,62 +446,62 @@ _Generated: 2026-07-12 07:36 UTC_
 | Bluewhite | comeet | ok | 1 | 1 |
 | Boaideas | comeet | ok | 2 | 2 |
 | Bottomline | greenhouse | ok | 29 | 2 |
-| Buyme | comeet | ok | 5 | 4 |
+| Buyme | comeet | ok | 4 | 3 |
 | Candex | ashby | ok | 19 | 8 |
 | Canopy | greenhouse | ok | 4 | 3 |
-| Cardosystems | comeet | ok | 9 | 7 |
-| Cato Networks | greenhouse | ok | 115 | 45 |
-| Cellebrite | comeet | ok | 69 | 24 |
+| Cardosystems | comeet | ok | 8 | 6 |
+| Cato Networks | greenhouse | ok | 117 | 47 |
+| Cellebrite | comeet | ok | 68 | 23 |
 | Cglms | comeet | ok | 5 | 4 |
 | Chainalysis | ashby | ok | 49 | 12 |
 | Chargeflow | comeet | ok | 7 | 4 |
-| Clickhouse | greenhouse | ok | 170 | 2 |
+| Clickhouse | greenhouse | ok | 169 | 2 |
 | Clinch | comeet | ok | 9 | 2 |
 | CodiumAI | comeet | ok | 9 | 6 |
-| Cognyte | comeet | ok | 48 | 11 |
+| Cognyte | comeet | ok | 47 | 11 |
 | Commbox | comeet | ok | 6 | 5 |
 | ConsenSys | greenhouse | ok | 4 | 1 |
 | Cortica | greenhouse | ok | 57 | 1 |
 | Craft.io | recruitee | ok | 1 | 1 |
-| Crossriver | comeet | ok | 16 | 16 |
+| Crossriver | comeet | ok | 15 | 15 |
 | Crusoe | ashby | ok | 348 | 7 |
-| Cyera | comeet | ok | 108 | 34 |
+| Cyera | comeet | ok | 112 | 36 |
 | Cylus | greenhouse | ok | 7 | 4 |
 | Cymbio | comeet | ok | 3 | 3 |
 | Cymotive | comeet | ok | 1 | 1 |
 | Cymulate | greenhouse | ok | 9 | 2 |
-| Cynet | comeet | ok | 20 | 4 |
+| Cynet | comeet | ok | 21 | 4 |
 | D-Fend Solutions | lever | ok | 31 | 25 |
 | DataRails | greenhouse | ok | 13 | 7 |
-| Databricks | greenhouse | ok | 786 | 2 |
-| Dealhub | comeet | ok | 24 | 14 |
+| Databricks | greenhouse | ok | 788 | 2 |
+| Dealhub | comeet | ok | 23 | 13 |
 | Deepdub | comeet | ok | 6 | 1 |
 | Deltagalil | comeet | ok | 41 | 9 |
 | Descope | greenhouse | ok | 10 | 5 |
 | Draftt | comeet | ok | 1 | 1 |
 | Droxiai | comeet | ok | 5 | 4 |
-| Drw | greenhouse | ok | 139 | 4 |
+| Drw | greenhouse | ok | 146 | 4 |
 | DustPhotonics | comeet | ok | 8 | 7 |
 | Duve | comeet | ok | 5 | 3 |
 | EasySend | comeet | ok | 3 | 3 |
 | Eitanmedical | comeet | ok | 11 | 10 |
-| Elastic | greenhouse | ok | 183 | 2 |
+| Elastic | greenhouse | ok | 182 | 2 |
 | Eleos Health | greenhouse | ok | 13 | 6 |
 | Empathy | comeet | ok | 11 | 4 |
-| Enercon | comeet | ok | 13 | 12 |
-| Enlightenergy | comeet | ok | 26 | 17 |
-| Exodigo | comeet | ok | 29 | 13 |
-| Eyesatop | comeet | ok | 10 | 8 |
+| Enercon | comeet | ok | 12 | 11 |
+| Enlightenergy | comeet | ok | 24 | 16 |
+| Exodigo | comeet | ok | 27 | 11 |
+| Eyesatop | comeet | ok | 11 | 9 |
 | Facilities | comeet | ok | 7 | 2 |
-| Feverup | greenhouse | ok | 593 | 2 |
-| Figma | greenhouse | ok | 171 | 4 |
+| Feverup | greenhouse | ok | 592 | 2 |
+| Figma | greenhouse | ok | 170 | 4 |
 | Finout | ashby | ok | 10 | 4 |
-| Finubit | comeet | ok | 4 | 4 |
+| Finubit | comeet | ok | 5 | 5 |
 | Flexor | comeet | ok | 3 | 3 |
 | Flox | ashby | ok | 6 | 4 |
 | Fluenttech | comeet | ok | 15 | 3 |
 | Foresightauto | comeet | ok | 2 | 2 |
-| Forsightrobotics | comeet | ok | 10 | 10 |
+| Forsightrobotics | comeet | ok | 9 | 9 |
 | Forter | greenhouse | ok | 43 | 13 |
 | Gini-Apps | comeet | ok | 24 | 9 |
 | Grain | comeet | ok | 7 | 4 |
@@ -510,9 +510,9 @@ _Generated: 2026-07-12 07:36 UTC_
 | Guard | comeet | ok | 24 | 24 |
 | Guesty | comeet | ok | 18 | 1 |
 | Guidde | greenhouse | ok | 13 | 9 |
-| Guideline | comeet | ok | 16 | 16 |
+| Guideline | comeet | ok | 15 | 15 |
 | HUMAN | ashby | ok | 10 | 2 |
-| Hellosimply | greenhouse | ok | 4 | 4 |
+| Hellosimply | greenhouse | ok | 5 | 5 |
 | Hexagate | ashby | ok | 49 | 12 |
 | HoneyBook | ashby | ok | 15 | 10 |
 | Houzz | lever | ok | 3 | 2 |
@@ -522,60 +522,60 @@ _Generated: 2026-07-12 07:36 UTC_
 | Insightec | comeet | ok | 19 | 5 |
 | Ironscales | comeet | ok | 6 | 5 |
 | Ivix | comeet | ok | 15 | 11 |
-| JFrog | greenhouse | ok | 52 | 13 |
+| JFrog | greenhouse | ok | 52 | 14 |
 | Jamf | greenhouse | ok | 34 | 1 |
-| Jennifer Airobotics | comeet | ok | 22 | 22 |
+| Jennifer Airobotics | comeet | ok | 21 | 21 |
 | Kaltura | comeet | ok | 20 | 12 |
 | Kelasys | comeet | ok | 20 | 20 |
 | Kendago | comeet | ok | 4 | 1 |
-| Latitude | greenhouse | ok | 40 | 1 |
+| Latitude | greenhouse | ok | 39 | 1 |
 | Layerxsecurity | comeet | ok | 7 | 6 |
 | Ledge | ashby | ok | 5 | 2 |
 | Legitsecurity.Com | comeet | ok | 6 | 3 |
 | Lemalabs | comeet | ok | 4 | 3 |
-| Lendbuzz | lever | ok | 73 | 11 |
+| Lendbuzz | lever | ok | 74 | 12 |
 | Leverate | comeet | ok | 5 | 1 |
 | Lightricks | greenhouse | ok | 9 | 7 |
 | Lilt-production | ashby | ok | 363 | 7 |
 | Linxsecurity | comeet | ok | 10 | 5 |
-| Liveu | comeet | ok | 12 | 5 |
+| Liveu | comeet | ok | 11 | 4 |
 | Localize | comeet | ok | 1 | 1 |
 | Ludeo | comeet | ok | 1 | 1 |
 | Lumenis | comeet | ok | 5 | 5 |
 | Matia | ashby | ok | 8 | 5 |
-| Mdclone | comeet | ok | 4 | 3 |
+| Mdclone | comeet | ok | 3 | 2 |
 | Menlosecurity | ashby | ok | 20 | 8 |
-| Mentee Robotics | comeet | ok | 11 | 11 |
-| Meron Capital | greenhouse | ok | 18 | 5 |
+| Mentee Robotics | comeet | ok | 9 | 9 |
+| Meron Capital | greenhouse | ok | 17 | 4 |
 | Minimus | comeet | ok | 2 | 2 |
 | Mixtiles | greenhouse | ok | 13 | 11 |
-| Mongodb | greenhouse | ok | 387 | 9 |
+| Mongodb | greenhouse | ok | 383 | 9 |
 | Moonshot | comeet | ok | 1 | 1 |
 | Morphisec | comeet | ok | 2 | 1 |
 | Mprest | comeet | ok | 8 | 8 |
 | Nanit | greenhouse | ok | 7 | 2 |
 | Nasstudios | greenhouse | ok | 2 | 2 |
-| Native | comeet | ok | 13 | 4 |
+| Native | comeet | ok | 11 | 3 |
 | Navina | comeet | ok | 16 | 1 |
-| Nebius | greenhouse | ok | 331 | 40 |
-| Netafim | comeet | ok | 50 | 26 |
-| Nexite | comeet | ok | 7 | 7 |
+| Nebius | greenhouse | ok | 331 | 41 |
+| Netafim | comeet | ok | 51 | 27 |
+| Nexite | comeet | ok | 4 | 4 |
 | Nextinsurance | greenhouse | ok | 27 | 8 |
-| Nice | greenhouse | ok | 332 | 24 |
+| Nice | greenhouse | ok | 337 | 28 |
 | NoTraffic | comeet | ok | 11 | 6 |
 | Noble | greenhouse | ok | 2 | 1 |
-| OPSWAT | greenhouse | ok | 73 | 4 |
+| OPSWAT | greenhouse | ok | 72 | 4 |
 | OXIO | ashby | ok | 16 | 13 |
 | Oasis | greenhouse | ok | 66 | 5 |
 | Obligo | greenhouse | ok | 4 | 2 |
 | Offchain Labs | lever | ok | 16 | 12 |
-| Okta | greenhouse | ok | 346 | 2 |
+| Okta | greenhouse | ok | 343 | 2 |
 | Onapsis | greenhouse | ok | 11 | 1 |
 | Onestep | comeet | ok | 6 | 4 |
 | Onezerobank | comeet | ok | 9 | 9 |
 | Orca Security | greenhouse | ok | 5 | 4 |
 | Orca-Ai | comeet | ok | 15 | 8 |
-| Orchid Security | comeet | ok | 5 | 3 |
+| Orchid Security | comeet | ok | 5 | 2 |
 | Orpak | comeet | ok | 3 | 3 |
 | Overline | greenhouse | ok | 1 | 1 |
 | Ox Security | comeet | ok | 17 | 8 |
@@ -583,7 +583,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Panorays | comeet | ok | 3 | 1 |
 | Paragon | comeet | ok | 25 | 25 |
 | Passportcard | comeet | ok | 17 | 16 |
-| Payoneer | greenhouse | ok | 136 | 15 |
+| Payoneer | greenhouse | ok | 139 | 18 |
 | Pendo | greenhouse | ok | 47 | 1 |
 | Penlink | comeet | ok | 8 | 3 |
 | People.ai | lever | ok | 10 | 2 |
@@ -592,7 +592,7 @@ _Generated: 2026-07-12 07:36 UTC_
 | Playtech | smartrecruiters | ok | 100 | 1 |
 | PointFive | ashby | ok | 12 | 3 |
 | Pontera | greenhouse | ok | 2 | 1 |
-| Port | comeet | ok | 43 | 13 |
+| Port | comeet | ok | 45 | 13 |
 | Postman | greenhouse | ok | 121 | 1 |
 | PrettyDamnQuick | comeet | ok | 3 | 2 |
 | Qedma | comeet | ok | 5 | 3 |
@@ -602,8 +602,8 @@ _Generated: 2026-07-12 07:36 UTC_
 | Reeco | comeet | ok | 3 | 1 |
 | Regulus | comeet | ok | 13 | 12 |
 | Residenthome | greenhouse | ok | 18 | 6 |
-| Riskified | greenhouse | ok | 29 | 8 |
-| Rubrik | greenhouse | ok | 97 | 5 |
+| Riskified | greenhouse | ok | 28 | 7 |
+| Rubrik | greenhouse | ok | 96 | 5 |
 | SESO | greenhouse | ok | 10 | 1 |
 | Safebreach | greenhouse | ok | 8 | 5 |
 | Sagetap | ashby | ok | 2 | 1 |
@@ -611,19 +611,19 @@ _Generated: 2026-07-12 07:36 UTC_
 | Sauce | lever | ok | 11 | 1 |
 | Sayanchor | comeet | ok | 13 | 7 |
 | Saymine | comeet | ok | 3 | 2 |
-| ScaleOps | comeet | ok | 56 | 30 |
+| ScaleOps | comeet | ok | 55 | 29 |
 | Scopely | greenhouse | ok | 140 | 6 |
 | Scylladb | comeet | ok | 3 | 1 |
 | Seasecuirty | comeet | ok | 2 | 1 |
 | Seekingalpha | comeet | ok | 13 | 3 |
 | Sensi.AI | comeet | ok | 16 | 7 |
-| Sentinelone | greenhouse | ok | 206 | 24 |
-| ServiceNow | smartrecruiters | ok | 100 | 4 |
+| Sentinelone | greenhouse | ok | 211 | 29 |
+| ServiceNow | smartrecruiters | ok | 100 | 3 |
 | Sett | comeet | ok | 9 | 9 |
-| Sidelines Group | comeet | ok | 10 | 10 |
+| Sidelines Group | comeet | ok | 11 | 11 |
 | Silk | comeet | ok | 4 | 2 |
-| Silverfort | comeet | ok | 33 | 9 |
-| SimilarWeb | greenhouse | ok | 82 | 29 |
+| Silverfort | comeet | ok | 31 | 10 |
+| SimilarWeb | greenhouse | ok | 81 | 28 |
 | Sisense | greenhouse | ok | 4 | 1 |
 | Skai | comeet | ok | 17 | 5 |
 | SmartAsset | greenhouse | ok | 4 | 2 |
@@ -631,28 +631,28 @@ _Generated: 2026-07-12 07:36 UTC_
 | Storyblok | greenhouse | ok | 13 | 8 |
 | Stripe | greenhouse | ok | 511 | 5 |
 | Supercom | comeet | ok | 3 | 2 |
-| Superplay | comeet | ok | 27 | 16 |
+| Superplay | comeet | ok | 30 | 19 |
 | Surecomp | comeet | ok | 10 | 3 |
 | Sweet Security | greenhouse | ok | 7 | 6 |
 | Syqe | comeet | ok | 2 | 1 |
-| Taboola | greenhouse | ok | 80 | 20 |
+| Taboola | greenhouse | ok | 80 | 21 |
 | Tango | comeet | ok | 17 | 2 |
 | Tavily | ashby | ok | 18 | 9 |
 | Teads | greenhouse | ok | 60 | 8 |
-| Tenableinc | greenhouse | ok | 53 | 12 |
+| Tenableinc | greenhouse | ok | 51 | 10 |
 | Tenengroup | comeet | ok | 15 | 10 |
 | Tomorrow | greenhouse | ok | 18 | 4 |
 | Torii | greenhouse | ok | 3 | 1 |
-| Torq | greenhouse | ok | 21 | 5 |
+| Torq | greenhouse | ok | 20 | 4 |
 | Travelier | comeet | ok | 1 | 1 |
 | TriEye | comeet | ok | 3 | 3 |
 | Truvid | comeet | ok | 1 | 1 |
 | Tulip | greenhouse | ok | 57 | 2 |
 | Twingate | lever | ok | 3 | 2 |
-| Unframe | greenhouse | ok | 33 | 9 |
+| Unframe | greenhouse | ok | 32 | 8 |
 | Unit | ashby | ok | 8 | 4 |
-| Upwind | comeet | ok | 56 | 16 |
-| Utila | comeet | ok | 10 | 5 |
+| Upwind | comeet | ok | 55 | 15 |
+| Utila | comeet | ok | 11 | 5 |
 | Vastdata | comeet | ok | 233 | 38 |
 | Vectoriousmedtech | comeet | ok | 3 | 2 |
 | Vega | comeet | ok | 14 | 9 |
@@ -660,12 +660,12 @@ _Generated: 2026-07-12 07:36 UTC_
 | Vhive | comeet | ok | 7 | 2 |
 | Vi | comeet | ok | 12 | 4 |
 | Vonage (Israel) | greenhouse | ok | 57 | 2 |
-| Vpgsensors | comeet | ok | 82 | 13 |
-| Walmart | comeet | ok | 7 | 7 |
-| Webbing | comeet | ok | 55 | 1 |
+| Vpgsensors | comeet | ok | 80 | 11 |
+| Walmart | comeet | ok | 6 | 6 |
+| Webbing | comeet | ok | 56 | 1 |
 | Weski | comeet | ok | 5 | 5 |
-| Wiliot | comeet | ok | 16 | 8 |
-| Wiz | greenhouse | ok | 153 | 23 |
+| Wiliot | comeet | ok | 17 | 9 |
+| Wiz | greenhouse | ok | 154 | 23 |
 | Yotpo | greenhouse | ok | 17 | 7 |
 | Youappi | comeet | ok | 5 | 1 |
 | Zafran Io | comeet | ok | 32 | 7 |
