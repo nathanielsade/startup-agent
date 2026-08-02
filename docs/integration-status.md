@@ -1,6 +1,6 @@
 # Integration Status
 
-_Generated: 2026-08-01 07:36 UTC_
+_Generated: 2026-08-02 07:42 UTC_
 
 **483 companies** scanned.
 
@@ -10,9 +10,9 @@ _Generated: 2026-08-01 07:36 UTC_
 |---|---|
 | failed | 19 |
 | filtered_foreign | 146 |
-| empty | 46 |
+| empty | 47 |
 | unsupported | 0 |
-| ok | 272 |
+| ok | 271 |
 
 ## ⚠️ Broken feeds (fix the seed config)
 
@@ -95,7 +95,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | GoSource | lever | 5 |
 | HYPR | greenhouse | 2 |
 | Home365 | bamboohr | 11 |
-| Human Interest | greenhouse | 65 |
+| Human Interest | greenhouse | 64 |
 | Hyperscience | ashby | 3 |
 | ISEE | lever | 25 |
 | Immuta | lever | 10 |
@@ -103,7 +103,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | JetInsight | greenhouse | 3 |
 | JumpCloud | lever | 17 |
 | Juno | greenhouse | 3 |
-| Kendago | comeet | 5 |
+| Kendago | comeet | 6 |
 | Kentik | greenhouse | 10 |
 | Kraus Hamdani Aerospace | greenhouse | 8 |
 | Krypton | lever | 3 |
@@ -265,7 +265,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | GoSource | lever | filtered_foreign | 5 | 0 |
 | HYPR | greenhouse | filtered_foreign | 2 | 0 |
 | Home365 | bamboohr | filtered_foreign | 11 | 0 |
-| Human Interest | greenhouse | filtered_foreign | 65 | 0 |
+| Human Interest | greenhouse | filtered_foreign | 64 | 0 |
 | Hyperscience | ashby | filtered_foreign | 3 | 0 |
 | ISEE | lever | filtered_foreign | 25 | 0 |
 | Immuta | lever | filtered_foreign | 10 | 0 |
@@ -273,7 +273,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | JetInsight | greenhouse | filtered_foreign | 3 | 0 |
 | JumpCloud | lever | filtered_foreign | 17 | 0 |
 | Juno | greenhouse | filtered_foreign | 3 | 0 |
-| Kendago | comeet | filtered_foreign | 5 | 0 |
+| Kendago | comeet | filtered_foreign | 6 | 0 |
 | Kentik | greenhouse | filtered_foreign | 10 | 0 |
 | Kraus Hamdani Aerospace | greenhouse | filtered_foreign | 8 | 0 |
 | Krypton | lever | filtered_foreign | 3 | 0 |
@@ -358,6 +358,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | acceldata | lever | filtered_foreign | 50 | 0 |
 | super.AI | greenhouse | filtered_foreign | 195 | 0 |
 | withco | ashby | filtered_foreign | 1 | 0 |
+| Aka Food | comeet | empty | 0 | 0 |
 | Alpha Medical | ashby | empty | 0 | 0 |
 | Battery Ventures | greenhouse | empty | 0 | 0 |
 | Beamr | comeet | empty | 0 | 0 |
@@ -413,15 +414,14 @@ _Generated: 2026-08-01 07:36 UTC_
 | Activefence | comeet | ok | 30 | 17 |
 | Aerospike | greenhouse | ok | 15 | 3 |
 | Agora | comeet | ok | 7 | 5 |
-| Airwallex | ashby | ok | 621 | 5 |
-| Aka Food | comeet | ok | 1 | 1 |
+| Airwallex | ashby | ok | 622 | 5 |
 | Aligned | greenhouse | ok | 5 | 3 |
 | Allbetter | comeet | ok | 2 | 2 |
 | Allied-Universal-Em | comeet | ok | 1 | 1 |
 | Anima | ashby | ok | 7 | 1 |
 | Apiiro | greenhouse | ok | 8 | 5 |
 | AppViewX | greenhouse | ok | 28 | 1 |
-| AppsFlyer | greenhouse | ok | 62 | 24 |
+| AppsFlyer | greenhouse | ok | 61 | 23 |
 | Appsforce | comeet | ok | 2 | 2 |
 | Appstock | comeet | ok | 2 | 2 |
 | Aqua Security | comeet | ok | 7 | 4 |
@@ -453,7 +453,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | Canopy | greenhouse | ok | 4 | 3 |
 | Capitolis | greenhouse | ok | 3 | 2 |
 | Cardosystems | comeet | ok | 9 | 7 |
-| Cato Networks | greenhouse | ok | 125 | 43 |
+| Cato Networks | greenhouse | ok | 126 | 44 |
 | Cellebrite | comeet | ok | 67 | 20 |
 | Cglms | comeet | ok | 5 | 4 |
 | Chainalysis | ashby | ok | 44 | 13 |
@@ -473,14 +473,14 @@ _Generated: 2026-08-01 07:36 UTC_
 | Cylus | greenhouse | ok | 7 | 4 |
 | Cymotive | comeet | ok | 1 | 1 |
 | Cymulate | greenhouse | ok | 12 | 3 |
-| Cynet | comeet | ok | 23 | 4 |
+| Cynet | comeet | ok | 24 | 5 |
 | D-Fend Solutions | lever | ok | 32 | 26 |
 | DataRails | greenhouse | ok | 13 | 7 |
 | Databricks | greenhouse | ok | 803 | 1 |
 | Dealhub | comeet | ok | 23 | 15 |
 | Deepdub | comeet | ok | 12 | 1 |
 | Deltagalil | comeet | ok | 38 | 7 |
-| Descope | greenhouse | ok | 7 | 5 |
+| Descope | greenhouse | ok | 6 | 4 |
 | Draftt | comeet | ok | 1 | 1 |
 | Droxiai | comeet | ok | 3 | 2 |
 | Drw | greenhouse | ok | 163 | 4 |
@@ -495,7 +495,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | Exodigo | comeet | ok | 55 | 14 |
 | Eyesatop | comeet | ok | 12 | 9 |
 | Facilities | comeet | ok | 4 | 3 |
-| Feverup | greenhouse | ok | 591 | 2 |
+| Feverup | greenhouse | ok | 592 | 2 |
 | Figma | greenhouse | ok | 176 | 5 |
 | Finout | ashby | ok | 14 | 4 |
 | Finubit | comeet | ok | 5 | 5 |
@@ -526,7 +526,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | Insightec | comeet | ok | 20 | 4 |
 | Ironscales | comeet | ok | 9 | 5 |
 | Ivix | comeet | ok | 12 | 8 |
-| JFrog | greenhouse | ok | 37 | 9 |
+| JFrog | greenhouse | ok | 35 | 9 |
 | Jamf | greenhouse | ok | 39 | 2 |
 | Jennifer Airobotics | comeet | ok | 23 | 23 |
 | Kaltura | comeet | ok | 20 | 12 |
@@ -563,7 +563,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | Netafim | comeet | ok | 53 | 31 |
 | Nexite | comeet | ok | 3 | 3 |
 | Nextinsurance | greenhouse | ok | 29 | 10 |
-| Nice | greenhouse | ok | 322 | 38 |
+| Nice | greenhouse | ok | 321 | 38 |
 | NoTraffic | comeet | ok | 11 | 6 |
 | Noble | greenhouse | ok | 2 | 1 |
 | OPSWAT | greenhouse | ok | 82 | 4 |
@@ -585,16 +585,16 @@ _Generated: 2026-08-01 07:36 UTC_
 | Palantir Technologies | lever | ok | 302 | 1 |
 | Paragon | comeet | ok | 30 | 30 |
 | Passportcard | comeet | ok | 18 | 17 |
-| Payoneer | greenhouse | ok | 125 | 17 |
+| Payoneer | greenhouse | ok | 126 | 17 |
 | Pendo | greenhouse | ok | 36 | 1 |
 | Penlink | comeet | ok | 8 | 5 |
 | People.ai | lever | ok | 8 | 2 |
 | Pipl | comeet | ok | 6 | 2 |
 | Placerlabs | greenhouse | ok | 9 | 2 |
 | PointFive | ashby | ok | 13 | 4 |
-| Pontera | greenhouse | ok | 2 | 1 |
+| Pontera | greenhouse | ok | 3 | 1 |
 | Port | comeet | ok | 36 | 10 |
-| Postman | greenhouse | ok | 110 | 1 |
+| Postman | greenhouse | ok | 113 | 1 |
 | PrettyDamnQuick | comeet | ok | 3 | 2 |
 | Qedma | comeet | ok | 5 | 3 |
 | Quanthealth | greenhouse | ok | 10 | 9 |
@@ -609,7 +609,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | Safebreach | greenhouse | ok | 3 | 3 |
 | Sagetap | ashby | ok | 1 | 1 |
 | Salt Security | greenhouse | ok | 7 | 2 |
-| Sauce | lever | ok | 10 | 2 |
+| Sauce | lever | ok | 12 | 2 |
 | Sayanchor | comeet | ok | 14 | 8 |
 | Saymine | comeet | ok | 5 | 4 |
 | ScaleOps | comeet | ok | 56 | 30 |
@@ -617,10 +617,10 @@ _Generated: 2026-08-01 07:36 UTC_
 | Scylladb | comeet | ok | 4 | 1 |
 | Seasecuirty | comeet | ok | 2 | 1 |
 | Sedric | comeet | ok | 3 | 1 |
-| Seekingalpha | comeet | ok | 14 | 3 |
+| Seekingalpha | comeet | ok | 13 | 3 |
 | Seemplicity | comeet | ok | 3 | 2 |
 | Sensi.AI | comeet | ok | 15 | 6 |
-| Sentinelone | greenhouse | ok | 216 | 27 |
+| Sentinelone | greenhouse | ok | 217 | 28 |
 | ServiceNow | smartrecruiters | ok | 100 | 4 |
 | Sett | comeet | ok | 16 | 16 |
 | Sidelines Group | comeet | ok | 13 | 12 |
@@ -642,7 +642,7 @@ _Generated: 2026-08-01 07:36 UTC_
 | Tango | comeet | ok | 18 | 1 |
 | Tavily | ashby | ok | 18 | 9 |
 | Teads | greenhouse | ok | 64 | 6 |
-| Tenableinc | greenhouse | ok | 56 | 9 |
+| Tenableinc | greenhouse | ok | 55 | 9 |
 | Tenengroup | comeet | ok | 22 | 16 |
 | Tomorrow | greenhouse | ok | 16 | 4 |
 | Torii | greenhouse | ok | 2 | 1 |
@@ -662,13 +662,13 @@ _Generated: 2026-08-01 07:36 UTC_
 | Venncity | greenhouse | ok | 4 | 1 |
 | Vhive | comeet | ok | 7 | 2 |
 | Vi | comeet | ok | 14 | 4 |
-| Vpgsensors | comeet | ok | 66 | 13 |
+| Vpgsensors | comeet | ok | 67 | 14 |
 | Walmart | comeet | ok | 6 | 6 |
 | Webbing | comeet | ok | 48 | 2 |
 | Weski | comeet | ok | 5 | 5 |
 | Wiliot | comeet | ok | 23 | 9 |
 | Wiz | greenhouse | ok | 122 | 23 |
-| Yotpo | greenhouse | ok | 12 | 3 |
+| Yotpo | greenhouse | ok | 13 | 4 |
 | Youappi | comeet | ok | 5 | 1 |
 | Zafran Io | comeet | ok | 27 | 4 |
 | Zencity | comeet | ok | 3 | 1 |
