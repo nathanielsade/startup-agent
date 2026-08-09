@@ -1,6 +1,6 @@
 # Integration Status
 
-_Generated: 2026-08-08 05:50 UTC_
+_Generated: 2026-08-09 05:55 UTC_
 
 **483 companies** scanned.
 
@@ -9,8 +9,8 @@ _Generated: 2026-08-08 05:50 UTC_
 | Status | Count |
 |---|---|
 | failed | 21 |
-| filtered_foreign | 146 |
-| empty | 47 |
+| filtered_foreign | 145 |
+| empty | 48 |
 | unsupported | 0 |
 | ok | 269 |
 
@@ -176,7 +176,6 @@ _Generated: 2026-08-08 05:50 UTC_
 | Veracode | greenhouse | 10 |
 | Versapay | lever | 12 |
 | Virtru | greenhouse | 15 |
-| Volley | ashby | 5 |
 | Vonage (Israel) | greenhouse | 43 |
 | Webselenese | comeet | 4 |
 | Webz | comeet | 1 |
@@ -348,7 +347,6 @@ _Generated: 2026-08-08 05:50 UTC_
 | Veracode | greenhouse | filtered_foreign | 10 | 0 |
 | Versapay | lever | filtered_foreign | 12 | 0 |
 | Virtru | greenhouse | filtered_foreign | 15 | 0 |
-| Volley | ashby | filtered_foreign | 5 | 0 |
 | Vonage (Israel) | greenhouse | filtered_foreign | 43 | 0 |
 | Webselenese | comeet | filtered_foreign | 4 | 0 |
 | Webz | comeet | filtered_foreign | 1 | 0 |
@@ -407,17 +405,18 @@ _Generated: 2026-08-08 05:50 UTC_
 | Swiftly | lever | empty | 0 | 0 |
 | Truvid | comeet | empty | 0 | 0 |
 | Tymely AI | comeet | empty | 0 | 0 |
+| Volley | ashby | empty | 0 | 0 |
 | Walnut | greenhouse | empty | 0 | 0 |
 | eko | greenhouse | empty | 0 | 0 |
 | 4manalytics | comeet | ok | 7 | 5 |
 | A Place for Mom | ashby | ok | 57 | 3 |
 | A.Team | ashby | ok | 2 | 1 |
 | AST SpaceMobile | greenhouse | ok | 209 | 1 |
-| About | greenhouse | ok | 189 | 5 |
+| About | greenhouse | ok | 188 | 5 |
 | Abra-it | comeet | ok | 119 | 10 |
 | Activefence | comeet | ok | 30 | 16 |
 | Agora | comeet | ok | 7 | 5 |
-| Airwallex | ashby | ok | 634 | 4 |
+| Airwallex | ashby | ok | 631 | 4 |
 | Aligned | greenhouse | ok | 5 | 3 |
 | Allbetter | comeet | ok | 4 | 4 |
 | Allied-Universal-Em | comeet | ok | 1 | 1 |
@@ -439,7 +438,7 @@ _Generated: 2026-08-08 05:50 UTC_
 | Autobrains | comeet | ok | 6 | 5 |
 | Autods | greenhouse | ok | 3 | 2 |
 | Automatit | comeet | ok | 18 | 5 |
-| Axon | greenhouse | ok | 489 | 2 |
+| Axon | greenhouse | ok | 490 | 2 |
 | Axonius | greenhouse | ok | 31 | 8 |
 | Base | ashby | ok | 7 | 4 |
 | Beamup | greenhouse | ok | 4 | 4 |
@@ -472,14 +471,14 @@ _Generated: 2026-08-08 05:50 UTC_
 | Craft.io | recruitee | ok | 1 | 1 |
 | Crossriver | comeet | ok | 17 | 17 |
 | Crusoe | ashby | ok | 365 | 7 |
-| Cyera | comeet | ok | 145 | 34 |
+| Cyera | comeet | ok | 144 | 34 |
 | Cylus | greenhouse | ok | 7 | 4 |
 | Cymotive | comeet | ok | 1 | 1 |
 | Cymulate | greenhouse | ok | 11 | 3 |
 | Cynet | comeet | ok | 20 | 5 |
 | D-Fend Solutions | lever | ok | 31 | 25 |
 | DataRails | greenhouse | ok | 14 | 7 |
-| Databricks | greenhouse | ok | 819 | 1 |
+| Databricks | greenhouse | ok | 823 | 1 |
 | Dealhub | comeet | ok | 23 | 14 |
 | Deepdub | comeet | ok | 15 | 2 |
 | Deltagalil | comeet | ok | 39 | 8 |
@@ -506,7 +505,7 @@ _Generated: 2026-08-08 05:50 UTC_
 | Flexor | comeet | ok | 2 | 2 |
 | FloatMe | ashby | ok | 8 | 2 |
 | Flox | ashby | ok | 5 | 3 |
-| Fluenttech | comeet | ok | 13 | 3 |
+| Fluenttech | comeet | ok | 12 | 3 |
 | Foresightauto | comeet | ok | 4 | 4 |
 | Forsightrobotics | comeet | ok | 8 | 8 |
 | Forter | greenhouse | ok | 43 | 13 |
@@ -583,7 +582,7 @@ _Generated: 2026-08-08 05:50 UTC_
 | Orca Security | greenhouse | ok | 11 | 4 |
 | Orca-Ai | comeet | ok | 12 | 7 |
 | Orchid Security | comeet | ok | 5 | 2 |
-| Orpak | comeet | ok | 2 | 2 |
+| Orpak | comeet | ok | 1 | 1 |
 | Overline | greenhouse | ok | 1 | 1 |
 | Ox Security | comeet | ok | 19 | 10 |
 | Palantir Technologies | lever | ok | 305 | 1 |
@@ -598,7 +597,7 @@ _Generated: 2026-08-08 05:50 UTC_
 | PointFive | ashby | ok | 14 | 4 |
 | Pontera | greenhouse | ok | 4 | 1 |
 | Port | comeet | ok | 40 | 11 |
-| Postman | greenhouse | ok | 106 | 1 |
+| Postman | greenhouse | ok | 107 | 1 |
 | PrettyDamnQuick | comeet | ok | 3 | 2 |
 | Qedma | comeet | ok | 4 | 2 |
 | Quanthealth | greenhouse | ok | 9 | 8 |
@@ -633,7 +632,7 @@ _Generated: 2026-08-08 05:50 UTC_
 | Sisense | greenhouse | ok | 6 | 2 |
 | Skai | comeet | ok | 16 | 4 |
 | SmartAsset | greenhouse | ok | 6 | 3 |
-| Speechify | greenhouse | ok | 975 | 25 |
+| Speechify | greenhouse | ok | 1289 | 25 |
 | Storyblok | greenhouse | ok | 12 | 8 |
 | Stripe | greenhouse | ok | 550 | 6 |
 | Supercom | comeet | ok | 3 | 1 |
@@ -653,7 +652,7 @@ _Generated: 2026-08-08 05:50 UTC_
 | Travelier | comeet | ok | 1 | 1 |
 | TriEye | comeet | ok | 4 | 4 |
 | Tripledot Studios | greenhouse | ok | 75 | 2 |
-| Tulip | greenhouse | ok | 71 | 1 |
+| Tulip | greenhouse | ok | 72 | 1 |
 | Twingate | lever | ok | 3 | 2 |
 | Unframe | greenhouse | ok | 34 | 10 |
 | Unit | ashby | ok | 5 | 3 |
